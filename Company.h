@@ -20,11 +20,13 @@ class Company
     int getValue();
     int getNumOfEmployees();
     AVLTree<Employee>* getEmployeesTree();
-    Employee* getMostEarner();
+    Employee* getHighestEarner();
     void setCompanyID(int newID);
     void setValue(int value);
-    void setMostEarner(Employee* emp);
+    void setHighesEarner(Employee* emp);
+
     void addEmployee(Employee* employee);
+    void removeEmployee(Employee* employee);
     
 }
 

@@ -14,7 +14,7 @@ int Company::getNumOfEmployees(){
     return num_of_employees;
 }
 
-Employee* Company::getMostEarner(){
+Employee* Company::getHighestEarner(){
     return highest_earner;
 }
 
@@ -26,7 +26,7 @@ void Company::setValue(int value){
     this->value=value;
 }
 
-void Company::setMostEarner(Employee* emp){
+void Company::setHighesEarner(Employee* emp){
     highest_earner=emp;
 }
 AVLTree<Employee>* Company::getEmployeesTree(){
@@ -35,4 +35,8 @@ AVLTree<Employee>* Company::getEmployeesTree(){
 
 void Company::addEmployee(Employee* employee){
     employees_tree->add(*employee);
+}
+
+void Company::removeEmployee(Employee* employee){
+    employees_tree->remove(*employee);
 }
