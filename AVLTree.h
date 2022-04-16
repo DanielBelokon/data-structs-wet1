@@ -46,11 +46,6 @@ public:
         return node1.getData() < node2.getData();
     }
 
-    bool compare(Node<T> &node1, Node<T> &node2)
-    {
-        return compare(node1, node2);
-    }
-
 private:
     bool addRecursive(Node<T> *newNode, Node<T> *current);
 
@@ -138,8 +133,10 @@ void LR(Node<T> *&root)
 {
     Node<T> *new_left = root->getLeft();
     Node<T> *new_root = new_left->getRight();
+    // Swap the left child of the root with the right child of the left child
     root->setLeft(new_root->getRight());
     new_left->setRight(new_root->getLeft());
+    // Rotate left
     new_root->setRight(root);
     new_root->setLeft(new_left);
     root = new_root;
