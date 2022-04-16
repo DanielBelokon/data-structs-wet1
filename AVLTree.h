@@ -1,3 +1,6 @@
+#ifndef AVL_TREE_H
+#define AVL_TREE_H
+
 #include "TreeNode.h"
 
 class Condition
@@ -100,10 +103,4 @@ void LR(Node<T> *&root)
     root = temp2;
 }
 
-AVLTree::AVLTree(/* args */)
-{
-}
-
-AVLTree::~AVLTree()
-{
-}
+#endif // AVL_TREE_H
