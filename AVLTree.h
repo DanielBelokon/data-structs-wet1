@@ -137,21 +137,8 @@ void AVLTree<T>::RR(Node<T> *root, Node<T> *parent)
 template <typename T>
 void AVLTree<T>::RL(Node<T> *root, Node<T> *parent)
 {
-    Node<T> *new_right = root->getRight();
-    Node<T> *new_root = new_right->getLeft();
-    replaceChild(parent, root, new_root);
-    new_root->setRight(new_right);
-    new_right->setLeft(nullptr);
-
-    new_root->setLeft(root);
-    root->setRight(nullptr);
-
-    new_root->getLeft()->updateHeight();
-    new_root->updateHeight();
-    if (parent != nullptr)
-    {
-        parent->updateHeight();
-    }
+    LL(root->getRight(), root);
+    RR(root, parent);
 }
 
 template <typename T>
@@ -173,21 +160,8 @@ void AVLTree<T>::LL(Node<T> *root, Node<T> *parent)
 template <typename T>
 void AVLTree<T>::LR(Node<T> *root, Node<T> *parent)
 {
-    Node<T> *new_left = root->getLeft();
-    Node<T> *new_root = new_left->getRight();
-    replaceChild(parent, root, new_root);
-    new_root->setLeft(new_left);
-    new_left->setLeft(nullptr);
-
-    new_root->setRight(root);
-    root->setLeft(nullptr);
-
-    new_root->getRight()->updateHeight();
-    new_root->updateHeight();
-    if (parent != nullptr)
-    {
-        parent->updateHeight();
-    }
+    RR(root->getLeft(), root);
+    LL(root, parent);
 }
 
 template <typename T>
