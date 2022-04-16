@@ -101,39 +101,48 @@ bool AVLTree<T>::addRecursive(Node<T> *newNode, Node<T> *current)
     return false;
 }
 
+template <typename T>
 void RR(Node<T> *&root)
 {
-    Node<T> *temp = root->getRight();
-    root->setRight(temp->getLeft());
-    temp->setLeft(root);
-    root = temp;
+    Node<T> *new_root = root->getRight();
+    root->setRight(new_root->getLeft());
+    new_root->setLeft(root);
+    root = new_root;
 }
+
+template <typename T>
 void RL(Node<T> *&root)
 {
-    Node<T> *temp = root->getRight();
-    Node<T> *temp2 = temp->getLeft();
-    root->setRight(temp2->getLeft());
-    temp->setLeft(temp2->getRight());
-    temp2->setLeft(root);
-    temp2->setRight(temp);
-    root = temp2;
+    Node<T> *new_right = root->getRight();
+    Node<T> *new_root = new_right->getLeft();
+    // Swap the right child of the root with the left child of the right child
+    root->setRight(new_root->getLeft());
+    new_right->setLeft(new_root->getRight());
+    // Rotate right
+    new_root->setLeft(root);
+    new_root->setRight(new_right);
+    root = new_root;
 }
+
+template <typename T>
 void LL(Node<T> *&root)
 {
-    Node<T> *temp = root->getLeft();
-    root->setLeft(temp->getRight());
-    temp->setRight(root);
-    root = temp;
+    Node<T> *new_root = root->getLeft();
+    root->setLeft(new_root->getRight());
+    new_root->setRight(root);
+    root = new_root;
 }
+
+template <typename T>
 void LR(Node<T> *&root)
 {
-    Node<T> *temp = root->getLeft();
-    Node<T> *temp2 = temp->getRight();
-    root->setLeft(temp2->getRight());
-    temp->setRight(temp2->getLeft());
-    temp2->setRight(root);
-    temp2->setLeft(temp);
-    root = temp2;
+    Node<T> *new_left = root->getLeft();
+    Node<T> *new_root = new_left->getRight();
+    root->setLeft(new_root->getRight());
+    new_left->setRight(new_root->getLeft());
+    new_root->setRight(root);
+    new_root->setLeft(new_left);
+    root = new_root;
 }
 
 #endif // AVL_TREE_H
