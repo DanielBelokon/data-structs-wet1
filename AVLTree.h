@@ -15,23 +15,46 @@ private:
     Node<T> *root;
     int size;
 
+    bool (*customCompare)(const T &a, const T &b);
+
 public:
     class iterator
     {
     public:
         Node<T> *current;
         AVLTree *tree;
+    };
+
+    AVLTree(bool (*customCompare)(const T &a, const T &b) = nullptr) : root(nullptr), size(0), customCompare(customCompare)
+    {
     }
 
-    AVLTree(/* args */);
-
     void add(T data);
+
     void remove(T data);
     void merge(AVLTree<T> *tree);
+
     int getSize();
+
     T search(int key);
     T *getInOrderArray(int amount = 0);
-    T *filter(Condition conditon);
+
+    T *filter();
+
+    ~AVLTree() = default;
+    bool compare(Node<T> const &node1, Node<T> const &node2)
+    {
+        if (customCompare != nullptr)
+        {
+            return customCompare(node1.getData(), node2.getData());
+        }
+        return node1.getData() < node2.getData();
+    }
+
+    bool compare(Node<T> &node1, Node<T> &node2)
+    {
+        return compare(node1, node2);
+    }
 
 private:
     void
