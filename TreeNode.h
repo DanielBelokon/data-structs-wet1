@@ -16,6 +16,9 @@ public:
 
     int getBf() { return balance_factor; }
     T getData() { return data; }
+    const T getData() const { return data; }
     Node<T> *getLeft() { return left; }
     Node<T> *getRight() { return right; }
+    void setLeft(Node &node) { left = &node; }
+    void setRight(Node &node) { right = &node; }
 };
