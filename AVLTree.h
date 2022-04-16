@@ -50,10 +50,10 @@ private:
     Node<T> *addRecursive(T data, Node<T> *current, Node<T> *parent);
     void replaceChild(Node<T> *parent, Node<T> *child, Node<T> *newChild);
 
-    Node<T> *RR(Node<T> *current, Node<T> *parent);
-    Node<T> *LL(Node<T> *current, Node<T> *parent);
-    Node<T> *LR(Node<T> *current, Node<T> *parent);
-    Node<T> *RL(Node<T> *current, Node<T> *parent);
+    void RR(Node<T> *current, Node<T> *parent);
+    void LL(Node<T> *current, Node<T> *parent);
+    void LR(Node<T> *current, Node<T> *parent);
+    void RL(Node<T> *current, Node<T> *parent);
 };
 
 template <typename T>
@@ -119,73 +119,75 @@ Node<T> *AVLTree<T>::addRecursive(T data, Node<T> *current, Node<T> *parent)
 }
 
 template <typename T>
-Node<T> *AVLTree<T>::RR(Node<T> *root, Node<T> *parent)
+void AVLTree<T>::RR(Node<T> *root, Node<T> *parent)
 {
     Node<T> *new_root = root->getRight();
     replaceChild(parent, root, new_root);
+    root->setRight(new_root->getLeft());
     new_root->setLeft(root);
-    root = new_root;
-    root->getLeft()->setRight(nullptr);
-    root->getLeft()->updateHeight();
-    root->updateHeight();
+
+    new_root->getLeft()->updateHeight();
+    new_root->updateHeight();
     if (parent != nullptr)
     {
         parent->updateHeight();
     }
-
-    return root;
 }
 
 template <typename T>
-Node<T> *AVLTree<T>::RL(Node<T> *root, Node<T> *parent)
+void AVLTree<T>::RL(Node<T> *root, Node<T> *parent)
 {
     Node<T> *new_right = root->getRight();
     Node<T> *new_root = new_right->getLeft();
     replaceChild(parent, root, new_root);
-    // Swap the right child of the root with the left child of the right child
-    root->setRight(new_root);
     new_root->setRight(new_right);
-    // Rotate right
-    new_root->setLeft(root);
-    root = new_root;
-    root->getLeft()->updateHeight();
-    root->updateHeight();
-    parent->updateHeight();
+    new_right->setLeft(nullptr);
 
-    return root;
+    new_root->setLeft(root);
+    root->setRight(nullptr);
+
+    new_root->getLeft()->updateHeight();
+    new_root->updateHeight();
+    if (parent != nullptr)
+    {
+        parent->updateHeight();
+    }
 }
 
 template <typename T>
-Node<T> *AVLTree<T>::LL(Node<T> *root, Node<T> *parent)
+void AVLTree<T>::LL(Node<T> *root, Node<T> *parent)
 {
     Node<T> *new_root = root->getLeft();
     replaceChild(parent, root, new_root);
+    root->setLeft(new_root->getRight());
     new_root->setRight(root);
-    root = new_root;
-    root->getRight()->updateHeight();
-    root->updateHeight();
-    parent->updateHeight();
 
-    return root;
+    new_root->getRight()->updateHeight();
+    new_root->updateHeight();
+    if (parent != nullptr)
+    {
+        parent->updateHeight();
+    }
 }
 
 template <typename T>
-Node<T> *AVLTree<T>::LR(Node<T> *root, Node<T> *parent)
+void AVLTree<T>::LR(Node<T> *root, Node<T> *parent)
 {
     Node<T> *new_left = root->getLeft();
     Node<T> *new_root = new_left->getRight();
     replaceChild(parent, root, new_root);
-    // Swap the left child of the root with the right child of the left child
-    root->setLeft(new_root);
-    new_root->setRight(new_left);
-    // Rotate left
-    new_root->setRight(root);
-    root = new_root;
-    root->getRight()->updateHeight();
-    root->updateHeight();
-    parent->updateHeight();
+    new_root->setLeft(new_left);
+    new_left->setLeft(nullptr);
 
-    return root;
+    new_root->setRight(root);
+    root->setLeft(nullptr);
+
+    new_root->getRight()->updateHeight();
+    new_root->updateHeight();
+    if (parent != nullptr)
+    {
+        parent->updateHeight();
+    }
 }
 
 template <typename T>
