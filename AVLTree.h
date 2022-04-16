@@ -3,15 +3,7 @@
 
 #include "TreeNode.h"
 
-class Condition
-{
-public:
-    Condition();
-    ~Condition();
-    virtual bool check(TreeNode *node) = 0;
-};
-
-template <class T>
+template <typename T>
 class AVLTree
 {
 private:
