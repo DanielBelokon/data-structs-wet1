@@ -60,13 +60,54 @@ public:
     }
 
 private:
-    void
-    RR(Node<T> *&root);
+    bool addRecursive(Node<T> *newNode, Node<T> *current);
+
+    void RR(Node<T> *&root);
     void LL(Node<T> *&root);
     void LR(Node<T> *&root);
     void RL(Node<T> *&root);
-    ~AVLTree();
 };
+
+template <typename T>
+void AVLTree<T>::add(T data)
+{
+    if (root == nullptr)
+    {
+        root = new Node<T>(data);
+        size++;
+        return;
+    }
+    Node<T> *current = root;
+    Node<T> *newNode = new Node<T>(data);
+    addRecursive(newNode, current);
+}
+
+template <typename T>
+bool AVLTree<T>::addRecursive(Node<T> *newNode, Node<T> *current)
+{
+    if (current == nullptr)
+    {
+        size++;
+        return true;
+    }
+
+    if (compare(newNode->getData(), current->getData()))
+    {
+
+        if (addRecursive(newNode, current->getLeft()))
+        {
+            current->setLeft(*newNode);
+        }
+    }
+    else
+    {
+        if (addRecursive(newNode, current->getRight()))
+        {
+            current->setRight(*newNode);
+        }
+    }
+    return false;
+}
 
 void RR(Node<T> *&root)
 {
