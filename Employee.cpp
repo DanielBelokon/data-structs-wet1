@@ -43,3 +43,4 @@ int main(){
     int result = a.compareBySalary(b);
     std::cout<<result;
 }
+//
