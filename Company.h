@@ -27,6 +27,11 @@ class Company
 
     void addEmployee(Employee* employee);
     void removeEmployee(Employee* employee);
+
+    bool operator<(const Company &other) const;
+    bool operator>(const Company &other) const;
+    bool operator==(const Company &other) const;
+    bool operator!=(const Company &other) const;
 };
 
 #endif
