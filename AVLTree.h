@@ -2,7 +2,7 @@
 #define AVL_TREE_H
 
 #include <iostream>
-
+#include "Exceptions.h"
 #include "TreeNode.h"
 
 template <typename T>
@@ -35,7 +35,7 @@ public:
     int getSize();
     Node<T> *getRoot() { return root; }
 
-    T search(int key);
+    T search(T object);
     T *getInOrderArray(int amount = 0);
 
     T *filter();
@@ -56,12 +56,20 @@ private:
     void replaceChild(Node<T> *parent, Node<T> *child, Node<T> *newChild);
 
     void balance(Node<T> *current, Node<T> *parent);
+    Node<T> *findNode(T object);
+    void InOrderAux(T *array, int *index, Node<T> *current, int amount);
 
     void RR(Node<T> *current, Node<T> *parent);
     void LL(Node<T> *current, Node<T> *parent);
     void LR(Node<T> *current, Node<T> *parent);
     void RL(Node<T> *current, Node<T> *parent);
 };
+
+template <typename T>
+int AVLTree<T>::getSize()
+{
+    return size;
+}
 
 template <typename T>
 void AVLTree<T>::print(std::ostream &out)
@@ -222,6 +230,122 @@ void AVLTree<T>::replaceChild(Node<T> *parent, Node<T> *child, Node<T> *newChild
     {
         parent->setRight(newChild);
     }
+}
+
+template <typename T>
+T AVLTree<T>::search(T object)
+{
+    Node<T> *result = findNode(object);
+    if (result == nullptr)
+    {
+        return nullptr;
+    }
+    else
+        return result->getData();
+}
+
+template <typename T>
+Node<T> *AVLTree<T>::findNode(T object)
+{
+    Node<T> *current = root;
+    while (current != nullptr)
+    {
+        if (compare(current->getData(), object))
+        {
+            current = current->getRight();
+        }
+        else if (compare(object, current->getData()))
+        {
+            current = current->getLeft();
+        }
+        else
+        {
+            return current;
+        }
+    }
+    return nullptr;
+}
+
+template <typename T>
+void AVLTree<T>::remove(T object)
+{
+    Node<T> *current = root;
+    Node<T> *prev = nullptr;
+    while (current != nullptr)
+    {
+        if (compare(current->getData(), object))
+        {
+            prev = current;
+            current = current->getRight();
+        }
+        else if (compare(object, current->getData()))
+        {
+            prev = current;
+            current = current->getLeft();
+        }
+        else
+        {
+            if (current->getRight() == nullptr && current->getLeft() == nullptr)
+            {
+                replaceChild(prev, current, nullptr);
+                delete current;
+                current = nullptr;
+            }
+            else if (current->getRight() == nullptr && current->getLeft() != nullptr)
+            {
+                Node<T> *temp = current->getLeft();
+                replaceChild(prev, current, temp);
+                delete current;
+                current = nullptr;
+            }
+            else if (current->getRight() != nullptr && current->getLeft() == nullptr)
+            {
+                Node<T> *temp = current->getRight();
+                replaceChild(prev, current, temp);
+                delete current;
+                current = nullptr;
+            }
+            else
+            {
+                Node<T> *temp = current->getRight();
+                while (temp->getLeft() != nullptr)
+                {
+                    temp = temp->getLeft();
+                }
+                current->setData(temp->getData());
+                remove(temp->getData());
+            }
+        }
+    }
+    size--;
+}
+
+template <typename T>
+T *AVLTree<T>::getInOrderArray(int amount)
+{
+    if (amount == 0)
+    {
+        amount = size;
+    }
+
+    T *array = new T[size < amount ? size : amount];
+    int index = 0;
+    InOrderAux(array, &index, root, amount);
+    return array;
+}
+
+template <typename T>
+void AVLTree<T>::InOrderAux(T *array, int *index, Node<T> *current, int amount)
+{
+    if (current == nullptr || *index >= amount)
+    {
+        return;
+    }
+
+    InOrderAux(array, index, current->getLeft(), amount);
+    array[*index] = current->getData();
+    (*index)++;
+    InOrderAux(array, index, current->getRight(), amount);
 }
 
 #endif // AVL_TREE_H
