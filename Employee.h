@@ -20,24 +20,22 @@ public:
     ~Employee()=default;
 
 
-    int getGrade();
-    int getSalary();
-    int getEmployeeID();
-    int getCompanyID();
+    int getGrade() const;
+    int getSalary() const;
+    int getEmployeeID() const;
+    int getCompanyID() const;
     void setGrade(int grade);
+    void increaseGrade();
     void setSalary(int salary);
+    void increaseSalary(int salary);
     void setCompanyID(int company_id);
-
-    /*compare function by salary
-    if salary < temp.salary return -1;
-    if eqaul - return 0;
-    else return 1;
-    */
-    bool compareBySalary(Employee *temp);
 
     bool operator<(const Employee &other) const;
     bool operator>(const Employee &other) const;
     bool operator==(const Employee &other) const;
     bool operator!=(const Employee &other) const;
+    static bool compareBySalary(Employee *const &temp1, Employee *const &temp2);
+    static bool compareByPointer(Employee *const &temp1, Employee *const &temp2);
 };
+
 #endif
