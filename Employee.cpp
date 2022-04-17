@@ -27,19 +27,31 @@ void Employee::setCompanyID(int company_id){
     this->company_id = company_id;
 }
 
-int Employee::compareBySalary(Employee* temp)
+bool Employee::compareBySalary(Employee *temp)
 {
-    if(this->salary < temp->getSalary())
-        return -1;
-    if(this->salary == temp->getSalary())
-        return 0;
-    return 1;
-
+    if (this->salary < temp->getSalary())
+        return true;
+    if (this->salary == temp->getSalary())
+        return this->employee_id > temp->getEmployeeID();
+    return false;
 }
-int main(){
-    Employee a;
-    a.setSalary(1000);
-    Employee* b = new Employee(2,4,700,34);
-    int result = a.compareBySalary(b);
-    std::cout<<result;
+
+bool Employee::operator<(const Employee &other) const
+{
+    return this->employee_id < other.employee_id;
+}
+
+bool Employee::operator==(const Employee &other) const
+{
+    return this->employee_id == other.employee_id;
+}
+
+bool Employee::operator>(const Employee &other) const
+{
+    return this->employee_id > other.employee_id;
+}
+
+bool Employee::operator!=(const Employee &other) const
+{
+    return this->employee_id != other.employee_id;
 }

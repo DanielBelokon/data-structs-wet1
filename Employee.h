@@ -33,8 +33,11 @@ public:
     if eqaul - return 0;
     else return 1;
     */
-    int compareBySalary(Employee* temp);
+    bool compareBySalary(Employee *temp);
 
-
+    bool operator<(const Employee &other) const;
+    bool operator>(const Employee &other) const;
+    bool operator==(const Employee &other) const;
+    bool operator!=(const Employee &other) const;
 };
 #endif
