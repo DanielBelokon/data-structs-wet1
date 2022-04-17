@@ -1,16 +1,25 @@
 #include "Company.h"
 
-Company::Company(int companyID,int value):companyID(companyID),value(value){};
+Company::Company(int companyID, int value) : companyID(companyID), value(value)
+{
+    num_of_employees = 0;
+    highest_earner = nullptr;
+    employees_tree = AVLTree<Employee *>(Employee::compareByPointer);
+    employees_tree_by_salary = AVLTree<Employee *>(Employee::compareBySalary);
+};
 
-int Company::getCompanyID(){
+int Company::getCompanyID() const
+{
     return companyID;
 }
 
-int Company::getValue(){
+int Company::getValue() const
+{
     return value;
 }
 
-int Company::getNumOfEmployees(){
+int Company::getNumOfEmployees() const
+{
     return num_of_employees;
 }
 
@@ -23,20 +32,42 @@ void Company::setCompanyID(int newID){
 }
 
 void Company::setValue(int value){
-    this->value=value;
+    this->value += value;
 }
 
 void Company::setHighesEarner(Employee* emp){
     highest_earner=emp;
 }
-AVLTree<Employee>* Company::getEmployeesTree(){
-    return employees_tree;
+AVLTree<Employee *> *Company::getEmployeesTree()
+{
+    return &employees_tree;
 }
 
 void Company::addEmployee(Employee* employee){
-    employees_tree->add(*employee);
+    if (highest_earner == nullptr || employee->getSalary() > highest_earner->getSalary())
+    {
+        highest_earner = employee;
+    }
+    else if (employee->getSalary() == highest_earner->getSalary() && employee->getEmployeeID() < highest_earner->getEmployeeID())
+    {
+        highest_earner = employee;
+    }
+    num_of_employees++;
+    employees_tree.add(employee);
+    employees_tree_by_salary.add(employee);
 }
 
 void Company::removeEmployee(Employee* employee){
-    employees_tree->remove(*employee);
+    employees_tree.remove(employee);
+    num_of_employees--;
+}
+
+AVLTree<Employee *> *Company::getEmployeesTreeBySalary()
+{
+    return &employees_tree_by_salary;
+}
+
+bool Company::compareByPointer(Company *const &a, Company *const &b)
+{
+    return a->getCompanyID() < b->getCompanyID();
 }
