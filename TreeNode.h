@@ -53,6 +53,7 @@ public:
     const T getData() const { return data; }
     Node<T> *getLeft() { return left; }
     Node<T> *getRight() { return right; }
+    void setData(T data) { this->data = data; }
     void setLeft(Node *node) { left = node; }
     void setRight(Node *node) { right = node; }
 };
