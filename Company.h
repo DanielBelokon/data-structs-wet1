@@ -27,23 +27,6 @@ class Company
 
     void addEmployee(Employee* employee);
     void removeEmployee(Employee* employee);
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+};
 
 #endif
