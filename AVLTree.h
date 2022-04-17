@@ -1,6 +1,8 @@
 #ifndef AVL_TREE_H
 #define AVL_TREE_H
 
+#include <iostream>
+
 #include "TreeNode.h"
 
 template <typename T>
@@ -25,11 +27,13 @@ public:
     }
 
     void add(T data);
-
     void remove(T data);
     void merge(AVLTree<T> *tree);
 
+    void print(std::ostream &out);
+
     int getSize();
+    Node<T> *getRoot() { return root; }
 
     T search(int key);
     T *getInOrderArray(int amount = 0);
@@ -48,6 +52,7 @@ public:
 
 private:
     Node<T> *addRecursive(T data, Node<T> *current, Node<T> *parent);
+    void printRecursive(Node<T> *current, std::ostream &out);
     void replaceChild(Node<T> *parent, Node<T> *child, Node<T> *newChild);
 
     void balance(Node<T> *current, Node<T> *parent);
@@ -57,6 +62,29 @@ private:
     void LR(Node<T> *current, Node<T> *parent);
     void RL(Node<T> *current, Node<T> *parent);
 };
+
+template <typename T>
+void AVLTree<T>::print(std::ostream &out)
+{
+    if (root == nullptr)
+    {
+        out << "Tree is empty" << std::endl;
+        return;
+    }
+    printRecursive(root, out);
+}
+
+template <typename T>
+void AVLTree<T>::printRecursive(Node<T> *current, std::ostream &out)
+{
+    if (current == nullptr)
+    {
+        return;
+    }
+    printRecursive(current->getLeft(), out);
+    out << current->getData() << " ";
+    printRecursive(current->getRight(), out);
+}
 
 template <typename T>
 void AVLTree<T>::add(T data)
