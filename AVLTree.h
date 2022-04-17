@@ -50,6 +50,8 @@ private:
     Node<T> *addRecursive(T data, Node<T> *current, Node<T> *parent);
     void replaceChild(Node<T> *parent, Node<T> *child, Node<T> *newChild);
 
+    void balance(Node<T> *current, Node<T> *parent);
+
     void RR(Node<T> *current, Node<T> *parent);
     void LL(Node<T> *current, Node<T> *parent);
     void LR(Node<T> *current, Node<T> *parent);
@@ -91,6 +93,18 @@ Node<T> *AVLTree<T>::addRecursive(T data, Node<T> *current, Node<T> *parent)
             current->setRight(newNode);
     }
     current->updateHeight();
+    balance(current, parent);
+
+    return nullptr;
+}
+
+template <typename T>
+void AVLTree<T>::balance(Node<T> *current, Node<T> *parent)
+{
+    if (current == nullptr)
+    {
+        return;
+    }
 
     int balanceFactor = current->getBalanceFactor();
     if (balanceFactor > 1)
@@ -115,7 +129,6 @@ Node<T> *AVLTree<T>::addRecursive(T data, Node<T> *current, Node<T> *parent)
             RL(current, parent);
         }
     }
-    return nullptr;
 }
 
 template <typename T>
