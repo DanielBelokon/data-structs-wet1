@@ -35,4 +35,8 @@ class InvalidInputException : public std::exception
 {
 };
 
+class CompanyHasEmployeesException : public std::exception
+{
+};
+
 #endif // EXCEPTIONS_H

@@ -38,6 +38,11 @@ void MainDataStructure::RemoveCompany(int companyID)
         throw CompanyNotFoundException();
     }
 
+    if (company->getNumOfEmployees() > 0)
+    {
+        throw CompanyHasEmployeesException();
+    }
+
     companies_tree.remove(company);
 }
 
