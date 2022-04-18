@@ -140,22 +140,35 @@ bool MainDataStructure::AqcquireCompany(int companyID, int aquiredCompanyID, dou
     return true;
 }
 
-Employee *MainDataStructure::GetHighestEarner(int companyID)
+int MainDataStructure::GetHighestEarner(int companyID)
 {
-    if (companyID <= 0)
+    Employee *employee = nullptr;
+    if (companyID == 0)
     {
         throw InvalidInputException();
     }
 
-    Company tmp = Company(companyID, 0);
-
-    Company *company = companies_tree.search(&tmp);
-    if (company == nullptr)
+    if (companyID < 0)
     {
-        throw CompanyNotFoundException();
+        employee = highest_earner;
+    }
+    else
+    {
+        Company tmp = Company(companyID, 0);
+
+        Company *company = companies_tree.search(&tmp);
+        if (company == nullptr)
+        {
+            throw CompanyNotFoundException();
+        }
+
+        employee = company->getHighestEarner();
     }
 
-    return company->getHighestEarner();
+    if (employee == nullptr)
+        throw EmployeeNotFoundException();
+    else
+        return employee->getEmployeeID();
 }
 
 int MainDataStructure::GetAllEmployeesBySalary(int companyID, int **employeeIDs)
