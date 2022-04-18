@@ -48,7 +48,7 @@ void MainDataStructure::RemoveCompany(int companyID)
 
 void MainDataStructure::AddEmployee(int companyID, int employeeID, int salary, int grade)
 {
-    if (companyID == 0 || employeeID == 0 || salary <= 0)
+    if (companyID <= 0 || employeeID <= 0 || salary <= 0)
     {
         throw InvalidInputException();
     }
@@ -74,7 +74,7 @@ void MainDataStructure::AddEmployee(int companyID, int employeeID, int salary, i
 
 void MainDataStructure::RemoveEmployee(int companyID, int employeeID)
 {
-    if (companyID == 0 || employeeID == 0)
+    if (companyID <= 0 || employeeID <= 0)
     {
         throw InvalidInputException();
     }
