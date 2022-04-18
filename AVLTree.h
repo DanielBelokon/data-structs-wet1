@@ -32,6 +32,7 @@ public:
     T *getInOrderArray(int amount = 0);
 
     T *filter();
+    T getHighest();
 
     ~AVLTree() = default;
     bool compare(Node<T> const &node1, Node<T> const &node2)
@@ -63,6 +64,17 @@ template <typename T>
 int AVLTree<T>::getSize()
 {
     return size;
+}
+
+template <typename T>
+T AVLTree<T>::getHighest()
+{
+    Node<T> *current = root;
+    while (current->getRight() != nullptr)
+    {
+        current = current->getRight();
+    }
+    return current->getData();
 }
 
 template <typename T>
