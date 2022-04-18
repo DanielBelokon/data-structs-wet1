@@ -15,13 +15,6 @@ private:
     bool (*customCompare)(const T &a, const T &b);
 
 public:
-    class iterator
-    {
-    public:
-        Node<T> *current;
-        AVLTree *tree;
-    };
-
     AVLTree(bool (*customCompare)(const T &a, const T &b) = nullptr) : root(nullptr), size(0), customCompare(customCompare)
     {
     }
