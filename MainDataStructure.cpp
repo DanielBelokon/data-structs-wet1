@@ -96,6 +96,8 @@ void MainDataStructure::RemoveEmployee(int companyID, int employeeID)
     company->removeEmployee(employee);
     employees_tree.remove(employee);
     employees_tree_by_salary.remove(employee);
+    if (employee == highest_earner)
+        highest_earner = employees_tree_by_salary.getHighest();
     delete employee;
 }
 
