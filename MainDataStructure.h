@@ -30,7 +30,7 @@ public:
     void GetCompanyInfo(int companyId, int *value, int *numOfEmployees);
     void GetEmployeeInfo(int employeeID, int *employerID, int *salary, int *grade);
     void IncreaseCompanyValue(int companyID, int valueIncrease);
-    void promoteEmployee(int EmployeeID, int salaryIncrease, int bumpGrade);
+    void PromoteEmployee(int EmployeeID, int salaryIncrease, int bumpGrade);
     void HireEmployee(int EmployeeID, int newCompanyID);
 };
 

@@ -30,7 +30,7 @@ int main()
     mainDataStructure.HireEmployee(12, 1);
 
     // promote employee
-    mainDataStructure.promoteEmployee(12, 100, 2);
+    mainDataStructure.PromoteEmployee(12, 100, 2);
 
     // increase company value
     mainDataStructure.IncreaseCompanyValue(1, 100);

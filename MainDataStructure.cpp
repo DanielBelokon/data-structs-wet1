@@ -260,7 +260,7 @@ void MainDataStructure::IncreaseCompanyValue(int companyID, int valueIncrease)
     company->setValue(valueIncrease);
 }
 
-void MainDataStructure::promoteEmployee(int employeeID, int salaryIncrease, int bumpGrade)
+void MainDataStructure::PromoteEmployee(int employeeID, int salaryIncrease, int bumpGrade)
 {
     if (employeeID <= 0 || salaryIncrease <= 0)
         throw InvalidInputException();
