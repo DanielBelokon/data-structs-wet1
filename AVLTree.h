@@ -45,11 +45,12 @@ public:
 
 private:
     Node<T> *addRecursive(T data, Node<T> *current, Node<T> *parent);
+    void removeRecoursive(T toDelete, Node<T> *current, Node<T> *parent);
     void printRecursive(Node<T> *current, std::ostream &out);
     void replaceChild(Node<T> *parent, Node<T> *child, Node<T> *newChild);
 
     void balance(Node<T> *current, Node<T> *parent);
-    Node<T> *findNode(T object);
+    Node<T> *findNode(T object, Node<T> **prev = nullptr);
     void InOrderAux(T *array, int *index, Node<T> *current, int amount);
 
     void RR(Node<T> *current, Node<T> *parent);
@@ -121,7 +122,7 @@ Node<T> *AVLTree<T>::addRecursive(T data, Node<T> *current, Node<T> *parent)
         if (newNode != nullptr)
             current->setRight(newNode);
     }
-    current->updateHeight();
+
     balance(current, parent);
 
     return nullptr;
@@ -135,6 +136,7 @@ void AVLTree<T>::balance(Node<T> *current, Node<T> *parent)
         return;
     }
 
+    current->updateHeight();
     int balanceFactor = current->getBalanceFactor();
     if (balanceFactor > 1)
     {
@@ -157,6 +159,54 @@ void AVLTree<T>::balance(Node<T> *current, Node<T> *parent)
         {
             RL(current, parent);
         }
+    }
+}
+
+template <typename T>
+void AVLTree<T>::removeRecoursive(T toDelete, Node<T> *current, Node<T> *parent)
+{
+    // Find
+    if (current == nullptr)
+        return;
+
+    if (compare(toDelete, current->getData()))
+        removeRecoursive(toDelete, current->getLeft(), current);
+    else if (compare(current->getData(), toDelete))
+        removeRecoursive(toDelete, current->getRight(), current);
+    else if (current->getRight() == nullptr && current->getLeft() == nullptr)
+    {
+        replaceChild(parent, current, nullptr);
+        delete current;
+        current = nullptr;
+    }
+    else if (current->getRight() == nullptr && current->getLeft() != nullptr)
+    {
+        Node<T> *temp = current->getLeft();
+        replaceChild(parent, current, temp);
+        delete current;
+        current = nullptr;
+    }
+    else if (current->getRight() != nullptr && current->getLeft() == nullptr)
+    {
+        Node<T> *temp = current->getRight();
+        replaceChild(parent, current, temp);
+        delete current;
+        current = nullptr;
+    }
+    else
+    {
+        Node<T> *temp = current->getRight();
+        while (temp->getLeft() != nullptr)
+        {
+            temp = temp->getLeft();
+        }
+        T tempData = temp->getData();
+        removeRecoursive(temp->getData(), root, nullptr);
+        current->setData(tempData);
+    }
+    if (current != nullptr)
+    {
+        balance(current, parent);
     }
 }
 
@@ -238,21 +288,28 @@ T AVLTree<T>::search(T object)
 }
 
 template <typename T>
-Node<T> *AVLTree<T>::findNode(T object)
+Node<T> *AVLTree<T>::findNode(T object, Node<T> **prev)
 {
     Node<T> *current = root;
+    Node<T> *parent;
     while (current != nullptr)
     {
         if (compare(current->getData(), object))
         {
+            parent = current;
             current = current->getRight();
         }
         else if (compare(object, current->getData()))
         {
+            parent = current;
             current = current->getLeft();
         }
         else
         {
+            if (prev != nullptr)
+            {
+                *prev = parent;
+            }
             return current;
         }
     }
@@ -262,54 +319,7 @@ Node<T> *AVLTree<T>::findNode(T object)
 template <typename T>
 void AVLTree<T>::remove(T object)
 {
-    Node<T> *current = root;
-    Node<T> *prev = nullptr;
-    while (current != nullptr)
-    {
-        if (compare(current->getData(), object))
-        {
-            prev = current;
-            current = current->getRight();
-        }
-        else if (compare(object, current->getData()))
-        {
-            prev = current;
-            current = current->getLeft();
-        }
-        else
-        {
-            if (current->getRight() == nullptr && current->getLeft() == nullptr)
-            {
-                replaceChild(prev, current, nullptr);
-                delete current;
-                current = nullptr;
-            }
-            else if (current->getRight() == nullptr && current->getLeft() != nullptr)
-            {
-                Node<T> *temp = current->getLeft();
-                replaceChild(prev, current, temp);
-                delete current;
-                current = nullptr;
-            }
-            else if (current->getRight() != nullptr && current->getLeft() == nullptr)
-            {
-                Node<T> *temp = current->getRight();
-                replaceChild(prev, current, temp);
-                delete current;
-                current = nullptr;
-            }
-            else
-            {
-                Node<T> *temp = current->getRight();
-                while (temp->getLeft() != nullptr)
-                {
-                    temp = temp->getLeft();
-                }
-                current->setData(temp->getData());
-                remove(temp->getData());
-            }
-        }
-    }
+    removeRecoursive(object, root, nullptr);
     size--;
 }
 
