@@ -26,13 +26,16 @@ public:
     int GetHighestEarner(int companyId);
     int GetAllEmployeesBySalary(int companyId, int **employees); // returns num of employees
     void GetHighestEarnerInEachCompany(int numOfCompanies, int **highestEarners);
-    int GetNumEmployeesMatching(int companyId, int minId, int maxId, int minSalary, int maxSalary, int minGrad, int *inRange);
+    int GetNumEmployeesMatching(int companyId, int minId, int maxId, int minSalary, int minGrad, int *inRange);
 
     void GetCompanyInfo(int companyId, int *value, int *numOfEmployees);
     void GetEmployeeInfo(int employeeID, int *employerID, int *salary, int *grade);
     void IncreaseCompanyValue(int companyID, int valueIncrease);
     void PromoteEmployee(int EmployeeID, int salaryIncrease, int bumpGrade);
     void HireEmployee(int EmployeeID, int newCompanyID);
+
+private:
+    void MainDataStructure::checkInRangeRocourisve(Node<Employee *> *current, int minId, int maxId, int minSalary, int minGrade, int *inRange, int *numOfEmployees);
 };
 
 #endif

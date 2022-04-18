@@ -20,7 +20,6 @@ void MainDataStructure::AddCompany(int companyID, int value)
         delete company;
         throw CompanyAlreadyExistsException();
     }
-
     companies_tree.add(company);
 }
 
@@ -216,33 +215,52 @@ void MainDataStructure::GetHighestEarnerInEachCompany(int numOfCompanies, int **
     }
 }
 
-int MainDataStructure::GetNumEmployeesMatching(int companyID, int minId, int maxId, int minSalary, int maxSalary, int minGrad, int *inRange)
+int MainDataStructure::GetNumEmployeesMatching(int companyID, int minId, int maxId, int minSalary, int minGrade, int *inRange)
 {
-    if (companyID <= 0 || minId <= 0 || maxId <= 0 || minSalary <= 0 || maxSalary <= 0 || minGrad <= 0)
+    if (companyID = 0 || minId <= 0 || maxId <= 0 || minSalary <= 0 || minGrade <= 0)
     {
         throw InvalidInputException();
     }
-
-    Company tmp = Company(companyID, 0);
-
-    Company *company = companies_tree.search(&tmp);
-    if (company == nullptr)
+    AVLTree<Employee *> *employeesTree = &this->employees_tree;
+    if (companyID > 0)
     {
-        throw CompanyNotFoundException();
+        Company tmp = Company(companyID, 0);
+
+        Company *company = companies_tree.search(&tmp);
+        if (company == nullptr)
+        {
+            throw CompanyNotFoundException();
+        }
+        employeesTree = company->getEmployeesTree();
+    }
+    int numOfEmployees = 0;
+    *inRange = 0;
+
+    Node<Employee *> *current = employeesTree->getRoot();
+
+    checkInRangeRocourisve(current, minId, maxId, minSalary, minGrade, inRange, &numOfEmployees);
+
+    return numOfEmployees;
+}
+
+void MainDataStructure::checkInRangeRocourisve(Node<Employee *> *current, int minId, int maxId, int minSalary, int minGrade, int *inRange, int *numOfEmployees)
+{
+    if (current == nullptr)
+        return;
+
+    if (current->getData()->getEmployeeID() >= minId && current->getData()->getEmployeeID() <= maxId)
+    {
+        (*inRange)++;
+        if (current->getData()->getSalary() >= minSalary && current->getData()->getGrade() >= minGrade)
+        {
+            (*numOfEmployees)++;
+        }
     }
 
-    int numOfEmployees = 0;
-    // Employee **employees = company->getEmployeesTree()->getInOrderArray();
-    // for (int i = 0; i < company->getNumOfEmployees(); i++)
-    // {
-    //     if (employees[i]->getEmployeeID() >= minId && employees[i]->getEmployeeID() <= maxId && employees[i]->getSalary() >= minSalary && employees[i]->getSalary() <= maxSalary && employees[i]->getGrade() >= minGrad)
-    //     {
-    //         numOfEmployees++;
-    //     }
-    // }
-
-    *inRange = numOfEmployees;
-    return numOfEmployees;
+    if (current->getData()->getEmployeeID() >= minId)
+        checkInRangeRocourisve(current->getLeft(), minId, maxId, minSalary, minGrade, inRange, numOfEmployees);
+    if (current->getData()->getEmployeeID() <= maxId)
+        checkInRangeRocourisve(current->getRight(), minId, maxId, minSalary, minGrade, inRange, numOfEmployees);
 }
 
 void MainDataStructure::GetCompanyInfo(int companyID, int *value, int *numOfEmployees)
