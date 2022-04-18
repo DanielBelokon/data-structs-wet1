@@ -13,6 +13,7 @@ private:
     AVLTree<Company *> companies_tree;
     AVLTree<Employee *> employees_tree;
     AVLTree<Employee *> employees_tree_by_salary;
+    Employee *highest_earner;
 
 public:
     MainDataStructure();
@@ -22,7 +23,7 @@ public:
     void RemoveEmployee(int companyID, int employeeID);
 
     bool AqcquireCompany(int companyId, int aquiredCompanyId, double factor);
-    Employee *GetHighestEarner(int companyId);
+    int GetHighestEarner(int companyId);
     int GetAllEmployeesBySalary(int companyId, int **employees); // returns num of employees
     void GetHighestEarnerInEachCompany(int numOfCompanies, int **highestEarners);
     int GetNumEmployeesMatching(int companyId, int minId, int maxId, int minSalary, int maxSalary, int minGrad, int *inRange);
