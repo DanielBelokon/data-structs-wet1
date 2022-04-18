@@ -70,6 +70,14 @@ void MainDataStructure::AddEmployee(int companyID, int employeeID, int salary, i
     employees_tree.add(employee);
     company->addEmployee(employee);
     employees_tree_by_salary.add(employee);
+    if (highest_earner == nullptr || employee->getSalary() > highest_earner->getSalary())
+    {
+        highest_earner = employee;
+    }
+    else if (employee->getSalary() == highest_earner->getSalary() && employee->getEmployeeID() < highest_earner->getEmployeeID())
+    {
+        highest_earner = employee;
+    }
 }
 
 void MainDataStructure::RemoveEmployee(int companyID, int employeeID)
