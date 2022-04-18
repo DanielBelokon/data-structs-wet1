@@ -323,12 +323,12 @@ void AVLTree<T>::remove(T object)
 template <typename T>
 T *AVLTree<T>::getInOrderArray(int amount)
 {
-    if (amount == 0)
+    if (amount == 0 || size < amount)
     {
         amount = size;
     }
 
-    T *array = new T[size < amount ? size : amount];
+    T *array = new T[amount];
     int index = 0;
     InOrderAux(array, &index, root, amount);
     return array;
