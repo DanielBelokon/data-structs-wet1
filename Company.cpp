@@ -64,6 +64,19 @@ void Company::removeEmployee(Employee* employee){
     num_of_employees--;
 }
 
+void Company::merge(Company *company, int factor)
+{
+    if (company == nullptr)
+        return;
+
+    num_of_employees += company->getNumOfEmployees();
+    this->setValue(factor * (company->getValue() + this->getValue()));
+
+    employees_tree.merge(company->getEmployeesTree());
+    employees_tree_by_salary.merge(company->getEmployeesTreeBySalary());
+    setHighesEarner(company->getHighestEarner());
+}
+
 AVLTree<Employee *> *Company::getEmployeesTreeBySalary()
 {
     return &employees_tree_by_salary;
