@@ -72,21 +72,24 @@ void MainDataStructure::AddEmployee(int companyID, int employeeID, int salary, i
     setHighesEarner(employee);
 }
 
-void MainDataStructure::RemoveEmployee(int companyID, int employeeID)
+void MainDataStructure::RemoveEmployee(int employeeID)
 {
-    if (companyID <= 0 || employeeID <= 0)
+    if (employeeID <= 0)
     {
         throw InvalidInputException();
     }
 
-    Company tmp = Company(companyID, 0);
+    int company_id, salary, grade;
+    GetEmployeeInfo(employeeID, &company_id, &salary, &grade);
+
+    Company tmp = Company(company_id, 0);
     Company *company = companies_tree.search(&tmp);
     if (company == nullptr)
     {
         throw CompanyNotFoundException();
     }
 
-    Employee tmp2 = Employee(employeeID, companyID, 0, 0);
+    Employee tmp2 = Employee(employeeID, company_id, 0, 0);
     Employee *employee = company->getEmployeesTree()->search(&tmp2);
     if (employee == nullptr)
     {
@@ -101,7 +104,7 @@ void MainDataStructure::RemoveEmployee(int companyID, int employeeID)
     delete employee;
 }
 
-bool MainDataStructure::AqcquireCompany(int companyID, int aquiredCompanyID, double factor)
+bool MainDataStructure::AcquireCompany(int companyID, int aquiredCompanyID, double factor)
 {
     if (companyID <= 0 || aquiredCompanyID <= 0 || factor < 1)
     {
@@ -289,6 +292,7 @@ void MainDataStructure::GetEmployeeInfo(int employeeID, int *employerID, int *sa
         throw EmployeeNotFoundException();
     *salary = temp->getSalary();
     *grade = temp->getGrade();
+    *employerID = temp->getCompanyID();
 }
 
 void MainDataStructure::IncreaseCompanyValue(int companyID, int valueIncrease)

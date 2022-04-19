@@ -46,7 +46,7 @@ int main()
     int *highestEarners = nullptr;
     mainDataStructure.GetHighestEarnerInEachCompany(3, &highestEarners);
 
-    mainDataStructure.AqcquireCompany(4, 1, 2);
+    mainDataStructure.AcquireCompany(4, 1, 2);
 
     mainDataStructure.RemoveCompany(1);
     mainDataStructure.RemoveCompany(2);

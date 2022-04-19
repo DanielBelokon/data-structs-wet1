@@ -1,0 +1,46 @@
+#Test: BasicTest. NumCommands: 30. MinInt: -20. MaxInt: 100. With outer errors. Seed: 8892186870335112229.
+#Injecting commands before Init
+AddEmployee 55 26 35 57
+PromoteEmployee 33 83 -11
+GetHighestEarnerInEachCompany 19
+GetHighestEarner 25
+AddCompany 47 21
+RemoveCompany 30
+GetHighestEarnerInEachCompany 37
+GetCompanyInfo 90
+RemoveEmployee 74
+Init
+AddCompany 1 50
+AddCompany 2 500
+AddCompany 3 5000
+AddEmployee 11 1 60 70
+AddEmployee 12 2 600 700
+AddEmployee 13 3 6000 7000
+AcquireCompany 3 2 1.63
+IncreaseCompanyValue 1 100
+PromoteEmployee 13 10 1
+GetHighestEarner 12
+GetAllEmployeesBySalary 3
+GetHighestEarnerInEachCompany 2
+GetNumEmployeesMatching -1 0 20 100 10
+HireEmployee 12 1
+GetCompanyInfo 1
+GetCompanyInfo 2
+GetCompanyInfo 3
+GetEmployeeInfo 11
+GetEmployeeInfo 12
+GetEmployeeInfo 13
+RemoveEmployee 13
+RemoveCompany 3
+AddEmployee 11 1 70 25
+GetCompanyInfo -14
+GetCompanyInfo 1
+IncreaseCompanyValue 1 39
+IncreaseCompanyValue 1 15
+GetHighestEarner 1
+GetNumEmployeesMatching 1 1 52 54 65
+GetHighestEarnerInEachCompany 1
+Quit
+#Injecting commands after Quit
+GetNumEmployeesMatching -16 58 21 57 60
+GetAllEmployeesBySalary 82
