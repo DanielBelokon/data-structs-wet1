@@ -2,6 +2,7 @@
 #define AVL_TREE_H
 
 #include <iostream>
+#include <cmath>
 #include "Exceptions.h"
 #include "TreeNode.h"
 
@@ -52,8 +53,11 @@ private:
 
     void balance(Node<T> *current, Node<T> *parent);
     Node<T> *findNode(T object, Node<T> **prev = nullptr);
-    void InOrderAux(T *array, int *index, Node<T> *current, int amount);
-
+    void inOrderAux(T *array, int *index, Node<T> *current, int amount);
+    void trim(Node<T> *current, Node<T> *parent, int *amount);
+    T *mergeArrays(T *arr1, T *arr2, int size1, int size2);
+    void insertInOrder(Node<T> *current, T **arr, int index, int size);
+    Node<T> *buildEmptyTree(int h);
     void RR(Node<T> *current, Node<T> *parent);
     void LL(Node<T> *current, Node<T> *parent);
     void LR(Node<T> *current, Node<T> *parent);
@@ -336,6 +340,95 @@ void AVLTree<T>::remove(T object)
 }
 
 template <typename T>
+void AVLTree<T>::merge(AVLTree<T> *tree)
+{
+    // Merge tree with O(n) complexity
+    if (tree == nullptr)
+        return;
+    T *tree1 = getInOrderArray();
+    T *tree2 = tree->getInOrderArray();
+    T *merged = mergeArrays(tree1, tree2, size, tree->size);
+    delete[] tree1;
+    delete[] tree2;
+    size += tree->size;
+    int new_height = std::ceil(std::log2(size + 1)) - 1;
+    int to_delete = std::exp2(new_height + 1) - size - 1;
+
+    root = buildEmptyTree(new_height);
+    trim(root, nullptr, &to_delete);
+    insertInOrder(root, &merged, 0, size);
+    Node<T> *current = root;
+    int index = 0;
+    while (current != nullptr)
+    {
+        current = current->getLeft();
+    }
+    delete[] merged;
+}
+
+template <typename T>
+T *AVLTree<T>::mergeArrays(T *arr1, T *arr2, int size1, int size2)
+{
+    T *merged = new T[size1 + size2];
+    int i = 0, j = 0, k = 0;
+    while (i < size1 && j < size2)
+    {
+        if (compare(arr1[i], arr2[j]))
+        {
+            merged[k] = arr1[i];
+            i++;
+        }
+        else
+        {
+            merged[k] = arr2[j];
+            j++;
+        }
+        k++;
+    }
+    while (i < size1)
+    {
+        merged[k] = arr1[i];
+        i++;
+        k++;
+    }
+    while (j < size2)
+    {
+        merged[k] = arr2[j];
+        j++;
+        k++;
+    }
+    return merged;
+}
+
+template <typename T>
+void AVLTree<T>::insertInOrder(Node<T> *current, T **arr, int index, int size)
+{
+    if (current == nullptr)
+        return;
+    insertInOrder(current->getLeft(), arr, index, size);
+    current->setData((*arr)[index]);
+    index++;
+    insertInOrder(current->getRight(), arr, index, size);
+}
+
+template <typename T>
+void AVLTree<T>::trim(Node<T> *current, Node<T> *parent, int *amount)
+{
+    if (current == nullptr || *amount == 0)
+        return;
+    trim(current->getRight(), current, amount);
+
+    if (current->getRight() == nullptr && current->getLeft() == nullptr)
+    {
+        delete current;
+        replaceChild(parent, current, nullptr);
+        (*amount)--;
+    }
+
+    trim(current->getLeft(), current, amount);
+}
+
+template <typename T>
 T *AVLTree<T>::getInOrderArray(int amount)
 {
     if (amount == 0 || size < amount)
@@ -345,22 +438,36 @@ T *AVLTree<T>::getInOrderArray(int amount)
 
     T *array = new T[amount];
     int index = 0;
-    InOrderAux(array, &index, root, amount);
+    inOrderAux(array, &index, root, amount);
     return array;
 }
 
 template <typename T>
-void AVLTree<T>::InOrderAux(T *array, int *index, Node<T> *current, int amount)
+void AVLTree<T>::inOrderAux(T *array, int *index, Node<T> *current, int amount)
 {
     if (current == nullptr || *index >= amount)
     {
         return;
     }
 
-    InOrderAux(array, index, current->getLeft(), amount);
+    inOrderAux(array, index, current->getLeft(), amount);
     array[*index] = current->getData();
     (*index)++;
-    InOrderAux(array, index, current->getRight(), amount);
+    inOrderAux(array, index, current->getRight(), amount);
+}
+
+template <typename T>
+Node<T> *AVLTree<T>::buildEmptyTree(int h)
+{
+    if (h == 0)
+    {
+        return nullptr;
+    }
+    Node<T> *head = new Node<T>();
+    head->setHeight(h);
+    head->setLeft(buildEmptyTree(h - 1));
+    head->setRight(buildEmptyTree(h - 1));
+    return head;
 }
 
 #endif // AVL_TREE_H
