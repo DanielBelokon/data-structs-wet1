@@ -23,7 +23,7 @@ void MainDataStructure::AddCompany(int companyID, int value)
     companies_tree.add(company);
 }
 
-void MainDataStructure::RemoveCompany(int companyID)
+void MainDataStructure::RemoveCompany(int companyID, bool force)
 {
     if (companyID == 0)
     {
@@ -37,7 +37,7 @@ void MainDataStructure::RemoveCompany(int companyID)
         throw CompanyNotFoundException();
     }
 
-    if (company->getNumOfEmployees() > 0)
+    if (company->getNumOfEmployees() > 0 && !force)
     {
         throw CompanyHasEmployeesException();
     }
@@ -69,14 +69,7 @@ void MainDataStructure::AddEmployee(int companyID, int employeeID, int salary, i
     employees_tree.add(employee);
     company->addEmployee(employee);
     employees_tree_by_salary.add(employee);
-    if (highest_earner == nullptr || employee->getSalary() > highest_earner->getSalary())
-    {
-        highest_earner = employee;
-    }
-    else if (employee->getSalary() == highest_earner->getSalary() && employee->getEmployeeID() < highest_earner->getEmployeeID())
-    {
-        highest_earner = employee;
-    }
+    setHighesEarner(employee);
 }
 
 void MainDataStructure::RemoveEmployee(int companyID, int employeeID)
@@ -124,18 +117,19 @@ bool MainDataStructure::AqcquireCompany(int companyID, int aquiredCompanyID, dou
 
     Company tmp2 = Company(aquiredCompanyID, 0);
 
-    Company *aquiredCompany = companies_tree.search(&tmp2);
-    if (aquiredCompany == nullptr)
+    Company *aqcuiredCompany = companies_tree.search(&tmp2);
+    if (aqcuiredCompany == nullptr)
     {
         throw CompanyNotFoundException();
     }
 
-    if (company->getValue() > 10 * aquiredCompany->getValue())
+    if (company->getValue() < 10 * aqcuiredCompany->getValue())
     {
         return false;
     }
 
-    company->setValue(factor * (company->getValue() + aquiredCompany->getValue()));
+    company->merge(aqcuiredCompany, factor);
+    RemoveCompany(aquiredCompanyID, true);
     return true;
 }
 
@@ -168,6 +162,14 @@ int MainDataStructure::GetHighestEarner(int companyID)
         throw EmployeeNotFoundException();
     else
         return employee->getEmployeeID();
+}
+
+void MainDataStructure::setHighesEarner(Employee *emp)
+{
+    if (highest_earner == nullptr || Employee::compareBySalary(highest_earner, emp))
+    {
+        highest_earner = emp;
+    }
 }
 
 int MainDataStructure::GetAllEmployeesBySalary(int companyID, int **employeeIDs)
@@ -298,7 +300,7 @@ void MainDataStructure::IncreaseCompanyValue(int companyID, int valueIncrease)
     Company *company = companies_tree.search(&tmp);
     if (company == nullptr)
         throw CompanyNotFoundException();
-    company->setValue(valueIncrease);
+    company->setValue(company->getValue() + valueIncrease);
 }
 
 void MainDataStructure::PromoteEmployee(int employeeID, int salaryIncrease, int bumpGrade)

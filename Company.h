@@ -28,6 +28,7 @@ public:
 
     void addEmployee(Employee* employee);
     void removeEmployee(Employee* employee);
+    void merge(Company *company, int factor);
 
     bool operator<(const Company &other) const;
     bool operator>(const Company &other) const;

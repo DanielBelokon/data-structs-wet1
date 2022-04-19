@@ -18,12 +18,13 @@ private:
 public:
     MainDataStructure();
     void AddCompany(int companyID, int value);
-    void RemoveCompany(int companyID);
+    void RemoveCompany(int companyID, bool force = false);
     void AddEmployee(int companyID, int employeeID, int salary, int grade);
     void RemoveEmployee(int companyID, int employeeID);
-
     bool AqcquireCompany(int companyId, int aquiredCompanyId, double factor);
+
     int GetHighestEarner(int companyId);
+    void setHighesEarner(Employee *emp);
     int GetAllEmployeesBySalary(int companyId, int **employees); // returns num of employees
     void GetHighestEarnerInEachCompany(int numOfCompanies, int **highestEarners);
     int GetNumEmployeesMatching(int companyId, int minId, int maxId, int minSalary, int minGrad, int *inRange);
@@ -35,7 +36,7 @@ public:
     void HireEmployee(int EmployeeID, int newCompanyID);
 
 private:
-    void MainDataStructure::checkInRangeRocourisve(Node<Employee *> *current, int minId, int maxId, int minSalary, int minGrade, int *inRange, int *numOfEmployees);
+    void checkInRangeRocourisve(Node<Employee *> *current, int minId, int maxId, int minSalary, int minGrade, int *inRange, int *numOfEmployees);
 };
 
 #endif
