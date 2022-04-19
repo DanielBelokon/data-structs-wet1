@@ -32,26 +32,23 @@ void Company::setCompanyID(int newID){
 }
 
 void Company::setValue(int value){
-    this->value += value;
+    this->value = value;
 }
 
 void Company::setHighesEarner(Employee* emp){
-    highest_earner=emp;
+    if (highest_earner == nullptr || Employee::compareBySalary(highest_earner, emp))
+    {
+        highest_earner = emp;
+    }
 }
+
 AVLTree<Employee *> *Company::getEmployeesTree()
 {
     return &employees_tree;
 }
 
 void Company::addEmployee(Employee* employee){
-    if (highest_earner == nullptr || employee->getSalary() > highest_earner->getSalary())
-    {
-        highest_earner = employee;
-    }
-    else if (employee->getSalary() == highest_earner->getSalary() && employee->getEmployeeID() < highest_earner->getEmployeeID())
-    {
-        highest_earner = employee;
-    }
+    setHighesEarner(employee);
     num_of_employees++;
     employees_tree.add(employee);
     employees_tree_by_salary.add(employee);
