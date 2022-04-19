@@ -35,14 +35,14 @@ public:
     T *filter();
     T getHighest();
 
-    ~AVLTree() = default;
-    bool compare(Node<T> const &node1, Node<T> const &node2)
+    ~AVLTree();
+    bool compare(T const &node1, T const &node2)
     {
         if (customCompare != nullptr)
         {
-            return customCompare(node1.getData(), node2.getData());
+            return customCompare(node1, node2);
         }
-        return node1.getData() < node2.getData();
+        return node1 < node2;
     }
 
 private:
@@ -199,6 +199,7 @@ void AVLTree<T>::removeRecoursive(T toDelete, Node<T> *current, Node<T> *parent)
     {
         Node<T> *temp = current->getLeft();
         replaceChild(parent, current, temp);
+        current->setLeft(nullptr);
         delete current;
         current = nullptr;
     }
@@ -206,6 +207,7 @@ void AVLTree<T>::removeRecoursive(T toDelete, Node<T> *current, Node<T> *parent)
     {
         Node<T> *temp = current->getRight();
         replaceChild(parent, current, temp);
+        current->setRight(nullptr);
         delete current;
         current = nullptr;
     }
@@ -414,9 +416,10 @@ void AVLTree<T>::trim(Node<T> *current, Node<T> *parent, int *amount)
 
     if (current->getRight() == nullptr && current->getLeft() == nullptr)
     {
-        delete current;
         replaceChild(parent, current, nullptr);
+        delete current;
         (*amount)--;
+        return;
     }
 
     trim(current->getLeft(), current, amount);
@@ -462,6 +465,15 @@ Node<T> *AVLTree<T>::buildEmptyTree(int h)
     head->setLeft(buildEmptyTree(h - 1));
     head->setRight(buildEmptyTree(h - 1));
     return head;
+}
+
+template <typename T>
+AVLTree<T>::~AVLTree()
+{
+    if (root != nullptr)
+    {
+        delete root;
+    }
 }
 
 #endif // AVL_TREE_H

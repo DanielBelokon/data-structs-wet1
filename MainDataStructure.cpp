@@ -169,6 +169,9 @@ int MainDataStructure::GetHighestEarner(int companyID)
 
 void MainDataStructure::setHighesEarner(Employee *emp)
 {
+    if (emp == nullptr)
+        return;
+
     if (highest_earner == nullptr || Employee::compareBySalary(highest_earner, emp))
     {
         highest_earner = emp;
@@ -189,13 +192,15 @@ int MainDataStructure::GetAllEmployeesBySalary(int companyID, int **employeeIDs)
         throw CompanyNotFoundException();
     }
     int numOfEmployees = company->getNumOfEmployees();
-    *employeeIDs = new int[numOfEmployees];
 
     Employee **employees = company->getEmployeesTreeBySalary()->getInOrderArray();
+    *employeeIDs = new int[numOfEmployees];
     for (int i = 0, j = numOfEmployees - 1; i < company->getNumOfEmployees(); i++, j--)
     {
         (*employeeIDs)[i] = employees[j]->getEmployeeID();
     }
+
+    delete[] employees;
 
     return numOfEmployees;
 }
@@ -218,6 +223,7 @@ void MainDataStructure::GetHighestEarnerInEachCompany(int numOfCompanies, int **
 
         (*highestEarners)[i] = employee->getEmployeeID();
     }
+    delete[] companies;
 }
 
 int MainDataStructure::GetNumEmployeesMatching(int companyID, int minId, int maxId, int minSalary, int minGrade, int *inRange)
@@ -345,4 +351,21 @@ void MainDataStructure::HireEmployee(int employeeID, int newCompanyID)
     employee->setCompanyID(newCompanyID);
     old_company->removeEmployee(employee);
     new_company->addEmployee(employee);
+}
+
+MainDataStructure::~MainDataStructure()
+{
+    Employee **employees = employees_tree.getInOrderArray();
+    for (int i = 0; i < employees_tree.getSize(); i++)
+    {
+        delete employees[i];
+    }
+    delete[] employees;
+
+    Company **companies = companies_tree.getInOrderArray();
+    for (int i = 0; i < companies_tree.getSize(); i++)
+    {
+        delete companies[i];
+    }
+    delete[] companies;
 }

@@ -11,8 +11,19 @@ private:
     int height;
 
 public:
-    Node(T data) : data(data) {}
-    Node() = default;
+    Node(T data) : data(data)
+    {
+        left = nullptr;
+        right = nullptr;
+        height = 0;
+    }
+
+    Node()
+    {
+        left = nullptr;
+        right = nullptr;
+        height = 0;
+    }
 
     int getBalanceFactor() { return getHeight(left) - getHeight(right); }
     void setHeight(int height) { this->height = height; }
@@ -56,4 +67,12 @@ public:
     void setData(T data) { this->data = data; }
     void setLeft(Node *node) { left = node; }
     void setRight(Node *node) { right = node; }
+
+    ~Node()
+    {
+        if (left != nullptr)
+            delete left;
+        if (right != nullptr)
+            delete right;
+    }
 };

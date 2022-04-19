@@ -35,6 +35,8 @@ public:
     void PromoteEmployee(int EmployeeID, int salaryIncrease, int bumpGrade);
     void HireEmployee(int EmployeeID, int newCompanyID);
 
+    ~MainDataStructure();
+
 private:
     void checkInRangeRocourisve(Node<Employee *> *current, int minId, int maxId, int minSalary, int minGrade, int *inRange, int *numOfEmployees);
 };

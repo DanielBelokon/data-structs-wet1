@@ -396,7 +396,7 @@ static errorType OnGetAllEmployeesBySalary(void **DS, const char* const command)
         for (int i=0; i<NumOfEmployees; i++) {
             printf("%d - %d\n", i, Employees[i]);
         }
-        free(Employees);
+        delete[] Employees;
     } else {
         printf("GetAllEmployeesBySalary: %s\n", ReturnValToStr(res));
     }
@@ -416,7 +416,7 @@ static errorType OnGetHighestEarnerInEachCompany(void **DS, const char* const co
         for (int i=0; i<NumOfCompanies; i++) {
             printf("%d - %d\n", i, Employees[i]);
         }
-        free(Employees);
+        delete[] Employees;
     } else {
         printf("GetHighestEarnerInEachCompany: %s\n", ReturnValToStr(res));
     }
