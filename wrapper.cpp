@@ -1,5 +1,8 @@
 #include "library1.h"
+#include <exception>
 #include "MainDataStructure.h"
+
+StatusType ExceptionToEnum(std::exception &e);
 
 void *Init()
 {
@@ -9,13 +12,14 @@ void *Init()
 
 StatusType AddCompany(void *DS, int CompanyID, int Value)
 {
+    if (DS == NULL)
+        return INVALID_INPUT;
     try
     {
-        MainDataStructure *ds = (MainDataStructure *)DS;
-        ds->AddCompany(CompanyID, Value);
+        ((MainDataStructure *)DS)->AddCompany(CompanyID, Value);
         return SUCCESS;
     }
-    catch (const std::exception &e)
+    catch (std::exception &e)
     {
         return ExceptionToEnum(e);
     }
@@ -23,13 +27,14 @@ StatusType AddCompany(void *DS, int CompanyID, int Value)
 
 StatusType AddEmployee(void *DS, int EmployeeID, int CompanyID, int Salary, int Grade)
 {
+    if (DS == NULL)
+        return INVALID_INPUT;
     try
     {
-        MainDataStructure *ds = (MainDataStructure *)DS;
-        ds->AddEmployee(EmployeeID, CompanyID, Salary, Grade);
+        ((MainDataStructure *)DS)->AddEmployee(EmployeeID, CompanyID, Salary, Grade);
         return SUCCESS;
     }
-    catch (const std::exception &e)
+    catch (std::exception &e)
     {
         return ExceptionToEnum(e);
     }
@@ -37,13 +42,14 @@ StatusType AddEmployee(void *DS, int EmployeeID, int CompanyID, int Salary, int 
 
 StatusType RemoveCompany(void *DS, int CompanyID)
 {
+    if (DS == NULL)
+        return INVALID_INPUT;
     try
     {
-        MainDataStructure *ds = (MainDataStructure *)DS;
-        ds->RemoveCompany(CompanyID);
+        ((MainDataStructure *)DS)->RemoveCompany(CompanyID);
         return SUCCESS;
     }
-    catch (const std::exception &e)
+    catch (std::exception &e)
     {
         return ExceptionToEnum(e);
     }
@@ -51,13 +57,14 @@ StatusType RemoveCompany(void *DS, int CompanyID)
 
 StatusType RemoveEmployee(void *DS, int EmployeeID)
 {
+    if (DS == NULL)
+        return INVALID_INPUT;
     try
     {
-        MainDataStructure *ds = (MainDataStructure *)DS;
-        ds->RemoveEmployee(EmployeeID);
+        ((MainDataStructure *)DS)->RemoveEmployee(EmployeeID);
         return SUCCESS;
     }
-    catch (const std::exception &e)
+    catch (std::exception &e)
     {
         return ExceptionToEnum(e);
     }
@@ -65,13 +72,14 @@ StatusType RemoveEmployee(void *DS, int EmployeeID)
 
 StatusType GetCompanyInfo(void *DS, int CompanyID, int *Value, int *NumEmployees)
 {
+    if (DS == NULL)
+        return INVALID_INPUT;
     try
     {
-        MainDataStructure *ds = (MainDataStructure *)DS;
-        ds->GetCompanyInfo(CompanyID, Value, NumEmployees);
+        ((MainDataStructure *)DS)->GetCompanyInfo(CompanyID, Value, NumEmployees);
         return SUCCESS;
     }
-    catch (const std::exception &e)
+    catch (std::exception &e)
     {
         return ExceptionToEnum(e);
     }
@@ -79,13 +87,14 @@ StatusType GetCompanyInfo(void *DS, int CompanyID, int *Value, int *NumEmployees
 
 StatusType GetEmployeeInfo(void *DS, int EmployeeID, int *EmployerID, int *Salary, int *Grade)
 {
+    if (DS == NULL)
+        return INVALID_INPUT;
     try
     {
-        MainDataStructure *ds = (MainDataStructure *)DS;
-        ds->GetEmployeeInfo(EmployeeID, EmployerID, Salary, Grade);
+        ((MainDataStructure *)DS)->GetEmployeeInfo(EmployeeID, EmployerID, Salary, Grade);
         return SUCCESS;
     }
-    catch (const std::exception &e)
+    catch (std::exception &e)
     {
         return ExceptionToEnum(e);
     }
@@ -93,13 +102,14 @@ StatusType GetEmployeeInfo(void *DS, int EmployeeID, int *EmployerID, int *Salar
 
 StatusType IncreaseCompanyValue(void *DS, int CompanyID, int ValueIncrease)
 {
+    if (DS == NULL)
+        return INVALID_INPUT;
     try
     {
-        MainDataStructure *ds = (MainDataStructure *)DS;
-        ds->IncreaseCompanyValue(CompanyID, ValueIncrease);
+        ((MainDataStructure *)DS)->IncreaseCompanyValue(CompanyID, ValueIncrease);
         return SUCCESS;
     }
-    catch (const std::exception &e)
+    catch (std::exception &e)
     {
         return ExceptionToEnum(e);
     }
@@ -107,13 +117,14 @@ StatusType IncreaseCompanyValue(void *DS, int CompanyID, int ValueIncrease)
 
 StatusType PromoteEmployee(void *DS, int EmployeeID, int SalaryIncrease, int BumpGrade)
 {
+    if (DS == NULL)
+        return INVALID_INPUT;
     try
     {
-        MainDataStructure *ds = (MainDataStructure *)DS;
-        ds->PromoteEmployee(EmployeeID, SalaryIncrease, BumpGrade);
+        ((MainDataStructure *)DS)->PromoteEmployee(EmployeeID, SalaryIncrease, BumpGrade);
         return SUCCESS;
     }
-    catch (const std::exception &e)
+    catch (std::exception &e)
     {
         return ExceptionToEnum(e);
     }
@@ -121,13 +132,14 @@ StatusType PromoteEmployee(void *DS, int EmployeeID, int SalaryIncrease, int Bum
 
 StatusType HireEmployee(void *DS, int EmployeeID, int NewCompanyID)
 {
+    if (DS == NULL)
+        return INVALID_INPUT;
     try
     {
-        MainDataStructure *ds = (MainDataStructure *)DS;
-        ds->HireEmployee(EmployeeID, NewCompanyID);
+        ((MainDataStructure *)DS)->HireEmployee(EmployeeID, NewCompanyID);
         return SUCCESS;
     }
-    catch (const std::exception &e)
+    catch (std::exception &e)
     {
         return ExceptionToEnum(e);
     }
@@ -135,13 +147,14 @@ StatusType HireEmployee(void *DS, int EmployeeID, int NewCompanyID)
 
 StatusType AcquireCompany(void *DS, int AcquirerID, int TargetID, double Factor)
 {
+    if (DS == NULL)
+        return INVALID_INPUT;
     try
     {
-        MainDataStructure *ds = (MainDataStructure *)DS;
-        ds->AcquireCompany(AcquirerID, TargetID, Factor);
+        ((MainDataStructure *)DS)->AcquireCompany(AcquirerID, TargetID, Factor);
         return SUCCESS;
     }
-    catch (const std::exception &e)
+    catch (std::exception &e)
     {
         return ExceptionToEnum(e);
     }
@@ -149,13 +162,14 @@ StatusType AcquireCompany(void *DS, int AcquirerID, int TargetID, double Factor)
 
 StatusType GetHighestEarner(void *DS, int CompanyID, int *EmployeeID)
 {
+    if (DS == NULL)
+        return INVALID_INPUT;
     try
     {
-        MainDataStructure *ds = (MainDataStructure *)DS;
-        *EmployeeID = ds->GetHighestEarner(CompanyID);
+        *EmployeeID = ((MainDataStructure *)DS)->GetHighestEarner(CompanyID);
         return SUCCESS;
     }
-    catch (const std::exception &e)
+    catch (std::exception &e)
     {
         return ExceptionToEnum(e);
     }
@@ -163,13 +177,14 @@ StatusType GetHighestEarner(void *DS, int CompanyID, int *EmployeeID)
 
 StatusType GetAllEmployeesBySalary(void *DS, int CompanyID, int **Employees, int *NumOfEmployees)
 {
+    if (DS == NULL)
+        return INVALID_INPUT;
     try
     {
-        MainDataStructure *ds = (MainDataStructure *)DS;
-        *NumOfEmployees = ds->GetAllEmployeesBySalary(CompanyID, Employees);
+        *NumOfEmployees = ((MainDataStructure *)DS)->GetAllEmployeesBySalary(CompanyID, Employees);
         return SUCCESS;
     }
-    catch (const std::exception &e)
+    catch (std::exception &e)
     {
         return ExceptionToEnum(e);
     }
@@ -177,13 +192,14 @@ StatusType GetAllEmployeesBySalary(void *DS, int CompanyID, int **Employees, int
 
 StatusType GetHighestEarnerInEachCompany(void *DS, int NumOfCompanies, int **Employees)
 {
+    if (DS == NULL)
+        return INVALID_INPUT;
     try
     {
-        MainDataStructure *ds = (MainDataStructure *)DS;
-        ds->GetHighestEarnerInEachCompany(NumOfCompanies, Employees);
+        ((MainDataStructure *)DS)->GetHighestEarnerInEachCompany(NumOfCompanies, Employees);
         return SUCCESS;
     }
-    catch (const std::exception &e)
+    catch (std::exception &e)
     {
         return ExceptionToEnum(e);
     }
@@ -192,13 +208,14 @@ StatusType GetHighestEarnerInEachCompany(void *DS, int NumOfCompanies, int **Emp
 StatusType GetNumEmployeesMatching(void *DS, int CompanyID, int MinEmployeeID, int MaxEmployeeId,
                                    int MinSalary, int MinGrade, int *TotalNumOfEmployees, int *NumOfEmployees)
 {
+    if (DS == NULL)
+        return INVALID_INPUT;
     try
     {
-        MainDataStructure *ds = (MainDataStructure *)DS;
-        *NumOfEmployees = ds->GetNumEmployeesMatching(CompanyID, MinEmployeeID, MaxEmployeeId, MinSalary, MinGrade, TotalNumOfEmployees);
+        *NumOfEmployees = ((MainDataStructure *)DS)->GetNumEmployeesMatching(CompanyID, MinEmployeeID, MaxEmployeeId, MinSalary, MinGrade, TotalNumOfEmployees);
         return SUCCESS;
     }
-    catch (const std::exception &e)
+    catch (std::exception &e)
     {
         return ExceptionToEnum(e);
     }
@@ -211,7 +228,7 @@ void Quit(void **DS)
     *DS = nullptr;
 }
 
-StatusType ExceptionToEnum(std::exception ex)
+StatusType ExceptionToEnum(std::exception &ex)
 {
     if (dynamic_cast<InvalidInputException *>(&ex))
     {

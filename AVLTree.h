@@ -56,7 +56,7 @@ private:
     void inOrderAux(T *array, int *index, Node<T> *current, int amount);
     void trim(Node<T> *current, Node<T> *parent, int *amount);
     T *mergeArrays(T *arr1, T *arr2, int size1, int size2);
-    void insertInOrder(Node<T> *current, T **arr, int index, int size);
+    void insertInOrder(Node<T> *current, T **arr, int *index, int size);
     Node<T> *buildEmptyTree(int h);
     void RR(Node<T> *current, Node<T> *parent);
     void LL(Node<T> *current, Node<T> *parent);
@@ -356,13 +356,8 @@ void AVLTree<T>::merge(AVLTree<T> *tree)
 
     root = buildEmptyTree(new_height);
     trim(root, nullptr, &to_delete);
-    insertInOrder(root, &merged, 0, size);
-    Node<T> *current = root;
     int index = 0;
-    while (current != nullptr)
-    {
-        current = current->getLeft();
-    }
+    insertInOrder(root, &merged, &index, size);
     delete[] merged;
 }
 
@@ -401,14 +396,13 @@ T *AVLTree<T>::mergeArrays(T *arr1, T *arr2, int size1, int size2)
 }
 
 template <typename T>
-void AVLTree<T>::insertInOrder(Node<T> *current, T **arr, int index, int size)
+void AVLTree<T>::insertInOrder(Node<T> *current, T **arr, int *index, int size)
 {
     if (current == nullptr)
         return;
     insertInOrder(current->getLeft(), arr, index, size);
-    current->setData((*arr)[index]);
-    index++;
-    insertInOrder(current->getRight(), arr, index, size);
+    current->setData((*arr)[(*index)++]);
+    insertInOrder(current->getRight(), arr, index + 1, size);
 }
 
 template <typename T>
@@ -459,7 +453,7 @@ void AVLTree<T>::inOrderAux(T *array, int *index, Node<T> *current, int amount)
 template <typename T>
 Node<T> *AVLTree<T>::buildEmptyTree(int h)
 {
-    if (h == 0)
+    if (h < 0)
     {
         return nullptr;
     }

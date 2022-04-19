@@ -19,7 +19,7 @@ public:
     MainDataStructure();
     void AddCompany(int companyID, int value);
     void RemoveCompany(int companyID, bool force = false);
-    void AddEmployee(int companyID, int employeeID, int salary, int grade);
+    void AddEmployee(int employeeID, int companyID, int salary, int grade);
     void RemoveEmployee(int employeeID);
     bool AcquireCompany(int companyId, int aquiredCompanyId, double factor);
 

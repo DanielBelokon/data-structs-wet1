@@ -156,7 +156,7 @@ static OnFuncPtr OnCmdPtrs[] = {
 
 int main(int argc, const char**argv) {
     char buffer[MAX_STRING_INPUT_SIZE];
-
+    printf("Welcome to the company management system!\n");
     // Reading commands
     while (fgets(buffer, MAX_STRING_INPUT_SIZE, stdin) != NULL) {
         fflush(stdout);

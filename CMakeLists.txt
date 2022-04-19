@@ -3,7 +3,7 @@ project(simple_example)               # Create project "simple_example"
 set(CMAKE_CXX_STANDARD 14)            # Enable c++14 standard
 
 # Add main.cpp file of project root directory as source file
-set(SOURCE_FILES MainDataStructureTests.cpp MainDataStructure.cpp Employee.cpp Company.cpp)
+set(SOURCE_FILES main1.cpp Wrapper.cpp MainDataStructure.cpp Employee.cpp Company.cpp)
 
 
 # Add executable target with source files listed in SOURCE_FILES variable

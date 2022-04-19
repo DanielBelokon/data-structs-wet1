@@ -9,7 +9,7 @@ MainDataStructure::MainDataStructure()
 
 void MainDataStructure::AddCompany(int companyID, int value)
 {
-    if (companyID == 0)
+    if (companyID <= 0)
     {
         throw InvalidInputException();
     }
@@ -45,7 +45,7 @@ void MainDataStructure::RemoveCompany(int companyID, bool force)
     companies_tree.remove(company);
 }
 
-void MainDataStructure::AddEmployee(int companyID, int employeeID, int salary, int grade)
+void MainDataStructure::AddEmployee(int employeeID, int companyID, int salary, int grade)
 {
     if (companyID <= 0 || employeeID <= 0 || salary <= 0)
     {
@@ -192,9 +192,9 @@ int MainDataStructure::GetAllEmployeesBySalary(int companyID, int **employeeIDs)
     *employeeIDs = new int[numOfEmployees];
 
     Employee **employees = company->getEmployeesTreeBySalary()->getInOrderArray();
-    for (int i = 0; i < company->getNumOfEmployees(); i++)
+    for (int i = 0, j = numOfEmployees - 1; i < company->getNumOfEmployees(); i++, j--)
     {
-        (*employeeIDs)[i] = employees[i]->getEmployeeID();
+        (*employeeIDs)[i] = employees[j]->getEmployeeID();
     }
 
     return numOfEmployees;
@@ -222,7 +222,7 @@ void MainDataStructure::GetHighestEarnerInEachCompany(int numOfCompanies, int **
 
 int MainDataStructure::GetNumEmployeesMatching(int companyID, int minId, int maxId, int minSalary, int minGrade, int *inRange)
 {
-    if (companyID = 0 || minId <= 0 || maxId <= 0 || minSalary <= 0 || minGrade <= 0)
+    if (companyID == 0 || minId < 0 || maxId <= 0 || minSalary <= 0 || minGrade <= 0)
     {
         throw InvalidInputException();
     }
