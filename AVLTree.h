@@ -356,6 +356,7 @@ void AVLTree<T>::merge(AVLTree<T> *tree)
     int new_height = std::ceil(std::log2(size + 1)) - 1;
     int to_delete = std::exp2(new_height + 1) - size - 1;
 
+    delete root;
     root = buildEmptyTree(new_height);
     trim(root, nullptr, &to_delete);
     int index = 0;
