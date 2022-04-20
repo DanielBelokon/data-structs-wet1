@@ -1,0 +1,54 @@
+#Test: BasicTest. NumCommands: 30. MinInt: -20. MaxInt: 100. With outer errors. Seed: 8892186870335112229. 
+#Injecting commands before Init 
+AddEmployee: INVALID_INPUT 
+PromoteEmployee: INVALID_INPUT 
+GetHighestEarnerInEachCompany: INVALID_INPUT 
+GetHighestEarner: INVALID_INPUT 
+AddCompany: INVALID_INPUT 
+RemoveCompany: INVALID_INPUT 
+GetHighestEarnerInEachCompany: INVALID_INPUT 
+GetCompanyInfo: INVALID_INPUT 
+RemoveEmployee: INVALID_INPUT 
+Init done 
+AddCompany: SUCCESS 
+AddCompany: SUCCESS 
+AddCompany: SUCCESS 
+AddEmployee: SUCCESS 
+AddEmployee: SUCCESS 
+AddEmployee: SUCCESS 
+AcquireCompany: SUCCESS 
+IncreaseCompanyValue: SUCCESS 
+PromoteEmployee: SUCCESS 
+GetHighestEarner: FAILURE 
+GetAllEmployeesBySalary: SUCCESS. Highest earners: 
+Employee Rank || Employee ID 
+0 - 13 
+1 - 12 
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners: 
+Company Index || Employee ID 
+0 - 11 
+1 - 13 
+GetNumEmployeesMatching: SUCCESS. Out of 3, 2 match 
+HireEmployee: SUCCESS 
+GetCompanyInfo: SUCCESS. Company 1 has 2 employees and value 150 
+GetCompanyInfo: FAILURE 
+GetCompanyInfo: SUCCESS. Company 3 has 1 employees and value 8965 
+GetEmployeeInfo: SUCCESS. Employee 11 works at 1 and earns 60 at grade 70 
+GetEmployeeInfo: SUCCESS. Employee 12 works at 1 and earns 600 at grade 700 
+GetEmployeeInfo: SUCCESS. Employee 13 works at 3 and earns 6010 at grade 7001 
+RemoveEmployee: SUCCESS 
+RemoveCompany: SUCCESS 
+AddEmployee: FAILURE 
+GetCompanyInfo: INVALID_INPUT 
+GetCompanyInfo: SUCCESS. Company 1 has 2 employees and value 150 
+IncreaseCompanyValue: SUCCESS 
+IncreaseCompanyValue: SUCCESS 
+GetHighestEarner: SUCCESS. Highest earner is 12 
+GetNumEmployeesMatching: SUCCESS. Out of 2, 2 match 
+GetHighestEarnerInEachCompany: SUCCESS. Highest earners: 
+Company Index || Employee ID 
+0 - 12 
+Quit done 
+#Injecting commands after Quit 
+GetNumEmployeesMatching: INVALID_INPUT 
+GetAllEmployeesBySalary: INVALID_INPUT
