@@ -43,6 +43,7 @@ void MainDataStructure::RemoveCompany(int companyID, bool force)
     }
 
     companies_tree.remove(company);
+    delete company;
 }
 
 void MainDataStructure::AddEmployee(int employeeID, int companyID, int salary, int grade)
