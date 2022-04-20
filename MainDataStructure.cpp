@@ -5,6 +5,7 @@ MainDataStructure::MainDataStructure()
     companies_tree = AVLTree<Company *>(Company::compareByPointer);
     employees_tree = AVLTree<Employee *>(Employee::compareByPointer);
     employees_tree_by_salary = AVLTree<Employee *>(Employee::compareBySalary);
+    highest_earner = nullptr;
 }
 
 void MainDataStructure::AddCompany(int companyID, int value)
