@@ -39,4 +39,8 @@ class CompanyHasEmployeesException : public std::exception
 {
 };
 
+class EmptyTreeException : public std::exception
+{
+};
+
 #endif // EXCEPTIONS_H

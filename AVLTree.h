@@ -74,6 +74,11 @@ template <typename T>
 T AVLTree<T>::getHighest()
 {
     Node<T> *current = root;
+    if (current == nullptr)
+    {
+        throw EmptyTreeException();
+    }
+
     while (current->getRight() != nullptr)
     {
         current = current->getRight();

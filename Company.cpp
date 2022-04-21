@@ -56,9 +56,17 @@ void Company::addEmployee(Employee* employee){
 
 void Company::removeEmployee(Employee* employee){
     employees_tree.remove(employee);
-    if (employee == highest_earner)
-        highest_earner = employees_tree_by_salary.getHighest();
+    employees_tree_by_salary.remove(employee);
     num_of_employees--;
+    if (employee == highest_earner)
+        if (this->getNumOfEmployees() > 0)
+        {
+            highest_earner = employees_tree_by_salary.getHighest();
+        }
+        else
+        {
+            highest_earner = nullptr;
+        }
 }
 
 void Company::merge(Company *company, double factor)
