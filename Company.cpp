@@ -36,7 +36,8 @@ void Company::setValue(int value){
 }
 
 void Company::setHighesEarner(Employee* emp){
-    if (highest_earner == nullptr || Employee::compareBySalary(highest_earner, emp))
+    if (emp != nullptr &&
+        (highest_earner == nullptr || Employee::compareBySalary(highest_earner, emp)))
     {
         highest_earner = emp;
     }
