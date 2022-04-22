@@ -10,7 +10,7 @@ MainDataStructure::MainDataStructure()
 
 void MainDataStructure::AddCompany(int companyID, int value)
 {
-    if (companyID <= 0)
+    if (companyID <= 0 || value <= 0)
     {
         throw InvalidInputException();
     }
