@@ -259,6 +259,10 @@ int MainDataStructure::GetNumEmployeesMatching(int companyID, int minId, int max
     Node<Employee *> *current = employeesTree->getRoot();
 
     checkInRangeRocourisve(current, minId, maxId, minSalary, minGrade, inRange, &numOfEmployees);
+    if (*inRange == 0)
+    {
+        throw EmployeeNotFoundException();
+    }
 
     return numOfEmployees;
 }
