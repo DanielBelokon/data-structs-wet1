@@ -115,7 +115,7 @@ void MainDataStructure::RemoveEmployee(int employeeID)
 
 bool MainDataStructure::AcquireCompany(int companyID, int aquiredCompanyID, double factor)
 {
-    if (companyID <= 0 || aquiredCompanyID <= 0 || factor < 1)
+    if (companyID <= 0 || aquiredCompanyID <= 0 || factor < 1 || companyID == aquiredCompanyID)
     {
         throw InvalidInputException();
     }
