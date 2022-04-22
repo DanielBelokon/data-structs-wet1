@@ -448,14 +448,16 @@ T *AVLTree<T>::getInOrderArray(int amount)
 template <typename T>
 void AVLTree<T>::inOrderAux(T *array, int *index, Node<T> *current, int amount)
 {
-    if (current == nullptr || *index >= amount)
+    if (current == nullptr || (*index) >= amount)
     {
         return;
     }
 
     inOrderAux(array, index, current->getLeft(), amount);
-    array[*index] = current->getData();
-    (*index)++;
+    if ((*index) < amount)
+    {
+        array[(*index)++] = current->getData();
+    }
     inOrderAux(array, index, current->getRight(), amount);
 }
 
