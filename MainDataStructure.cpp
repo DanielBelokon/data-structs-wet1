@@ -189,24 +189,30 @@ void MainDataStructure::setHighesEarner(Employee *emp)
 
 int MainDataStructure::GetAllEmployeesBySalary(int companyID, int **employeeIDs)
 {
-    if (companyID <= 0)
+    if (companyID == 0)
     {
         throw InvalidInputException();
     }
 
-    Company tmp = Company(companyID, 0);
-    Company *company = companies_tree.search(&tmp);
-    if (company == nullptr)
+    AVLTree<Employee *> *cur_employees_tree_by_salary = &(this->employees_tree_by_salary);
+    if (companyID > 0)
     {
-        throw CompanyNotFoundException();
+        Company tmp = Company(companyID, 0);
+        Company *company = companies_tree.search(&tmp);
+        if (company == nullptr)
+        {
+            throw CompanyNotFoundException();
+        }
+        cur_employees_tree_by_salary = company->getEmployeesTreeBySalary();
     }
-    int numOfEmployees = company->getNumOfEmployees();
 
-    Employee **employees = company->getEmployeesTreeBySalary()->getInOrderArray();
-    *employeeIDs = new int[numOfEmployees];
-    for (int i = 0, j = numOfEmployees - 1; i < company->getNumOfEmployees(); i++, j--)
+    int numOfEmployees = cur_employees_tree_by_salary->getSize();
+    auto employees = cur_employees_tree_by_salary->getInOrderArray();
+    *employeeIDs = (int *)(malloc(sizeof(int) * numOfEmployees));
+    //*employeeIDs = new int[numOfEmployees];
+    for (int i = 0; i < numOfEmployees; i++)
     {
-        (*employeeIDs)[i] = employees[j]->getEmployeeID();
+        (*employeeIDs)[i] = employees[numOfEmployees - 1 - i]->getEmployeeID();
     }
 
     delete[] employees;
