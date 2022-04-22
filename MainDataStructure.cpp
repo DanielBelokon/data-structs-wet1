@@ -227,18 +227,25 @@ void MainDataStructure::GetHighestEarnerInEachCompany(int numOfCompanies, int **
         throw InvalidInputException();
     }
 
-    *highestEarners = new int[numOfCompanies];
+    //*highestEarners = new int[numOfCompanies];
+    *highestEarners = (int *)(malloc(sizeof(int) * numOfCompanies));
 
-    Company **companies = companies_tree.getInOrderArray();
+    Company **companies = companies_tree.getInOrderArray(numOfCompanies);
+    int amount = 0;
     for (int i = 0; i < numOfCompanies; i++)
     {
         Employee *employee = companies[i]->getHighestEarner();
-        if (employee == nullptr)
-            throw NotEnoughCompaniesException();
-
-        (*highestEarners)[i] = employee->getEmployeeID();
+        if (employee != nullptr)
+        {
+            (*highestEarners)[amount++] = employee->getEmployeeID();
+        }
     }
     delete[] companies;
+
+    if (amount < numOfCompanies - 1)
+    {
+        throw NotEnoughCompaniesException();
+    }
 }
 
 int MainDataStructure::GetNumEmployeesMatching(int companyID, int minId, int maxId, int minSalary, int minGrade, int *inRange)
