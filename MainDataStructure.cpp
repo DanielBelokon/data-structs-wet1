@@ -230,9 +230,9 @@ void MainDataStructure::GetHighestEarnerInEachCompany(int numOfCompanies, int **
     //*highestEarners = new int[numOfCompanies];
     *highestEarners = (int *)(malloc(sizeof(int) * numOfCompanies));
 
-    Company **companies = companies_tree.getInOrderArray(numOfCompanies);
+    Company **companies = companies_tree.getInOrderArray();
     int amount = 0;
-    for (int i = 0; i < numOfCompanies; i++)
+    for (int i = 0; i < this->companies_tree.getSize() && amount < numOfCompanies; i++)
     {
         Employee *employee = companies[i]->getHighestEarner();
         if (employee != nullptr)
@@ -244,6 +244,7 @@ void MainDataStructure::GetHighestEarnerInEachCompany(int numOfCompanies, int **
 
     if (amount < numOfCompanies - 1)
     {
+        free(highestEarners);
         throw NotEnoughCompaniesException();
     }
 }
@@ -264,18 +265,21 @@ int MainDataStructure::GetNumEmployeesMatching(int companyID, int minId, int max
         {
             throw CompanyNotFoundException();
         }
+
         employeesTree = company->getEmployeesTree();
     }
+
+    if (employeesTree->getSize() == 0)
+    {
+        throw EmployeeNotFoundException();
+    }
+
     int numOfEmployees = 0;
     *inRange = 0;
 
     Node<Employee *> *current = employeesTree->getRoot();
 
     checkInRangeRocourisve(current, minId, maxId, minSalary, minGrade, inRange, &numOfEmployees);
-    if (*inRange == 0)
-    {
-        throw EmployeeNotFoundException();
-    }
 
     return numOfEmployees;
 }
@@ -359,6 +363,7 @@ void MainDataStructure::PromoteEmployee(int employeeID, int salaryIncrease, int 
     company->getEmployeesTreeBySalary()->add(employee);
     employees_tree_by_salary.add(employee);
 
+    company->setHighesEarner(employee);
     setHighesEarner(employee);
 
     if (bumpGrade > 0)
