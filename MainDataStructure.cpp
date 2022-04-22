@@ -330,9 +330,19 @@ void MainDataStructure::PromoteEmployee(int employeeID, int salaryIncrease, int 
     Employee tmp = Employee(employeeID, 0, 0, 0);
     Employee *employee = employees_tree.search(&tmp);
 
-    if (!employee)
+    if (employee == nullptr)
         throw EmployeeNotFoundException();
+    Company tmp2 = Company(employee->getCompanyID(), 0);
+    Company *company = companies_tree.search(&tmp2);
+    if (company == nullptr)
+        throw CompanyNotFoundException();
+    company->getEmployeesTreeBySalary()->remove(employee);
+    employees_tree_by_salary.remove(employee);
     employee->increaseSalary(salaryIncrease);
+    company->getEmployeesTreeBySalary()->add(employee);
+    employees_tree_by_salary.add(employee);
+
+    setHighesEarner(employee);
 
     if (bumpGrade > 0)
         employee->increaseGrade();
