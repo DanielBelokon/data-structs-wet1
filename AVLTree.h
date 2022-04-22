@@ -410,7 +410,7 @@ void AVLTree<T>::insertInOrder(Node<T> *current, T **arr, int *index, int size)
         return;
     insertInOrder(current->getLeft(), arr, index, size);
     current->setData((*arr)[(*index)++]);
-    insertInOrder(current->getRight(), arr, index + 1, size);
+    insertInOrder(current->getRight(), arr, index, size);
 }
 
 template <typename T>
