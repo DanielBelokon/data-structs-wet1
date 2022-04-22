@@ -151,8 +151,8 @@ StatusType AcquireCompany(void *DS, int AcquirerID, int TargetID, double Factor)
         return INVALID_INPUT;
     try
     {
-        ((MainDataStructure *)DS)->AcquireCompany(AcquirerID, TargetID, Factor);
-        return SUCCESS;
+        bool success = ((MainDataStructure *)DS)->AcquireCompany(AcquirerID, TargetID, Factor);
+        return success ? SUCCESS : FAILURE;
     }
     catch (std::exception &e)
     {
@@ -192,7 +192,7 @@ StatusType GetAllEmployeesBySalary(void *DS, int CompanyID, int **Employees, int
 
 StatusType GetHighestEarnerInEachCompany(void *DS, int NumOfCompanies, int **Employees)
 {
-    if (DS == NULL)
+    if (DS == NULL || Employees == NULL)
         return INVALID_INPUT;
     try
     {
@@ -208,7 +208,7 @@ StatusType GetHighestEarnerInEachCompany(void *DS, int NumOfCompanies, int **Emp
 StatusType GetNumEmployeesMatching(void *DS, int CompanyID, int MinEmployeeID, int MaxEmployeeId,
                                    int MinSalary, int MinGrade, int *TotalNumOfEmployees, int *NumOfEmployees)
 {
-    if (DS == NULL)
+    if (DS == NULL || TotalNumOfEmployees == NULL || NumOfEmployees == NULL)
         return INVALID_INPUT;
     try
     {
