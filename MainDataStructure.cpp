@@ -237,7 +237,7 @@ void MainDataStructure::GetHighestEarnerInEachCompany(int numOfCompanies, int **
 
 int MainDataStructure::GetNumEmployeesMatching(int companyID, int minId, int maxId, int minSalary, int minGrade, int *inRange)
 {
-    if (companyID == 0 || minId < 0 || maxId <= 0 || minSalary <= 0 || minGrade <= 0)
+    if (companyID == 0 || minId < 0 || maxId < 0 || minSalary < 0 || minGrade < 0 || maxId < minId)
     {
         throw InvalidInputException();
     }
