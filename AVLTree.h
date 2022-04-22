@@ -425,6 +425,10 @@ void AVLTree<T>::trim(Node<T> *current, Node<T> *parent, int *amount)
         replaceChild(parent, current, nullptr);
         delete current;
         (*amount)--;
+        if (parent != nullptr)
+        {
+            parent->updateHeight();
+        }
         return;
     }
 
