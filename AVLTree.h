@@ -198,7 +198,7 @@ void AVLTree<T>::removeRecoursive(T toDelete, Node<T> *current, Node<T> *parent)
     {
         replaceChild(parent, current, nullptr);
         delete current;
-        current = nullptr;
+        return;
     }
     else if (current->getRight() == nullptr && current->getLeft() != nullptr)
     {
@@ -206,7 +206,7 @@ void AVLTree<T>::removeRecoursive(T toDelete, Node<T> *current, Node<T> *parent)
         replaceChild(parent, current, temp);
         current->setLeft(nullptr);
         delete current;
-        current = nullptr;
+        return;
     }
     else if (current->getRight() != nullptr && current->getLeft() == nullptr)
     {
@@ -214,7 +214,7 @@ void AVLTree<T>::removeRecoursive(T toDelete, Node<T> *current, Node<T> *parent)
         replaceChild(parent, current, temp);
         current->setRight(nullptr);
         delete current;
-        current = nullptr;
+        return;
     }
     else
     {
@@ -227,6 +227,7 @@ void AVLTree<T>::removeRecoursive(T toDelete, Node<T> *current, Node<T> *parent)
         removeRecoursive(temp->getData(), root, nullptr);
         current->setData(tempData);
     }
+
     if (current != nullptr)
     {
         balance(current, parent);
