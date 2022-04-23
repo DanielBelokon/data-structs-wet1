@@ -161,7 +161,7 @@ void AVLTree<T>::balance(Node<T> *current, Node<T> *parent)
     int balanceFactor = current->getBalanceFactor();
     if (balanceFactor > 1)
     {
-        if (current->getLeft()->getBalanceFactor() == 1)
+        if (current->getLeft()->getBalanceFactor() >= 0)
         {
             LL(current, parent);
         }
@@ -172,7 +172,7 @@ void AVLTree<T>::balance(Node<T> *current, Node<T> *parent)
     }
     else if (balanceFactor < -1)
     {
-        if (current->getRight()->getBalanceFactor() == -1)
+        if (current->getRight()->getBalanceFactor() <= 0)
         {
             RR(current, parent);
         }
