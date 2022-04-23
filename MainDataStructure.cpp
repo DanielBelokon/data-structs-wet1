@@ -389,9 +389,9 @@ void MainDataStructure::HireEmployee(int employeeID, int newCompanyID)
 
     Company tmp3 = Company(employee->getCompanyID(), 0);
     Company *old_company = companies_tree.search(&tmp3);
-    employee->setCompanyID(newCompanyID);
     old_company->removeEmployee(employee);
     new_company->addEmployee(employee);
+    employee->setCompanyID(newCompanyID);
 }
 
 MainDataStructure::~MainDataStructure()
