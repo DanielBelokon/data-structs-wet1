@@ -39,6 +39,8 @@ public:
 
 private:
     void checkInRangeRocourisve(Node<Employee *> *current, int minId, int maxId, int minSalary, int minGrade, int *inRange, int *numOfEmployees);
+    Company *findCompanyById(int id);
+    Employee *findEmployeeById(int id);
 };
 
 #endif

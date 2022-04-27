@@ -78,20 +78,21 @@ void Company::merge(Company *company, double factor)
     num_of_employees += company->getNumOfEmployees();
     this->setValue(factor * (company->getValue() + this->getValue()));
 
-    company->updateIds(this->getCompanyID(), company->getEmployeesTree()->getRoot());
+    // company->updateIds(this->getCompanyID(), company->getEmployeesTree()->getRoot());
+    company->transferEmployees(this, company->getEmployeesTree()->getRoot());
     employees_tree.merge(company->getEmployeesTree());
     employees_tree_by_salary.merge(company->getEmployeesTreeBySalary());
     setHighesEarner(company->getHighestEarner());
 }
 
-void Company::updateIds(int id, Node<Employee *> *current)
+void Company::transferEmployees(Company *new_company, Node<Employee *> *current)
 {
     if (current == nullptr)
         return;
 
-    current->getData()->setCompanyID(id);
-    updateIds(id, current->getLeft());
-    updateIds(id, current->getRight());
+    current->getData()->setCompany(new_company);
+    transferEmployees(new_company, current->getLeft());
+    transferEmployees(new_company, current->getRight());
 }
 
 AVLTree<Employee *> *Company::getEmployeesTreeBySalary()

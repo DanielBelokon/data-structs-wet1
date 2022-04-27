@@ -31,12 +31,7 @@ void MainDataStructure::RemoveCompany(int companyID, bool force)
         throw InvalidInputException();
     }
 
-    Company tmp = Company(companyID, 0);
-    Company *company = companies_tree.search(&tmp);
-    if (company == nullptr)
-    {
-        throw CompanyNotFoundException();
-    }
+    Company *company = findCompanyById(companyID);
 
     if (company->getNumOfEmployees() > 0 && !force)
     {
@@ -54,14 +49,8 @@ void MainDataStructure::AddEmployee(int employeeID, int companyID, int salary, i
         throw InvalidInputException();
     }
 
-    Company tmp = Company(companyID, 0);
-    Company *company = companies_tree.search(&tmp);
-    if (company == nullptr)
-    {
-        throw CompanyNotFoundException();
-    }
-
-    Employee *employee = new Employee(employeeID, companyID, salary, grade);
+    Company *company = findCompanyById(companyID);
+    Employee *employee = new Employee(employeeID, company, salary, grade);
     if (employees_tree.search(employee) != nullptr)
     {
         delete employee;
@@ -84,19 +73,8 @@ void MainDataStructure::RemoveEmployee(int employeeID)
     int company_id, salary, grade;
     GetEmployeeInfo(employeeID, &company_id, &salary, &grade);
 
-    Company tmp = Company(company_id, 0);
-    Company *company = companies_tree.search(&tmp);
-    if (company == nullptr)
-    {
-        throw CompanyNotFoundException();
-    }
-
-    Employee tmp2 = Employee(employeeID, company_id, 0, 0);
-    Employee *employee = company->getEmployeesTree()->search(&tmp2);
-    if (employee == nullptr)
-    {
-        throw EmployeeNotFoundException();
-    }
+    Company *company = findCompanyById(company_id);
+    Employee *employee = findEmployeeById(employeeID);
 
     company->removeEmployee(employee);
     employees_tree.remove(employee);
@@ -120,20 +98,8 @@ bool MainDataStructure::AcquireCompany(int companyID, int aquiredCompanyID, doub
         throw InvalidInputException();
     }
 
-    Company tmp = Company(companyID, 0);
-    Company *company = companies_tree.search(&tmp);
-    if (company == nullptr)
-    {
-        throw CompanyNotFoundException();
-    }
-
-    Company tmp2 = Company(aquiredCompanyID, 0);
-
-    Company *aqcuiredCompany = companies_tree.search(&tmp2);
-    if (aqcuiredCompany == nullptr)
-    {
-        throw CompanyNotFoundException();
-    }
+    Company *company = findCompanyById(companyID);
+    Company *aqcuiredCompany = findCompanyById(aquiredCompanyID);
 
     if (company->getValue() < 10 * aqcuiredCompany->getValue())
     {
@@ -197,19 +163,14 @@ int MainDataStructure::GetAllEmployeesBySalary(int companyID, int **employeeIDs)
     AVLTree<Employee *> *cur_employees_tree_by_salary = &(this->employees_tree_by_salary);
     if (companyID > 0)
     {
-        Company tmp = Company(companyID, 0);
-        Company *company = companies_tree.search(&tmp);
-        if (company == nullptr)
-        {
-            throw CompanyNotFoundException();
-        }
+        Company *company = findCompanyById(companyID);
         cur_employees_tree_by_salary = company->getEmployeesTreeBySalary();
     }
 
     int numOfEmployees = cur_employees_tree_by_salary->getSize();
     auto employees = cur_employees_tree_by_salary->getInOrderArray();
     *employeeIDs = (int *)(malloc(sizeof(int) * numOfEmployees));
-    //*employeeIDs = new int[numOfEmployees];
+
     for (int i = 0; i < numOfEmployees; i++)
     {
         (*employeeIDs)[i] = employees[numOfEmployees - 1 - i]->getEmployeeID();
@@ -258,14 +219,7 @@ int MainDataStructure::GetNumEmployeesMatching(int companyID, int minId, int max
     AVLTree<Employee *> *employeesTree = &this->employees_tree;
     if (companyID > 0)
     {
-        Company tmp = Company(companyID, 0);
-
-        Company *company = companies_tree.search(&tmp);
-        if (company == nullptr)
-        {
-            throw CompanyNotFoundException();
-        }
-
+        Company *company = findCompanyById(companyID);
         employeesTree = company->getEmployeesTree();
     }
 
@@ -309,12 +263,9 @@ void MainDataStructure::GetCompanyInfo(int companyID, int *value, int *numOfEmpl
     if (!value || !numOfEmployees || companyID <= 0)
         throw InvalidInputException();
 
-    Company tmp = Company(companyID, 0);
-    Company *temp = companies_tree.search(&tmp);
-    if (temp == nullptr)
-        throw CompanyNotFoundException();
-    *value = temp->getValue();
-    *numOfEmployees = temp->getNumOfEmployees();
+    Company *company = findCompanyById(companyID);
+    *value = company->getValue();
+    *numOfEmployees = company->getNumOfEmployees();
 }
 
 void MainDataStructure::GetEmployeeInfo(int employeeID, int *employerID, int *salary, int *grade)
@@ -322,13 +273,10 @@ void MainDataStructure::GetEmployeeInfo(int employeeID, int *employerID, int *sa
     if (!employerID || !salary || !grade || employeeID <= 0)
         throw InvalidInputException();
 
-    Employee tmp = Employee(employeeID, 0, 0, 0);
-    Employee *temp = employees_tree.search(&tmp);
-    if (temp == nullptr)
-        throw EmployeeNotFoundException();
-    *salary = temp->getSalary();
-    *grade = temp->getGrade();
-    *employerID = temp->getCompanyID();
+    Employee *Employee = findEmployeeById(employeeID);
+    *salary = Employee->getSalary();
+    *grade = Employee->getGrade();
+    *employerID = Employee->getCompany()->getCompanyID();
 }
 
 void MainDataStructure::IncreaseCompanyValue(int companyID, int valueIncrease)
@@ -336,10 +284,7 @@ void MainDataStructure::IncreaseCompanyValue(int companyID, int valueIncrease)
     if (companyID <= 0 || valueIncrease <= 0)
         throw InvalidInputException();
 
-    Company tmp = Company(companyID, 0);
-    Company *company = companies_tree.search(&tmp);
-    if (company == nullptr)
-        throw CompanyNotFoundException();
+    Company *company = findCompanyById(companyID);
     company->setValue(company->getValue() + valueIncrease);
 }
 
@@ -348,15 +293,9 @@ void MainDataStructure::PromoteEmployee(int employeeID, int salaryIncrease, int 
     if (employeeID <= 0 || salaryIncrease <= 0)
         throw InvalidInputException();
 
-    Employee tmp = Employee(employeeID, 0, 0, 0);
-    Employee *employee = employees_tree.search(&tmp);
+    Employee *employee = findEmployeeById(employeeID);
 
-    if (employee == nullptr)
-        throw EmployeeNotFoundException();
-    Company tmp2 = Company(employee->getCompanyID(), 0);
-    Company *company = companies_tree.search(&tmp2);
-    if (company == nullptr)
-        throw CompanyNotFoundException();
+    Company *company = employee->getCompany();
     company->getEmployeesTreeBySalary()->remove(employee);
     employees_tree_by_salary.remove(employee);
     employee->increaseSalary(salaryIncrease);
@@ -375,23 +314,34 @@ void MainDataStructure::HireEmployee(int employeeID, int newCompanyID)
     if (employeeID <= 0 || newCompanyID <= 0)
         throw InvalidInputException();
 
-    Employee tmp = Employee(employeeID, 0, 0, 0);
-    Employee *employee = employees_tree.search(&tmp);
-    if (!employee)
-        throw EmployeeNotFoundException();
+    Employee *employee = findEmployeeById(employeeID);
+    Company *new_company = findCompanyById(newCompanyID);
 
-    Company tmp2 = Company(newCompanyID, 0);
-    Company *new_company = companies_tree.search(&tmp2);
-    if (!new_company)
-        throw CompanyNotFoundException();
-    if (employee->getCompanyID() == newCompanyID)
+    if (employee->getCompany() == new_company)
         throw EmployeeAlreadyExistsException();
 
-    Company tmp3 = Company(employee->getCompanyID(), 0);
-    Company *old_company = companies_tree.search(&tmp3);
+    Company *old_company = employee->getCompany();
     old_company->removeEmployee(employee);
     new_company->addEmployee(employee);
-    employee->setCompanyID(newCompanyID);
+    employee->setCompany(new_company);
+}
+
+Company *MainDataStructure::findCompanyById(int id)
+{
+    Company tmp = Company(id, 0);
+    Company *result = this->companies_tree.search(&tmp);
+    if (result == nullptr)
+        throw CompanyNotFoundException();
+    return result;
+}
+
+Employee *MainDataStructure::findEmployeeById(int id)
+{
+    Employee tmp = Employee(id, 0, 0, 0);
+    Employee *result = this->employees_tree.search(&tmp);
+    if (result == nullptr)
+        throw EmployeeNotFoundException();
+    return result;
 }
 
 MainDataStructure::~MainDataStructure()

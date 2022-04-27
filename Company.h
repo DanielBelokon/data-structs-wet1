@@ -24,8 +24,7 @@ public:
     Employee* getHighestEarner();
     void setCompanyID(int newID);
     void setValue(int value);
-    void setHighesEarner(Employee* emp);
-    void updateIds(int newId, Node<Employee *> *current);
+    void setHighesEarner(Employee *emp);
 
     void addEmployee(Employee* employee);
     void removeEmployee(Employee* employee);
@@ -37,6 +36,9 @@ public:
     bool operator!=(const Company &other) const;
 
     static bool compareByPointer(Company *const &a, Company *const &b);
+
+private:
+    void transferEmployees(Company *new_company, Node<Employee *> *current);
 };
 
 #endif
