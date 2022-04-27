@@ -125,14 +125,7 @@ int MainDataStructure::GetHighestEarner(int companyID)
     }
     else
     {
-        Company tmp = Company(companyID, 0);
-
-        Company *company = companies_tree.search(&tmp);
-        if (company == nullptr)
-        {
-            throw CompanyNotFoundException();
-        }
-
+        Company *company = findCompanyById(companyID);
         employee = company->getHighestEarner();
     }
 
