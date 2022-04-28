@@ -370,6 +370,7 @@ void AVLTree<T>::merge(AVLTree<T> *tree)
     delete[] merged;
 }
 
+//helper function for merge arrays
 template <typename T>
 T *AVLTree<T>::mergeArrays(T *arr1, T *arr2, int size1, int size2)
 {
@@ -414,6 +415,7 @@ void AVLTree<T>::insertInOrder(Node<T> *current, T **arr, int *index, int size)
     insertInOrder(current->getRight(), arr, index, size);
 }
 
+//hlper function for cutting the un-necessary node for making the tree "almost full"
 template <typename T>
 void AVLTree<T>::trim(Node<T> *current, Node<T> *parent, int *amount)
 {
@@ -436,6 +438,7 @@ void AVLTree<T>::trim(Node<T> *current, Node<T> *parent, int *amount)
     trim(current->getLeft(), current, amount);
 }
 
+//return the array of the element in order
 template <typename T>
 T *AVLTree<T>::getInOrderArray(int amount)
 {
@@ -466,6 +469,7 @@ void AVLTree<T>::inOrderAux(T *array, int *index, Node<T> *current, int amount)
     inOrderAux(array, index, current->getRight(), amount);
 }
 
+//helper function for creating full binary tree with height of -h.
 template <typename T>
 Node<T> *AVLTree<T>::buildEmptyTree(int h)
 {

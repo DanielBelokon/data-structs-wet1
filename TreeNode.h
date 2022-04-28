@@ -61,15 +61,21 @@ public:
         return node->getHeight();
     }
     T getData() { return data; }
+
     const T getData() const { return data; }
+
     Node<T> *getLeft() { return left; }
+
     Node<T> *getRight() { return right; }
+
     void setData(T data) { this->data = data; }
+
     void setLeft(Node *node)
     {
         left = node;
         updateHeight();
     }
+    
     void setRight(Node *node)
     {
         right = node;

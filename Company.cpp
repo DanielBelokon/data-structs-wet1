@@ -49,7 +49,7 @@ AVLTree<Employee *> *Company::getEmployeesTree()
 }
 
 void Company::addEmployee(Employee* employee){
-    setHighesEarner(employee);
+    setHighesEarner(employee); // checking if the new employee is the new highest earner.
     num_of_employees++;
     employees_tree.add(employee);
     employees_tree_by_salary.add(employee);
@@ -59,14 +59,14 @@ void Company::removeEmployee(Employee* employee){
     employees_tree.remove(employee);
     employees_tree_by_salary.remove(employee);
     num_of_employees--;
-    if (employee == highest_earner)
+    if (employee == highest_earner) // if this employee was the richest
         if (this->getNumOfEmployees() > 0)
         {
-            highest_earner = employees_tree_by_salary.getHighest();
+            highest_earner = employees_tree_by_salary.getHighest(); //set new one.
         }
         else
         {
-            highest_earner = nullptr;
+            highest_earner = nullptr; // no employee in the company
         }
 }
 
