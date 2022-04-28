@@ -24,24 +24,6 @@ void MainDataStructure::AddCompany(int companyID, int value)
     companies_tree.add(company);
 }
 
-void MainDataStructure::RemoveCompany(int companyID, bool force)
-{
-    if (companyID == 0)
-    {
-        throw InvalidInputException();
-    }
-
-    Company *company = findCompanyById(companyID);
-
-    if (company->getNumOfEmployees() > 0 && !force)
-    {
-        throw CompanyHasEmployeesException();
-    }
-
-    companies_tree.remove(company);
-    delete company;
-}
-
 void MainDataStructure::AddEmployee(int employeeID, int companyID, int salary, int grade)
 {
     if (companyID <= 0 || employeeID <= 0 || salary <= 0)
@@ -91,6 +73,92 @@ void MainDataStructure::RemoveEmployee(int employeeID)
     delete employee;
 }
 
+void MainDataStructure::RemoveCompany(int companyID, bool force)
+{
+    if (companyID == 0)
+    {
+        throw InvalidInputException();
+    }
+
+    Company *company = findCompanyById(companyID);
+
+    if (company->getNumOfEmployees() > 0 && !force)
+    {
+        throw CompanyHasEmployeesException();
+    }
+
+    companies_tree.remove(company);
+    delete company;
+}
+
+void MainDataStructure::GetCompanyInfo(int companyID, int *value, int *numOfEmployees)
+{
+    if (!value || !numOfEmployees || companyID <= 0)
+        throw InvalidInputException();
+
+    Company *company = findCompanyById(companyID);
+    *value = company->getValue();
+    *numOfEmployees = company->getNumOfEmployees();
+}
+
+void MainDataStructure::GetEmployeeInfo(int employeeID, int *employerID, int *salary, int *grade)
+{
+    if (!employerID || !salary || !grade || employeeID <= 0)
+        throw InvalidInputException();
+
+    Employee *Employee = findEmployeeById(employeeID);
+    *salary = Employee->getSalary();
+    *grade = Employee->getGrade();
+    *employerID = Employee->getCompany()->getCompanyID();
+}
+
+void MainDataStructure::IncreaseCompanyValue(int companyID, int valueIncrease)
+{
+    if (companyID <= 0 || valueIncrease <= 0)
+        throw InvalidInputException();
+
+    Company *company = findCompanyById(companyID);
+    company->setValue(company->getValue() + valueIncrease);
+}
+
+void MainDataStructure::PromoteEmployee(int employeeID, int salaryIncrease, int bumpGrade)
+{
+    if (employeeID <= 0 || salaryIncrease <= 0)
+        throw InvalidInputException();
+
+    Employee *employee = findEmployeeById(employeeID);
+
+    Company *company = employee->getCompany();
+    company->getEmployeesTreeBySalary()->remove(employee);
+    employees_tree_by_salary.remove(employee);
+    employee->increaseSalary(salaryIncrease);
+    company->getEmployeesTreeBySalary()->add(employee);
+    employees_tree_by_salary.add(employee);
+
+    company->setHighesEarner(employee);
+    setHighesEarner(employee);
+
+    if (bumpGrade > 0)
+        employee->increaseGrade();
+}
+
+void MainDataStructure::HireEmployee(int employeeID, int newCompanyID)
+{
+    if (employeeID <= 0 || newCompanyID <= 0)
+        throw InvalidInputException();
+
+    Employee *employee = findEmployeeById(employeeID);
+    Company *new_company = findCompanyById(newCompanyID);
+
+    if (employee->getCompany() == new_company)
+        throw EmployeeAlreadyExistsException();
+
+    Company *old_company = employee->getCompany();
+    old_company->removeEmployee(employee);
+    new_company->addEmployee(employee);
+    employee->setCompany(new_company);
+}
+
 bool MainDataStructure::AcquireCompany(int companyID, int aquiredCompanyID, double factor)
 {
     if (companyID <= 0 || aquiredCompanyID <= 0 || factor < 1 || companyID == aquiredCompanyID)
@@ -133,17 +201,6 @@ int MainDataStructure::GetHighestEarner(int companyID)
         throw EmployeeNotFoundException();
     else
         return employee->getEmployeeID();
-}
-
-void MainDataStructure::setHighesEarner(Employee *emp)
-{
-    if (emp == nullptr)
-        return;
-
-    if (highest_earner == nullptr || Employee::compareBySalary(highest_earner, emp))
-    {
-        highest_earner = emp;
-    }
 }
 
 int MainDataStructure::GetAllEmployeesBySalary(int companyID, int **employeeIDs)
@@ -231,6 +288,45 @@ int MainDataStructure::GetNumEmployeesMatching(int companyID, int minId, int max
     return numOfEmployees;
 }
 
+void MainDataStructure::setHighesEarner(Employee *emp)
+{
+    if (emp == nullptr)
+        return;
+
+    if (highest_earner == nullptr || Employee::compareBySalary(highest_earner, emp))
+    {
+        highest_earner = emp;
+    }
+}
+
+int MainDataStructure::GetNumEmployeesMatching(int companyID, int minId, int maxId, int minSalary, int minGrade, int *inRange)
+{
+    if (companyID == 0 || minId < 0 || maxId < 0 || minSalary < 0 || minGrade < 0 || maxId < minId)
+    {
+        throw InvalidInputException();
+    }
+    AVLTree<Employee *> *employeesTree = &this->employees_tree;
+    if (companyID > 0)
+    {
+        Company *company = findCompanyById(companyID);
+        employeesTree = company->getEmployeesTree();
+    }
+
+    if (employeesTree->getSize() == 0)
+    {
+        throw EmployeeNotFoundException();
+    }
+
+    int numOfEmployees = 0;
+    *inRange = 0;
+
+    Node<Employee *> *current = employeesTree->getRoot();
+
+    checkInRangeRocourisve(current, minId, maxId, minSalary, minGrade, inRange, &numOfEmployees);
+
+    return numOfEmployees;
+}
+
 void MainDataStructure::checkInRangeRocourisve(Node<Employee *> *current, int minId, int maxId, int minSalary, int minGrade, int *inRange, int *numOfEmployees)
 {
     if (current == nullptr)
@@ -249,74 +345,6 @@ void MainDataStructure::checkInRangeRocourisve(Node<Employee *> *current, int mi
         checkInRangeRocourisve(current->getLeft(), minId, maxId, minSalary, minGrade, inRange, numOfEmployees);
     if (current->getData()->getEmployeeID() <= maxId)
         checkInRangeRocourisve(current->getRight(), minId, maxId, minSalary, minGrade, inRange, numOfEmployees);
-}
-
-void MainDataStructure::GetCompanyInfo(int companyID, int *value, int *numOfEmployees)
-{
-    if (!value || !numOfEmployees || companyID <= 0)
-        throw InvalidInputException();
-
-    Company *company = findCompanyById(companyID);
-    *value = company->getValue();
-    *numOfEmployees = company->getNumOfEmployees();
-}
-
-void MainDataStructure::GetEmployeeInfo(int employeeID, int *employerID, int *salary, int *grade)
-{
-    if (!employerID || !salary || !grade || employeeID <= 0)
-        throw InvalidInputException();
-
-    Employee *Employee = findEmployeeById(employeeID);
-    *salary = Employee->getSalary();
-    *grade = Employee->getGrade();
-    *employerID = Employee->getCompany()->getCompanyID();
-}
-
-void MainDataStructure::IncreaseCompanyValue(int companyID, int valueIncrease)
-{
-    if (companyID <= 0 || valueIncrease <= 0)
-        throw InvalidInputException();
-
-    Company *company = findCompanyById(companyID);
-    company->setValue(company->getValue() + valueIncrease);
-}
-
-void MainDataStructure::PromoteEmployee(int employeeID, int salaryIncrease, int bumpGrade)
-{
-    if (employeeID <= 0 || salaryIncrease <= 0)
-        throw InvalidInputException();
-
-    Employee *employee = findEmployeeById(employeeID);
-
-    Company *company = employee->getCompany();
-    company->getEmployeesTreeBySalary()->remove(employee);
-    employees_tree_by_salary.remove(employee);
-    employee->increaseSalary(salaryIncrease);
-    company->getEmployeesTreeBySalary()->add(employee);
-    employees_tree_by_salary.add(employee);
-
-    company->setHighesEarner(employee);
-    setHighesEarner(employee);
-
-    if (bumpGrade > 0)
-        employee->increaseGrade();
-}
-
-void MainDataStructure::HireEmployee(int employeeID, int newCompanyID)
-{
-    if (employeeID <= 0 || newCompanyID <= 0)
-        throw InvalidInputException();
-
-    Employee *employee = findEmployeeById(employeeID);
-    Company *new_company = findCompanyById(newCompanyID);
-
-    if (employee->getCompany() == new_company)
-        throw EmployeeAlreadyExistsException();
-
-    Company *old_company = employee->getCompany();
-    old_company->removeEmployee(employee);
-    new_company->addEmployee(employee);
-    employee->setCompany(new_company);
 }
 
 Company *MainDataStructure::findCompanyById(int id)
