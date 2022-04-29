@@ -262,34 +262,6 @@ void MainDataStructure::GetHighestEarnerInEachCompany(int numOfCompanies, int **
     }
 }
 
-int MainDataStructure::GetNumEmployeesMatching(int companyID, int minId, int maxId, int minSalary, int minGrade, int *inRange)
-{
-    if (companyID == 0 || minId < 0 || maxId < 0 || minSalary < 0 || minGrade < 0 || maxId < minId)
-    {
-        throw InvalidInputException();
-    }
-    AVLTree<Employee *> *employeesTree = &this->employees_tree;
-    if (companyID > 0)
-    {
-        Company *company = findCompanyById(companyID);
-        employeesTree = company->getEmployeesTree();
-    }
-
-    if (employeesTree->getSize() == 0)
-    {
-        throw EmployeeNotFoundException();
-    }
-
-    int numOfEmployees = 0;
-    *inRange = 0;
-
-    Node<Employee *> *current = employeesTree->getRoot();
-
-    checkInRangeRocourisve(current, minId, maxId, minSalary, minGrade, inRange, &numOfEmployees);
-
-    return numOfEmployees;
-}
-
 void MainDataStructure::setHighesEarner(Employee *emp)
 {
     if (emp == nullptr)
