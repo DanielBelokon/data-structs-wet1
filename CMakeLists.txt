@@ -13,13 +13,13 @@ add_executable(data-structs-1 ${SOURCE_FILES})
 
 
 file(GLOB inputs "${CMAKE_CURRENT_SOURCE_DIR}/tests/input/*.txt")
-file(GLOB ex_outputs "${CMAKE_CURRENT_SOURCE_DIR}/tests/output/*.txt")
-file(GLOB ac_outputs "${CMAKE_CURRENT_SOURCE_DIR}/tests/ac-output/*.txt")
+file(GLOB ex_outputs "${CMAKE_CURRENT_SOURCE_DIR}/tests/output/out*.txt")
+file(GLOB ac_outputs "${CMAKE_CURRENT_SOURCE_DIR}/tests/output/actual*.txt")
 
 set(i 0)
 foreach(filename ${inputs})
     add_test(NAME "input-${i}"
-       COMMAND sh -c "$<TARGET_FILE:data-structs-1> < ${filename} > ../tests/ac-output/out${i}.txt")
+       COMMAND sh -c "$<TARGET_FILE:data-structs-1> < ${filename} > ../tests/output/actual${i}.txt")
     math(EXPR i "${i} + 1")
 endforeach()
 
@@ -32,4 +32,3 @@ endforeach()
 
 
 enable_testing()
-#add_test(NAME input-{i} COMMAND sh -c "$<TARGET_FILE:data-structs-1> < ../tests/input/in0.txt > ../tests/ac-output/out0.txt")
