@@ -13,18 +13,23 @@ add_executable(data-structs-1 ${SOURCE_FILES})
 file(GLOB inputs "${CMAKE_CURRENT_SOURCE_DIR}/tests/input/*.txt")
 file(GLOB outputs "${CMAKE_CURRENT_SOURCE_DIR}/tests/output/*.txt")
 
-set(i 0)
 foreach(filename ${inputs})
-    add_test(NAME "input-${i}"
-       COMMAND sh -c "$<TARGET_FILE:data-structs-1> < ${filename} > ${CMAKE_CURRENT_BINARY_DIR}/actual${i}.txt")
-    math(EXPR i "${i} + 1")
+    get_filename_component(filename_no_extension ${filename} NAME_WE)
+    string(REGEX REPLACE "in" "actual" actual_no_extension ${filename_no_extension})
+
+    add_test(NAME "${filename_no_extension}"
+       COMMAND sh -c "$<TARGET_FILE:data-structs-1> < ${filename} > ${CMAKE_CURRENT_BINARY_DIR}/${actual_no_extension}.txt")
 endforeach()
 
-set(i 0)
 foreach(filename ${outputs})
-    add_test(NAME "output-compare-${i}"
-       COMMAND ${CMAKE_COMMAND} -E compare_files --ignore-eol ${CMAKE_CURRENT_BINARY_DIR}/actual${i}.txt ${filename})
-    math(EXPR i "${i} + 1")
+    get_filename_component(filename_no_extension ${filename} NAME_WE)
+    string(REGEX REPLACE "out" "in" input_no_extension ${filename_no_extension})
+    string(REGEX REPLACE "out" "actual" actual ${filename_no_extension})
+
+    add_test(NAME "compare${filename_no_extension}"
+       COMMAND ${CMAKE_COMMAND} -E compare_files --ignore-eol ${CMAKE_CURRENT_BINARY_DIR}/${actual}.txt ${filename})
+    set_tests_properties(compare${filename_no_extension} PROPERTIES DEPENDS "${input_no_extension}")
+
 endforeach()
 
 
