@@ -11,7 +11,7 @@ set(SOURCE_FILES main1.cpp Wrapper.cpp MainDataStructure.cpp Employee.cpp Compan
 add_executable(data-structs-1 ${SOURCE_FILES})
 
 file(GLOB inputs "${CMAKE_CURRENT_SOURCE_DIR}/tests/input/*.txt")
-file(GLOB ac_outputs "${CMAKE_CURRENT_BINARY_DIR}/actual*")
+file(GLOB outputs "${CMAKE_CURRENT_SOURCE_DIR}/tests/output/*.txt")
 
 set(i 0)
 foreach(filename ${inputs})
@@ -21,9 +21,9 @@ foreach(filename ${inputs})
 endforeach()
 
 set(i 0)
-foreach(filename ${ac_outputs})
+foreach(filename ${outputs})
     add_test(NAME "output-compare-${i}"
-       COMMAND ${CMAKE_COMMAND} -E compare_files --ignore-eol ${CMAKE_CURRENT_BINARY_DIR}/actual${i}.txt ${CMAKE_CURRENT_SOURCE_DIR}/tests/output/out${i}.txt)
+       COMMAND ${CMAKE_COMMAND} -E compare_files --ignore-eol ${CMAKE_CURRENT_BINARY_DIR}/actual${i}.txt ${filename})
     math(EXPR i "${i} + 1")
 endforeach()
 
