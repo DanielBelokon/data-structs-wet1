@@ -232,7 +232,7 @@ StatusType ExceptionToEnum(std::exception &ex)
 {
     if (dynamic_cast<InvalidInputException *>(&ex))
     {
-        return INVALID_INPUT;
+        return ALLOCATION_ERROR;
     }
     else if (dynamic_cast<CompanyAlreadyExistsException *>(&ex))
     {
