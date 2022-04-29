@@ -220,6 +220,11 @@ int MainDataStructure::GetAllEmployeesBySalary(int companyID, int **employeeIDs)
     }
 
     int numOfEmployees = cur_employees_tree_by_salary->getSize();
+    if (numOfEmployees == 0)
+    {
+        *employeeIDs = nullptr;
+        throw EmployeeNotFoundException();
+    }
     auto employees = cur_employees_tree_by_salary->getInOrderArray();
     *employeeIDs = (int *)(malloc(sizeof(int) * numOfEmployees));
 
