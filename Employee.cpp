@@ -2,7 +2,7 @@
 #include "Company.h"
 #include<iostream>
 
-Employee::Employee(int employee_id, Company *company, int salary, int grade) : employee_id(employee_id), company(company), salary(salary), grade(grade) {}
+Employee::Employee(int employee_id, Company *company, int salary, int grade) : employee_id(employee_id), salary(salary), grade(grade), company(company) {}
 
 bool Employee::compareBySalary(Employee *const &temp1, Employee *const &temp2)
 {
