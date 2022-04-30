@@ -1,0 +1,2761 @@
+Init
+AddCompany 480 51
+AddCompany 142 40
+AddCompany 29 78
+AddCompany 188 13
+AddCompany 445 82
+AddCompany 15 79
+AddCompany 119 29
+AddCompany 330 94
+AddCompany 468 89
+AddCompany 374 54
+AddCompany 16 47
+AddCompany 389 16
+AddCompany 155 20
+AddCompany 358 76
+AddCompany 310 22
+AddCompany 474 47
+AddEmployee 1980 389 32 9
+AddEmployee 3162 29 89 3
+AddEmployee 2417 468 27 4
+AddEmployee 6224 389 0 0
+AddEmployee 443 142 18 6
+AddEmployee 5308 119 81 3
+AddEmployee 5352 445 50 1
+AddEmployee 272 445 2 6
+AddEmployee 247 29 18 6
+AddEmployee 4969 389 42 6
+AddEmployee 3665 29 54 0
+AddEmployee 5648 310 34 2
+AddEmployee 1433 474 12 0
+AddEmployee 3221 29 69 1
+AddEmployee 554 29 56 9
+AddEmployee 208 389 57 5
+AddEmployee 2898 445 84 5
+AddEmployee 3122 29 92 4
+AddEmployee 2482 15 31 1
+AddEmployee 1082 310 97 7
+AddEmployee 106 445 46 6
+AddEmployee 3431 389 24 1
+AddEmployee 7154 155 25 8
+AddEmployee 5152 15 37 9
+AddEmployee 4316 468 51 3
+AddEmployee 6846 374 12 3
+AddEmployee 7018 389 71 4
+AddEmployee 2065 389 26 7
+AddEmployee 7356 474 18 7
+AddEmployee 6782 15 17 2
+AddEmployee 4294 468 47 0
+AddEmployee 7770 16 47 9
+AddEmployee 7921 310 43 5
+AddEmployee 4680 29 84 7
+AddEmployee 1545 389 40 6
+AddEmployee 2594 445 2 6
+AddEmployee 7402 188 28 4
+AddEmployee 5841 119 53 7
+AddEmployee 3768 15 61 2
+AddEmployee 1844 142 60 5
+AddEmployee 3248 445 89 4
+AddEmployee 5799 142 51 4
+AddEmployee 4025 358 60 7
+AddEmployee 6943 29 12 4
+AddEmployee 7858 15 90 5
+AddEmployee 3219 374 34 9
+AddEmployee 4597 374 84 5
+AddEmployee 1095 29 97 6
+AddEmployee 1008 474 49 2
+AddEmployee 3332 330 0 8
+AddEmployee 5680 358 48 9
+AddEmployee 1483 15 34 4
+AddEmployee 3804 358 74 5
+AddEmployee 7894 480 58 8
+AddEmployee 5598 188 48 2
+AddEmployee 3999 468 23 6
+AddEmployee 6167 310 69 1
+AddEmployee 3684 330 68 9
+AddEmployee 564 119 73 8
+AddEmployee 502 330 53 2
+AddEmployee 7855 358 70 3
+AddEmployee 1527 15 33 1
+AddEmployee 3954 358 76 3
+AddEmployee 613 16 75 1
+AddEmployee 1010 330 55 2
+AddEmployee 1855 474 70 8
+AddEmployee 1131 155 37 7
+AddEmployee 6030 310 93 6
+AddEmployee 2235 474 78 4
+AddEmployee 2789 15 21 1
+AddEmployee 3785 16 79 3
+AddEmployee 5391 29 7 7
+AddEmployee 2214 358 80 5
+AddEmployee 6763 16 56 0
+AddEmployee 7810 310 88 2
+AddEmployee 1653 374 81 2
+AddEmployee 4844 445 23 7
+AddEmployee 5673 29 7 7
+AddEmployee 2717 468 75 0
+AddEmployee 4008 389 65 1
+AddEmployee 7918 188 5 4
+AddEmployee 4560 188 95 3
+AddEmployee 4568 480 49 3
+AddEmployee 4335 468 35 8
+AddEmployee 1327 155 94 1
+AddEmployee 7822 15 91 5
+AddEmployee 4453 358 33 5
+AddEmployee 6175 445 91 2
+AddEmployee 2794 310 39 1
+AddEmployee 3957 468 73 3
+AddEmployee 4487 155 83 9
+AddEmployee 6241 15 74 7
+AddEmployee 7148 29 10 4
+AddEmployee 842 389 7 3
+AddEmployee 1345 374 52 1
+AddEmployee 4463 468 41 8
+AddEmployee 5116 474 10 3
+AddEmployee 3539 389 31 6
+AddEmployee 1330 119 69 9
+AddEmployee 6556 188 56 3
+AddEmployee 3660 480 12 7
+AddEmployee 2631 188 65 8
+AddEmployee 6962 29 49 4
+AddEmployee 7126 358 39 9
+AddEmployee 3831 119 73 3
+AddEmployee 1091 155 16 3
+AddEmployee 3114 468 18 2
+AddEmployee 5304 142 38 1
+AddEmployee 4171 155 73 1
+AddEmployee 3689 480 19 7
+AddEmployee 2661 389 82 2
+AddEmployee 913 468 49 5
+AddEmployee 1629 15 32 7
+AddEmployee 4915 374 64 3
+AddEmployee 3679 445 1 2
+AddEmployee 7168 374 65 7
+AddEmployee 2021 480 43 7
+AddEmployee 3448 188 63 5
+AddEmployee 6158 16 2 4
+AddEmployee 3898 358 74 3
+AddEmployee 4013 445 95 1
+AddEmployee 7150 310 4 3
+AddEmployee 4259 474 11 1
+AddEmployee 3313 16 81 3
+AddEmployee 645 374 9 7
+AddEmployee 587 310 43 5
+AddEmployee 6096 480 16 4
+AddEmployee 292 389 82 3
+AddEmployee 2371 445 54 8
+AddEmployee 7093 389 88 8
+AddEmployee 5051 155 46 1
+AddEmployee 3205 188 65 4
+AddEmployee 5649 15 89 9
+GetCompanyInfo 155
+GetNumEmployeesMatching 0 -1 -1 -1 -1
+HireEmployee 6943 155
+GetHighestEarner -450
+GetNumEmployeesMatching 0 2625 4093 1 4
+PromoteEmployee 5051 28 29
+GetNumEmployeesMatching 0 7858 7876 9 7
+HireEmployee 4487 155
+AddCompany 259 5
+PromoteEmployee 2214 88 21
+GetHighestEarnerInEachCompany 3
+PromoteEmployee 6030 66 -8
+HireEmployee 2235 389
+GetNumEmployeesMatching 0 1367 5451 2 4
+AcquireCompany 474 474 0.77
+HireEmployee 3431 15
+IncreaseCompanyValue 16 2
+GetEmployeeInfo 6782
+GetCompanyInfo 330
+HireEmployee 3684 155
+HireEmployee 3205 480
+IncreaseCompanyValue 445 3
+PromoteEmployee 842 52 8
+GetNumEmployeesMatching 142 4561 5039 18 5
+GetNumEmployeesMatching 0 5687 5839 8 5
+IncreaseCompanyValue 550 0
+GetEmployeeInfo 2235
+AcquireCompany 330 259 1.91
+GetNumEmployeesMatching 0 2894 5300 8 1
+GetNumEmployeesMatching 0 4885 6278 7 2
+RemoveEmployee 0
+HireEmployee 4915 374
+HireEmployee 4463 468
+GetNumEmployeesMatching 0 5091 7674 1 1
+GetNumEmployeesMatching 0 7010 7053 7 1
+GetHighestEarner -760
+PromoteEmployee 6763 8 52
+HireEmployee 5680 15
+GetNumEmployeesMatching 0 4558 7522 2 7
+PromoteEmployee 6158 25 22
+PromoteEmployee 1629 11 0
+IncreaseCompanyValue 474 1
+GetAllEmployeesBySalary 1500
+AddCompany 131 0
+GetCompanyInfo 468
+RemoveEmployee 913
+PromoteEmployee 1545 73 44
+GetEmployeeInfo 1545
+PromoteEmployee 0 0 13
+GetNumEmployeesMatching 0 1357 3242 6 1
+IncreaseCompanyValue 330 1
+GetNumEmployeesMatching 0 1436 3469 2 2
+HireEmployee 3448 474
+GetEmployeeInfo 4844
+PromoteEmployee 3313 63 -11
+IncreaseCompanyValue 480 1
+GetCompanyInfo 310
+GetNumEmployeesMatching 0 7771 7856 3 4
+HireEmployee 4568 358
+IncreaseCompanyValue 480 3
+GetCompanyInfo 480
+GetHighestEarner -10
+GetHighestEarnerInEachCompany 3
+GetEmployeeInfo 3898
+RemoveCompany 550
+RemoveCompany 188
+PromoteEmployee 7126 55 32
+HireEmployee 5673 188
+GetEmployeeInfo 2065
+GetHighestEarner 1825
+GetCompanyInfo 142
+GetHighestEarnerInEachCompany 0
+GetNumEmployeesMatching 0 -1 -1 -1 -1
+PromoteEmployee 5649 91 54
+GetHighestEarnerInEachCompany 0
+IncreaseCompanyValue 310 0
+IncreaseCompanyValue 358 4
+GetCompanyInfo 188
+GetNumEmployeesMatching 0 -1 -1 -1 -1
+IncreaseCompanyValue 29 1
+IncreaseCompanyValue 389 4
+GetAllEmployeesBySalary -3381
+GetNumEmployeesMatching 0 4649 5953 1 4
+HireEmployee 613 445
+IncreaseCompanyValue 0 -1
+PromoteEmployee 0 -1 38
+GetCompanyInfo 468
+HireEmployee 1980 16
+GetNumEmployeesMatching 480 6674 7084 17 7
+AddEmployee 1756 330 33 6
+GetHighestEarner 2912
+AddCompany 228 6
+IncreaseCompanyValue 188 4
+IncreaseCompanyValue 358 3
+GetNumEmployeesMatching 0 151 4361 6 1
+HireEmployee 3804 389
+GetHighestEarnerInEachCompany 0
+HireEmployee 1131 15
+HireEmployee 3665 474
+GetHighestEarner 1768
+PromoteEmployee 3954 6 -3
+GetAllEmployeesBySalary 29
+AcquireCompany 374 16 1.34
+GetAllEmployeesBySalary -384
+PromoteEmployee 0 -1 -31
+HireEmployee 7402 1
+GetAllEmployeesBySalary 0
+IncreaseCompanyValue 142 1
+GetCompanyInfo 142
+IncreaseCompanyValue 16 2
+GetAllEmployeesBySalary -2541
+GetNumEmployeesMatching 0 4433 6554 7 1
+GetHighestEarner 0
+GetNumEmployeesMatching 0 859 3644 3 9
+GetNumEmployeesMatching 0 6871 7812 3 9
+PromoteEmployee 2631 34 15
+GetCompanyInfo 480
+GetAllEmployeesBySalary -924
+GetHighestEarnerInEachCompany 0
+AddEmployee 6183 330 88 0
+GetNumEmployeesMatching 0 6411 7889 3 3
+GetNumEmployeesMatching 0 6407 6407 6 1
+AcquireCompany 16 142 2.88
+HireEmployee 1545 8
+PromoteEmployee 6175 20 44
+AcquireCompany 142 188 2.78
+GetNumEmployeesMatching 0 -1 -1 -1 -1
+GetCompanyInfo 468
+GetNumEmployeesMatching 0 4922 5919 8 3
+AcquireCompany 16 374 1.27
+GetCompanyInfo 474
+AcquireCompany 468 228 1.67
+RemoveEmployee 0
+AddCompany 89 9
+HireEmployee 645 142
+RemoveCompany 155
+HireEmployee 5648 310
+PromoteEmployee 613 53 12
+GetHighestEarnerInEachCompany 0
+GetHighestEarner 2320
+IncreaseCompanyValue 480 2
+GetNumEmployeesMatching 550 -1 -2 -1 -1
+GetNumEmployeesMatching 550 -1 -2 -1 -1
+PromoteEmployee 3999 69 59
+AddEmployee 7088 550 0 -1
+GetEmployeeInfo 6030
+HireEmployee 4969 188
+GetNumEmployeesMatching 0 7023 7023 1 1
+PromoteEmployee 4453 96 -6
+HireEmployee 7093 389
+IncreaseCompanyValue 89 0
+GetAllEmployeesBySalary -3555
+GetNumEmployeesMatching 0 1148 3873 1 6
+HireEmployee 3665 474
+GetNumEmployeesMatching 0 -1 -2 -1 -1
+IncreaseCompanyValue 389 3
+GetNumEmployeesMatching 0 407 7078 3 9
+AddEmployee 565 550 -1 -1
+GetNumEmployeesMatching 0 7586 7811 1 6
+PromoteEmployee 3219 19 13
+GetNumEmployeesMatching 0 6240 6831 7 9
+PromoteEmployee 7168 62 -22
+IncreaseCompanyValue 15 4
+GetNumEmployeesMatching 0 944 4103 5 8
+GetNumEmployeesMatching 0 4045 4963 1 9
+PromoteEmployee 6167 72 62
+GetAllEmployeesBySalary -1408
+PromoteEmployee 4400 -1 -7
+GetAllEmployeesBySalary -534
+AcquireCompany 358 445 1.69
+PromoteEmployee 564 38 49
+GetEmployeeInfo 7894
+IncreaseCompanyValue 155 3
+GetCompanyInfo 188
+IncreaseCompanyValue 310 0
+PromoteEmployee 7921 59 39
+GetNumEmployeesMatching 0 106 7738 7 2
+GetHighestEarnerInEachCompany 0
+HireEmployee 3162 4
+GetNumEmployeesMatching 0 106 7853 4 3
+AcquireCompany 374 89 2.6
+IncreaseCompanyValue 480 4
+GetCompanyInfo 480
+GetNumEmployeesMatching 0 5777 6100 4 1
+GetHighestEarner -266
+RemoveEmployee 0
+GetHighestEarnerInEachCompany 0
+GetCompanyInfo 374
+AcquireCompany 15 330 2.18
+AcquireCompany 155 16 1.87
+GetHighestEarnerInEachCompany 0
+GetNumEmployeesMatching 0 106 3060 1 2
+GetNumEmployeesMatching 0 6570 7690 1 4
+GetNumEmployeesMatching 0 4856 6679 3 1
+HireEmployee 554 374
+GetNumEmployeesMatching 0 -1 -1 -1 -1
+AcquireCompany 89 474 1.11
+HireEmployee 2417 16
+GetAllEmployeesBySalary 3240
+PromoteEmployee 613 99 60
+IncreaseCompanyValue 374 4
+PromoteEmployee 842 76 -21
+AcquireCompany 155 155 0.5
+AddEmployee 3684 155 22 1
+RemoveCompany 389
+GetEmployeeInfo 613
+GetEmployeeInfo 7894
+PromoteEmployee 5051 58 -28
+AcquireCompany 480 330 2.46
+GetNumEmployeesMatching 0 5522 5870 4 2
+GetCompanyInfo 358
+GetNumEmployeesMatching 0 106 2381 8 9
+GetEmployeeInfo 5308
+GetAllEmployeesBySalary 2952
+PromoteEmployee 5841 65 27
+AddCompany 101 0
+GetNumEmployeesMatching 0 1603 6406 1 7
+HireEmployee 3804 15
+IncreaseCompanyValue 15 4
+GetCompanyInfo 29
+PromoteEmployee 1131 46 -26
+IncreaseCompanyValue 188 4
+GetHighestEarner 358
+GetHighestEarnerInEachCompany 0
+HireEmployee 2789 330
+GetAllEmployeesBySalary 0
+GetNumEmployeesMatching 0 3051 3935 9 2
+PromoteEmployee 3219 64 50
+GetNumEmployeesMatching 0 -1 -1 -1 -1
+GetNumEmployeesMatching 0 5797 5797 1 6
+GetNumEmployeesMatching 0 106 4877 1 2
+AcquireCompany 389 310 1.01
+GetNumEmployeesMatching 0 7811 7811 5 10
+GetEmployeeInfo 6175
+AddEmployee 4528 155 80 8
+GetNumEmployeesMatching 0 6279 7459 1 5
+HireEmployee 1008 155
+GetAllEmployeesBySalary 1950
+IncreaseCompanyValue 89 3
+HireEmployee 554 16
+IncreaseCompanyValue 155 4
+PromoteEmployee 0 -1 39
+RemoveCompany 0
+IncreaseCompanyValue 89 2
+GetCompanyInfo 89
+GetHighestEarner 1212
+GetHighestEarner 406
+GetNumEmployeesMatching 0 2064 2649 8 8
+GetAllEmployeesBySalary 2960
+PromoteEmployee 4400 -1 -11
+GetNumEmployeesMatching 0 106 2693 8 7
+PromoteEmployee 554 88 44
+GetCompanyInfo 16
+GetNumEmployeesMatching 0 1980 4607 6 5
+RemoveEmployee 4400
+GetNumEmployeesMatching 0 106 7593 2 1
+HireEmployee 1433 389
+GetNumEmployeesMatching 0 2514 6051 5 9
+GetEmployeeInfo 5304
+GetNumEmployeesMatching 0 -1 -2 -1 -1
+GetEmployeeInfo 6962
+IncreaseCompanyValue 142 3
+GetCompanyInfo 468
+GetNumEmployeesMatching 188 5126 6221 14 3
+AddCompany 119 2
+GetCompanyInfo 155
+GetCompanyInfo 310
+PromoteEmployee 613 39 6
+GetEmployeeInfo 1327
+GetHighestEarnerInEachCompany 0
+PromoteEmployee 3689 99 60
+GetNumEmployeesMatching 0 4161 5640 2 4
+GetEmployeeInfo 4969
+IncreaseCompanyValue 468 1
+GetNumEmployeesMatching 0 106 106 2 5
+IncreaseCompanyValue 445 2
+GetCompanyInfo 445
+AcquireCompany 155 155 2.17
+GetNumEmployeesMatching 0 3732 3851 6 8
+AddCompany 348 0
+HireEmployee 3248 29
+GetCompanyInfo 15
+GetNumEmployeesMatching 0 4349 4880 5 4
+GetNumEmployeesMatching 0 121 121 5 8
+GetNumEmployeesMatching 0 3532 6219 6 4
+GetNumEmployeesMatching 0 3692 6533 1 1
+AddEmployee 7865 89 86 4
+RemoveEmployee 7921
+AcquireCompany 480 389 0.72
+GetNumEmployeesMatching 0 3301 3794 1 7
+RemoveCompany 480
+GetHighestEarnerInEachCompany 0
+GetEmployeeInfo 1330
+GetHighestEarnerInEachCompany 0
+AddEmployee 790 155 69 0
+RemoveEmployee 0
+AcquireCompany 89 89 0.32
+PromoteEmployee 2631 60 47
+IncreaseCompanyValue 474 2
+GetEmployeeInfo 2417
+PromoteEmployee 4400 -1 14
+AcquireCompany 29 16 1.06
+GetAllEmployeesBySalary 0
+RemoveEmployee 3162
+GetHighestEarner -1698
+AddEmployee 7153 89 62 7
+GetCompanyInfo 374
+GetHighestEarner 930
+PromoteEmployee 3999 52 49
+GetEmployeeInfo 3999
+GetCompanyInfo 474
+HireEmployee 7150 480
+GetHighestEarner -1190
+GetAllEmployeesBySalary -1775
+GetAllEmployeesBySalary 1425
+PromoteEmployee 6962 96 40
+IncreaseCompanyValue 445 1
+GetNumEmployeesMatching 0 6787 7470 4 6
+IncreaseCompanyValue 445 2
+GetNumEmployeesMatching 188 6165 7767 39 2
+AddCompany 34 2
+GetEmployeeInfo 4969
+HireEmployee 3665 89
+GetNumEmployeesMatching 0 3974 4331 2 8
+PromoteEmployee 7093 3 -4
+GetNumEmployeesMatching 0 4358 7885 9 1
+PromoteEmployee 1433 35 10
+GetHighestEarnerInEachCompany 0
+AcquireCompany 16 374 0.89
+GetNumEmployeesMatching 0 327 5528 7 5
+HireEmployee 7402 358
+GetEmployeeInfo 0
+PromoteEmployee 4487 65 44
+GetNumEmployeesMatching 0 4261 5736 3 8
+IncreaseCompanyValue 89 3
+GetNumEmployeesMatching 0 1556 4306 1 6
+GetHighestEarner 64
+GetHighestEarnerInEachCompany 0
+RemoveCompany 142
+GetNumEmployeesMatching 0 5057 7106 1 5
+HireEmployee 0 1
+GetEmployeeInfo 2214
+PromoteEmployee 4400 0 24
+RemoveEmployee 0
+PromoteEmployee 4560 37 44
+HireEmployee 7356 389
+GetAllEmployeesBySalary 201
+HireEmployee 106 15
+GetNumEmployeesMatching 0 562 6240 9 10
+GetNumEmployeesMatching 0 5106 5106 1 7
+GetNumEmployeesMatching 0 1417 4576 7 1
+HireEmployee 1091 15
+PromoteEmployee 3431 57 6
+GetNumEmployeesMatching 0 -1 -2 -1 -1
+HireEmployee 1545 34
+GetNumEmployeesMatching 0 4649 7411 5 2
+AcquireCompany 389 89 2.75
+HireEmployee 5649 445
+GetCompanyInfo 330
+GetCompanyInfo 155
+PromoteEmployee 2661 67 58
+GetNumEmployeesMatching 0 6051 7887 3 10
+GetCompanyInfo 155
+PromoteEmployee 7402 88 60
+GetNumEmployeesMatching 0 7443 7732 5 5
+GetNumEmployeesMatching 0 6721 7620 2 7
+GetCompanyInfo 89
+GetCompanyInfo 474
+GetEmployeeInfo 6241
+GetHighestEarnerInEachCompany 0
+GetHighestEarnerInEachCompany 4
+GetNumEmployeesMatching 0 7860 7863 5 2
+GetCompanyInfo 15
+AddEmployee 7721 16 66 8
+RemoveCompany 0
+GetNumEmployeesMatching 0 1330 1366 3 4
+GetNumEmployeesMatching 0 3487 7456 1 6
+AddCompany 339 2
+GetEmployeeInfo 443
+PromoteEmployee 6556 43 30
+AddCompany 286 7
+GetHighestEarnerInEachCompany 0
+GetAllEmployeesBySalary 1404
+PromoteEmployee 4680 95 -15
+GetHighestEarner -1614
+HireEmployee 6167 89
+PromoteEmployee 4171 61 -28
+GetNumEmployeesMatching 0 6574 6574 8 10
+GetHighestEarner 168
+IncreaseCompanyValue 339 4
+GetAllEmployeesBySalary -2794
+GetNumEmployeesMatching 0 2563 5701 1 5
+IncreaseCompanyValue 16 3
+HireEmployee 1345 188
+GetNumEmployeesMatching 0 5712 6915 7 1
+AcquireCompany 374 15 0.1
+PromoteEmployee 3205 10 -24
+IncreaseCompanyValue 15 3
+GetEmployeeInfo 4259
+PromoteEmployee 6556 61 45
+GetNumEmployeesMatching 0 4588 5484 1 3
+AcquireCompany 15 468 1.44
+GetNumEmployeesMatching 0 4278 5144 9 7
+GetHighestEarner 1100
+GetNumEmployeesMatching 0 6669 7438 6 3
+GetCompanyInfo 155
+IncreaseCompanyValue 15 1
+GetHighestEarnerInEachCompany 0
+GetHighestEarnerInEachCompany 0
+IncreaseCompanyValue 155 0
+GetHighestEarner -13
+GetNumEmployeesMatching 0 552 1706 5 9
+IncreaseCompanyValue 358 0
+GetEmployeeInfo 4915
+GetHighestEarnerInEachCompany 0
+HireEmployee 7810 15
+HireEmployee 208 89
+GetNumEmployeesMatching 0 6133 6151 7 10
+RemoveEmployee 5648
+IncreaseCompanyValue 474 1
+GetCompanyInfo 445
+PromoteEmployee 4400 0 51
+IncreaseCompanyValue 480 3
+GetHighestEarner -120
+AcquireCompany 286 34 0.53
+RemoveEmployee 0
+AddCompany 154 9
+IncreaseCompanyValue 310 4
+PromoteEmployee 3219 57 25
+GetHighestEarnerInEachCompany 0
+IncreaseCompanyValue 286 0
+PromoteEmployee 0 0 31
+PromoteEmployee 5799 81 16
+GetCompanyInfo 15
+GetNumEmployeesMatching 0 3118 6565 5 1
+GetNumEmployeesMatching 0 6535 7416 1 3
+GetNumEmployeesMatching 0 7286 7483 2 8
+GetNumEmployeesMatching 0 779 7628 6 2
+IncreaseCompanyValue 474 3
+GetNumEmployeesMatching 0 106 3161 5 1
+GetNumEmployeesMatching 0 106 6012 2 6
+GetNumEmployeesMatching 550 -1 -1 -1 -1
+GetEmployeeInfo 3431
+PromoteEmployee 790 56 -21
+IncreaseCompanyValue 286 4
+PromoteEmployee 2065 96 36
+IncreaseCompanyValue 468 2
+GetEmployeeInfo 2371
+AddEmployee 7324 330 21 6
+AddEmployee 1726 16 41 4
+IncreaseCompanyValue 358 0
+GetNumEmployeesMatching 0 1616 4229 4 3
+GetAllEmployeesBySalary -795
+AddEmployee 3151 15 57 1
+GetNumEmployeesMatching 0 1002 1002 7 2
+AddCompany 355 6
+IncreaseCompanyValue 480 0
+AddEmployee 7434 154 21 2
+PromoteEmployee 0 0 24
+GetNumEmployeesMatching 0 106 6186 1 8
+GetAllEmployeesBySalary 0
+GetEmployeeInfo 247
+GetNumEmployeesMatching 550 -1 -2 -1 -1
+GetNumEmployeesMatching 550 -1 -2 -1 -1
+AcquireCompany 480 468 0.9
+GetNumEmployeesMatching 0 106 1171 6 9
+GetNumEmployeesMatching 188 3102 6184 7 6
+PromoteEmployee 4463 67 26
+GetNumEmployeesMatching 0 106 5381 6 3
+AddCompany 411 7
+AcquireCompany 29 310 2.32
+GetNumEmployeesMatching 550 -1 -1 -1 -1
+PromoteEmployee 6846 3 66
+GetNumEmployeesMatching 550 -1 -1 -1 -1
+PromoteEmployee 6167 22 -11
+GetNumEmployeesMatching 0 6558 6650 6 8
+AddCompany 229 6
+GetCompanyInfo 34
+AcquireCompany 480 480 2.29
+AcquireCompany 480 358 2.37
+IncreaseCompanyValue 468 2
+GetHighestEarner -2232
+GetHighestEarner 1776
+GetNumEmployeesMatching 0 106 106 3 7
+AcquireCompany 374 15 0.41
+RemoveEmployee 0
+GetHighestEarner -484
+IncreaseCompanyValue 339 4
+GetHighestEarner 397
+HireEmployee 2789 445
+GetHighestEarnerInEachCompany 0
+AddEmployee 4715 468 60 8
+GetEmployeeInfo 1082
+GetEmployeeInfo 790
+GetHighestEarner -1700
+IncreaseCompanyValue 89 4
+AddEmployee 7294 286 91 7
+IncreaseCompanyValue 229 4
+GetCompanyInfo 229
+GetCompanyInfo 0
+GetNumEmployeesMatching 0 6471 6610 5 4
+GetHighestEarnerInEachCompany 0
+PromoteEmployee 4400 0 8
+IncreaseCompanyValue 468 2
+IncreaseCompanyValue 229 2
+GetAllEmployeesBySalary -2022
+GetAllEmployeesBySalary -1100
+GetNumEmployeesMatching 0 -1 -2 -1 -1
+HireEmployee 7918 229
+AcquireCompany 286 15 0.16
+AddEmployee 576 389 69 2
+GetNumEmployeesMatching 0 4251 6371 3 6
+GetHighestEarner -3546
+GetEmployeeInfo 7918
+GetEmployeeInfo 2482
+GetCompanyInfo 89
+GetNumEmployeesMatching 142 4951 5141 10 6
+AddEmployee 1297 374 19 4
+GetNumEmployeesMatching 0 4396 5792 8 2
+GetNumEmployeesMatching 0 106 3904 3 5
+RemoveCompany 0
+GetAllEmployeesBySalary 0
+IncreaseCompanyValue 34 2
+RemoveCompany 374
+HireEmployee 6030 154
+GetNumEmployeesMatching 550 -1 -2 -1 -1
+GetNumEmployeesMatching 0 106 5331 2 1
+IncreaseCompanyValue 411 0
+GetAllEmployeesBySalary 1248
+IncreaseCompanyValue 411 0
+PromoteEmployee 3898 96 0
+GetHighestEarner 2790
+RemoveCompany 374
+IncreaseCompanyValue 339 2
+PromoteEmployee 1629 30 -32
+GetNumEmployeesMatching 0 6215 6348 9 3
+GetCompanyInfo 468
+AddEmployee 6128 355 9 7
+HireEmployee 5598 16
+GetCompanyInfo 188
+GetCompanyInfo 113
+GetEmployeeInfo 5598
+GetCompanyInfo 480
+GetHighestEarnerInEachCompany 0
+AcquireCompany 16 445 1.63
+GetHighestEarner 1656
+GetCompanyInfo 34
+GetCompanyInfo 330
+IncreaseCompanyValue 29 0
+AddEmployee 1721 16 0 2
+GetNumEmployeesMatching 0 -1 -2 -1 -1
+AddCompany 210 4
+GetCompanyInfo 286
+GetNumEmployeesMatching 0 1798 1851 8 5
+GetNumEmployeesMatching 0 6098 6873 1 6
+GetCompanyInfo 480
+GetNumEmployeesMatching 0 6522 6736 5 10
+AddEmployee 6998 389 2 1
+GetNumEmployeesMatching 0 263 5745 1 8
+RemoveCompany 468
+GetCompanyInfo 210
+GetNumEmployeesMatching 0 3716 7697 5 8
+HireEmployee 3122 15
+GetNumEmployeesMatching 0 2993 6737 9 9
+GetAllEmployeesBySalary -256
+AcquireCompany 15 474 2.78
+PromoteEmployee 1008 91 -1
+GetNumEmployeesMatching 0 5182 5182 8 2
+PromoteEmployee 4715 30 58
+GetNumEmployeesMatching 0 3534 5757 4 10
+GetHighestEarner 1848
+AcquireCompany 310 89 1.95
+GetHighestEarner -4420
+HireEmployee 7324 142
+AddEmployee 541 34 19 7
+IncreaseCompanyValue 210 0
+GetNumEmployeesMatching 0 4257 5171 7 1
+HireEmployee 790 286
+GetNumEmployeesMatching 0 1253 1295 6 2
+GetAllEmployeesBySalary -186
+IncreaseCompanyValue 154 0
+GetEmployeeInfo 4400
+GetCompanyInfo 355
+GetNumEmployeesMatching 0 7844 7880 1 1
+GetHighestEarnerInEachCompany 2
+AddCompany 107 6
+GetCompanyInfo 339
+HireEmployee 443 155
+GetHighestEarner -1708
+GetNumEmployeesMatching 0 3650 3650 3 8
+GetEmployeeInfo 6183
+GetCompanyInfo 0
+HireEmployee 7093 34
+GetCompanyInfo 188
+AcquireCompany 89 286 1.73
+AcquireCompany 89 154 0.81
+AcquireCompany 34 480 2.81
+PromoteEmployee 1629 38 -22
+GetCompanyInfo 286
+HireEmployee 7822 374
+IncreaseCompanyValue 480 1
+GetEmployeeInfo 1844
+GetAllEmployeesBySalary -792
+PromoteEmployee 7810 80 10
+GetNumEmployeesMatching 0 2094 6232 9 3
+GetCompanyInfo 188
+HireEmployee 5051 411
+GetNumEmployeesMatching 0 1103 7818 1 10
+GetHighestEarnerInEachCompany 0
+GetNumEmployeesMatching 0 3885 3885 2 2
+GetNumEmployeesMatching 0 -1 -2 -1 -1
+IncreaseCompanyValue 374 0
+GetAllEmployeesBySalary 43
+AcquireCompany 445 330 2.99
+HireEmployee 3954 29
+GetCompanyInfo 0
+GetCompanyInfo 389
+GetHighestEarnerInEachCompany 0
+GetEmployeeInfo 2482
+GetHighestEarnerInEachCompany 0
+HireEmployee 2898 16
+GetNumEmployeesMatching 0 4212 6393 7 4
+GetCompanyInfo 339
+GetNumEmployeesMatching 0 -1 -1 -1 -1
+GetHighestEarner -3688
+GetEmployeeInfo 790
+PromoteEmployee 3665 99 37
+GetEmployeeInfo 3665
+GetAllEmployeesBySalary -290
+HireEmployee 1629 188
+GetNumEmployeesMatching 0 3762 7573 4 10
+AcquireCompany 142 468 2.58
+GetHighestEarnerInEachCompany 0
+GetHighestEarner -684
+AcquireCompany 210 154 1.18
+AddCompany 255 3
+GetEmployeeInfo 6030
+PromoteEmployee 0 -1 53
+GetHighestEarnerInEachCompany 0
+AddEmployee 7048 330 54 4
+PromoteEmployee 1433 43 3
+GetCompanyInfo 474
+RemoveCompany 411
+GetHighestEarner 2224
+HireEmployee 3539 142
+AddEmployee 559 119 93 2
+GetAllEmployeesBySalary -3660
+AddEmployee 1987 374 11 0
+GetHighestEarner -528
+GetCompanyInfo 480
+AcquireCompany 16 468 2.23
+GetEmployeeInfo 1756
+GetNumEmployeesMatching 0 1076 6021 5 7
+GetNumEmployeesMatching 550 -1 -1 -1 -1
+GetNumEmployeesMatching 550 -1 -2 -1 -1
+GetNumEmployeesMatching 0 -1 -1 -1 -1
+PromoteEmployee 4400 -1 5
+GetEmployeeInfo 3831
+GetNumEmployeesMatching 0 497 4107 2 1
+PromoteEmployee 7126 41 4
+PromoteEmployee 106 89 30
+GetEmployeeInfo 106
+GetNumEmployeesMatching 0 106 2077 1 5
+HireEmployee 842 29
+GetNumEmployeesMatching 0 812 6221 1 4
+GetHighestEarnerInEachCompany 0
+GetNumEmployeesMatching 0 7853 7853 5 3
+GetHighestEarnerInEachCompany 0
+GetHighestEarner -1022
+PromoteEmployee 4400 0 64
+IncreaseCompanyValue 154 2
+GetNumEmployeesMatching 0 6412 6480 9 1
+AcquireCompany 468 339 1.37
+AddEmployee 3227 474 1 0
+IncreaseCompanyValue 89 4
+GetNumEmployeesMatching 0 3561 7195 1 2
+RemoveEmployee 0
+PromoteEmployee 7865 50 43
+GetEmployeeInfo 7865
+HireEmployee 4335 286
+GetAllEmployeesBySalary 712
+GetNumEmployeesMatching 0 4400 7772 2 5
+GetCompanyInfo 107
+IncreaseCompanyValue 480 2
+IncreaseCompanyValue 355 3
+HireEmployee 7721 310
+GetAllEmployeesBySalary 1017
+HireEmployee 7294 34
+GetEmployeeInfo 6096
+GetNumEmployeesMatching 0 1702 4675 3 11
+AddCompany 207 6
+AcquireCompany 34 154 1.24
+AddCompany 163 3
+HireEmployee 3313 389
+GetEmployeeInfo 3219
+GetCompanyInfo 310
+RemoveCompany 550
+PromoteEmployee 3313 77 -14
+IncreaseCompanyValue 163 0
+IncreaseCompanyValue 550 0
+RemoveCompany 0
+AcquireCompany 142 89 0.87
+GetAllEmployeesBySalary -3096
+AddEmployee 7011 163 96 5
+AddCompany 207 -1
+GetHighestEarner 1708
+GetHighestEarnerInEachCompany 0
+GetHighestEarner 1652
+GetEmployeeInfo 502
+GetNumEmployeesMatching 0 4668 6331 2 7
+HireEmployee 1345 411
+GetHighestEarner 3474
+GetCompanyInfo 286
+GetNumEmployeesMatching 0 5883 7306 4 7
+GetHighestEarner -565
+GetNumEmployeesMatching 0 106 3432 9 4
+PromoteEmployee 2214 41 4
+GetAllEmployeesBySalary 1955
+GetAllEmployeesBySalary -1864
+GetAllEmployeesBySalary -1892
+GetHighestEarnerInEachCompany 0
+AddEmployee 7617 119 55 5
+AcquireCompany 207 286 0.96
+AcquireCompany 358 16 1.5
+AddEmployee 2242 210 21 4
+IncreaseCompanyValue 163 3
+AddEmployee 4191 480 16 8
+AcquireCompany 286 119 1.29
+IncreaseCompanyValue 15 0
+GetNumEmployeesMatching 0 2309 5500 5 11
+GetAllEmployeesBySalary 1872
+GetNumEmployeesMatching 0 1204 2910 7 10
+GetCompanyInfo 155
+GetCompanyInfo 474
+GetHighestEarnerInEachCompany 0
+GetNumEmployeesMatching 0 2505 3077 3 4
+GetAllEmployeesBySalary -60
+GetNumEmployeesMatching 0 5123 7798 4 10
+GetNumEmployeesMatching 0 7484 7785 4 5
+PromoteEmployee 4560 14 6
+GetHighestEarnerInEachCompany 0
+HireEmployee 6183 142
+AcquireCompany 229 468 0.5
+HireEmployee 4560 155
+HireEmployee 6030 207
+HireEmployee 1483 89
+GetEmployeeInfo 6030
+AcquireCompany 389 330 2.9
+GetCompanyInfo 286
+PromoteEmployee 7018 11 29
+GetEmployeeInfo 7018
+GetNumEmployeesMatching 0 3238 7528 7 6
+RemoveEmployee 2371
+GetNumEmployeesMatching 0 5931 7836 2 1
+RemoveEmployee 3539
+GetHighestEarner 1266
+HireEmployee 7294 229
+PromoteEmployee 5673 53 -27
+AcquireCompany 15 29 0.22
+GetNumEmployeesMatching 0 6371 6732 1 11
+GetAllEmployeesBySalary -3773
+GetNumEmployeesMatching 0 1545 5612 8 7
+PromoteEmployee 4400 -1 -27
+IncreaseCompanyValue 330 3
+GetNumEmployeesMatching 0 7436 7645 4 6
+GetCompanyInfo 142
+PromoteEmployee 3804 58 30
+GetAllEmployeesBySalary -292
+GetNumEmployeesMatching 0 3770 6953 7 3
+IncreaseCompanyValue 15 0
+GetNumEmployeesMatching 550 -1 -1 -1 -1
+IncreaseCompanyValue 163 3
+GetNumEmployeesMatching 0 4457 6314 2 10
+GetNumEmployeesMatching 550 -1 -1 -1 -1
+AddCompany 382 1
+GetHighestEarnerInEachCompany 0
+GetNumEmployeesMatching 0 7289 7420 8 10
+GetNumEmployeesMatching 0 5196 7497 4 3
+GetEmployeeInfo 3221
+IncreaseCompanyValue 330 3
+RemoveCompany 210
+GetNumEmployeesMatching 0 106 1554 8 4
+HireEmployee 4259 188
+PromoteEmployee 4969 59 42
+PromoteEmployee 7617 81 66
+AcquireCompany 210 89 0.25
+PromoteEmployee 7810 79 -13
+GetAllEmployeesBySalary -198
+AcquireCompany 445 16 1.99
+GetNumEmployeesMatching 0 2101 5435 2 7
+PromoteEmployee 842 48 21
+GetEmployeeInfo 842
+HireEmployee 7048 480
+GetHighestEarnerInEachCompany 0
+GetNumEmployeesMatching 0 1061 3859 1 1
+GetNumEmployeesMatching 0 3585 4293 1 3
+GetEmployeeInfo 4453
+HireEmployee 7018 188
+IncreaseCompanyValue 355 3
+RemoveEmployee 443
+GetNumEmployeesMatching 0 106 5569 1 2
+GetNumEmployeesMatching 0 5525 5525 2 9
+AcquireCompany 480 480 0.91
+PromoteEmployee 2214 23 -15
+HireEmployee 6175 163
+HireEmployee 2794 26
+GetEmployeeInfo 2898
+GetCompanyInfo 411
+GetNumEmployeesMatching 0 1837 3348 3 2
+AddCompany 426 1
+GetAllEmployeesBySalary 0
+GetNumEmployeesMatching 0 4040 4040 1 1
+IncreaseCompanyValue 154 2
+AddEmployee 1109 411 95 9
+AddEmployee 4108 374 55 9
+GetNumEmployeesMatching 0 -1 -1 -1 -1
+AddCompany 137 1
+AcquireCompany 163 229 0.95
+GetNumEmployeesMatching 0 2953 5583 5 2
+GetNumEmployeesMatching 0 3601 5321 3 7
+GetNumEmployeesMatching 0 5349 5708 6 6
+AddEmployee 403 188 1 8
+GetNumEmployeesMatching 0 4593 5647 7 6
+GetNumEmployeesMatching 0 6581 7219 3 1
+PromoteEmployee 7153 77 57
+AddEmployee 1963 286 27 4
+RemoveEmployee 1844
+HireEmployee 5308 229
+HireEmployee 1082 89
+PromoteEmployee 2717 18 -5
+IncreaseCompanyValue 474 1
+GetAllEmployeesBySalary -4632
+GetEmployeeInfo 4969
+IncreaseCompanyValue 107 0
+GetNumEmployeesMatching 0 5448 5461 9 6
+HireEmployee 0 22
+HireEmployee 208 286
+HireEmployee 1109 374
+RemoveEmployee 292
+GetHighestEarnerInEachCompany 1
+GetHighestEarner -1434
+GetHighestEarner 2130
+AcquireCompany 286 426 2.49
+IncreaseCompanyValue 137 3
+GetHighestEarner -1608
+GetCompanyInfo 137
+GetNumEmployeesMatching 0 5667 7116 1 8
+GetEmployeeInfo 2717
+GetNumEmployeesMatching 154 2207 2207 21 3
+GetEmployeeInfo 4108
+GetHighestEarner 40
+RemoveCompany 358
+IncreaseCompanyValue 142 1
+GetHighestEarnerInEachCompany 0
+RemoveEmployee 4400
+GetEmployeeInfo 5308
+HireEmployee 403 355
+GetNumEmployeesMatching 0 3979 6375 5 1
+PromoteEmployee 7918 78 24
+GetNumEmployeesMatching 0 6500 7401 5 1
+GetCompanyInfo 374
+GetNumEmployeesMatching 0 2922 3701 1 5
+GetCompanyInfo 119
+GetAllEmployeesBySalary -1624
+IncreaseCompanyValue 16 0
+PromoteEmployee 502 67 -13
+AcquireCompany 389 389 1.48
+AcquireCompany 358 445 1.31
+IncreaseCompanyValue 142 4
+HireEmployee 842 119
+GetNumEmployeesMatching 0 3900 7718 3 7
+GetCompanyInfo 207
+GetNumEmployeesMatching 0 233 6764 7 7
+GetNumEmployeesMatching 0 6780 7521 1 2
+GetCompanyInfo 16
+GetAllEmployeesBySalary 334
+AcquireCompany 16 207 0.12
+GetNumEmployeesMatching 0 6764 7303 6 10
+RemoveEmployee 0
+GetEmployeeInfo 576
+GetCompanyInfo 210
+IncreaseCompanyValue 16 3
+AcquireCompany 34 468 0.73
+GetCompanyInfo 445
+IncreaseCompanyValue 310 1
+GetHighestEarnerInEachCompany 0
+GetNumEmployeesMatching 0 106 496 1 1
+IncreaseCompanyValue 229 2
+GetCompanyInfo 229
+GetCompanyInfo 188
+AddCompany 399 4
+PromoteEmployee 4844 41 60
+HireEmployee 7154 34
+AddEmployee 2837 210 23 6
+AddCompany 132 6
+AddEmployee 1208 16 36 4
+IncreaseCompanyValue 132 4
+GetNumEmployeesMatching 0 7137 7588 5 9
+GetNumEmployeesMatching 34 3010 6516 20 7
+GetCompanyInfo 155
+IncreaseCompanyValue 468 1
+GetNumEmployeesMatching 0 6230 7506 2 9
+GetNumEmployeesMatching 550 -1 -2 -1 -1
+GetHighestEarnerInEachCompany 0
+RemoveCompany 550
+AddCompany 27 7
+HireEmployee 7154 374
+HireEmployee 4008 389
+HireEmployee 0 16
+HireEmployee 7894 34
+GetNumEmployeesMatching 0 4385 7779 2 2
+GetNumEmployeesMatching 0 4369 6548 9 7
+HireEmployee 1082 210
+GetHighestEarner -994
+HireEmployee 7324 382
+GetHighestEarnerInEachCompany 0
+PromoteEmployee 7048 71 1
+GetEmployeeInfo 6782
+GetNumEmployeesMatching 0 6888 6896 1 8
+GetNumEmployeesMatching 0 7283 7671 3 11
+RemoveEmployee 0
+GetAllEmployeesBySalary -2601
+RemoveEmployee 3313
+PromoteEmployee 7294 6 45
+PromoteEmployee 6556 90 35
+GetEmployeeInfo 7855
+HireEmployee 7918 399
+GetNumEmployeesMatching 0 4171 7465 6 1
+GetNumEmployeesMatching 0 2465 5542 1 1
+HireEmployee 5051 142
+GetAllEmployeesBySalary 4095
+IncreaseCompanyValue 389 4
+AddCompany 2 3
+IncreaseCompanyValue 210 1
+PromoteEmployee 3665 92 66
+PromoteEmployee 4259 22 11
+AddEmployee 4455 15 4 6
+HireEmployee 5352 9
+GetCompanyInfo 27
+HireEmployee 1082 468
+PromoteEmployee 1131 54 62
+GetEmployeeInfo 4400
+IncreaseCompanyValue 34 2
+HireEmployee 7918 286
+GetAllEmployeesBySalary 0
+IncreaseCompanyValue 355 2
+GetNumEmployeesMatching 0 6150 7491 8 4
+GetHighestEarner 170
+GetHighestEarnerInEachCompany 0
+IncreaseCompanyValue 389 2
+GetCompanyInfo 29
+GetAllEmployeesBySalary -30
+GetHighestEarnerInEachCompany 1
+PromoteEmployee 4560 21 -9
+GetNumEmployeesMatching 0 2550 2550 2 6
+PromoteEmployee 7356 18 6
+HireEmployee 3831 137
+GetNumEmployeesMatching 0 5780 5922 5 5
+HireEmployee 3684 155
+IncreaseCompanyValue 468 0
+PromoteEmployee 0 -1 38
+GetCompanyInfo 550
+GetAllEmployeesBySalary -462
+HireEmployee 1483 355
+GetNumEmployeesMatching 0 3341 4385 7 9
+GetNumEmployeesMatching 0 2161 6015 1 10
+GetHighestEarner -3256
+IncreaseCompanyValue 107 3
+GetAllEmployeesBySalary -175
+IncreaseCompanyValue 389 1
+GetHighestEarnerInEachCompany 0
+PromoteEmployee 6241 58 -5
+GetHighestEarnerInEachCompany 0
+GetNumEmployeesMatching 0 3680 7375 4 9
+GetEmployeeInfo 6943
+IncreaseCompanyValue 15 2
+GetAllEmployeesBySalary -3619
+HireEmployee 3248 34
+GetNumEmployeesMatching 0 2565 3957 8 4
+AcquireCompany 155 163 0.71
+PromoteEmployee 0 -1 5
+HireEmployee 3227 89
+IncreaseCompanyValue 16 2
+GetCompanyInfo 16
+AddEmployee 6817 210 60 7
+GetNumEmployeesMatching 0 4362 6928 1 4
+PromoteEmployee 2417 37 -3
+GetNumEmployeesMatching 0 5084 6966 9 5
+IncreaseCompanyValue 445 3
+GetHighestEarnerInEachCompany 0
+HireEmployee 7168 210
+GetHighestEarner 488
+GetAllEmployeesBySalary 64
+IncreaseCompanyValue 154 1
+PromoteEmployee 272 74 -13
+AcquireCompany 358 210 1.12
+GetNumEmployeesMatching 0 -1 -2 -1 -1
+GetAllEmployeesBySalary 0
+GetNumEmployeesMatching 0 3594 3594 7 1
+AddEmployee 4684 188 30 1
+GetEmployeeInfo 6183
+IncreaseCompanyValue 355 0
+AcquireCompany 330 474 1.03
+AddCompany 122 6
+GetHighestEarnerInEachCompany 0
+GetNumEmployeesMatching 0 969 7676 3 10
+GetAllEmployeesBySalary 0
+GetNumEmployeesMatching 0 5905 6713 1 1
+GetCompanyInfo 207
+GetAllEmployeesBySalary -1156
+GetNumEmployeesMatching 0 4769 4769 1 1
+GetCompanyInfo 188
+GetNumEmployeesMatching 0 -1 -2 -1 -1
+AcquireCompany 15 15 1.55
+GetNumEmployeesMatching 0 3429 7716 6 7
+GetEmployeeInfo 1091
+RemoveEmployee 4400
+PromoteEmployee 6943 65 2
+GetAllEmployeesBySalary -1140
+GetNumEmployeesMatching 0 106 5410 9 2
+PromoteEmployee 3219 2 -18
+GetEmployeeInfo 3219
+AddEmployee 6634 107 30 7
+GetHighestEarner 2120
+RemoveEmployee 4915
+PromoteEmployee 4568 11 15
+GetNumEmployeesMatching 0 4467 6045 6 10
+GetCompanyInfo 188
+AddEmployee 3591 155 24 2
+GetNumEmployeesMatching 0 -1 -1 -1 -1
+GetCompanyInfo 188
+IncreaseCompanyValue 229 1
+GetCompanyInfo 229
+GetNumEmployeesMatching 0 7899 7899 6 10
+GetAllEmployeesBySalary 127
+RemoveCompany 550
+GetNumEmployeesMatching 0 2327 4322 1 1
+GetNumEmployeesMatching 0 1512 4321 8 7
+GetHighestEarner 1885
+AddEmployee 5442 286 49 6
+IncreaseCompanyValue 207 0
+HireEmployee 3999 27
+HireEmployee 7148 229
+GetNumEmployeesMatching 0 6884 6984 4 11
+IncreaseCompanyValue 389 3
+GetNumEmployeesMatching 0 6995 7686 6 10
+AcquireCompany 358 154 2.71
+RemoveEmployee 0
+PromoteEmployee 3448 47 16
+GetNumEmployeesMatching 0 6902 7274 9 9
+HireEmployee 3785 119
+PromoteEmployee 3448 15 53
+RemoveCompany 34
+GetEmployeeInfo 7402
+AddEmployee 982 122 51 7
+AddEmployee 1124 286 50 0
+GetNumEmployeesMatching 0 -1 -1 -1 -1
+GetEmployeeInfo 4560
+HireEmployee 6096 119
+GetCompanyInfo 358
+GetHighestEarnerInEachCompany 0
+GetEmployeeInfo 4453
+GetEmployeeInfo 4528
+GetAllEmployeesBySalary -2691
+GetCompanyInfo 89
+GetNumEmployeesMatching 0 4694 6704 9 1
+IncreaseCompanyValue 122 0
+PromoteEmployee 1980 62 -31
+IncreaseCompanyValue 2 0
+GetEmployeeInfo 5598
+IncreaseCompanyValue 132 0
+IncreaseCompanyValue 389 1
+GetCompanyInfo 15
+IncreaseCompanyValue 286 4
+HireEmployee 2661 163
+GetCompanyInfo 445
+GetCompanyInfo 27
+IncreaseCompanyValue 445 3
+GetNumEmployeesMatching 0 6602 6602 1 4
+GetEmployeeInfo 1527
+GetAllEmployeesBySalary 3584
+AddEmployee 4503 399 8 5
+RemoveEmployee 2898
+PromoteEmployee 106 26 -2
+GetEmployeeInfo 106
+GetNumEmployeesMatching 0 -1 -1 -1 -1
+GetNumEmployeesMatching 0 2404 4750 4 2
+GetCompanyInfo 154
+GetHighestEarner -572
+AcquireCompany 16 188 2.46
+GetHighestEarner 2772
+GetNumEmployeesMatching 411 526 498 52 42
+GetNumEmployeesMatching 445 5201 5344 20 7
+GetHighestEarner -235
+GetEmployeeInfo 247
+PromoteEmployee 6943 45 15
+GetHighestEarnerInEachCompany 0
+GetHighestEarnerInEachCompany 0
+AcquireCompany 310 330 2.98
+GetHighestEarnerInEachCompany 0
+HireEmployee 6158 188
+GetCompanyInfo 163
+PromoteEmployee 0 -1 -22
+GetNumEmployeesMatching 0 6185 6356 7 6
+GetNumEmployeesMatching 0 3714 3963 9 6
+IncreaseCompanyValue 355 1
+HireEmployee 0 14
+HireEmployee 6167 474
+PromoteEmployee 1963 33 -4
+HireEmployee 842 27
+GetNumEmployeesMatching 0 6158 6764 1 2
+IncreaseCompanyValue 142 3
+GetHighestEarner 336
+IncreaseCompanyValue 27 1
+PromoteEmployee 7148 79 -24
+AcquireCompany 286 358 1.1
+HireEmployee 7093 34
+HireEmployee 208 399
+GetCompanyInfo 286
+GetCompanyInfo 148
+GetEmployeeInfo 208
+GetAllEmployeesBySalary 833
+GetEmployeeInfo 4400
+RemoveEmployee 3785
+GetNumEmployeesMatching 550 -1 -2 -1 -1
+GetEmployeeInfo 6763
+RemoveEmployee 4400
+GetNumEmployeesMatching 0 3866 5936 3 6
+GetNumEmployeesMatching 0 106 2739 5 2
+GetNumEmployeesMatching 0 4038 7255 1 3
+GetNumEmployeesMatching 188 3268 4197 148 9
+HireEmployee 4597 286
+IncreaseCompanyValue 137 3
+AcquireCompany 15 207 0.56
+GetEmployeeInfo 6183
+GetHighestEarner -1443
+GetHighestEarnerInEachCompany 0
+AcquireCompany 107 16 1.73
+PromoteEmployee 842 25 7
+GetNumEmployeesMatching 0 2720 2720 5 6
+GetNumEmployeesMatching 0 653 2852 5 10
+GetNumEmployeesMatching 0 6071 7319 1 7
+HireEmployee 3151 16
+AcquireCompany 0 0 0.5
+AddEmployee 3666 132 94 6
+GetEmployeeInfo 2594
+GetHighestEarnerInEachCompany 0
+RemoveEmployee 4400
+GetNumEmployeesMatching 550 -1 -2 -1 -1
+AcquireCompany 132 374 0.6
+GetNumEmployeesMatching 0 6052 6401 6 1
+GetNumEmployeesMatching 0 4930 7616 5 9
+GetCompanyInfo 207
+GetNumEmployeesMatching 0 4270 6388 5 8
+GetCompanyInfo 137
+GetHighestEarner -90
+GetCompanyInfo 358
+HireEmployee 2242 154
+GetNumEmployeesMatching 550 -1 -2 -1 -1
+HireEmployee 1483 29
+GetHighestEarner 1995
+GetAllEmployeesBySalary -760
+IncreaseCompanyValue 27 0
+GetNumEmployeesMatching 550 -1 -1 -1 -1
+PromoteEmployee 7721 22 49
+GetEmployeeInfo 7721
+GetNumEmployeesMatching 0 6333 7760 5 6
+GetNumEmployeesMatching 0 106 2178 1 5
+AddCompany 123 4
+PromoteEmployee 272 27 22
+GetEmployeeInfo 1345
+GetNumEmployeesMatching 0 106 5097 5 10
+AcquireCompany 399 374 2.18
+HireEmployee 4503 399
+AddEmployee 720 358 59 7
+IncreaseCompanyValue 107 4
+GetNumEmployeesMatching 382 5742 451 21 21
+GetEmployeeInfo 5442
+GetEmployeeInfo 3660
+HireEmployee 6634 411
+GetAllEmployeesBySalary 99
+RemoveCompany 399
+RemoveEmployee 4400
+GetNumEmployeesMatching 0 4546 4553 3 4
+IncreaseCompanyValue 207 4
+IncreaseCompanyValue 154 3
+PromoteEmployee 7148 22 -1
+PromoteEmployee 1327 44 -20
+GetNumEmployeesMatching 0 3802 7362 6 8
+GetNumEmployeesMatching 0 3196 5358 9 2
+HireEmployee 4191 382
+AcquireCompany 468 16 1.18
+GetNumEmployeesMatching 550 -1 -1 -1 -1
+GetAllEmployeesBySalary 1808
+RemoveCompany 0
+GetNumEmployeesMatching 0 213 1089 3 6
+HireEmployee 2789 16
+GetNumEmployeesMatching 0 5248 6870 3 5
+HireEmployee 7402 399
+GetHighestEarner 0
+GetNumEmployeesMatching 0 2226 7483 6 10
+GetCompanyInfo 34
+HireEmployee 3898 2
+PromoteEmployee 0 0 -20
+PromoteEmployee 559 56 23
+IncreaseCompanyValue 137 2
+GetCompanyInfo 27
+GetAllEmployeesBySalary 2072
+GetNumEmployeesMatching 0 7071 7647 7 6
+RemoveCompany 389
+HireEmployee 0 18
+GetNumEmployeesMatching 0 6446 6754 5 11
+GetNumEmployeesMatching 550 -1 -1 -1 -1
+GetAllEmployeesBySalary 1666
+PromoteEmployee 7153 50 39
+GetEmployeeInfo 4171
+GetHighestEarner -2880
+GetNumEmployeesMatching 0 6298 7510 3 7
+GetNumEmployeesMatching 0 7588 7625 1 8
+GetAllEmployeesBySalary 1464
+GetHighestEarner 2208
+PromoteEmployee 7154 54 -8
+GetEmployeeInfo 7154
+GetHighestEarner 228
+PromoteEmployee 6782 98 -32
+AcquireCompany 132 358 0.68
+RemoveCompany 550
+HireEmployee 613 15
+GetEmployeeInfo 7822
+GetHighestEarner -1062
+AcquireCompany 137 207 0.15
+GetCompanyInfo 132
+IncreaseCompanyValue 374 0
+HireEmployee 7018 137
+GetCompanyInfo 89
+GetHighestEarnerInEachCompany 0
+HireEmployee 7294 155
+RemoveEmployee 0
+GetNumEmployeesMatching 550 -1 -1 -1 -1
+GetHighestEarner -2056
+GetHighestEarner -1239
+GetHighestEarnerInEachCompany 0
+RemoveEmployee 4400
+AcquireCompany 29 34 1.75
+PromoteEmployee 1124 43 43
+GetEmployeeInfo 1124
+AcquireCompany 411 119 2.6
+GetCompanyInfo 188
+GetNumEmployeesMatching 0 4075 7190 2 4
+GetNumEmployeesMatching 0 1750 7045 1 9
+AcquireCompany 2 480 1.62
+GetNumEmployeesMatching 0 2854 2913 1 1
+AddEmployee 1504 474 23 3
+AddCompany 223 1
+AddEmployee 2608 89 77 7
+GetAllEmployeesBySalary 0
+GetAllEmployeesBySalary -3232
+HireEmployee 4335 411
+PromoteEmployee 587 38 -1
+GetEmployeeInfo 2235
+GetEmployeeInfo 4715
+GetEmployeeInfo 4316
+RemoveCompany 0
+GetEmployeeInfo 7356
+HireEmployee 4108 16
+AddEmployee 15 330 82 7
+GetHighestEarner 2060
+RemoveCompany 0
+PromoteEmployee 7324 12 -6
+GetHighestEarnerInEachCompany 0
+AddEmployee 334 382 31 6
+GetCompanyInfo 229
+GetNumEmployeesMatching 0 872 1914 1 6
+GetNumEmployeesMatching 0 7345 7844 7 8
+GetNumEmployeesMatching 0 4266 4266 3 1
+AddEmployee 4782 132 16 9
+GetCompanyInfo 382
+GetEmployeeInfo 4400
+AddEmployee 3843 286 58 2
+HireEmployee 2789 142
+AcquireCompany 474 480 1.53
+GetNumEmployeesMatching 0 6822 7479 2 7
+GetHighestEarner 768
+GetAllEmployeesBySalary -1106
+GetEmployeeInfo 7011
+RemoveEmployee 3431
+PromoteEmployee 645 43 64
+HireEmployee 4455 15
+IncreaseCompanyValue 122 1
+AddEmployee 7722 107 4 8
+HireEmployee 2242 382
+GetHighestEarner 114
+GetNumEmployeesMatching 0 2312 5186 3 2
+HireEmployee 6158 229
+PromoteEmployee 587 2 33
+PromoteEmployee 587 56 -20
+RemoveEmployee 4400
+AddCompany 67 0
+AcquireCompany 142 374 0.37
+IncreaseCompanyValue 27 1
+HireEmployee 613 132
+GetNumEmployeesMatching 0 6447 7845 1 10
+GetAllEmployeesBySalary -3696
+GetHighestEarner 2212
+RemoveEmployee 2631
+AcquireCompany 16 468 1.19
+IncreaseCompanyValue 286 2
+RemoveEmployee 2789
+GetAllEmployeesBySalary -1575
+IncreaseCompanyValue 16 2
+PromoteEmployee 4025 27 30
+PromoteEmployee 3227 24 18
+IncreaseCompanyValue 358 2
+GetEmployeeInfo 576
+AcquireCompany 286 119 1.34
+RemoveCompany 0
+GetAllEmployeesBySalary -544
+PromoteEmployee 6175 3 30
+GetEmployeeInfo 6175
+GetHighestEarnerInEachCompany 0
+HireEmployee 5841 119
+GetNumEmployeesMatching 0 2280 6376 1 7
+PromoteEmployee 7154 41 59
+IncreaseCompanyValue 16 2
+RemoveCompany 132
+IncreaseCompanyValue 207 4
+GetNumEmployeesMatching 0 908 3122 4 7
+RemoveEmployee 4400
+GetNumEmployeesMatching 0 1541 3293 5 6
+PromoteEmployee 2482 79 -19
+HireEmployee 1124 229
+HireEmployee 7865 310
+GetNumEmployeesMatching 0 668 5564 2 8
+GetEmployeeInfo 4171
+GetNumEmployeesMatching 286 4038 5186 72 5
+GetAllEmployeesBySalary 408
+GetNumEmployeesMatching 0 3548 3548 9 3
+PromoteEmployee 7722 72 -5
+GetNumEmployeesMatching 0 2261 2261 9 8
+IncreaseCompanyValue 142 3
+GetHighestEarner -450
+GetCompanyInfo 411
+GetEmployeeInfo 2065
+RemoveCompany 550
+AcquireCompany 223 155 1.97
+GetAllEmployeesBySalary 3640
+PromoteEmployee 7855 38 -33
+GetNumEmployeesMatching 0 3148 7494 8 10
+GetNumEmployeesMatching 0 -1 -2 -1 -1
+GetCompanyInfo 399
+AcquireCompany 188 355 0.21
+HireEmployee 7148 154
+AddCompany 397 3
+RemoveEmployee 0
+GetCompanyInfo 286
+GetHighestEarner 108
+GetNumEmployeesMatching 0 7593 7917 8 5
+PromoteEmployee 564 42 -11
+GetHighestEarner -1836
+GetEmployeeInfo 334
+GetCompanyInfo 397
+GetNumEmployeesMatching 0 15 482 4 3
+GetHighestEarnerInEachCompany 0
+IncreaseCompanyValue 29 3
+GetNumEmployeesMatching 0 15 6097 5 1
+AddCompany 475 2
+GetAllEmployeesBySalary -816
+AcquireCompany 142 480 1.66
+GetEmployeeInfo 208
+IncreaseCompanyValue 229 0
+GetNumEmployeesMatching 399 3399 5444 8 5
+GetHighestEarner 147
+GetHighestEarner 1936
+RemoveCompany 475
+PromoteEmployee 7294 61 38
+GetAllEmployeesBySalary -1964
+GetNumEmployeesMatching 0 523 2341 9 2
+HireEmployee 1483 223
+PromoteEmployee 0 -1 -8
+HireEmployee 2794 29
+PromoteEmployee 5304 11 -11
+PromoteEmployee 4400 0 38
+IncreaseCompanyValue 374 4
+AcquireCompany 163 286 1.05
+HireEmployee 247 310
+GetHighestEarner -2198
+AcquireCompany 389 119 0.21
+GetCompanyInfo 411
+GetCompanyInfo 223
+IncreaseCompanyValue 207 3
+GetAllEmployeesBySalary -2079
+GetHighestEarner 856
+GetAllEmployeesBySalary 4158
+GetHighestEarner -550
+PromoteEmployee 5598 60 -8
+GetCompanyInfo 27
+GetNumEmployeesMatching 0 6555 6785 5 7
+IncreaseCompanyValue 142 0
+AddEmployee 5328 223 7 5
+RemoveEmployee 4400
+AddEmployee 7776 382 32 2
+GetCompanyInfo 445
+GetHighestEarner -198
+GetNumEmployeesMatching 0 6663 7033 7 11
+HireEmployee 3957 382
+GetEmployeeInfo 4316
+PromoteEmployee 2661 98 -27
+PromoteEmployee 3122 99 32
+IncreaseCompanyValue 119 1
+GetHighestEarner -468
+GetEmployeeInfo 6943
+IncreaseCompanyValue 445 2
+IncreaseCompanyValue 27 0
+GetHighestEarnerInEachCompany 0
+RemoveEmployee 4400
+GetEmployeeInfo 541
+AddCompany 77 5
+AddCompany 486 1
+GetNumEmployeesMatching 0 1175 3544 3 1
+IncreaseCompanyValue 16 4
+AddEmployee 3714 154 12 3
+GetNumEmployeesMatching 0 3145 6012 7 6
+GetEmployeeInfo 1855
+GetHighestEarner -1032
+AcquireCompany 480 163 0.39
+PromoteEmployee 3151 58 -33
+GetEmployeeInfo 4259
+RemoveEmployee 7894
+GetNumEmployeesMatching 0 2533 6375 3 1
+IncreaseCompanyValue 123 0
+GetAllEmployeesBySalary 1030
+GetHighestEarnerInEachCompany 0
+IncreaseCompanyValue 163 4
+GetHighestEarner -238
+GetNumEmployeesMatching 0 3777 7355 9 11
+IncreaseCompanyValue 480 0
+GetEmployeeInfo 4025
+IncreaseCompanyValue 15 1
+GetNumEmployeesMatching 0 1926 1926 3 10
+GetNumEmployeesMatching 0 5910 7467 2 8
+GetCompanyInfo 310
+GetHighestEarner -1995
+GetNumEmployeesMatching 0 6825 6825 6 10
+GetNumEmployeesMatching 0 4635 6216 2 10
+GetNumEmployeesMatching 0 15 1915 3 7
+GetHighestEarner -4338
+GetNumEmployeesMatching 0 3874 5782 8 8
+GetEmployeeInfo 3666
+IncreaseCompanyValue 123 0
+PromoteEmployee 4487 3 61
+AddCompany 7 3
+GetNumEmployeesMatching 229 1124 2785 59 1
+AddEmployee 7503 399 0 0
+AcquireCompany 445 374 2.73
+AcquireCompany 358 27 0.06
+GetCompanyInfo 119
+HireEmployee 7356 397
+IncreaseCompanyValue 480 3
+HireEmployee 1091 486
+GetNumEmployeesMatching 0 5415 7398 3 9
+HireEmployee 3714 330
+GetNumEmployeesMatching 0 -1 -2 -1 -1
+PromoteEmployee 1987 29 12
+GetAllEmployeesBySalary -3780
+RemoveEmployee 4400
+HireEmployee 6943 486
+GetHighestEarnerInEachCompany 0
+GetAllEmployeesBySalary 12
+GetNumEmployeesMatching 0 2804 5389 9 1
+RemoveEmployee 4560
+GetHighestEarnerInEachCompany 0
+RemoveEmployee 1330
+IncreaseCompanyValue 486 0
+GetCompanyInfo 397
+AcquireCompany 382 7 2.62
+GetNumEmployeesMatching 0 1781 4353 7 1
+GetCompanyInfo 229
+HireEmployee 1629 89
+GetNumEmployeesMatching 0 5494 5494 6 10
+GetNumEmployeesMatching 0 158 6788 6 1
+GetHighestEarnerInEachCompany 2
+GetEmployeeInfo 247
+AddEmployee 3364 229 78 2
+GetNumEmployeesMatching 0 2647 5665 3 7
+HireEmployee 7865 474
+HireEmployee 1131 397
+IncreaseCompanyValue 474 3
+GetHighestEarnerInEachCompany 0
+GetHighestEarner -1686
+PromoteEmployee 720 31 65
+GetNumEmployeesMatching 0 7757 7903 9 7
+GetNumEmployeesMatching 0 3797 4989 3 5
+IncreaseCompanyValue 188 1
+HireEmployee 5442 468
+IncreaseCompanyValue 355 1
+GetHighestEarner -669
+GetNumEmployeesMatching 0 2276 6516 9 1
+GetCompanyInfo 397
+PromoteEmployee 1987 97 33
+GetNumEmployeesMatching 0 1666 4615 4 9
+GetHighestEarner 0
+AcquireCompany 89 107 1.72
+HireEmployee 4008 411
+GetNumEmployeesMatching 0 6225 6407 4 6
+GetHighestEarnerInEachCompany 0
+IncreaseCompanyValue 445 4
+GetHighestEarnerInEachCompany 0
+AcquireCompany 155 137 0.93
+GetNumEmployeesMatching 0 7791 7837 5 1
+GetNumEmployeesMatching 0 3530 5472 9 6
+HireEmployee 3219 132
+RemoveCompany 550
+GetHighestEarner -1242
+HireEmployee 5442 188
+AcquireCompany 310 77 2.62
+GetNumEmployeesMatching 0 7085 7085 9 5
+IncreaseCompanyValue 445 2
+GetNumEmployeesMatching 0 6858 6858 1 1
+GetNumEmployeesMatching 0 1846 3476 6 8
+AcquireCompany 445 107 1.51
+GetNumEmployeesMatching 389 3004 3135 2 6
+PromoteEmployee 0 0 27
+GetCompanyInfo 468
+GetNumEmployeesMatching 0 5401 6405 7 8
+IncreaseCompanyValue 154 3
+PromoteEmployee 7356 49 3
+GetEmployeeInfo 0
+HireEmployee 645 2
+GetNumEmployeesMatching 0 7000 7726 7 2
+GetAllEmployeesBySalary 3087
+GetHighestEarner 1170
+HireEmployee 564 119
+GetCompanyInfo 286
+AddEmployee 7062 397 27 2
+AcquireCompany 188 119 2.95
+GetHighestEarner -1556
+AddCompany 15 0
+GetHighestEarner -905
+IncreaseCompanyValue 223 2
+HireEmployee 7150 389
+GetCompanyInfo 411
+GetAllEmployeesBySalary -3129
+GetAllEmployeesBySalary -720
+AcquireCompany 286 89 2.58
+HireEmployee 1980 2
+GetNumEmployeesMatching 0 3481 6227 8 8
+GetNumEmployeesMatching 0 15 4834 2 9
+GetNumEmployeesMatching 0 15 1458 5 9
+AcquireCompany 122 122 1.72
+GetAllEmployeesBySalary 0
+GetAllEmployeesBySalary 320
+GetEmployeeInfo 3957
+GetNumEmployeesMatching 0 1306 4382 1 3
+GetCompanyInfo 286
+GetNumEmployeesMatching 550 -1 -2 -1 -1
+AcquireCompany 16 399 2.84
+GetNumEmployeesMatching 0 6204 6859 7 1
+GetHighestEarner -1960
+AcquireCompany 163 389 1.11
+PromoteEmployee 272 63 53
+HireEmployee 2661 411
+GetEmployeeInfo 576
+GetEmployeeInfo 6556
+IncreaseCompanyValue 122 1
+GetNumEmployeesMatching 0 1873 3017 3 3
+GetCompanyInfo 223
+IncreaseCompanyValue 154 4
+GetNumEmployeesMatching 0 1555 4153 4 4
+IncreaseCompanyValue 89 0
+IncreaseCompanyValue 2 3
+RemoveEmployee 0
+GetNumEmployeesMatching 0 7439 7800 2 1
+GetNumEmployeesMatching 0 15 5683 7 11
+GetNumEmployeesMatching 0 15 3768 9 2
+GetNumEmployeesMatching 0 3191 5486 5 6
+GetCompanyInfo 154
+GetCompanyInfo 474
+GetHighestEarnerInEachCompany 0
+GetNumEmployeesMatching 0 15 6591 6 3
+GetAllEmployeesBySalary 0
+GetNumEmployeesMatching 0 1091 3011 2 3
+GetAllEmployeesBySalary -1890
+IncreaseCompanyValue 16 0
+GetHighestEarner -1040
+AcquireCompany 310 188 0.48
+IncreaseCompanyValue 27 0
+HireEmployee 720 229
+GetNumEmployeesMatching 550 -1 -2 -1 -1
+PromoteEmployee 208 62 12
+GetHighestEarner -400
+GetCompanyInfo 29
+PromoteEmployee 1008 92 -22
+GetNumEmployeesMatching 0 1368 4377 5 10
+GetEmployeeInfo 7048
+IncreaseCompanyValue 77 1
+IncreaseCompanyValue 358 0
+HireEmployee 0 37
+GetNumEmployeesMatching 468 3505 3505 18 5
+IncreaseCompanyValue 330 1
+AcquireCompany 207 286 1.4
+GetAllEmployeesBySalary -1203
+GetAllEmployeesBySalary -1830
+HireEmployee 4684 107
+PromoteEmployee 7918 72 -2
+GetCompanyInfo 355
+AddEmployee 5851 286 75 9
+RemoveEmployee 4400
+AcquireCompany 382 119 1.93
+IncreaseCompanyValue 286 4
+IncreaseCompanyValue 358 0
+AcquireCompany 474 89 0.53
+GetCompanyInfo 355
+GetNumEmployeesMatching 0 6460 6495 9 8
+IncreaseCompanyValue 155 1
+HireEmployee 403 155
+GetCompanyInfo 119
+RemoveEmployee 0
+AddCompany 256 2
+RemoveEmployee 5799
+HireEmployee 0 12
+GetNumEmployeesMatching 0 15 211 8 1
+AcquireCompany 374 142 2.77
+RemoveCompany 550
+HireEmployee 2065 374
+GetNumEmployeesMatching 0 7063 7863 4 2
+GetNumEmployeesMatching 0 15 5961 3 9
+IncreaseCompanyValue 188 4
+IncreaseCompanyValue 163 0
+AddEmployee 3868 374 50 8
+RemoveEmployee 5442
+GetEmployeeInfo 3843
+GetHighestEarner -363
+GetHighestEarnerInEachCompany 0
+GetNumEmployeesMatching 0 439 4273 7 4
+AcquireCompany 286 123 2.59
+HireEmployee 554 229
+GetAllEmployeesBySalary 1492
+GetNumEmployeesMatching 0 7841 7841 8 2
+HireEmployee 2594 330
+GetHighestEarnerInEachCompany 0
+GetHighestEarner -2565
+GetNumEmployeesMatching 0 2253 5456 6 6
+GetNumEmployeesMatching 0 15 322 5 10
+HireEmployee 645 223
+IncreaseCompanyValue 330 2
+HireEmployee 4008 468
+GetCompanyInfo 411
+GetCompanyInfo 126
+GetEmployeeInfo 4008
+GetHighestEarner 1360
+AddEmployee 5890 7 30 6
+PromoteEmployee 4400 -1 0
+GetCompanyInfo 256
+GetEmployeeInfo 4171
+GetNumEmployeesMatching 0 7507 7835 3 6
+GetNumEmployeesMatching 0 -1 -1 -1 -1
+IncreaseCompanyValue 486 3
+PromoteEmployee 645 64 -14
+GetNumEmployeesMatching 0 6213 7606 9 10
+GetHighestEarner 2672
+PromoteEmployee 3364 89 3
+PromoteEmployee 1095 63 -30
+GetEmployeeInfo 1095
+AcquireCompany 486 382 0.92
+IncreaseCompanyValue 397 3
+IncreaseCompanyValue 480 4
+AcquireCompany 29 16 1.13
+PromoteEmployee 1131 91 10
+HireEmployee 7721 256
+GetHighestEarnerInEachCompany 0
+GetCompanyInfo 229
+GetEmployeeInfo 7356
+GetEmployeeInfo 3448
+GetAllEmployeesBySalary 80
+GetHighestEarnerInEachCompany 0
+GetEmployeeInfo 2661
+GetNumEmployeesMatching 0 15 15 1 1
+GetHighestEarnerInEachCompany 0
+AcquireCompany 474 27 1.12
+GetCompanyInfo 107
+GetEmployeeInfo 4684
+HireEmployee 4487 330
+IncreaseCompanyValue 486 2
+AcquireCompany 123 445 1.96
+GetNumEmployeesMatching 0 2764 4736 1 4
+GetNumEmployeesMatching 0 3819 5511 1 4
+GetAllEmployeesBySalary -453
+GetHighestEarner -1773
+IncreaseCompanyValue 480 0
+GetEmployeeInfo 2214
+AddCompany 48 2
+GetNumEmployeesMatching 0 15 15 4 11
+AddCompany 426 0
+AddEmployee 7445 256 64 1
+PromoteEmployee 6183 9 51
+GetEmployeeInfo 1124
+HireEmployee 3665 137
+GetHighestEarnerInEachCompany 1
+IncreaseCompanyValue 132 3
+PromoteEmployee 5841 96 -21
+GetAllEmployeesBySalary -5436
+GetCompanyInfo 374
+GetNumEmployeesMatching 0 4577 6500 8 2
+IncreaseCompanyValue 286 0
+GetEmployeeInfo 7018
+GetHighestEarner 2880
+IncreaseCompanyValue 389 2
+IncreaseCompanyValue 310 4
+GetNumEmployeesMatching 0 2719 5478 5 6
+GetCompanyInfo 474
+PromoteEmployee 4782 55 49
+GetEmployeeInfo 4782
+GetAllEmployeesBySalary 1805
+GetNumEmployeesMatching 0 979 6217 8 10
+GetHighestEarner 1926
+AcquireCompany 382 411 2.7
+PromoteEmployee 1483 84 56
+GetHighestEarner -1510
+AcquireCompany 132 122 2.72
+GetNumEmployeesMatching 0 827 4914 7 3
+IncreaseCompanyValue 358 3
+GetNumEmployeesMatching 0 1481 7746 6 11
+GetNumEmployeesMatching 0 6595 7223 5 2
+GetHighestEarner -81
+GetNumEmployeesMatching 0 3012 7303 5 8
+HireEmployee 6175 474
+PromoteEmployee 790 12 -27
+GetEmployeeInfo 3665
+IncreaseCompanyValue 474 3
+GetAllEmployeesBySalary -5076
+GetHighestEarnerInEachCompany 0
+PromoteEmployee 2608 10 -27
+GetNumEmployeesMatching 0 2600 2610 1 11
+GetHighestEarner -2648
+GetHighestEarner 0
+HireEmployee 7048 445
+AcquireCompany 142 374 2.39
+GetNumEmployeesMatching 0 1647 7078 4 11
+GetEmployeeInfo 4969
+GetNumEmployeesMatching 0 15 6916 2 9
+HireEmployee 5051 154
+IncreaseCompanyValue 207 0
+GetNumEmployeesMatching 0 3526 3590 7 8
+HireEmployee 613 223
+IncreaseCompanyValue 163 1
+GetCompanyInfo 163
+GetNumEmployeesMatching 0 3202 4218 4 6
+PromoteEmployee 4294 40 14
+AddEmployee 1930 411 89 5
+GetAllEmployeesBySalary -2560
+GetNumEmployeesMatching 0 5889 7627 6 7
+GetNumEmployeesMatching 0 4247 4362 3 9
+AcquireCompany 389 223 1.28
+RemoveCompany 550
+PromoteEmployee 4463 74 -24
+GetHighestEarner 3290
+GetNumEmployeesMatching 0 4638 7407 7 4
+HireEmployee 6763 7
+GetNumEmployeesMatching 0 7467 7690 1 1
+GetHighestEarnerInEachCompany 0
+GetCompanyInfo 286
+IncreaseCompanyValue 122 4
+HireEmployee 15 155
+IncreaseCompanyValue 142 3
+HireEmployee 4108 48
+GetHighestEarnerInEachCompany 0
+GetAllEmployeesBySalary -1530
+GetHighestEarnerInEachCompany 0
+GetHighestEarner -255
+GetNumEmployeesMatching 107 4684 4684 30 2
+GetNumEmployeesMatching 0 3404 6630 1 3
+IncreaseCompanyValue 374 0
+PromoteEmployee 5308 18 -12
+AddEmployee 3981 480 50 4
+GetNumEmployeesMatching 0 3410 4542 4 5
+IncreaseCompanyValue 137 4
+GetAllEmployeesBySalary -117
+HireEmployee 7148 142
+GetHighestEarnerInEachCompany 0
+GetAllEmployeesBySalary -1264
+GetCompanyInfo 15
+AcquireCompany 142 286 0.54
+GetNumEmployeesMatching 0 2942 5534 3 5
+AcquireCompany 330 286 1.1
+GetEmployeeInfo 3868
+PromoteEmployee 0 0 -33
+GetCompanyInfo 15
+GetNumEmployeesMatching 0 587 2382 8 10
+GetEmployeeInfo 1726
+AcquireCompany 163 77 0.62
+GetHighestEarnerInEachCompany 0
+HireEmployee 4487 358
+PromoteEmployee 4191 3 -6
+GetCompanyInfo 310
+PromoteEmployee 7855 40 58
+GetNumEmployeesMatching 0 5690 7096 2 3
+RemoveCompany 0
+GetHighestEarnerInEachCompany 0
+PromoteEmployee 842 8 -7
+IncreaseCompanyValue 207 3
+AddCompany 57 6
+HireEmployee 3227 15
+GetNumEmployeesMatching 0 5467 7165 3 8
+GetCompanyInfo 382
+GetAllEmployeesBySalary 798
+GetAllEmployeesBySalary -38
+IncreaseCompanyValue 256 4
+IncreaseCompanyValue 29 2
+GetNumEmployeesMatching 0 15 1348 3 4
+GetEmployeeInfo 1124
+IncreaseCompanyValue 486 2
+IncreaseCompanyValue 137 0
+PromoteEmployee 4400 0 19
+PromoteEmployee 7402 62 40
+IncreaseCompanyValue 77 0
+IncreaseCompanyValue 486 1
+IncreaseCompanyValue 154 2
+PromoteEmployee 1980 10 24
+AddCompany 53 1
+IncreaseCompanyValue 445 2
+GetNumEmployeesMatching 0 2817 2817 2 9
+RemoveEmployee 2661
+PromoteEmployee 6782 19 -4
+GetAllEmployeesBySalary -588
+AcquireCompany 132 480 1.44
+GetCompanyInfo 27
+PromoteEmployee 15 65 55
+GetAllEmployeesBySalary 145
+GetNumEmployeesMatching 550 -1 -1 -1 -1
+RemoveEmployee 4400
+GetAllEmployeesBySalary 0
+GetEmployeeInfo 7356
+GetHighestEarnerInEachCompany 0
+GetCompanyInfo 27
+IncreaseCompanyValue 155 4
+GetNumEmployeesMatching 0 406 406 2 10
+GetCompanyInfo 256
+GetEmployeeInfo 7434
+GetNumEmployeesMatching 0 7910 7910 7 3
+GetNumEmployeesMatching 0 6921 6921 5 4
+GetNumEmployeesMatching 0 4884 6934 1 4
+GetHighestEarnerInEachCompany 0
+PromoteEmployee 7294 24 -19
+HireEmployee 4463 154
+PromoteEmployee 6183 30 5
+HireEmployee 2837 16
+GetNumEmployeesMatching 0 2547 5494 1 5
+HireEmployee 4171 256
+GetNumEmployeesMatching 0 629 7810 2 10
+AddEmployee 2352 29 78 3
+PromoteEmployee 7776 95 -20
+GetEmployeeInfo 7776
+PromoteEmployee 7402 53 17
+GetNumEmployeesMatching 0 -1 -2 -1 -1
+GetAllEmployeesBySalary -269
+IncreaseCompanyValue 155 4
+PromoteEmployee 6241 45 8
+GetAllEmployeesBySalary 500
+GetNumEmployeesMatching 0 2447 4795 6 3
+AcquireCompany 382 474 1.45
+IncreaseCompanyValue 286 1
+GetNumEmployeesMatching 0 5461 6339 7 4
+RemoveEmployee 790
+GetNumEmployeesMatching 0 -1 -1 -1 -1
+PromoteEmployee 6763 88 17
+GetCompanyInfo 397
+IncreaseCompanyValue 330 0
+HireEmployee 106 27
+IncreaseCompanyValue 132 1
+GetHighestEarnerInEachCompany 0
+PromoteEmployee 4503 32 -16
+GetCompanyInfo 123
+GetHighestEarnerInEachCompany 0
+GetEmployeeInfo 5308
+PromoteEmployee 3114 89 66
+GetAllEmployeesBySalary -1480
+AcquireCompany 57 207 2.97
+IncreaseCompanyValue 374 4
+HireEmployee 4782 468
+HireEmployee 0 5
+GetHighestEarner -3590
+GetNumEmployeesMatching 0 15 1029 9 1
+AcquireCompany 468 137 1.04
+RemoveCompany 27
+GetAllEmployeesBySalary -1696
+GetHighestEarnerInEachCompany 0
+RemoveEmployee 7018
+GetEmployeeInfo 1756
+GetNumEmployeesMatching 0 1967 4796 5 1
+HireEmployee 3868 207
+AddEmployee 3239 256 22 0
+GetCompanyInfo 57
+GetHighestEarnerInEachCompany 0
+HireEmployee 6556 480
+HireEmployee 7154 188
+PromoteEmployee 2608 9 21
+GetNumEmployeesMatching 0 880 880 4 2
+GetNumEmployeesMatching 550 -1 -1 -1 -1
+HireEmployee 3219 142
+GetCompanyInfo 15
+IncreaseCompanyValue 48 2
+GetCompanyInfo 48
+PromoteEmployee 1527 40 20
+GetEmployeeInfo 1527
+GetHighestEarner -1098
+GetNumEmployeesMatching 0 15 4735 2 7
+RemoveCompany 550
+IncreaseCompanyValue 468 3
+AddEmployee 6558 155 67 6
+AddEmployee 1796 0 0 -1
+GetNumEmployeesMatching 0 2023 3292 9 11
+GetNumEmployeesMatching 0 4447 7591 2 1
+GetAllEmployeesBySalary -113
+HireEmployee 3957 389
+GetNumEmployeesMatching 0 55 3656 5 5
+AcquireCompany 142 229 0.31
+GetNumEmployeesMatching 0 4401 6138 3 4
+AddEmployee 992 142 64 1
+GetCompanyInfo 411
+GetHighestEarner 27
+RemoveCompany 0
+GetCompanyInfo 382
+AcquireCompany 286 142 2.46
+PromoteEmployee 3239 98 53
+RemoveCompany 550
+GetHighestEarner 1368
+IncreaseCompanyValue 15 1
+GetAllEmployeesBySalary 2376
+GetCompanyInfo 188
+GetNumEmployeesMatching 0 5821 7863 1 1
+IncreaseCompanyValue 142 0
+IncreaseCompanyValue 229 0
+GetNumEmployeesMatching 0 7422 7791 5 5
+GetNumEmployeesMatching 0 5020 6410 3 3
+AcquireCompany 474 330 2.24
+GetCompanyInfo 15
+GetHighestEarner -2169
+GetNumEmployeesMatching 0 3960 5409 1 11
+RemoveCompany 411
+GetCompanyInfo 550
+GetEmployeeInfo 3714
+IncreaseCompanyValue 286 4
+PromoteEmployee 992 37 -31
+GetEmployeeInfo 992
+PromoteEmployee 7148 83 16
+HireEmployee 0 3
+GetNumEmployeesMatching 0 4021 4669 9 2
+AcquireCompany 188 480 0.72
+RemoveCompany 7
+GetHighestEarnerInEachCompany 0
+GetAllEmployeesBySalary -1210
+GetNumEmployeesMatching 0 4390 5652 6 9
+AcquireCompany 382 123 1.95
+AddEmployee 6769 411 96 8
+GetEmployeeInfo 7402
+RemoveCompany 16
+AddCompany 388 0
+GetHighestEarner 1332
+PromoteEmployee 3954 18 -6
+GetNumEmployeesMatching 0 1451 4520 3 6
+IncreaseCompanyValue 355 2
+PromoteEmployee 0 0 4
+GetEmployeeInfo 559
+GetAllEmployeesBySalary -1998
+IncreaseCompanyValue 355 1
+GetNumEmployeesMatching 0 3532 3567 2 5
+HireEmployee 7402 188
+AddCompany 202 6
+IncreaseCompanyValue 474 4
+IncreaseCompanyValue 123 1
+GetNumEmployeesMatching 0 15 6320 3 11
+PromoteEmployee 1208 44 -30
+GetNumEmployeesMatching 0 15 837 6 3
+GetNumEmployeesMatching 0 3495 4398 4 6
+IncreaseCompanyValue 7 4
+GetHighestEarner -340
+GetHighestEarner -2905
+GetEmployeeInfo 4316
+GetCompanyInfo 16
+AddEmployee 7253 119 75 8
+GetHighestEarner 936
+AcquireCompany 310 468 1.49
+GetHighestEarner -2110
+GetNumEmployeesMatching 0 4763 5213 7 9
+GetCompanyInfo 355
+RemoveEmployee 0
+HireEmployee 6128 445
+AddCompany 434 6
+GetHighestEarnerInEachCompany 0
+GetCompanyInfo 29
+GetNumEmployeesMatching 0 4897 6133 4 11
+AcquireCompany 122 358 0.59
+GetNumEmployeesMatching 0 640 1724 3 3
+GetNumEmployeesMatching 0 261 7784 6 6
+GetNumEmployeesMatching 0 4470 6151 2 7
+GetCompanyInfo 358
+HireEmployee 6782 355
+AddCompany 59 8
+RemoveCompany 550
+RemoveEmployee 4453
+AcquireCompany 358 397 0.12
+HireEmployee 1010 411
+AcquireCompany 188 155 1.42
+GetNumEmployeesMatching 0 7643 7748 4 7
+GetNumEmployeesMatching 0 3791 5453 2 1
+GetAllEmployeesBySalary -435
+AcquireCompany 154 119 0.55
+GetCompanyInfo 89
+HireEmployee 272 53
+PromoteEmployee 6128 64 -24
+IncreaseCompanyValue 89 2
+GetNumEmployeesMatching 0 1175 1558 7 11
+GetNumEmployeesMatching 0 5980 6676 6 2
+IncreaseCompanyValue 89 1
+IncreaseCompanyValue 2 1
+GetCompanyInfo 2
+GetHighestEarner 1484
+GetHighestEarner 172
+GetHighestEarnerInEachCompany 0
+GetEmployeeInfo 6175
+IncreaseCompanyValue 389 0
+PromoteEmployee 2214 32 38
+GetAllEmployeesBySalary -3696
+HireEmployee 5851 155
+GetAllEmployeesBySalary -3465
+IncreaseCompanyValue 188 4
+GetNumEmployeesMatching 0 3802 6600 1 7
+GetHighestEarner -3730
+GetEmployeeInfo 1208
+GetNumEmployeesMatching 0 15 7786 5 2
+GetAllEmployeesBySalary -4302
+GetNumEmployeesMatching 0 1730 4238 1 1
+GetEmployeeInfo 1010
+GetNumEmployeesMatching 0 3248 4548 7 9
+GetNumEmployeesMatching 0 6227 7620 3 1
+GetAllEmployeesBySalary -1010
+GetHighestEarnerInEachCompany 0
+HireEmployee 7294 89
+GetEmployeeInfo 3684
+GetNumEmployeesMatching 0 -1 -2 -1 -1
+GetNumEmployeesMatching 0 4851 4851 2 6
+AcquireCompany 59 397 1.27
+GetAllEmployeesBySalary 1496
+PromoteEmployee 7048 33 -9
+AddCompany 456 1
+RemoveEmployee 4171
+GetNumEmployeesMatching 0 15 1326 6 1
+HireEmployee 7617 486
+AcquireCompany 48 397 2.72
+IncreaseCompanyValue 122 2
+GetNumEmployeesMatching 0 3986 6259 2 3
+HireEmployee 7294 154
+IncreaseCompanyValue 445 1
+GetNumEmployeesMatching 0 4506 7871 1 4
+GetHighestEarner 191
+GetNumEmployeesMatching 0 7224 7379 5 11
+IncreaseCompanyValue 57 3
+GetCompanyInfo 155
+AddCompany 292 2
+GetNumEmployeesMatching 0 15 2645 5 1
+GetCompanyInfo 355
+PromoteEmployee 2352 22 42
+IncreaseCompanyValue 207 4
+IncreaseCompanyValue 456 1
+PromoteEmployee 0 0 -33
+PromoteEmployee 4597 45 10
+GetCompanyInfo 89
+IncreaseCompanyValue 480 1
+GetNumEmployeesMatching 0 5012 5387 3 1
+PromoteEmployee 1345 99 -1
+AddCompany 312 3
+AcquireCompany 229 286 0.62
+IncreaseCompanyValue 53 3
+GetNumEmployeesMatching 0 620 4134 8 4
+GetHighestEarnerInEachCompany 0
+HireEmployee 3843 123
+AcquireCompany 486 358 2.76
+AcquireCompany 389 188 2.88
+HireEmployee 3448 77
+GetCompanyInfo 474
+GetCompanyInfo 182
+GetEmployeeInfo 3448
+GetNumEmployeesMatching 0 561 4259 3 3
+GetAllEmployeesBySalary -4960
+AcquireCompany 456 29 2.2
+GetNumEmployeesMatching 0 6730 7479 5 2
+GetHighestEarnerInEachCompany 0
+GetHighestEarnerInEachCompany 0
+RemoveEmployee 4400
+AcquireCompany 119 48 0.65
+GetHighestEarner -39
+GetNumEmployeesMatching 0 7687 7842 1 9
+GetNumEmployeesMatching 0 4878 5727 2 1
+AcquireCompany 411 27 1.24
+GetNumEmployeesMatching 0 5754 6282 3 1
+IncreaseCompanyValue 382 0
+GetCompanyInfo 207
+GetHighestEarner 0
+RemoveCompany 0
+GetNumEmployeesMatching 0 614 2297 8 1
+IncreaseCompanyValue 292 3
+GetNumEmployeesMatching 0 5383 6654 9 1
+GetCompanyInfo 389
+GetNumEmployeesMatching 0 1877 2041 2 3
+GetNumEmployeesMatching 0 4281 4452 5 9
+GetHighestEarner 205
+GetNumEmployeesMatching 0 6132 7757 9 6
+GetCompanyInfo 48
+GetNumEmployeesMatching 550 -1 -1 -1 -1
+GetCompanyInfo 456
+IncreaseCompanyValue 27 1
+HireEmployee 7810 132
+IncreaseCompanyValue 310 4
+PromoteEmployee 4400 -1 11
+GetEmployeeInfo 3679
+IncreaseCompanyValue 468 2
+PromoteEmployee 4400 -1 0
+GetHighestEarnerInEachCompany 0
+AcquireCompany 312 480 1.1
+GetNumEmployeesMatching 0 -1 -1 -1 -1
+HireEmployee 3665 15
+GetEmployeeInfo 7776
+AddEmployee 6105 59 74 4
+GetAllEmployeesBySalary -3645
+GetNumEmployeesMatching 0 5072 6503 4 1
+GetNumEmployeesMatching 0 6088 7583 9 5
+HireEmployee 5890 188
+GetNumEmployeesMatching 0 6277 6277 4 8
+PromoteEmployee 4400 -1 -28
+GetNumEmployeesMatching 0 1656 7824 1 1
+HireEmployee 7253 411
+GetEmployeeInfo 4568
+IncreaseCompanyValue 53 1
+IncreaseCompanyValue 330 2
+PromoteEmployee 5352 79 -13
+GetNumEmployeesMatching 0 4859 6902 7 1
+PromoteEmployee 7253 73 45
+HireEmployee 4335 374
+GetNumEmployeesMatching 0 7180 7812 9 3
+PromoteEmployee 2352 98 -12
+AddEmployee 5416 57 45 4
+GetAllEmployeesBySalary 1728
+RemoveEmployee 4400
+GetHighestEarner 2045
+GetCompanyInfo 202
+AddCompany 103 4
+GetCompanyInfo 15
+GetNumEmployeesMatching 0 1977 3556 1 3
+GetHighestEarnerInEachCompany 2
+PromoteEmployee 4400 -1 61
+IncreaseCompanyValue 456 1
+GetCompanyInfo 468
+GetAllEmployeesBySalary 640
+IncreaseCompanyValue 486 1
+GetHighestEarner 88
+GetAllEmployeesBySalary 158
+HireEmployee 3868 474
+PromoteEmployee 3448 43 12
+PromoteEmployee 3843 17 21
+IncreaseCompanyValue 16 1
+GetAllEmployeesBySalary 2824
+GetNumEmployeesMatching 0 6002 7827 5 7
+GetAllEmployeesBySalary 3294
+HireEmployee 334 155
+GetNumEmployeesMatching 0 5585 6856 3 3
+AcquireCompany 382 397 0.82
+GetNumEmployeesMatching 0 704 2023 8 7
+IncreaseCompanyValue 468 3
+GetHighestEarnerInEachCompany 0
+GetNumEmployeesMatching 550 -1 -1 -1 -1
+GetHighestEarner 752
+AcquireCompany 456 207 1.37
+RemoveEmployee 4400
+RemoveCompany 550
+HireEmployee 3768 456
+GetAllEmployeesBySalary 2415
+PromoteEmployee 3248 18 19
+RemoveEmployee 1327
+GetNumEmployeesMatching 0 7508 7665 1 3
+GetCompanyInfo 456
+GetAllEmployeesBySalary -1617
+AcquireCompany 330 188 0.68
+GetNumEmployeesMatching 0 6355 6355 5 1
+AcquireCompany 374 48 2.92
+AcquireCompany 434 355 1.14
+IncreaseCompanyValue 397 2
+GetCompanyInfo 468
+GetNumEmployeesMatching 0 1889 1975 8 5
+GetNumEmployeesMatching 286 1963 2230 66 4
+GetEmployeeInfo 4400
+GetEmployeeInfo 5308
+PromoteEmployee 7776 50 1
+GetEmployeeInfo 7858
+GetCompanyInfo 292
+IncreaseCompanyValue 0 -1
+IncreaseCompanyValue 229 0
+PromoteEmployee 3666 3 -10
+GetAllEmployeesBySalary 2349
+RemoveCompany 0
+GetEmployeeInfo 3981
+GetCompanyInfo 155
+GetHighestEarner -250
+IncreaseCompanyValue 53 1
+GetNumEmployeesMatching 0 6965 6965 2 10
+IncreaseCompanyValue 330 4
+GetHighestEarnerInEachCompany 0
+IncreaseCompanyValue 29 4
+RemoveEmployee 5328
+AddEmployee 2479 7 97 1
+GetEmployeeInfo 1208
+GetNumEmployeesMatching 0 3424 4706 4 1
+GetCompanyInfo 59
+IncreaseCompanyValue 122 4
+RemoveCompany 0
+PromoteEmployee 7855 42 -10
+GetNumEmployeesMatching 0 6689 6689 7 10
+GetEmployeeInfo 1726
+GetAllEmployeesBySalary -4140
+AcquireCompany 355 411 2.37
+GetNumEmployeesMatching 0 3564 4078 4 7
+AddEmployee 5407 389 66 2
+GetEmployeeInfo 3714
+GetNumEmployeesMatching 0 1057 4713 6 9
+GetNumEmployeesMatching 0 15 3780 7 1
+GetHighestEarnerInEachCompany 0
+IncreaseCompanyValue 188 3
+AcquireCompany 434 355 0.64
+GetAllEmployeesBySalary -2916
+GetNumEmployeesMatching 0 1669 3829 9 8
+GetNumEmployeesMatching 0 -1 -1 -1 -1
+AcquireCompany 89 7 2.7
+IncreaseCompanyValue 330 2
+IncreaseCompanyValue 312 3
+AcquireCompany 16 229 0.96
+AcquireCompany 103 397 0.53
+GetNumEmployeesMatching 0 15 7579 5 10
+IncreaseCompanyValue 103 3
+PromoteEmployee 4335 24 -15
+GetNumEmployeesMatching 0 3619 3619 2 3
+GetNumEmployeesMatching 0 6653 7099 1 6
+GetEmployeeInfo 7150
+HireEmployee 6769 16
+GetNumEmployeesMatching 0 3116 7679 1 11
+GetAllEmployeesBySalary 1863
+GetNumEmployeesMatching 0 7637 7890 2 4
+PromoteEmployee 1433 0 38
+HireEmployee 106 486
+GetEmployeeInfo 4969
+HireEmployee 3248 207
+GetCompanyInfo 15
+GetHighestEarner -255
+GetEmployeeInfo 7434
+GetHighestEarnerInEachCompany 0
+GetNumEmployeesMatching 0 15 3584 7 3
+AddCompany 486 3
+IncreaseCompanyValue 89 1
+RemoveEmployee 4400
+IncreaseCompanyValue 123 1
+GetNumEmployeesMatching 0 3992 7615 8 9
+IncreaseCompanyValue 330 1
+GetHighestEarner -4320
+GetNumEmployeesMatching 0 5834 5988 1 1
+IncreaseCompanyValue 16 3
+GetNumEmployeesMatching 0 7277 7288 4 1
+GetCompanyInfo 486
+GetNumEmployeesMatching 0 2274 6376 1 1
+PromoteEmployee 7822 91 45
+RemoveEmployee 3868
+GetCompanyInfo 16
+GetCompanyInfo 480
+GetCompanyInfo 123
+RemoveEmployee 0
+PromoteEmployee 3122 97 60
+GetCompanyInfo 468
+IncreaseCompanyValue 119 4
+GetNumEmployeesMatching 0 7621 7697 2 7
+PromoteEmployee 4715 17 62
+GetCompanyInfo 188
+GetNumEmployeesMatching 550 -1 -1 -1 -1
+GetNumEmployeesMatching 0 2665 3087 3 4
+HireEmployee 5851 57
+GetNumEmployeesMatching 0 4137 7903 6 10
+PromoteEmployee 5416 19 11
+PromoteEmployee 0 0 63
+IncreaseCompanyValue 486 4
+GetNumEmployeesMatching 0 258 1030 6 1
+RemoveEmployee 4400
+PromoteEmployee 7434 69 -19
+HireEmployee 4008 207
+AcquireCompany 456 2 2.97
+GetEmployeeInfo 645
+GetEmployeeInfo 720
+GetCompanyInfo 59
+GetNumEmployeesMatching 0 6930 7552 7 4
+GetCompanyInfo 310
+IncreaseCompanyValue 286 2
+AcquireCompany 411 202 0.52
+GetEmployeeInfo 7434
+PromoteEmployee 554 7 43
+AcquireCompany 374 480 2.2
+GetNumEmployeesMatching 0 5217 5607 9 4
+GetHighestEarner 320
+HireEmployee 1124 310
+GetAllEmployeesBySalary -455
+IncreaseCompanyValue 163 0
+AddEmployee 4309 434 24 6
+AcquireCompany 154 202 2.28
+AcquireCompany 188 15 2.57
+GetNumEmployeesMatching 0 7220 7220 7 10
+GetCompanyInfo 59
+GetHighestEarner 2230
+GetEmployeeInfo 3684
+GetNumEmployeesMatching 0 2823 3053 4 2
+GetNumEmployeesMatching 550 -1 -1 -1 -1
+GetNumEmployeesMatching 0 6754 7863 7 4
+GetEmployeeInfo 3205
+GetNumEmployeesMatching 0 5432 6171 4 2
+GetCompanyInfo 480
+GetNumEmployeesMatching 0 714 3196 9 1
+GetAllEmployeesBySalary -2842
+AddEmployee 3272 15 44 7
+HireEmployee 7356 456
+GetCompanyInfo 397
+GetCompanyInfo 143
+GetEmployeeInfo 7356
+IncreaseCompanyValue 53 0
+GetHighestEarner 0
+PromoteEmployee 4400 0 -10
+GetAllEmployeesBySalary -406
+RemoveCompany 550
+GetAllEmployeesBySalary -316
+PromoteEmployee 2482 91 45
+HireEmployee 3239 397
+RemoveCompany 550
+PromoteEmployee 1095 59 57
+PromoteEmployee 1653 70 -30
+AddEmployee 6201 292 25 4
+AcquireCompany 53 103 0.21
+GetHighestEarnerInEachCompany 0
+PromoteEmployee 7855 99 -12
+AcquireCompany 7 312 0.54
+GetNumEmployeesMatching 0 5155 6433 4 7
+GetEmployeeInfo 3831
+AddEmployee 3285 89 12 4
+RemoveCompany 310
+HireEmployee 4463 27
+GetAllEmployeesBySalary 3537
+GetHighestEarner -177
+GetCompanyInfo 163
+GetNumEmployeesMatching 0 4718 6554 4 1
+GetNumEmployeesMatching 0 996 4926 8 7
+GetHighestEarner -944
+HireEmployee 6241 202
+AddEmployee 5576 382 50 7
+GetEmployeeInfo 4715
+GetCompanyInfo 59
+IncreaseCompanyValue 486 0
+PromoteEmployee 2794 10 6
+AcquireCompany 16 16 2.08
+AcquireCompany 486 7 0.27
+GetCompanyInfo 122
+GetNumEmployeesMatching 0 4872 6039 5 9
+AcquireCompany 122 89 2.91
+GetHighestEarnerInEachCompany 0
+AcquireCompany 397 468 0.65
+PromoteEmployee 1855 39 19
+GetNumEmployeesMatching 0 1850 2847 7 5
+AddCompany 468 7
+HireEmployee 2837 16
+PromoteEmployee 334 97 15
+IncreaseCompanyValue 550 0
+PromoteEmployee 3221 56 -11
+HireEmployee 6846 103
+GetCompanyInfo 389
+GetNumEmployeesMatching 0 4427 4427 4 1
+GetHighestEarnerInEachCompany 0
+IncreaseCompanyValue 411 3
+PromoteEmployee 4400 -1 62
+AddEmployee 2201 57 67 5
+IncreaseCompanyValue 445 3
+GetHighestEarner 2148
+IncreaseCompanyValue 229 0
+HireEmployee 3981 486
+AcquireCompany 132 256 2.23
+HireEmployee 247 207
+GetNumEmployeesMatching 355 1828 1198 134 75
+AddCompany 550 0
+PromoteEmployee 6183 15 -32
+GetEmployeeInfo 6183
+IncreaseCompanyValue 389 3
+GetNumEmployeesMatching 0 1534 7422 5 1
+PromoteEmployee 4400 -1 -31
+GetNumEmployeesMatching 0 475 475 9 1
+GetCompanyInfo 256
+GetNumEmployeesMatching 0 5719 7591 4 1
+RemoveEmployee 0
+IncreaseCompanyValue 103 4
+IncreaseCompanyValue 119 1
+PromoteEmployee 3591 9 66
+RemoveCompany 0
+IncreaseCompanyValue 355 1
+GetCompanyInfo 312
+HireEmployee 587 355
+IncreaseCompanyValue 202 3
+GetHighestEarner 1890
+GetAllEmployeesBySalary 1144
+GetHighestEarner -1860
+GetCompanyInfo 256
+AcquireCompany 468 286 0.38
+GetAllEmployeesBySalary -1030
+IncreaseCompanyValue 374 1
+IncreaseCompanyValue 229 4
+AcquireCompany 474 142 0.45
+GetCompanyInfo 358
+PromoteEmployee 4715 80 46
+GetNumEmployeesMatching 0 2687 3791 8 2
+GetNumEmployeesMatching 0 -1 -2 -1 -1
+GetNumEmployeesMatching 0 1789 3362 5 1
+GetCompanyInfo 119
+GetNumEmployeesMatching 0 15 6123 6 7
+GetHighestEarner -200
+AcquireCompany 256 155 0.1
+GetCompanyInfo 123
+IncreaseCompanyValue 7 0
+GetNumEmployeesMatching 0 1226 7243 9 9
+IncreaseCompanyValue 256 4
+HireEmployee 7770 132
+RemoveEmployee 4400
+AddCompany 410 1
+GetEmployeeInfo 2021
+GetCompanyInfo 122
+GetNumEmployeesMatching 0 377 4960 8 1
+PromoteEmployee 6167 0 -5
+IncreaseCompanyValue 374 1
+AcquireCompany 374 374 0.5
+AddEmployee 1320 202 56 1
+HireEmployee 1297 310
+GetCompanyInfo 374
+GetCompanyInfo 195
+GetEmployeeInfo 1297
+IncreaseCompanyValue 434 2
+PromoteEmployee 208 91 64
+GetHighestEarnerInEachCompany 0
+GetNumEmployeesMatching 0 4147 4147 8 7
+AcquireCompany 382 445 2.39
+GetAllEmployeesBySalary 196
+HireEmployee 1527 59
+GetNumEmployeesMatching 550 -1 -2 -1 -1
+GetCompanyInfo 57
+GetNumEmployeesMatching 0 4851 7879 8 3
+IncreaseCompanyValue 7 1
+HireEmployee 541 256
+GetNumEmployeesMatching 0 4174 5179 9 6
+AcquireCompany 312 7 2.12
+PromoteEmployee 842 9 37
+GetCompanyInfo 59
+GetNumEmployeesMatching 0 4171 7109 8 1
+GetNumEmployeesMatching 0 4642 7448 8 3
+PromoteEmployee 334 53 32
+GetCompanyInfo 2
+GetAllEmployeesBySalary 3944
+AcquireCompany 397 480 2.55
+GetNumEmployeesMatching 0 1067 3302 9 1
+AddCompany 341 1
+GetNumEmployeesMatching 0 3755 4366 7 11
+HireEmployee 645 163
+GetCompanyInfo 389
+GetCompanyInfo 206
+GetEmployeeInfo 645
+GetNumEmployeesMatching 0 -1 -1 -1 -1
+GetAllEmployeesBySalary -2484
+GetHighestEarner 993
+GetEmployeeInfo 1109
+GetNumEmployeesMatching 154 6482 6484 126 4
+GetEmployeeInfo 247
+GetNumEmployeesMatching 0 1350 5061 5 1
+GetCompanyInfo 330
+GetNumEmployeesMatching 0 4294 7264 5 8
+PromoteEmployee 4528 54 -32
+IncreaseCompanyValue 154 4
+GetNumEmployeesMatching 0 2719 2719 5 11
+RemoveEmployee 0
+AddCompany 197 4
+AcquireCompany 29 397 2.77
+HireEmployee 720 411
+GetCompanyInfo 229
+GetCompanyInfo 87
+GetEmployeeInfo 720
+HireEmployee 5841 355
+GetCompanyInfo 119
+GetCompanyInfo 4
+GetEmployeeInfo 5841
+GetNumEmployeesMatching 154 7116 7396 119 5
+GetEmployeeInfo 2417
+HireEmployee 1010 410
+RemoveEmployee 4400
+PromoteEmployee 2021 44 -21
+GetNumEmployeesMatching 0 388 4967 1 9
+AcquireCompany 119 154 2.72
+IncreaseCompanyValue 207 1
+IncreaseCompanyValue 7 2
+RemoveCompany 468
+GetNumEmployeesMatching 163 1403 2560 96 6
+GetHighestEarnerInEachCompany 0
+GetEmployeeInfo 7126
+HireEmployee 1629 16
+HireEmployee 5391 256
+GetEmployeeInfo 2242
+IncreaseCompanyValue 107 2
+AcquireCompany 15 486 2.53
+GetNumEmployeesMatching 0 15 762 8 4
+GetNumEmployeesMatching 0 2207 6267 1 7
+HireEmployee 3219 59
+GetCompanyInfo 434
+GetNumEmployeesMatching 0 3671 4035 8 6
+HireEmployee 613 411
+GetNumEmployeesMatching 445 6084 6084 8 3
+GetAllEmployeesBySalary -636
+PromoteEmployee 7858 19 -27
+GetAllEmployeesBySalary -450
+GetEmployeeInfo 7770
+RemoveEmployee 3221
+IncreaseCompanyValue 188 4
+PromoteEmployee 7048 43 -4
+IncreaseCompanyValue 103 0
+HireEmployee 3804 286
+IncreaseCompanyValue 550 0
+GetCompanyInfo 256
+GetCompanyInfo 411
+GetEmployeeInfo 3684
+RemoveEmployee 4400
+AddCompany 407 1
+AcquireCompany 341 229 1.82
+GetNumEmployeesMatching 0 5461 6773 1 2
+HireEmployee 1320 292
+AddEmployee 1483 197 92 5
+GetNumEmployeesMatching 468 3191 3278 53 10
+GetEmployeeInfo 5890
+AcquireCompany 2 59 1.39
+GetCompanyInfo 0
+GetNumEmployeesMatching 0 3776 7039 4 2
+HireEmployee 0 38
+PromoteEmployee 2717 26 11
+GetCompanyInfo 256
+HireEmployee 3679 486
+GetHighestEarner -270
+IncreaseCompanyValue 16 0
+GetCompanyInfo 7
+GetNumEmployeesMatching 0 252 7337 7 7
+IncreaseCompanyValue 358 4
+IncreaseCompanyValue 188 0
+GetNumEmployeesMatching 0 7549 7628 7 5
+GetHighestEarnerInEachCompany 0
+GetAllEmployeesBySalary -1452
+IncreaseCompanyValue 550 -1
+GetEmployeeInfo 2837
+AddCompany 139 5
+GetNumEmployeesMatching 0 4919 5393 9 10
+AddCompany 338 4
+GetCompanyInfo 107
+PromoteEmployee 4316 92 9
+GetEmployeeInfo 3843
+PromoteEmployee 982 54 2
+PromoteEmployee 4400 0 56
+GetNumEmployeesMatching 0 7626 7840 5 7
+PromoteEmployee 1504 77 -7
+HireEmployee 7770 411
+IncreaseCompanyValue 2 1
+HireEmployee 3665 338
+GetNumEmployeesMatching 0 3894 4101 2 5
+IncreaseCompanyValue 445 3
+PromoteEmployee 4455 10 34
+PromoteEmployee 4400 -1 35
+PromoteEmployee 4025 10 55
+GetCompanyInfo 374
+AcquireCompany 286 57 1.13
+IncreaseCompanyValue 310 0
+HireEmployee 3898 434
+HireEmployee 3957 434
+PromoteEmployee 4568 70 53
+RemoveEmployee 0
+IncreaseCompanyValue 188 3
+GetCompanyInfo 188
+GetNumEmployeesMatching 0 644 3974 6 3
+GetNumEmployeesMatching 0 15 1403 8 3
+IncreaseCompanyValue 468 0
+GetEmployeeInfo 7722
+GetCompanyInfo 155
+PromoteEmployee 106 0 63
+GetNumEmployeesMatching 0 715 1700 5 4
+HireEmployee 3954 41
+AcquireCompany 389 119 0.4
+HireEmployee 3957 456
+GetNumEmployeesMatching 0 2311 6731 1 10
+GetEmployeeInfo 5407
+GetAllEmployeesBySalary 0
+GetNumEmployeesMatching 0 4195 7736 6 1
+HireEmployee 6201 27
+PromoteEmployee 3714 9 44
+GetHighestEarner 3234
+GetCompanyInfo 480
+RemoveEmployee 0
+GetNumEmployeesMatching 550 -1 -1 -1 -1
+GetNumEmployeesMatching 0 6421 6783 1 5
+GetNumEmployeesMatching 550 -1 -1 -1 -1
+GetAllEmployeesBySalary -692
+HireEmployee 4597 27
+AddEmployee 6056 89 30 4
+AcquireCompany 77 119 0.5
+AddEmployee 6467 292 18 3
+Quit
