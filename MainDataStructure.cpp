@@ -245,6 +245,10 @@ int MainDataStructure::GetAllEmployeesBySalary(int companyID, int **employeeIDs)
     }
     auto employees = cur_employees_tree_by_salary->getInOrderArray();
     *employeeIDs = (int *)(malloc(sizeof(int) * numOfEmployees));
+    if (employeeIDs == NULL)
+    {
+        throw std::bad_alloc();
+    }
 
     for (int i = 0; i < numOfEmployees; i++)
     {
@@ -264,6 +268,10 @@ void MainDataStructure::GetHighestEarnerInEachCompany(int numOfCompanies, int **
     }
 
     *highestEarners = (int *)(malloc(sizeof(int) * numOfCompanies));
+    if (highestEarners == NULL)
+    {
+        throw std::bad_alloc();
+    }
 
     Company **companies_with_employees = companies_with_employees_tree.getInOrderArray(numOfCompanies);
     for (int i = 0; i < numOfCompanies; i++)
