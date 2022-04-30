@@ -137,11 +137,15 @@ Node<T> *AVLTree<T>::addRecursive(T data, Node<T> *current, Node<T> *parent)
         if (newNode != nullptr)
             current->setLeft(newNode);
     }
-    else
+    else if (compare(current->getData(), data))
     {
         Node<T> *newNode = addRecursive(data, current->getRight(), current);
         if (newNode != nullptr)
             current->setRight(newNode);
+    }
+    else
+    {
+        return nullptr;
     }
 
     balance(current, parent);
