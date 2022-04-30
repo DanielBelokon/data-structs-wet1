@@ -3,7 +3,7 @@
 MainDataStructure::MainDataStructure()
 {
     companies_tree = AVLTree<Company *>(Company::compareByPointer);
-    companies_tree_with_employees = AVLTree<Company *>(Company::compareByPointer);
+    companies_with_employees_tree = AVLTree<Company *>(Company::compareByPointer);
     employees_tree = AVLTree<Employee *>(Employee::compareByPointer);
     employees_tree_by_salary = AVLTree<Employee *>(Employee::compareBySalary);
     highest_earner = nullptr;
@@ -17,12 +17,12 @@ void MainDataStructure::AddCompany(int companyID, int value)
     }
     Company *company = new Company(companyID, value);
 
-    if (companies_tree.search(company) != nullptr)
+    if (companies_tree.find(company) != nullptr)
     {
         delete company;
         throw CompanyAlreadyExistsException();
     }
-    companies_tree.add(company);
+    companies_tree.insert(company);
 }
 
 void MainDataStructure::AddEmployee(int employeeID, int companyID, int salary, int grade)
@@ -34,17 +34,17 @@ void MainDataStructure::AddEmployee(int employeeID, int companyID, int salary, i
 
     Company *company = findCompanyById(companyID);
     Employee *employee = new Employee(employeeID, company, salary, grade);
-    if (employees_tree.search(employee) != nullptr)
+    if (employees_tree.find(employee) != nullptr)
     {
         delete employee;
         throw EmployeeAlreadyExistsException();
     }
 
-    companies_tree_with_employees.add(company);
+    companies_with_employees_tree.insert(company);
 
-    employees_tree.add(employee);
+    employees_tree.insert(employee);
     company->addEmployee(employee);
-    employees_tree_by_salary.add(employee);
+    employees_tree_by_salary.insert(employee);
     setHighesEarner(employee);
 }
 
@@ -75,7 +75,7 @@ void MainDataStructure::RemoveEmployee(int employeeID)
 
     if (company->getNumOfEmployees() == 0)
     {
-        companies_tree_with_employees.remove(company);
+        companies_with_employees_tree.remove(company);
     }
 
     delete employee;
@@ -96,7 +96,7 @@ void MainDataStructure::RemoveCompany(int companyID, bool force)
     }
 
     companies_tree.remove(company);
-    companies_tree_with_employees.remove(company);
+    companies_with_employees_tree.remove(company);
     delete company;
 }
 
@@ -141,8 +141,8 @@ void MainDataStructure::PromoteEmployee(int employeeID, int salaryIncrease, int 
     company->getEmployeesTreeBySalary()->remove(employee);
     employees_tree_by_salary.remove(employee);
     employee->increaseSalary(salaryIncrease);
-    company->getEmployeesTreeBySalary()->add(employee);
-    employees_tree_by_salary.add(employee);
+    company->getEmployeesTreeBySalary()->insert(employee);
+    employees_tree_by_salary.insert(employee);
 
     company->setHighesEarner(employee);
     setHighesEarner(employee);
@@ -166,10 +166,10 @@ void MainDataStructure::HireEmployee(int employeeID, int newCompanyID)
     old_company->removeEmployee(employee);
     if (old_company->getNumOfEmployees() == 0)
     {
-        companies_tree_with_employees.remove(old_company);
+        companies_with_employees_tree.remove(old_company);
     }
     new_company->addEmployee(employee);
-    companies_tree_with_employees.add(new_company);
+    companies_with_employees_tree.insert(new_company);
 
     employee->setCompany(new_company);
 }
@@ -192,7 +192,7 @@ bool MainDataStructure::AcquireCompany(int companyID, int aquiredCompanyID, doub
     company->merge(aqcuiredCompany, factor);
     if (company->getNumOfEmployees() > 0)
     {
-        companies_tree_with_employees.add(company);
+        companies_with_employees_tree.insert(company);
     }
 
     RemoveCompany(aquiredCompanyID, true);
@@ -258,14 +258,14 @@ int MainDataStructure::GetAllEmployeesBySalary(int companyID, int **employeeIDs)
 
 void MainDataStructure::GetHighestEarnerInEachCompany(int numOfCompanies, int **highestEarners)
 {
-    if (numOfCompanies <= 0 || numOfCompanies > companies_tree_with_employees.getSize())
+    if (numOfCompanies <= 0 || numOfCompanies > companies_with_employees_tree.getSize())
     {
         throw InvalidInputException();
     }
 
     *highestEarners = (int *)(malloc(sizeof(int) * numOfCompanies));
 
-    Company **companies_with_employees = companies_tree_with_employees.getInOrderArray(numOfCompanies);
+    Company **companies_with_employees = companies_with_employees_tree.getInOrderArray(numOfCompanies);
     for (int i = 0; i < numOfCompanies; i++)
     {
         (*highestEarners)[i] = companies_with_employees[i]->getHighestEarner()->getEmployeeID();
@@ -335,7 +335,7 @@ void MainDataStructure::checkInRangeRocourisve(Node<Employee *> *current, int mi
 Company *MainDataStructure::findCompanyById(int id)
 {
     Company tmp = Company(id, 0);
-    Company *result = this->companies_tree.search(&tmp);
+    Company *result = this->companies_tree.find(&tmp);
     if (result == nullptr)
         throw CompanyNotFoundException();
     return result;
@@ -344,7 +344,7 @@ Company *MainDataStructure::findCompanyById(int id)
 Employee *MainDataStructure::findEmployeeById(int id)
 {
     Employee tmp = Employee(id, 0, 0, 0);
-    Employee *result = this->employees_tree.search(&tmp);
+    Employee *result = this->employees_tree.find(&tmp);
     if (result == nullptr)
         throw EmployeeNotFoundException();
     return result;

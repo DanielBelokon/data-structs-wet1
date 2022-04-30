@@ -20,22 +20,20 @@ public:
     {
     }
 
-    void add(T data);
+    void insert(T data);
     void remove(T data);
     void merge(AVLTree<T> *tree);
-
-    void print(std::ostream &out);
 
     int getSize();
     Node<T> *getRoot() { return root; }
 
-    T search(T object);
+    T find(T object);
     T *getInOrderArray(int amount = 0);
-
-    T *filter();
     T getHighest();
 
     ~AVLTree();
+
+private:
     bool compare(T const &node1, T const &node2)
     {
         if (customCompare != nullptr)
@@ -45,10 +43,8 @@ public:
         return node1 < node2;
     }
 
-private:
-    Node<T> *addRecursive(T data, Node<T> *current, Node<T> *parent);
-    void removeRecoursive(T toDelete, Node<T> *current, Node<T> *parent);
-    void printRecursive(Node<T> *current, std::ostream &out);
+    Node<T> *insertAux(T data, Node<T> *current, Node<T> *parent);
+    void removeAux(T toDelete, Node<T> *current, Node<T> *parent);
     void replaceChild(Node<T> *parent, Node<T> *child, Node<T> *newChild);
 
     void balance(Node<T> *current, Node<T> *parent);
@@ -56,12 +52,10 @@ private:
     void inOrderAux(T *array, int *index, Node<T> *current, int amount);
     void trim(Node<T> *current, Node<T> *parent, int *amount);
     T *mergeArrays(T *arr1, T *arr2, int size1, int size2);
-    void insertInOrder(Node<T> *current, T **arr, int *index, int size);
+    void insertSortedArrayInOrder(Node<T> *current, T **arr, int *index, int size);
     Node<T> *buildEmptyTree(int h);
-    void RR(Node<T> *current, Node<T> *parent);
-    void LL(Node<T> *current, Node<T> *parent);
-    void LR(Node<T> *current, Node<T> *parent);
-    void RL(Node<T> *current, Node<T> *parent);
+    void rotateLeft(Node<T> *current, Node<T> *parent);
+    void rotateRight(Node<T> *current, Node<T> *parent);
 };
 
 template <typename T>
@@ -87,30 +81,7 @@ T AVLTree<T>::getHighest()
 }
 
 template <typename T>
-void AVLTree<T>::print(std::ostream &out)
-{
-    if (root == nullptr)
-    {
-        out << "Tree is empty" << std::endl;
-        return;
-    }
-    printRecursive(root, out);
-}
-
-template <typename T>
-void AVLTree<T>::printRecursive(Node<T> *current, std::ostream &out)
-{
-    if (current == nullptr)
-    {
-        return;
-    }
-    printRecursive(current->getLeft(), out);
-    out << current->getData() << " ";
-    printRecursive(current->getRight(), out);
-}
-
-template <typename T>
-void AVLTree<T>::add(T data)
+void AVLTree<T>::insert(T data)
 {
     if (root == nullptr)
     {
@@ -119,11 +90,11 @@ void AVLTree<T>::add(T data)
         return;
     }
     Node<T> *current = root;
-    addRecursive(data, current, nullptr);
+    insertAux(data, current, nullptr);
 }
 
 template <typename T>
-Node<T> *AVLTree<T>::addRecursive(T data, Node<T> *current, Node<T> *parent)
+Node<T> *AVLTree<T>::insertAux(T data, Node<T> *current, Node<T> *parent)
 {
     if (current == nullptr)
     {
@@ -133,13 +104,13 @@ Node<T> *AVLTree<T>::addRecursive(T data, Node<T> *current, Node<T> *parent)
     }
     if (compare(data, current->getData()))
     {
-        Node<T> *newNode = addRecursive(data, current->getLeft(), current);
+        Node<T> *newNode = insertAux(data, current->getLeft(), current);
         if (newNode != nullptr)
             current->setLeft(newNode);
     }
     else if (compare(current->getData(), data))
     {
-        Node<T> *newNode = addRecursive(data, current->getRight(), current);
+        Node<T> *newNode = insertAux(data, current->getRight(), current);
         if (newNode != nullptr)
             current->setRight(newNode);
     }
@@ -167,37 +138,43 @@ void AVLTree<T>::balance(Node<T> *current, Node<T> *parent)
     {
         if (current->getLeft()->getBalanceFactor() >= 0)
         {
-            LL(current, parent);
+            // Balance LL situation
+            rotateRight(current, parent);
         }
         else
         {
-            LR(current, parent);
+            // Balance LR situation
+            rotateLeft(current->getLeft(), current);
+            rotateRight(current, parent);
         }
     }
     else if (balanceFactor < -1)
     {
         if (current->getRight()->getBalanceFactor() <= 0)
         {
-            RR(current, parent);
+            // Balance RR situation
+            rotateLeft(current, parent);
         }
         else
         {
-            RL(current, parent);
+            // Balance RL situation
+            rotateRight(current->getRight(), current);
+            rotateLeft(current, parent);
         }
     }
 }
 
 template <typename T>
-void AVLTree<T>::removeRecoursive(T toDelete, Node<T> *current, Node<T> *parent)
+void AVLTree<T>::removeAux(T toDelete, Node<T> *current, Node<T> *parent)
 {
     // Find
     if (current == nullptr)
         return;
 
     if (compare(toDelete, current->getData()))
-        removeRecoursive(toDelete, current->getLeft(), current);
+        removeAux(toDelete, current->getLeft(), current);
     else if (compare(current->getData(), toDelete))
-        removeRecoursive(toDelete, current->getRight(), current);
+        removeAux(toDelete, current->getRight(), current);
     else if (current->getRight() == nullptr && current->getLeft() == nullptr)
     {
         replaceChild(parent, current, nullptr);
@@ -228,7 +205,7 @@ void AVLTree<T>::removeRecoursive(T toDelete, Node<T> *current, Node<T> *parent)
             temp = temp->getLeft();
         }
         T tempData = temp->getData();
-        removeRecoursive(temp->getData(), root, nullptr);
+        removeAux(temp->getData(), root, nullptr);
         current->setData(tempData);
     }
 
@@ -239,7 +216,7 @@ void AVLTree<T>::removeRecoursive(T toDelete, Node<T> *current, Node<T> *parent)
 }
 
 template <typename T>
-void AVLTree<T>::RR(Node<T> *root, Node<T> *parent)
+void AVLTree<T>::rotateLeft(Node<T> *root, Node<T> *parent)
 {
     Node<T> *new_root = root->getRight();
     replaceChild(parent, root, new_root);
@@ -255,14 +232,7 @@ void AVLTree<T>::RR(Node<T> *root, Node<T> *parent)
 }
 
 template <typename T>
-void AVLTree<T>::RL(Node<T> *root, Node<T> *parent)
-{
-    LL(root->getRight(), root);
-    RR(root, parent);
-}
-
-template <typename T>
-void AVLTree<T>::LL(Node<T> *root, Node<T> *parent)
+void AVLTree<T>::rotateRight(Node<T> *root, Node<T> *parent)
 {
     Node<T> *new_root = root->getLeft();
     replaceChild(parent, root, new_root);
@@ -275,13 +245,6 @@ void AVLTree<T>::LL(Node<T> *root, Node<T> *parent)
     {
         parent->updateHeight();
     }
-}
-
-template <typename T>
-void AVLTree<T>::LR(Node<T> *root, Node<T> *parent)
-{
-    RR(root->getLeft(), root);
-    LL(root, parent);
 }
 
 template <typename T>
@@ -304,7 +267,7 @@ void AVLTree<T>::replaceChild(Node<T> *parent, Node<T> *child, Node<T> *newChild
 }
 
 template <typename T>
-T AVLTree<T>::search(T object)
+T AVLTree<T>::find(T object)
 {
     Node<T> *result = findNode(object);
     if (result == nullptr)
@@ -347,7 +310,7 @@ Node<T> *AVLTree<T>::findNode(T object, Node<T> **prev)
 template <typename T>
 void AVLTree<T>::remove(T object)
 {
-    removeRecoursive(object, root, nullptr);
+    removeAux(object, root, nullptr);
     size--;
 }
 
@@ -370,7 +333,7 @@ void AVLTree<T>::merge(AVLTree<T> *tree)
     root = buildEmptyTree(new_height);
     trim(root, nullptr, &to_delete);
     int index = 0;
-    insertInOrder(root, &merged, &index, size);
+    insertSortedArrayInOrder(root, &merged, &index, size);
     delete[] merged;
 }
 
@@ -410,13 +373,13 @@ T *AVLTree<T>::mergeArrays(T *arr1, T *arr2, int size1, int size2)
 }
 
 template <typename T>
-void AVLTree<T>::insertInOrder(Node<T> *current, T **arr, int *index, int size)
+void AVLTree<T>::insertSortedArrayInOrder(Node<T> *current, T **arr, int *index, int size)
 {
     if (current == nullptr)
         return;
-    insertInOrder(current->getLeft(), arr, index, size);
+    insertSortedArrayInOrder(current->getLeft(), arr, index, size);
     current->setData((*arr)[(*index)++]);
-    insertInOrder(current->getRight(), arr, index, size);
+    insertSortedArrayInOrder(current->getRight(), arr, index, size);
 }
 
 //hlper function for cutting the un-necessary node for making the tree "almost full"

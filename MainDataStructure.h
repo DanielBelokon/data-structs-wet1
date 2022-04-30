@@ -12,7 +12,7 @@ class MainDataStructure
 
 private:
     AVLTree<Company *> companies_tree;
-    AVLTree<Company *> companies_tree_with_employees;
+    AVLTree<Company *> companies_with_employees_tree;
     AVLTree<Employee *> employees_tree;
     AVLTree<Employee *> employees_tree_by_salary;
     Employee *highest_earner;

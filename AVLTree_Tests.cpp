@@ -95,16 +95,16 @@ void printTree(Node<dummy_struct> *root, Trunk *prev, bool isLeft)
 int main()
 {
     AVLTree<dummy_struct> tree;
-    tree.add({1, 100});
-    tree.add({2, 200});
-    tree.add({3, 140});
-    tree.add({4, 120});
-    tree.add({6, 100});
-    tree.add({99, 150});
-    tree.add({7, 1004});
-    tree.add({55, 2003});
-    tree.add({10, 100});
-    tree.add({51, 1001});
-    tree.add({14, 100});
+    tree.insert({1, 100});
+    tree.insert({2, 200});
+    tree.insert({3, 140});
+    tree.insert({4, 120});
+    tree.insert({6, 100});
+    tree.insert({99, 150});
+    tree.insert({7, 1004});
+    tree.insert({55, 2003});
+    tree.insert({10, 100});
+    tree.insert({51, 1001});
+    tree.insert({14, 100});
     printTree(tree.getRoot(), nullptr, false);
 }
