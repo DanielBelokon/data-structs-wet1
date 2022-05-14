@@ -1,0 +1,1006 @@
+#Test: BasicInorderMidTest. NumCommands: 1000. MinInt: -20. MaxInt: 1000. Seed: 6421424474937348971.
+Init
+#Starting with 500 SUCCESS commands
+AddCompany 704 42
+GetCompanyInfo 704
+AddCompany 47 39
+RemoveCompany 47
+IncreaseCompanyValue 704 12
+AddCompany 711 36
+AddEmployee 503 711 56 683
+AddEmployee 901 711 488 293
+HireEmployee 901 704
+PromoteEmployee 901 352 510
+RemoveEmployee 503
+IncreaseCompanyValue 711 92
+GetEmployeeInfo 901
+AddCompany 479 51
+RemoveEmployee 901
+AddEmployee 173 711 554 73
+GetEmployeeInfo 173
+AddCompany 803 7
+IncreaseCompanyValue 704 88
+GetEmployeeInfo 173
+PromoteEmployee 173 299 523
+RemoveCompany 479
+RemoveCompany 803
+RemoveCompany 704
+GetCompanyInfo 711
+GetCompanyInfo 711
+PromoteEmployee 173 961 816
+RemoveEmployee 173
+AddCompany 360 1
+AddEmployee 198 711 466 671
+PromoteEmployee 198 94 499
+GetEmployeeInfo 198
+AddEmployee 449 711 65 783
+GetNumEmployeesMatching 711 376 1222 717 824
+RemoveCompany 360
+GetCompanyInfo 711
+RemoveEmployee 449
+RemoveEmployee 198
+GetCompanyInfo 711
+AddEmployee 358 711 753 903
+AddCompany 925 80
+PromoteEmployee 358 305 267
+AddCompany 857 11
+IncreaseCompanyValue 857 48
+GetEmployeeInfo 358
+GetEmployeeInfo 358
+GetCompanyInfo 857
+AddCompany 202 95
+PromoteEmployee 358 428 101
+AddCompany 382 51
+RemoveEmployee 358
+AddEmployee 854 925 770 587
+RemoveEmployee 854
+IncreaseCompanyValue 857 92
+RemoveCompany 857
+GetCompanyInfo 711
+RemoveCompany 202
+IncreaseCompanyValue 711 27
+AddCompany 190 29
+AddCompany 662 2
+RemoveCompany 190
+AddCompany 899 95
+GetCompanyInfo 899
+RemoveCompany 662
+IncreaseCompanyValue 899 36
+GetCompanyInfo 925
+IncreaseCompanyValue 711 74
+GetCompanyInfo 899
+AddCompany 5 1
+GetCompanyInfo 711
+IncreaseCompanyValue 382 30
+RemoveCompany 925
+RemoveCompany 5
+AddCompany 485 12
+AddCompany 646 12
+RemoveCompany 711
+GetCompanyInfo 899
+AddCompany 306 61
+RemoveCompany 899
+RemoveCompany 382
+RemoveCompany 306
+AddEmployee 384 485 103 869
+GetEmployeeInfo 384
+PromoteEmployee 384 502 247
+AddEmployee 867 485 55 640
+GetNumEmployeesMatching -20 733 928 543 274
+GetNumEmployeesMatching -8 39 515 863 150
+GetNumEmployeesMatching -15 17 841 248 372
+GetCompanyInfo 646
+GetCompanyInfo 485
+GetNumEmployeesMatching 485 260 760 925 702
+GetNumEmployeesMatching -15 618 995 611 530
+GetEmployeeInfo 384
+AddEmployee 529 485 281 612
+AddEmployee 58 485 443 176
+GetNumEmployeesMatching 485 849 1132 840 879
+IncreaseCompanyValue 485 74
+RemoveCompany 646
+GetNumEmployeesMatching -10 165 485 250 54
+GetNumEmployeesMatching 485 658 1550 321 469
+GetNumEmployeesMatching 485 920 1356 635 783
+IncreaseCompanyValue 485 98
+GetNumEmployeesMatching -9 241 652 520 50
+GetNumEmployeesMatching -9 170 433 423 821
+IncreaseCompanyValue 485 13
+GetCompanyInfo 485
+GetNumEmployeesMatching -2 139 509 321 198
+IncreaseCompanyValue 485 77
+AddCompany 826 82
+IncreaseCompanyValue 826 28
+PromoteEmployee 58 755 189
+GetNumEmployeesMatching 485 268 879 419 509
+GetNumEmployeesMatching -3 800 1240 821 878
+GetNumEmployeesMatching 485 222 713 419 582
+GetNumEmployeesMatching 485 675 939 502 503
+PromoteEmployee 58 378 300
+IncreaseCompanyValue 826 32
+GetNumEmployeesMatching 485 416 877 659 346
+AddEmployee 383 485 453 678
+GetNumEmployeesMatching 485 305 832 213 597
+HireEmployee 383 826
+GetNumEmployeesMatching 485 81 699 670 809
+IncreaseCompanyValue 826 22
+GetCompanyInfo 826
+GetNumEmployeesMatching -18 31 475 478 797
+IncreaseCompanyValue 826 44
+RemoveEmployee 384
+GetCompanyInfo 826
+GetNumEmployeesMatching -14 577 889 45 126
+GetNumEmployeesMatching -3 722 889 15 520
+GetNumEmployeesMatching -19 581 960 21 533
+RemoveEmployee 529
+GetNumEmployeesMatching 826 373 928 350 598
+GetNumEmployeesMatching 485 38 785 384 133
+HireEmployee 383 485
+GetNumEmployeesMatching -10 259 911 990 685
+GetNumEmployeesMatching 485 224 702 437 113
+RemoveEmployee 58
+GetCompanyInfo 485
+RemoveCompany 826
+GetEmployeeInfo 867
+RemoveEmployee 383
+RemoveEmployee 867
+GetCompanyInfo 485
+GetCompanyInfo 485
+IncreaseCompanyValue 485 9
+AddCompany 691 64
+GetCompanyInfo 485
+GetCompanyInfo 691
+IncreaseCompanyValue 691 9
+RemoveCompany 691
+IncreaseCompanyValue 485 31
+IncreaseCompanyValue 485 86
+AddCompany 533 46
+RemoveCompany 485
+AddCompany 104 85
+AddCompany 719 30
+GetCompanyInfo 104
+GetCompanyInfo 533
+AddEmployee 785 719 847 671
+PromoteEmployee 785 991 737
+AddEmployee 456 104 808 669
+AddEmployee 592 533 997 910
+RemoveEmployee 592
+GetNumEmployeesMatching 719 305 796 348 906
+AddEmployee 942 533 842 513
+GetCompanyInfo 104
+PromoteEmployee 785 907 758
+GetNumEmployeesMatching -14 80 137 846 173
+GetNumEmployeesMatching -1 727 852 240 633
+RemoveEmployee 942
+GetNumEmployeesMatching -17 58 792 139 894
+GetNumEmployeesMatching 719 318 1084 823 241
+HireEmployee 456 719
+GetEmployeeInfo 456
+GetNumEmployeesMatching 719 425 507 420 798
+GetNumEmployeesMatching 719 81 576 369 375
+GetEmployeeInfo 785
+GetNumEmployeesMatching 719 141 810 399 690
+PromoteEmployee 785 488 213
+IncreaseCompanyValue 104 50
+RemoveEmployee 785
+RemoveCompany 104
+IncreaseCompanyValue 533 50
+PromoteEmployee 456 622 348
+HireEmployee 456 533
+GetEmployeeInfo 456
+RemoveEmployee 456
+AddCompany 944 21
+AddEmployee 461 719 250 468
+GetCompanyInfo 944
+RemoveCompany 533
+GetCompanyInfo 944
+GetCompanyInfo 944
+AddEmployee 89 944 143 452
+GetNumEmployeesMatching 719 971 1646 490 48
+RemoveEmployee 461
+AddEmployee 905 719 844 34
+AddEmployee 626 719 530 68
+GetNumEmployeesMatching -8 506 819 921 711
+GetEmployeeInfo 905
+AddEmployee 783 719 815 9
+AddCompany 752 100
+RemoveEmployee 905
+GetNumEmployeesMatching -4 146 664 234 61
+GetNumEmployeesMatching -18 596 630 226 52
+GetNumEmployeesMatching -17 135 729 307 24
+HireEmployee 626 752
+GetNumEmployeesMatching 752 119 730 701 439
+AddCompany 845 90
+PromoteEmployee 89 745 351
+AddCompany 180 48
+RemoveEmployee 626
+RemoveEmployee 89
+RemoveEmployee 783
+GetCompanyInfo 752
+GetCompanyInfo 944
+GetCompanyInfo 845
+RemoveCompany 944
+RemoveCompany 845
+IncreaseCompanyValue 752 10
+RemoveCompany 719
+AddCompany 9 97
+RemoveCompany 752
+AddCompany 585 9
+AddCompany 173 81
+IncreaseCompanyValue 9 44
+AddEmployee 395 180 248 737
+GetCompanyInfo 180
+GetCompanyInfo 173
+IncreaseCompanyValue 585 39
+RemoveCompany 9
+AddCompany 200 58
+AddEmployee 951 585 441 268
+PromoteEmployee 951 673 484
+GetNumEmployeesMatching 180 343 755 37 616
+GetCompanyInfo 173
+GetNumEmployeesMatching 180 335 1318 705 835
+GetCompanyInfo 180
+AddCompany 394 39
+GetEmployeeInfo 395
+GetNumEmployeesMatching 585 169 971 776 394
+GetNumEmployeesMatching 180 63 747 237 474
+GetNumEmployeesMatching -12 185 764 647 189
+RemoveEmployee 951
+AddEmployee 46 585 165 232
+GetEmployeeInfo 46
+IncreaseCompanyValue 585 61
+IncreaseCompanyValue 173 11
+AddCompany 849 6
+GetNumEmployeesMatching -2 244 959 342 473
+RemoveEmployee 395
+HireEmployee 46 173
+HireEmployee 46 200
+RemoveCompany 173
+GetEmployeeInfo 46
+AddEmployee 695 394 865 177
+RemoveCompany 849
+RemoveCompany 180
+GetNumEmployeesMatching -20 293 920 562 800
+IncreaseCompanyValue 585 49
+AddCompany 699 70
+GetNumEmployeesMatching -11 478 774 367 140
+GetNumEmployeesMatching 200 138 548 894 846
+GetNumEmployeesMatching -13 520 715 345 343
+AddCompany 210 41
+AddEmployee 920 200 380 918
+PromoteEmployee 46 112 295
+HireEmployee 695 200
+AddEmployee 762 699 668 94
+GetCompanyInfo 585
+GetCompanyInfo 210
+GetNumEmployeesMatching -4 171 698 327 16
+GetNumEmployeesMatching 200 387 973 569 42
+RemoveEmployee 762
+HireEmployee 920 394
+GetNumEmployeesMatching 200 5 608 66 20
+GetCompanyInfo 699
+GetNumEmployeesMatching -3 256 857 379 22
+GetNumEmployeesMatching 394 822 933 834 529
+GetEmployeeInfo 695
+PromoteEmployee 46 284 935
+RemoveCompany 585
+GetNumEmployeesMatching 394 349 795 820 366
+GetNumEmployeesMatching 200 38 857 724 618
+RemoveCompany 210
+PromoteEmployee 920 255 931
+RemoveCompany 699
+AddEmployee 99 394 236 209
+GetEmployeeInfo 46
+AddCompany 245 16
+GetNumEmployeesMatching 200 472 807 163 98
+HireEmployee 695 394
+IncreaseCompanyValue 245 47
+HireEmployee 99 200
+RemoveCompany 245
+IncreaseCompanyValue 394 82
+RemoveEmployee 920
+GetEmployeeInfo 695
+GetNumEmployeesMatching 200 60 506 908 251
+GetEmployeeInfo 99
+AddCompany 686 53
+RemoveCompany 686
+GetNumEmployeesMatching 200 50 223 232 982
+AddEmployee 49 394 508 242
+GetNumEmployeesMatching -4 603 745 13 62
+IncreaseCompanyValue 200 65
+AddCompany 892 77
+GetNumEmployeesMatching -2 615 845 231 117
+GetNumEmployeesMatching -17 642 873 126 171
+RemoveCompany 892
+GetEmployeeInfo 99
+AddEmployee 319 394 481 821
+RemoveEmployee 319
+GetCompanyInfo 200
+IncreaseCompanyValue 394 68
+GetNumEmployeesMatching -12 484 1337 49 989
+GetNumEmployeesMatching -5 52 244 806 353
+GetNumEmployeesMatching -4 61 513 248 938
+GetCompanyInfo 200
+HireEmployee 49 200
+RemoveEmployee 46
+GetNumEmployeesMatching -7 292 920 495 622
+GetNumEmployeesMatching -8 365 367 609 266
+GetCompanyInfo 394
+GetNumEmployeesMatching -12 212 811 185 26
+GetCompanyInfo 394
+IncreaseCompanyValue 394 33
+HireEmployee 49 394
+GetNumEmployeesMatching -8 643 704 668 73
+PromoteEmployee 99 462 680
+AddCompany 76 19
+GetNumEmployeesMatching 394 291 939 52 77
+AddEmployee 950 200 931 171
+RemoveCompany 76
+GetCompanyInfo 200
+GetNumEmployeesMatching -4 778 976 353 68
+AddCompany 359 46
+RemoveEmployee 49
+GetNumEmployeesMatching -5 758 989 252 132
+AddEmployee 126 394 589 272
+PromoteEmployee 99 925 996
+PromoteEmployee 126 617 498
+HireEmployee 950 359
+IncreaseCompanyValue 200 47
+IncreaseCompanyValue 394 8
+AddCompany 798 40
+RemoveCompany 798
+GetNumEmployeesMatching 359 42 950 398 655
+RemoveEmployee 99
+GetNumEmployeesMatching -16 916 990 837 268
+GetCompanyInfo 394
+HireEmployee 695 200
+IncreaseCompanyValue 394 80
+AddCompany 820 41
+HireEmployee 950 200
+GetNumEmployeesMatching -8 1 805 315 719
+GetCompanyInfo 820
+AddEmployee 135 394 499 959
+GetNumEmployeesMatching -4 290 994 306 79
+GetNumEmployeesMatching -17 582 1422 627 722
+IncreaseCompanyValue 394 29
+AddEmployee 177 820 440 269
+GetEmployeeInfo 177
+GetCompanyInfo 359
+PromoteEmployee 177 849 24
+GetNumEmployeesMatching -3 789 992 69 71
+GetNumEmployeesMatching -10 55 892 757 188
+GetEmployeeInfo 695
+GetCompanyInfo 820
+RemoveCompany 359
+AddEmployee 391 200 55 106
+PromoteEmployee 950 632 396
+GetCompanyInfo 394
+RemoveEmployee 695
+RemoveEmployee 177
+GetNumEmployeesMatching 394 86 580 20 354
+AddEmployee 187 200 841 993
+GetNumEmployeesMatching 200 670 970 925 131
+AddEmployee 592 820 652 374
+AddCompany 921 48
+GetEmployeeInfo 391
+AddEmployee 146 921 648 322
+GetNumEmployeesMatching 921 580 1092 167 654
+HireEmployee 950 394
+AddCompany 20 91
+PromoteEmployee 126 289 56
+GetNumEmployeesMatching 200 253 976 11 62
+IncreaseCompanyValue 394 94
+RemoveCompany 20
+GetNumEmployeesMatching 394 403 967 375 98
+AddCompany 281 79
+RemoveCompany 281
+IncreaseCompanyValue 921 58
+GetCompanyInfo 200
+GetNumEmployeesMatching 200 1000 1728 90 135
+HireEmployee 126 820
+GetEmployeeInfo 391
+IncreaseCompanyValue 921 34
+GetNumEmployeesMatching 820 324 703 479 184
+GetCompanyInfo 921
+GetNumEmployeesMatching 394 840 1448 303 10
+GetNumEmployeesMatching 921 676 813 989 532
+GetNumEmployeesMatching 200 108 964 739 931
+RemoveEmployee 592
+GetNumEmployeesMatching 820 5 941 124 34
+IncreaseCompanyValue 394 87
+IncreaseCompanyValue 200 26
+GetNumEmployeesMatching -16 45 594 297 616
+GetEmployeeInfo 126
+IncreaseCompanyValue 820 62
+HireEmployee 135 200
+GetCompanyInfo 921
+GetEmployeeInfo 391
+RemoveEmployee 950
+GetCompanyInfo 921
+RemoveCompany 394
+GetNumEmployeesMatching 921 17 807 316 931
+HireEmployee 135 921
+RemoveEmployee 146
+GetCompanyInfo 820
+GetNumEmployeesMatching -1 881 1288 659 544
+GetNumEmployeesMatching 820 702 1545 967 666
+GetNumEmployeesMatching 820 23 680 374 117
+IncreaseCompanyValue 820 82
+GetNumEmployeesMatching 921 1000 1132 257 456
+GetNumEmployeesMatching 921 221 736 225 122
+GetNumEmployeesMatching 921 67 901 314 774
+GetCompanyInfo 820
+PromoteEmployee 126 771 538
+HireEmployee 187 921
+AddEmployee 569 200 951 991
+PromoteEmployee 569 308 578
+GetNumEmployeesMatching -10 187 309 735 269
+HireEmployee 391 921
+GetCompanyInfo 921
+IncreaseCompanyValue 921 25
+PromoteEmployee 135 20 543
+RemoveEmployee 135
+AddEmployee 249 820 88 248
+HireEmployee 391 200
+GetNumEmployeesMatching -1 262 394 34 66
+GetNumEmployeesMatching 921 155 396 792 589
+IncreaseCompanyValue 820 40
+GetNumEmployeesMatching 200 55 207 108 535
+IncreaseCompanyValue 921 38
+GetCompanyInfo 820
+IncreaseCompanyValue 200 62
+GetNumEmployeesMatching -14 350 493 119 970
+AddEmployee 115 820 46 291
+GetNumEmployeesMatching 200 351 1079 479 147
+GetNumEmployeesMatching -10 164 749 731 529
+PromoteEmployee 569 489 460
+GetNumEmployeesMatching 200 24 631 1378 822
+PromoteEmployee 249 805 780
+AddEmployee 312 921 904 628
+PromoteEmployee 312 527 64
+GetEmployeeInfo 391
+HireEmployee 249 921
+IncreaseCompanyValue 200 71
+AddEmployee 358 200 712 127
+AddEmployee 705 921 872 973
+GetNumEmployeesMatching 200 205 589 731 981
+GetCompanyInfo 921
+GetCompanyInfo 820
+AddCompany 910 83
+HireEmployee 187 820
+GetNumEmployeesMatching -16 275 692 719 603
+GetNumEmployeesMatching -19 623 793 797 18
+GetNumEmployeesMatching -2 389 557 40 47
+AddEmployee 226 820 105 680
+GetNumEmployeesMatching -9 425 999 183 403
+AddCompany 880 64
+IncreaseCompanyValue 820 91
+GetNumEmployeesMatching 820 90 840 524 547
+GetEmployeeInfo 187
+GetNumEmployeesMatching -4 108 433 202 209
+GetEmployeeInfo 226
+AddEmployee 611 910 106 539
+HireEmployee 249 880
+GetNumEmployeesMatching 910 977 1977 723 550
+GetNumEmployeesMatching -16 401 1345 70 578
+GetNumEmployeesMatching 200 211 947 955 334
+PromoteEmployee 187 684 239
+AddCompany 834 69
+RemoveCompany 834
+GetNumEmployeesMatching -12 522 913 835 878
+GetNumEmployeesMatching -19 387 785 891 139
+AddCompany 926 68
+GetCompanyInfo 926
+RemoveEmployee 226
+IncreaseCompanyValue 921 35
+AddCompany 363 75
+RemoveEmployee 358
+GetNumEmployeesMatching -3 266 1159 741 286
+GetEmployeeInfo 249
+GetNumEmployeesMatching -19 386 892 793 360
+GetNumEmployeesMatching -10 657 833 360 493
+PromoteEmployee 391 679 901
+GetNumEmployeesMatching 200 481 970 404 977
+#Trying 250 mixed SUCCESS/FAILURE commands
+GetEmployeeInfo 496
+GetNumEmployeesMatching 96 488 1007 366 374
+AddCompany 621 32
+RemoveEmployee 705
+GetNumEmployeesMatching 921 282 936 668 31
+GetNumEmployeesMatching 782 163 1112 759 220
+RemoveEmployee 817
+RemoveEmployee 650
+GetNumEmployeesMatching 906 337 615 89 44
+GetNumEmployeesMatching -11 319 468 637 100
+RemoveCompany 621
+RemoveEmployee 725
+HireEmployee 126 921
+GetNumEmployeesMatching 926 196 1058 366 659
+GetNumEmployeesMatching 926 729 947 769 988
+GetCompanyInfo 486
+GetCompanyInfo 880
+GetNumEmployeesMatching 880 662 1509 617 36
+GetNumEmployeesMatching 926 138 920 220 19
+GetCompanyInfo 926
+AddCompany 363 72
+GetNumEmployeesMatching 926 663 673 542 592
+GetNumEmployeesMatching -3 609 880 84 47
+AddEmployee 798 187 395 197
+PromoteEmployee 749 652 970
+HireEmployee 795 827
+GetNumEmployeesMatching -18 585 820 84 816
+RemoveCompany 880
+AddCompany 880 78
+GetNumEmployeesMatching 514 826 1301 426 470
+PromoteEmployee 342 851 883
+GetNumEmployeesMatching 663 65 370 963 296
+GetNumEmployeesMatching 869 984 1283 247 570
+GetNumEmployeesMatching 926 498 645 77 879
+GetEmployeeInfo 837
+GetEmployeeInfo 115
+GetNumEmployeesMatching 363 23 501 609 314
+IncreaseCompanyValue 131 13
+AddCompany 880 314
+GetNumEmployeesMatching -10 379 515 614 106
+RemoveCompany 880
+GetNumEmployeesMatching 910 531 618 321 730
+GetNumEmployeesMatching 363 871 1230 287 217
+HireEmployee 115 403
+GetNumEmployeesMatching 926 554 964 79 798
+GetNumEmployeesMatching 926 335 1310 17 794
+GetNumEmployeesMatching -11 238 937 1561 586
+GetNumEmployeesMatching 363 626 765 108 904
+AddEmployee 874 926 214 150
+PromoteEmployee 244 965 853
+HireEmployee 312 200
+PromoteEmployee 167 151 -20
+GetCompanyInfo 200
+GetNumEmployeesMatching 363 156 442 857 284
+GetEmployeeInfo 564
+GetNumEmployeesMatching -8 321 720 800 472
+IncreaseCompanyValue 198 518
+GetNumEmployeesMatching 200 889 1179 235 142
+GetEmployeeInfo 372
+RemoveCompany 880
+GetNumEmployeesMatching -4 654 723 347 450
+GetNumEmployeesMatching -6 926 1140 492 689
+IncreaseCompanyValue 41 877
+GetEmployeeInfo 126
+PromoteEmployee 477 941 785
+GetEmployeeInfo 249
+RemoveCompany 880
+GetNumEmployeesMatching 644 183 421 15 29
+GetNumEmployeesMatching 910 429 456 912 440
+GetCompanyInfo 200
+AddEmployee 385 215 381 258
+GetNumEmployeesMatching 363 774 1186 809 727
+GetCompanyInfo 200
+HireEmployee 391 363
+GetNumEmployeesMatching 536 647 855 665 788
+RemoveEmployee 288
+AddCompany 52 51
+RemoveCompany 52
+GetNumEmployeesMatching -8 723 933 73 116
+AddEmployee 569 363 61 807
+GetNumEmployeesMatching 580 467 1083 644 403
+RemoveCompany 820
+GetEmployeeInfo 874
+HireEmployee 874 880
+GetNumEmployeesMatching -18 517 965 29 324
+RemoveCompany 926
+GetNumEmployeesMatching 26 925 941 75 651
+GetNumEmployeesMatching -4 824 953 100 121
+GetNumEmployeesMatching 443 477 992 563 527
+HireEmployee 686 201
+GetNumEmployeesMatching -8 940 1109 179 670
+GetNumEmployeesMatching 910 157 997 573 391
+GetNumEmployeesMatching 743 292 752 767 347
+PromoteEmployee 732 578 449
+HireEmployee 569 558
+RemoveEmployee 675
+RemoveCompany 215
+RemoveCompany 306
+GetEmployeeInfo 569
+HireEmployee 115 127
+RemoveCompany 491
+GetCompanyInfo 363
+AddCompany 200 196
+RemoveEmployee 897
+AddEmployee 367 363 802 451
+AddCompany 915 19
+AddEmployee 874 820 7 345
+GetNumEmployeesMatching 915 476 766 868 963
+HireEmployee 249 910
+AddEmployee 373 910 832 72
+IncreaseCompanyValue 200 24
+AddCompany 921 33
+GetNumEmployeesMatching 915 586 1401 695 653
+GetNumEmployeesMatching 915 455 913 498 86
+HireEmployee 895 767
+GetCompanyInfo 159
+AddCompany 910 750
+GetNumEmployeesMatching 915 841 1655 739 298
+GetNumEmployeesMatching 159 261 795 522 866
+GetNumEmployeesMatching -2 317 812 62 780
+GetCompanyInfo 915
+AddCompany 363 141
+GetNumEmployeesMatching 910 262 654 190 2
+PromoteEmployee 611 769 705
+RemoveCompany 90
+RemoveEmployee 644
+GetNumEmployeesMatching 363 275 988 322 316
+GetNumEmployeesMatching -17 78 542 38 991
+GetNumEmployeesMatching 327 962 1921 952 5
+PromoteEmployee 788 896 820
+PromoteEmployee 373 874 218
+GetEmployeeInfo 411
+IncreaseCompanyValue 191 163
+GetNumEmployeesMatching 218 202 1050 193 987
+GetEmployeeInfo 159
+GetNumEmployeesMatching -6 258 850 1251 176
+GetNumEmployeesMatching 921 96 634 99 626
+GetCompanyInfo 26
+RemoveCompany 921
+RemoveEmployee 863
+GetCompanyInfo 38
+GetNumEmployeesMatching 915 225 663 730 353
+GetNumEmployeesMatching 880 644 889 92 64
+RemoveEmployee 447
+GetNumEmployeesMatching 915 819 1527 242 845
+HireEmployee 115 200
+GetNumEmployeesMatching 915 802 1228 790 521
+GetNumEmployeesMatching 915 604 804 303 957
+GetNumEmployeesMatching 915 17 127 789 972
+GetNumEmployeesMatching 200 374 916 440 668
+AddCompany 797 94
+IncreaseCompanyValue 900 765
+RemoveEmployee 569
+GetNumEmployeesMatching -20 138 695 657 388
+GetCompanyInfo 363
+AddEmployee 52 797 250 51
+GetNumEmployeesMatching -16 422 725 25 374
+IncreaseCompanyValue 797 30
+GetNumEmployeesMatching 164 208 716 508 673
+RemoveCompany 926
+RemoveCompany 730
+GetNumEmployeesMatching 567 283 715 628 57
+RemoveCompany 200
+HireEmployee 391 363
+RemoveCompany 915
+AddCompany 83 36
+GetNumEmployeesMatching 83 272 514 476 374
+GetEmployeeInfo 367
+AddEmployee 263 820 214 675
+GetNumEmployeesMatching 577 10 385 381 846
+GetNumEmployeesMatching -1 269 583 48 607
+RemoveCompany 19
+GetNumEmployeesMatching -17 465 620 829 359
+HireEmployee 312 797
+AddCompany 83 798
+PromoteEmployee 373 399 461
+HireEmployee 893 368
+GetNumEmployeesMatching 484 385 748 152 883
+AddCompany 921 803
+GetNumEmployeesMatching 797 83 397 896 173
+HireEmployee 115 797
+HireEmployee 611 910
+GetNumEmployeesMatching 83 803 1763 66 281
+GetEmployeeInfo 391
+RemoveEmployee 373
+HireEmployee 465 835
+GetCompanyInfo 875
+RemoveCompany 862
+GetNumEmployeesMatching 83 814 1478 408 202
+RemoveEmployee 115
+RemoveCompany 200
+GetNumEmployeesMatching 797 38 549 1378 491
+IncreaseCompanyValue 797 25
+RemoveCompany 83
+GetCompanyInfo 820
+GetNumEmployeesMatching 166 696 916 815 370
+GetNumEmployeesMatching -15 5 790 114 903
+RemoveCompany 363
+GetNumEmployeesMatching 528 694 1172 264 236
+GetNumEmployeesMatching -9 308 955 144 241
+PromoteEmployee 18 201 129
+GetNumEmployeesMatching -19 552 656 567 893
+GetNumEmployeesMatching 820 39 749 271 925
+GetCompanyInfo 19
+GetNumEmployeesMatching 771 692 1403 157 173
+GetNumEmployeesMatching -4 668 1365 258 549
+IncreaseCompanyValue 840 105
+GetCompanyInfo 363
+GetNumEmployeesMatching 232 816 978 680 559
+GetNumEmployeesMatching 880 121 303 40 939
+RemoveEmployee 481
+AddCompany 421 33
+AddCompany 797 759
+GetNumEmployeesMatching 910 777 1634 101 985
+AddEmployee 249 910 803 668
+AddEmployee 95 921 548 254
+PromoteEmployee 565 38 862
+RemoveEmployee 779
+GetNumEmployeesMatching -6 195 720 649 173
+AddCompany 44 9
+RemoveEmployee 21
+PromoteEmployee 95 624 268
+GetEmployeeInfo 95
+GetNumEmployeesMatching 363 346 837 190 291
+IncreaseCompanyValue 44 54
+IncreaseCompanyValue 438 205
+HireEmployee 611 363
+RemoveEmployee 702
+GetNumEmployeesMatching 910 134 692 478 458
+GetCompanyInfo 848
+GetNumEmployeesMatching 820 505 1155 439 478
+IncreaseCompanyValue 363 28
+GetNumEmployeesMatching -2 750 952 50 597
+GetNumEmployeesMatching 524 879 1388 730 942
+RemoveCompany 419
+PromoteEmployee 263 91 215
+GetEmployeeInfo 239
+HireEmployee 52 675
+AddEmployee 290 336 581 624
+GetNumEmployeesMatching 797 103 995 1068 569
+RemoveCompany 421
+GetCompanyInfo 170
+HireEmployee 95 910
+PromoteEmployee 391 967 678
+IncreaseCompanyValue 388 871
+HireEmployee 611 820
+AddCompany 797 832
+RemoveCompany 610
+GetCompanyInfo 820
+GetNumEmployeesMatching 44 238 317 172 72
+#Finishing with 250 SUCCESS commands
+GetNumEmployeesMatching 797 239 597 642 745
+GetCompanyInfo 921
+GetNumEmployeesMatching 910 200 928 52 295
+GetNumEmployeesMatching 910 195 514 267 777
+GetNumEmployeesMatching -6 584 754 865 911
+HireEmployee 187 910
+GetNumEmployeesMatching -5 182 893 737 630
+GetNumEmployeesMatching -15 401 422 908 420
+GetEmployeeInfo 874
+GetCompanyInfo 820
+GetEmployeeInfo 95
+GetCompanyInfo 363
+RemoveCompany 44
+GetCompanyInfo 910
+RemoveEmployee 249
+GetCompanyInfo 921
+GetNumEmployeesMatching -15 331 494 154 280
+AddCompany 735 89
+IncreaseCompanyValue 797 73
+AddEmployee 674 735 806 856
+RemoveEmployee 312
+GetNumEmployeesMatching -15 116 997 14 389
+GetCompanyInfo 880
+GetNumEmployeesMatching 735 76 278 455 48
+GetCompanyInfo 910
+RemoveEmployee 674
+HireEmployee 391 910
+HireEmployee 52 880
+IncreaseCompanyValue 910 86
+AddCompany 439 79
+GetNumEmployeesMatching 363 16 717 512 159
+GetNumEmployeesMatching -14 9 821 591 295
+HireEmployee 611 880
+GetEmployeeInfo 95
+AddEmployee 846 820 706 988
+GetNumEmployeesMatching 820 333 991 626 311
+GetCompanyInfo 820
+GetNumEmployeesMatching -17 619 916 152 592
+GetNumEmployeesMatching -8 24 462 505 49
+GetNumEmployeesMatching 880 146 894 5 223
+GetEmployeeInfo 187
+RemoveEmployee 95
+RemoveEmployee 187
+HireEmployee 846 880
+PromoteEmployee 126 260 979
+GetNumEmployeesMatching -14 794 984 845 81
+RemoveEmployee 846
+PromoteEmployee 391 220 581
+AddCompany 19 99
+GetNumEmployeesMatching -17 777 951 9 10
+GetNumEmployeesMatching -1 590 753 271 165
+IncreaseCompanyValue 910 92
+AddCompany 125 57
+HireEmployee 367 820
+GetNumEmployeesMatching -6 267 592 169 758
+HireEmployee 874 125
+GetNumEmployeesMatching 910 90 256 486 893
+GetEmployeeInfo 874
+GetNumEmployeesMatching -8 804 989 792 143
+RemoveEmployee 367
+AddCompany 208 31
+AddEmployee 805 208 152 101
+AddEmployee 910 439 242 639
+GetCompanyInfo 439
+GetEmployeeInfo 874
+GetEmployeeInfo 52
+GetEmployeeInfo 805
+RemoveCompany 363
+GetEmployeeInfo 805
+GetNumEmployeesMatching 439 978 1287 892 590
+GetNumEmployeesMatching -19 74 541 1803 253
+GetEmployeeInfo 52
+AddEmployee 255 880 993 249
+RemoveEmployee 611
+RemoveCompany 19
+AddEmployee 655 735 629 554
+GetNumEmployeesMatching 820 6 905 171 61
+GetNumEmployeesMatching 208 677 860 148 37
+AddCompany 39 89
+AddCompany 413 17
+GetNumEmployeesMatching -2 718 1539 479 504
+HireEmployee 910 413
+GetNumEmployeesMatching -3 250 775 413 789
+RemoveCompany 797
+GetEmployeeInfo 263
+RemoveEmployee 263
+PromoteEmployee 52 232 68
+AddCompany 633 67
+GetNumEmployeesMatching 921 53 567 686 49
+GetNumEmployeesMatching -14 294 985 1218 66
+AddCompany 189 87
+HireEmployee 874 439
+IncreaseCompanyValue 921 64
+PromoteEmployee 805 764 128
+GetNumEmployeesMatching -16 515 778 406 129
+IncreaseCompanyValue 208 68
+GetNumEmployeesMatching 208 337 878 125 65
+IncreaseCompanyValue 125 31
+AddCompany 907 68
+IncreaseCompanyValue 633 27
+AddEmployee 207 735 408 725
+GetNumEmployeesMatching -20 671 859 841 44
+AddCompany 853 61
+PromoteEmployee 207 570 597
+HireEmployee 910 907
+RemoveEmployee 655
+GetNumEmployeesMatching 921 107 919 1660 41
+RemoveEmployee 391
+HireEmployee 52 907
+AddEmployee 646 735 506 425
+GetNumEmployeesMatching -16 627 654 99 966
+PromoteEmployee 805 877 585
+GetEmployeeInfo 910
+GetNumEmployeesMatching 439 344 1201 477 678
+PromoteEmployee 255 798 323
+GetNumEmployeesMatching 439 544 980 139 955
+GetEmployeeInfo 874
+RemoveEmployee 646
+GetEmployeeInfo 874
+GetEmployeeInfo 910
+AddCompany 547 73
+AddCompany 751 64
+RemoveCompany 39
+RemoveCompany 633
+GetEmployeeInfo 126
+HireEmployee 805 413
+HireEmployee 805 921
+RemoveEmployee 910
+GetEmployeeInfo 52
+PromoteEmployee 874 396 681
+AddEmployee 42 208 186 298
+GetNumEmployeesMatching -16 157 966 250 356
+AddCompany 674 16
+GetNumEmployeesMatching 921 281 919 839 663
+GetNumEmployeesMatching -19 688 999 531 755
+PromoteEmployee 874 796 172
+GetCompanyInfo 125
+RemoveCompany 853
+RemoveCompany 751
+GetNumEmployeesMatching 208 38 474 21 262
+AddCompany 502 59
+RemoveCompany 125
+GetNumEmployeesMatching -9 468 832 69 503
+IncreaseCompanyValue 547 23
+RemoveCompany 820
+GetCompanyInfo 502
+GetCompanyInfo 910
+RemoveCompany 910
+GetNumEmployeesMatching 907 52 215 220 20
+GetNumEmployeesMatching 208 6 434 135 734
+IncreaseCompanyValue 502 20
+GetCompanyInfo 413
+GetNumEmployeesMatching 921 164 917 374 9
+GetNumEmployeesMatching 880 652 1178 712 199
+PromoteEmployee 42 985 516
+GetEmployeeInfo 805
+HireEmployee 42 674
+AddCompany 157 90
+GetEmployeeInfo 52
+GetNumEmployeesMatching -19 263 543 662 425
+IncreaseCompanyValue 502 94
+IncreaseCompanyValue 880 7
+GetNumEmployeesMatching 674 375 621 38 664
+HireEmployee 207 921
+PromoteEmployee 874 234 817
+AddEmployee 525 439 290 647
+GetNumEmployeesMatching 439 856 885 179 53
+RemoveCompany 208
+GetNumEmployeesMatching 921 55 976 78 243
+GetNumEmployeesMatching 674 626 1159 166 80
+GetNumEmployeesMatching -10 593 932 641 38
+GetNumEmployeesMatching 880 195 826 367 276
+RemoveCompany 189
+AddCompany 685 44
+GetNumEmployeesMatching 674 695 1666 478 470
+RemoveCompany 685
+GetNumEmployeesMatching -12 541 978 386 318
+GetCompanyInfo 413
+AddEmployee 141 157 201 637
+GetEmployeeInfo 255
+GetCompanyInfo 735
+GetNumEmployeesMatching -1 194 701 1721 145
+AddEmployee 819 735 607 963
+GetEmployeeInfo 255
+AddCompany 996 45
+AddEmployee 261 502 362 433
+RemoveEmployee 207
+GetNumEmployeesMatching 674 863 1295 232 79
+HireEmployee 819 502
+RemoveCompany 547
+GetCompanyInfo 735
+RemoveEmployee 525
+RemoveCompany 413
+GetNumEmployeesMatching -16 393 726 744 196
+GetNumEmployeesMatching 921 130 891 549 83
+AddEmployee 292 502 427 718
+GetNumEmployeesMatching 907 15 293 788 276
+GetNumEmployeesMatching 439 803 1562 601 519
+AddCompany 587 62
+GetNumEmployeesMatching -20 80 502 403 446
+GetNumEmployeesMatching 921 696 974 1363 25
+GetNumEmployeesMatching 157 749 1599 690 393
+GetEmployeeInfo 261
+HireEmployee 141 735
+RemoveCompany 996
+GetEmployeeInfo 52
+IncreaseCompanyValue 157 34
+GetNumEmployeesMatching 880 164 726 849 898
+GetCompanyInfo 587
+RemoveEmployee 874
+GetNumEmployeesMatching 907 607 1373 761 851
+RemoveCompany 587
+IncreaseCompanyValue 735 29
+HireEmployee 805 674
+RemoveEmployee 42
+PromoteEmployee 261 576 67
+GetEmployeeInfo 261
+RemoveEmployee 52
+GetCompanyInfo 439
+GetNumEmployeesMatching -10 296 850 553 218
+HireEmployee 126 880
+RemoveEmployee 292
+GetNumEmployeesMatching -2 48 687 662 513
+RemoveCompany 921
+GetNumEmployeesMatching 502 984 1879 594 594
+GetNumEmployeesMatching 880 170 530 1 246
+GetNumEmployeesMatching -16 608 951 713 533
+AddCompany 293 59
+HireEmployee 261 674
+GetNumEmployeesMatching 502 949 1749 315 714
+AddEmployee 394 674 825 195
+GetNumEmployeesMatching -16 140 387 961 793
+GetNumEmployeesMatching -16 412 598 108 179
+GetNumEmployeesMatching 880 106 587 916 102
+RemoveEmployee 255
+GetNumEmployeesMatching -10 269 556 490 185
+PromoteEmployee 819 478 566
+GetEmployeeInfo 141
+RemoveEmployee 141
+AddCompany 265 97
+IncreaseCompanyValue 880 52
+GetNumEmployeesMatching 880 48 733 7 128
+GetNumEmployeesMatching -16 76 624 95 788
+GetCompanyInfo 880
+GetEmployeeInfo 261
+GetCompanyInfo 157
+AddEmployee 616 880 900 181
+GetNumEmployeesMatching 880 466 885 192 119
+IncreaseCompanyValue 502 93
+RemoveEmployee 805
+Quit

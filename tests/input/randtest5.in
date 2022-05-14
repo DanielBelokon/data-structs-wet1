@@ -1,0 +1,1006 @@
+#Test: BasicMaxTest. NumCommands: 1000. MinInt: -20. MaxInt: 1000. Seed: 1943455636920920504.
+Init
+#Starting with 500 SUCCESS commands
+AddCompany 456 85
+GetCompanyInfo 456
+AddEmployee 483 456 317 547
+IncreaseCompanyValue 456 70
+AddEmployee 293 456 931 38
+GetHighestEarner 456
+GetHighestEarner 456
+GetEmployeeInfo 483
+IncreaseCompanyValue 456 16
+GetEmployeeInfo 293
+GetHighestEarner -12
+IncreaseCompanyValue 456 51
+GetHighestEarner -13
+GetHighestEarner -3
+GetHighestEarner 456
+GetCompanyInfo 456
+GetCompanyInfo 456
+PromoteEmployee 293 620 901
+RemoveEmployee 483
+GetCompanyInfo 456
+PromoteEmployee 293 492 390
+AddCompany 218 3
+AddCompany 145 1
+HireEmployee 293 145
+GetCompanyInfo 456
+AddCompany 594 75
+PromoteEmployee 293 623 406
+HireEmployee 293 218
+GetCompanyInfo 594
+PromoteEmployee 293 536 84
+IncreaseCompanyValue 145 96
+HireEmployee 293 456
+HireEmployee 293 218
+IncreaseCompanyValue 145 42
+RemoveEmployee 293
+AddEmployee 743 594 892 505
+GetCompanyInfo 145
+AddEmployee 358 594 753 34
+PromoteEmployee 358 210 389
+GetHighestEarner -8
+RemoveCompany 218
+RemoveEmployee 743
+AddCompany 706 89
+RemoveEmployee 358
+RemoveCompany 706
+AddCompany 974 58
+GetCompanyInfo 594
+AddEmployee 112 974 951 400
+GetCompanyInfo 974
+GetCompanyInfo 145
+PromoteEmployee 112 673 107
+RemoveCompany 456
+RemoveEmployee 112
+AddEmployee 495 594 384 284
+IncreaseCompanyValue 145 96
+GetCompanyInfo 145
+GetEmployeeInfo 495
+GetEmployeeInfo 495
+IncreaseCompanyValue 145 49
+AddCompany 116 1
+GetEmployeeInfo 495
+RemoveEmployee 495
+RemoveCompany 594
+GetCompanyInfo 145
+AddCompany 938 85
+IncreaseCompanyValue 938 32
+AddCompany 279 33
+GetCompanyInfo 116
+RemoveCompany 974
+RemoveCompany 116
+AddEmployee 202 938 622 342
+AddEmployee 867 145 238 236
+GetHighestEarner -14
+RemoveEmployee 202
+RemoveCompany 938
+AddCompany 486 64
+HireEmployee 867 279
+HireEmployee 867 486
+GetEmployeeInfo 867
+AddEmployee 794 145 554 248
+GetHighestEarner 145
+RemoveEmployee 867
+HireEmployee 794 486
+GetEmployeeInfo 794
+PromoteEmployee 794 193 105
+IncreaseCompanyValue 145 93
+RemoveEmployee 794
+AddEmployee 672 279 857 24
+PromoteEmployee 672 811 131
+GetEmployeeInfo 672
+PromoteEmployee 672 366 868
+RemoveEmployee 672
+AddCompany 693 27
+RemoveCompany 486
+GetCompanyInfo 693
+AddEmployee 568 693 519 802
+PromoteEmployee 568 413 519
+HireEmployee 568 145
+HireEmployee 568 693
+RemoveCompany 279
+HireEmployee 568 145
+RemoveEmployee 568
+AddEmployee 750 145 643 734
+AddEmployee 272 693 738 617
+GetHighestEarner 693
+GetHighestEarner -16
+GetHighestEarner -18
+GetHighestEarner -11
+IncreaseCompanyValue 145 74
+PromoteEmployee 272 489 343
+AddCompany 911 49
+PromoteEmployee 272 775 168
+GetHighestEarner 145
+AddCompany 988 32
+RemoveEmployee 750
+AddEmployee 19 911 15 399
+GetEmployeeInfo 272
+GetCompanyInfo 145
+GetHighestEarner 693
+IncreaseCompanyValue 988 75
+RemoveCompany 145
+IncreaseCompanyValue 911 40
+RemoveCompany 988
+GetHighestEarner 693
+GetHighestEarner 693
+GetHighestEarner 693
+HireEmployee 272 911
+AddEmployee 251 911 28 699
+GetHighestEarner -15
+PromoteEmployee 19 249 550
+RemoveEmployee 251
+AddCompany 109 76
+RemoveEmployee 272
+AddEmployee 390 109 248 76
+GetCompanyInfo 911
+AddCompany 447 53
+GetEmployeeInfo 19
+GetEmployeeInfo 19
+GetHighestEarner 911
+GetHighestEarner 109
+RemoveCompany 447
+AddEmployee 787 109 67 46
+GetHighestEarner 911
+GetHighestEarner 109
+AddEmployee 735 693 210 10
+RemoveEmployee 19
+GetHighestEarner -12
+GetHighestEarner 693
+IncreaseCompanyValue 693 76
+AddCompany 74 41
+GetHighestEarner -11
+GetHighestEarner 693
+GetHighestEarner -3
+GetCompanyInfo 109
+RemoveEmployee 735
+GetEmployeeInfo 390
+GetHighestEarner 109
+GetHighestEarner 109
+GetHighestEarner 109
+GetCompanyInfo 911
+RemoveCompany 911
+PromoteEmployee 787 939 932
+RemoveEmployee 787
+RemoveCompany 74
+PromoteEmployee 390 208 575
+IncreaseCompanyValue 693 61
+HireEmployee 390 693
+RemoveEmployee 390
+RemoveCompany 109
+IncreaseCompanyValue 693 30
+AddCompany 594 67
+IncreaseCompanyValue 693 74
+IncreaseCompanyValue 693 83
+AddEmployee 746 693 518 364
+AddEmployee 621 594 483 413
+GetCompanyInfo 693
+GetHighestEarner 594
+IncreaseCompanyValue 594 87
+GetHighestEarner 594
+HireEmployee 746 594
+PromoteEmployee 621 56 359
+GetHighestEarner 594
+GetCompanyInfo 693
+AddCompany 163 15
+GetHighestEarner 594
+PromoteEmployee 621 294 306
+RemoveCompany 163
+GetHighestEarner -20
+HireEmployee 746 693
+GetHighestEarner 594
+GetHighestEarner 594
+HireEmployee 621 693
+GetHighestEarner 693
+RemoveEmployee 621
+GetEmployeeInfo 746
+GetCompanyInfo 693
+GetCompanyInfo 693
+IncreaseCompanyValue 594 4
+PromoteEmployee 746 874 750
+AddCompany 762 98
+IncreaseCompanyValue 693 4
+GetEmployeeInfo 746
+GetEmployeeInfo 746
+AddEmployee 981 594 533 17
+GetHighestEarner -15
+GetHighestEarner 594
+GetHighestEarner 594
+RemoveCompany 762
+AddEmployee 395 693 312 566
+RemoveEmployee 981
+AddEmployee 54 594 552 713
+IncreaseCompanyValue 693 67
+IncreaseCompanyValue 594 91
+GetEmployeeInfo 395
+GetHighestEarner 693
+GetEmployeeInfo 395
+GetEmployeeInfo 54
+GetHighestEarner -11
+RemoveEmployee 54
+AddCompany 870 63
+GetEmployeeInfo 746
+GetCompanyInfo 594
+AddCompany 91 27
+GetHighestEarner 693
+AddCompany 643 42
+AddEmployee 652 693 248 825
+PromoteEmployee 395 728 700
+RemoveCompany 91
+RemoveCompany 643
+GetHighestEarner -15
+AddEmployee 159 870 137 949
+GetHighestEarner 693
+AddEmployee 915 594 739 790
+HireEmployee 652 594
+GetHighestEarner 594
+GetHighestEarner -15
+GetEmployeeInfo 395
+GetHighestEarner -1
+GetHighestEarner 594
+GetHighestEarner 594
+IncreaseCompanyValue 693 8
+IncreaseCompanyValue 594 29
+AddEmployee 138 693 150 133
+GetHighestEarner -9
+RemoveEmployee 159
+HireEmployee 395 594
+HireEmployee 746 870
+GetCompanyInfo 693
+HireEmployee 395 870
+AddCompany 191 48
+GetHighestEarner -13
+HireEmployee 395 693
+HireEmployee 915 693
+GetHighestEarner -10
+RemoveEmployee 746
+RemoveCompany 191
+PromoteEmployee 138 555 473
+GetHighestEarner 594
+RemoveCompany 870
+IncreaseCompanyValue 594 37
+AddEmployee 533 693 42 715
+GetCompanyInfo 693
+RemoveEmployee 533
+AddEmployee 567 594 346 266
+HireEmployee 915 594
+GetEmployeeInfo 652
+IncreaseCompanyValue 693 77
+GetHighestEarner -13
+GetHighestEarner -20
+GetHighestEarner -2
+GetHighestEarner 693
+GetHighestEarner -7
+GetHighestEarner -10
+RemoveEmployee 395
+GetHighestEarner -11
+AddCompany 636 61
+GetEmployeeInfo 915
+GetCompanyInfo 636
+GetCompanyInfo 594
+PromoteEmployee 915 443 630
+GetHighestEarner -1
+GetHighestEarner 594
+IncreaseCompanyValue 693 55
+HireEmployee 567 636
+RemoveEmployee 567
+RemoveCompany 636
+GetEmployeeInfo 138
+HireEmployee 652 693
+GetHighestEarner -15
+GetHighestEarner 594
+GetCompanyInfo 594
+PromoteEmployee 138 837 853
+GetEmployeeInfo 652
+GetHighestEarner -15
+HireEmployee 138 594
+HireEmployee 915 693
+HireEmployee 138 693
+RemoveEmployee 138
+GetHighestEarner 693
+GetHighestEarner 693
+GetHighestEarner -17
+GetHighestEarner -2
+RemoveCompany 594
+AddCompany 27 55
+RemoveEmployee 915
+GetCompanyInfo 27
+PromoteEmployee 652 586 263
+AddCompany 742 63
+GetCompanyInfo 693
+AddCompany 147 91
+RemoveEmployee 652
+AddEmployee 426 147 563 498
+GetCompanyInfo 693
+RemoveEmployee 426
+RemoveCompany 742
+AddCompany 565 88
+AddEmployee 162 147 89 660
+AddCompany 941 34
+RemoveCompany 565
+PromoteEmployee 162 892 45
+IncreaseCompanyValue 693 48
+HireEmployee 162 693
+RemoveCompany 147
+RemoveCompany 27
+AddCompany 503 28
+HireEmployee 162 503
+AddCompany 644 70
+HireEmployee 162 693
+HireEmployee 162 941
+GetEmployeeInfo 162
+AddCompany 111 13
+IncreaseCompanyValue 503 47
+AddEmployee 976 644 641 109
+GetEmployeeInfo 162
+GetHighestEarner -10
+IncreaseCompanyValue 111 16
+PromoteEmployee 976 539 149
+RemoveCompany 503
+PromoteEmployee 162 969 13
+RemoveEmployee 162
+RemoveEmployee 976
+IncreaseCompanyValue 941 13
+AddCompany 928 21
+AddCompany 987 37
+RemoveCompany 644
+AddCompany 532 90
+GetCompanyInfo 693
+GetCompanyInfo 693
+AddCompany 81 72
+RemoveCompany 111
+RemoveCompany 928
+RemoveCompany 987
+IncreaseCompanyValue 532 87
+AddEmployee 779 532 756 159
+PromoteEmployee 779 347 505
+RemoveCompany 693
+GetEmployeeInfo 779
+GetEmployeeInfo 779
+GetCompanyInfo 81
+PromoteEmployee 779 316 886
+IncreaseCompanyValue 81 26
+AddEmployee 784 81 430 860
+HireEmployee 784 532
+RemoveCompany 941
+GetHighestEarner -20
+GetHighestEarner -2
+GetHighestEarner 532
+IncreaseCompanyValue 532 44
+GetHighestEarner -17
+GetHighestEarner -19
+AddCompany 603 58
+GetCompanyInfo 532
+GetHighestEarner 532
+HireEmployee 784 603
+GetHighestEarner 532
+GetCompanyInfo 603
+GetHighestEarner 603
+GetEmployeeInfo 784
+GetHighestEarner 603
+GetHighestEarner -10
+HireEmployee 779 603
+GetHighestEarner -12
+GetHighestEarner -6
+GetEmployeeInfo 779
+HireEmployee 784 532
+AddCompany 280 19
+GetEmployeeInfo 784
+RemoveEmployee 779
+RemoveEmployee 784
+AddEmployee 287 81 639 452
+AddCompany 20 81
+RemoveCompany 20
+RemoveEmployee 287
+AddCompany 251 49
+IncreaseCompanyValue 603 35
+AddCompany 927 16
+IncreaseCompanyValue 603 47
+RemoveCompany 603
+AddCompany 260 55
+AddEmployee 581 260 823 360
+RemoveCompany 927
+AddEmployee 729 280 777 628
+GetHighestEarner -10
+GetHighestEarner 260
+RemoveCompany 532
+RemoveEmployee 729
+GetEmployeeInfo 581
+RemoveEmployee 581
+GetCompanyInfo 81
+IncreaseCompanyValue 81 36
+GetCompanyInfo 81
+RemoveCompany 260
+AddEmployee 50 251 199 1000
+RemoveEmployee 50
+GetCompanyInfo 280
+RemoveCompany 81
+RemoveCompany 251
+AddCompany 569 92
+IncreaseCompanyValue 280 67
+RemoveCompany 280
+GetCompanyInfo 569
+IncreaseCompanyValue 569 16
+GetCompanyInfo 569
+GetCompanyInfo 569
+AddEmployee 531 569 801 961
+IncreaseCompanyValue 569 3
+IncreaseCompanyValue 569 66
+IncreaseCompanyValue 569 62
+GetCompanyInfo 569
+GetEmployeeInfo 531
+GetCompanyInfo 569
+GetEmployeeInfo 531
+AddEmployee 415 569 934 166
+GetHighestEarner 569
+AddCompany 191 97
+RemoveEmployee 531
+PromoteEmployee 415 892 618
+IncreaseCompanyValue 191 20
+IncreaseCompanyValue 569 29
+HireEmployee 415 191
+PromoteEmployee 415 586 899
+PromoteEmployee 415 398 727
+AddCompany 361 94
+GetEmployeeInfo 415
+AddCompany 902 1
+RemoveCompany 569
+PromoteEmployee 415 382 472
+RemoveCompany 902
+HireEmployee 415 361
+IncreaseCompanyValue 191 38
+GetEmployeeInfo 415
+RemoveCompany 191
+GetEmployeeInfo 415
+GetEmployeeInfo 415
+GetCompanyInfo 361
+AddCompany 465 21
+RemoveEmployee 415
+RemoveCompany 465
+AddCompany 699 63
+AddCompany 401 58
+GetCompanyInfo 401
+RemoveCompany 401
+IncreaseCompanyValue 361 24
+IncreaseCompanyValue 361 11
+AddCompany 237 37
+AddCompany 33 34
+RemoveCompany 33
+AddCompany 644 89
+AddEmployee 890 237 28 308
+PromoteEmployee 890 232 792
+GetCompanyInfo 361
+AddEmployee 700 644 678 6
+GetHighestEarner -11
+RemoveCompany 699
+HireEmployee 700 237
+HireEmployee 890 644
+GetHighestEarner 644
+HireEmployee 890 361
+IncreaseCompanyValue 361 100
+GetHighestEarner 237
+PromoteEmployee 700 924 897
+GetHighestEarner -14
+GetHighestEarner -18
+GetCompanyInfo 237
+HireEmployee 890 644
+GetHighestEarner -1
+AddEmployee 670 644 17 224
+GetHighestEarner 237
+HireEmployee 890 237
+IncreaseCompanyValue 361 17
+HireEmployee 670 361
+GetHighestEarner 237
+HireEmployee 890 361
+HireEmployee 890 644
+RemoveEmployee 700
+GetHighestEarner -2
+AddCompany 202 48
+GetHighestEarner 361
+GetEmployeeInfo 670
+GetHighestEarner 644
+#Trying 250 mixed SUCCESS/FAILURE commands
+AddEmployee 670 644 621 366
+HireEmployee 87 248
+GetHighestEarner 237
+RemoveCompany 237
+GetHighestEarner 361
+GetCompanyInfo 639
+PromoteEmployee 890 658 248
+IncreaseCompanyValue 680 341
+HireEmployee 890 361
+AddEmployee 670 597 236 47
+AddCompany 403 20
+GetHighestEarner -19
+GetHighestEarner 644
+PromoteEmployee 869 741 914
+GetHighestEarner 361
+GetHighestEarner 361
+PromoteEmployee 890 663 827
+GetCompanyInfo 644
+PromoteEmployee 890 154 530
+GetHighestEarner 531
+GetHighestEarner 361
+AddEmployee 670 939 593 682
+RemoveEmployee 670
+PromoteEmployee 890 1000 137
+HireEmployee 890 818
+GetHighestEarner 644
+AddEmployee 106 644 254 687
+PromoteEmployee 890 945 448
+GetHighestEarner 644
+GetHighestEarner 361
+RemoveEmployee 713
+PromoteEmployee 106 452 392
+AddCompany 672 15
+AddEmployee 612 361 862 741
+GetHighestEarner 160
+RemoveCompany 403
+GetCompanyInfo 175
+GetHighestEarner -5
+AddCompany 660 35
+RemoveCompany 660
+PromoteEmployee 106 440 322
+RemoveCompany 863
+PromoteEmployee 491 556 235
+GetHighestEarner 644
+GetHighestEarner 715
+RemoveEmployee 106
+HireEmployee 612 202
+HireEmployee 890 361
+GetHighestEarner 644
+GetHighestEarner 745
+GetHighestEarner 202
+RemoveEmployee 612
+GetHighestEarner 462
+GetHighestEarner 672
+HireEmployee 890 644
+AddCompany 672 930
+PromoteEmployee 890 724 126
+RemoveEmployee 68
+GetHighestEarner 202
+GetEmployeeInfo 637
+GetHighestEarner 202
+GetCompanyInfo 644
+AddCompany 254 81
+GetHighestEarner 907
+AddEmployee 208 672 575 418
+HireEmployee 585 326
+AddCompany 361 307
+AddCompany 254 808
+RemoveEmployee 890
+HireEmployee 208 202
+HireEmployee 509 262
+GetCompanyInfo 702
+GetHighestEarner 531
+GetHighestEarner 532
+GetHighestEarner 636
+RemoveCompany 644
+GetCompanyInfo 121
+GetHighestEarner 254
+AddCompany 801 51
+GetCompanyInfo 361
+GetHighestEarner 361
+PromoteEmployee 208 960 707
+HireEmployee 208 202
+AddEmployee 208 254 760 186
+GetHighestEarner 205
+RemoveEmployee 208
+AddEmployee 267 202 355 661
+GetCompanyInfo 364
+GetHighestEarner 228
+AddEmployee 267 361 801 259
+RemoveCompany 801
+GetHighestEarner 672
+HireEmployee 491 174
+RemoveCompany 202
+AddEmployee 267 361 691 454
+AddEmployee 98 86 900 835
+HireEmployee 267 672
+GetHighestEarner 361
+RemoveEmployee 122
+HireEmployee 267 361
+GetHighestEarner 137
+RemoveEmployee 267
+AddCompany 254 54
+GetCompanyInfo 672
+HireEmployee 462 680
+AddCompany 202 167
+GetHighestEarner 797
+RemoveCompany 202
+HireEmployee 245 807
+GetCompanyInfo 254
+GetHighestEarner -7
+HireEmployee 33 988
+AddCompany 254 874
+AddEmployee 596 361 914 408
+AddEmployee 14 672 382 364
+AddEmployee 808 672 690 361
+AddCompany 365 61
+GetHighestEarner -17
+GetHighestEarner -19
+GetHighestEarner 950
+GetHighestEarner 672
+GetHighestEarner 254
+GetHighestEarner 361
+AddCompany 533 67
+GetHighestEarner 254
+RemoveCompany 254
+HireEmployee 14 365
+PromoteEmployee 386 489 570
+GetHighestEarner -3
+PromoteEmployee 207 767 373
+GetHighestEarner 361
+HireEmployee 596 365
+AddEmployee 114 672 13 255
+GetHighestEarner 729
+GetHighestEarner 361
+PromoteEmployee 596 598 267
+GetHighestEarner 365
+GetHighestEarner 533
+GetHighestEarner 533
+RemoveCompany 328
+GetEmployeeInfo 926
+GetHighestEarner 672
+GetHighestEarner -7
+GetHighestEarner 533
+IncreaseCompanyValue 466 967
+GetEmployeeInfo 596
+RemoveCompany 533
+HireEmployee 808 361
+AddEmployee 89 365 131 744
+AddCompany 365 522
+GetCompanyInfo 361
+RemoveEmployee 955
+GetHighestEarner 339
+GetHighestEarner 277
+GetHighestEarner 348
+AddCompany 911 31
+AddEmployee 114 641 974 8
+GetEmployeeInfo 579
+GetEmployeeInfo 289
+RemoveEmployee 114
+AddCompany 365 50
+GetHighestEarner -10
+GetHighestEarner 911
+AddEmployee 14 911 348 502
+RemoveCompany 343
+GetHighestEarner 911
+AddEmployee 808 365 100 103
+RemoveEmployee 89
+GetEmployeeInfo 596
+AddCompany 500 94
+GetCompanyInfo 386
+AddCompany 500 727
+AddEmployee 576 365 861 412
+RemoveCompany 500
+GetHighestEarner 911
+GetHighestEarner 420
+GetHighestEarner 672
+IncreaseCompanyValue 38 780
+GetHighestEarner 365
+AddEmployee 669 672 862 365
+RemoveEmployee 370
+IncreaseCompanyValue 911 84
+HireEmployee 855 824
+GetHighestEarner -18
+GetHighestEarner 835
+GetHighestEarner 730
+IncreaseCompanyValue 365 51
+GetHighestEarner -13
+RemoveEmployee 669
+GetHighestEarner 224
+AddEmployee 297 470 272 274
+GetHighestEarner 672
+HireEmployee 596 911
+GetHighestEarner 224
+AddEmployee 909 361 381 463
+GetHighestEarner 235
+HireEmployee 14 365
+GetHighestEarner 672
+AddCompany 857 37
+AddCompany 672 734
+GetHighestEarner -17
+AddEmployee 326 709 402 446
+GetHighestEarner 361
+AddEmployee 808 183 863 314
+GetHighestEarner -18
+AddCompany 857 345
+PromoteEmployee 37 963 24
+RemoveEmployee 22
+GetCompanyInfo 482
+GetHighestEarner 365
+GetCompanyInfo 365
+RemoveEmployee 776
+GetEmployeeInfo 844
+GetEmployeeInfo 596
+RemoveCompany 857
+GetHighestEarner 672
+AddEmployee 210 672 964 802
+IncreaseCompanyValue 911 53
+IncreaseCompanyValue 158 431
+GetEmployeeInfo 808
+GetEmployeeInfo 846
+GetHighestEarner 234
+GetHighestEarner 355
+IncreaseCompanyValue 5 289
+HireEmployee 14 361
+GetEmployeeInfo 210
+AddEmployee 15 361 279 955
+GetHighestEarner 365
+GetHighestEarner -12
+PromoteEmployee 900 792 568
+GetHighestEarner 8
+RemoveEmployee 102
+GetEmployeeInfo 45
+RemoveEmployee 550
+GetHighestEarner 493
+HireEmployee 100 201
+IncreaseCompanyValue 365 28
+GetHighestEarner -1
+GetHighestEarner -7
+RemoveCompany 672
+GetHighestEarner 156
+GetEmployeeInfo 264
+GetEmployeeInfo 909
+GetHighestEarner 712
+AddCompany 911 504
+GetHighestEarner -11
+GetEmployeeInfo 210
+GetHighestEarner 463
+GetCompanyInfo 764
+GetHighestEarner 361
+#Finishing with 250 SUCCESS commands
+AddCompany 173 43
+GetHighestEarner -7
+GetHighestEarner 911
+AddCompany 73 23
+RemoveCompany 173
+RemoveCompany 73
+GetHighestEarner 361
+GetHighestEarner 672
+AddCompany 740 97
+RemoveEmployee 909
+RemoveEmployee 210
+RemoveCompany 740
+GetCompanyInfo 361
+GetCompanyInfo 361
+GetCompanyInfo 672
+AddCompany 603 21
+GetHighestEarner -9
+GetHighestEarner 911
+PromoteEmployee 808 597 710
+HireEmployee 14 603
+GetHighestEarner -2
+GetHighestEarner 603
+GetHighestEarner -4
+GetHighestEarner -14
+GetHighestEarner 365
+AddEmployee 883 911 414 54
+IncreaseCompanyValue 603 39
+PromoteEmployee 14 852 815
+GetHighestEarner -18
+GetHighestEarner -6
+IncreaseCompanyValue 672 60
+GetHighestEarner 365
+RemoveEmployee 596
+GetHighestEarner -12
+RemoveCompany 672
+AddCompany 671 25
+GetHighestEarner 911
+PromoteEmployee 576 359 467
+GetHighestEarner -6
+RemoveCompany 671
+GetHighestEarner -12
+GetCompanyInfo 365
+PromoteEmployee 808 787 580
+GetHighestEarner -8
+AddEmployee 271 365 342 546
+AddEmployee 98 603 587 892
+GetHighestEarner -18
+GetHighestEarner -13
+GetEmployeeInfo 576
+GetCompanyInfo 361
+GetEmployeeInfo 271
+GetHighestEarner 361
+GetEmployeeInfo 98
+PromoteEmployee 271 150 551
+GetHighestEarner -2
+AddEmployee 4 361 99 114
+RemoveEmployee 576
+GetHighestEarner 911
+GetHighestEarner 603
+GetCompanyInfo 911
+GetHighestEarner 361
+GetHighestEarner 361
+AddEmployee 362 911 674 589
+IncreaseCompanyValue 361 17
+RemoveEmployee 808
+GetHighestEarner -10
+AddCompany 319 75
+AddEmployee 455 361 598 100
+HireEmployee 271 361
+AddEmployee 71 911 7 657
+RemoveEmployee 455
+PromoteEmployee 362 442 885
+GetHighestEarner 603
+PromoteEmployee 71 645 259
+GetEmployeeInfo 14
+AddCompany 749 21
+GetHighestEarner -12
+GetEmployeeInfo 271
+GetHighestEarner 361
+GetHighestEarner -15
+RemoveCompany 319
+PromoteEmployee 15 143 881
+GetCompanyInfo 749
+RemoveEmployee 362
+GetHighestEarner 603
+GetCompanyInfo 361
+AddCompany 617 74
+RemoveCompany 617
+GetHighestEarner 911
+GetHighestEarner 603
+IncreaseCompanyValue 365 37
+GetEmployeeInfo 98
+GetHighestEarner 603
+GetEmployeeInfo 14
+GetHighestEarner -4
+PromoteEmployee 271 99 527
+HireEmployee 15 911
+RemoveEmployee 14
+PromoteEmployee 883 581 830
+GetHighestEarner -14
+RemoveEmployee 883
+AddCompany 328 46
+GetHighestEarner -2
+GetHighestEarner 911
+IncreaseCompanyValue 603 54
+RemoveCompany 749
+RemoveCompany 365
+RemoveEmployee 271
+GetEmployeeInfo 4
+AddCompany 449 29
+GetHighestEarner 603
+HireEmployee 71 603
+AddEmployee 460 603 696 213
+RemoveEmployee 4
+GetHighestEarner 911
+RemoveEmployee 15
+RemoveEmployee 71
+HireEmployee 98 449
+AddCompany 104 67
+RemoveCompany 328
+IncreaseCompanyValue 361 15
+RemoveCompany 911
+RemoveCompany 104
+RemoveCompany 361
+GetHighestEarner -20
+AddCompany 142 50
+GetHighestEarner 603
+GetHighestEarner 449
+GetHighestEarner -19
+GetHighestEarner -5
+GetCompanyInfo 603
+GetHighestEarner 603
+GetHighestEarner 449
+RemoveEmployee 460
+GetCompanyInfo 449
+PromoteEmployee 98 420 144
+HireEmployee 98 603
+PromoteEmployee 98 989 35
+GetEmployeeInfo 98
+GetCompanyInfo 142
+PromoteEmployee 98 159 927
+RemoveCompany 142
+PromoteEmployee 98 513 353
+PromoteEmployee 98 43 936
+GetEmployeeInfo 98
+RemoveEmployee 98
+AddEmployee 612 449 931 94
+HireEmployee 612 603
+PromoteEmployee 612 913 688
+RemoveCompany 449
+IncreaseCompanyValue 603 16
+RemoveEmployee 612
+AddCompany 576 6
+IncreaseCompanyValue 603 77
+AddEmployee 124 576 702 429
+RemoveEmployee 124
+AddCompany 103 89
+RemoveCompany 103
+AddCompany 543 49
+AddEmployee 921 543 855 561
+GetCompanyInfo 576
+IncreaseCompanyValue 576 71
+GetEmployeeInfo 921
+RemoveCompany 576
+AddCompany 26 49
+RemoveCompany 26
+RemoveEmployee 921
+AddCompany 832 68
+AddCompany 897 44
+AddCompany 148 57
+AddCompany 821 30
+GetCompanyInfo 148
+IncreaseCompanyValue 603 44
+GetCompanyInfo 821
+AddCompany 381 29
+AddCompany 484 26
+AddEmployee 206 832 864 720
+PromoteEmployee 206 27 561
+PromoteEmployee 206 916 729
+AddCompany 909 76
+RemoveCompany 603
+PromoteEmployee 206 869 30
+GetEmployeeInfo 206
+HireEmployee 206 543
+GetCompanyInfo 897
+PromoteEmployee 206 115 893
+AddEmployee 868 543 696 499
+AddEmployee 923 148 914 843
+AddEmployee 709 897 266 716
+RemoveEmployee 709
+RemoveCompany 484
+PromoteEmployee 923 214 308
+GetCompanyInfo 832
+GetHighestEarner -9
+HireEmployee 923 821
+RemoveEmployee 868
+RemoveEmployee 923
+HireEmployee 206 381
+PromoteEmployee 206 479 605
+IncreaseCompanyValue 381 22
+GetEmployeeInfo 206
+RemoveEmployee 206
+IncreaseCompanyValue 148 55
+AddEmployee 809 821 475 31
+AddCompany 992 93
+GetCompanyInfo 148
+HireEmployee 809 909
+IncreaseCompanyValue 909 90
+RemoveEmployee 809
+AddCompany 73 19
+AddCompany 318 53
+AddEmployee 516 381 830 736
+HireEmployee 516 543
+AddEmployee 322 832 16 775
+RemoveCompany 821
+GetHighestEarner 543
+GetHighestEarner -19
+GetHighestEarner -1
+AddCompany 317 84
+AddCompany 678 53
+GetHighestEarner -6
+GetHighestEarner -14
+AddCompany 991 92
+GetHighestEarner 832
+AddCompany 731 78
+HireEmployee 322 318
+HireEmployee 516 832
+GetHighestEarner 318
+HireEmployee 322 832
+IncreaseCompanyValue 318 66
+RemoveCompany 317
+GetHighestEarner 832
+GetHighestEarner 832
+GetHighestEarner 832
+GetEmployeeInfo 322
+GetHighestEarner 832
+RemoveCompany 909
+GetEmployeeInfo 516
+RemoveCompany 678
+GetHighestEarner -19
+GetEmployeeInfo 322
+AddCompany 425 19
+GetHighestEarner 832
+GetHighestEarner 832
+HireEmployee 516 991
+RemoveEmployee 322
+IncreaseCompanyValue 148 60
+IncreaseCompanyValue 992 95
+AddCompany 666 82
+PromoteEmployee 516 659 282
+Quit

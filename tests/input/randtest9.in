@@ -1,0 +1,1006 @@
+#Test: BasicInorderTest. NumCommands: 1000. MinInt: -20. MaxInt: 1000. Seed: 2527291587662513214.
+Init
+#Starting with 500 SUCCESS commands
+AddCompany 963 63
+RemoveCompany 963
+AddCompany 766 95
+IncreaseCompanyValue 766 72
+GetCompanyInfo 766
+RemoveCompany 766
+AddCompany 137 64
+IncreaseCompanyValue 137 47
+IncreaseCompanyValue 137 81
+IncreaseCompanyValue 137 86
+AddEmployee 860 137 68 601
+GetEmployeeInfo 860
+GetCompanyInfo 137
+PromoteEmployee 860 145 290
+AddCompany 342 56
+HireEmployee 860 342
+IncreaseCompanyValue 342 88
+IncreaseCompanyValue 137 21
+AddCompany 210 68
+AddEmployee 980 137 716 816
+AddCompany 37 33
+IncreaseCompanyValue 37 77
+PromoteEmployee 980 124 154
+RemoveCompany 37
+GetCompanyInfo 210
+GetCompanyInfo 342
+GetAllEmployeesBySalary -19
+GetAllEmployeesBySalary -10
+AddEmployee 124 137 756 674
+IncreaseCompanyValue 210 50
+PromoteEmployee 860 150 48
+GetAllEmployeesBySalary -19
+GetCompanyInfo 210
+GetCompanyInfo 210
+GetCompanyInfo 137
+GetCompanyInfo 210
+GetAllEmployeesBySalary -10
+GetAllEmployeesBySalary -16
+GetAllEmployeesBySalary 137
+IncreaseCompanyValue 137 89
+GetAllEmployeesBySalary -4
+RemoveEmployee 980
+GetCompanyInfo 137
+GetAllEmployeesBySalary -12
+GetCompanyInfo 210
+RemoveCompany 210
+PromoteEmployee 860 432 483
+GetAllEmployeesBySalary 342
+AddCompany 50 92
+GetAllEmployeesBySalary -3
+PromoteEmployee 124 816 618
+RemoveEmployee 860
+GetCompanyInfo 137
+GetCompanyInfo 50
+GetCompanyInfo 342
+HireEmployee 124 50
+GetCompanyInfo 342
+RemoveCompany 137
+PromoteEmployee 124 607 767
+AddCompany 932 66
+AddEmployee 771 342 235 241
+GetAllEmployeesBySalary 50
+HireEmployee 771 50
+GetEmployeeInfo 771
+PromoteEmployee 771 511 120
+IncreaseCompanyValue 342 74
+IncreaseCompanyValue 932 3
+GetAllEmployeesBySalary -19
+GetAllEmployeesBySalary -9
+AddEmployee 426 932 436 968
+RemoveEmployee 771
+RemoveEmployee 426
+GetEmployeeInfo 124
+RemoveCompany 342
+RemoveCompany 932
+IncreaseCompanyValue 50 98
+GetCompanyInfo 50
+GetEmployeeInfo 124
+AddCompany 477 33
+PromoteEmployee 124 257 796
+AddEmployee 353 50 572 197
+AddCompany 469 68
+RemoveCompany 469
+GetAllEmployeesBySalary 50
+AddCompany 541 12
+GetAllEmployeesBySalary -6
+AddCompany 414 29
+HireEmployee 353 414
+PromoteEmployee 353 756 886
+AddEmployee 416 50 882 474
+GetCompanyInfo 50
+GetAllEmployeesBySalary 414
+RemoveCompany 541
+GetCompanyInfo 414
+HireEmployee 353 477
+GetEmployeeInfo 416
+GetEmployeeInfo 124
+GetAllEmployeesBySalary 477
+IncreaseCompanyValue 477 65
+RemoveEmployee 353
+PromoteEmployee 124 638 732
+PromoteEmployee 124 296 351
+RemoveCompany 477
+AddEmployee 789 50 942 639
+RemoveCompany 414
+GetCompanyInfo 50
+GetAllEmployeesBySalary -9
+AddCompany 983 70
+HireEmployee 416 983
+IncreaseCompanyValue 50 88
+AddEmployee 923 983 142 276
+GetAllEmployeesBySalary -11
+GetCompanyInfo 983
+AddCompany 972 88
+GetEmployeeInfo 416
+GetAllEmployeesBySalary 983
+RemoveCompany 972
+GetEmployeeInfo 416
+GetEmployeeInfo 789
+IncreaseCompanyValue 983 47
+PromoteEmployee 124 241 113
+GetAllEmployeesBySalary -13
+PromoteEmployee 923 398 388
+GetAllEmployeesBySalary -16
+AddEmployee 681 50 755 489
+GetAllEmployeesBySalary 983
+GetAllEmployeesBySalary 983
+GetAllEmployeesBySalary -15
+IncreaseCompanyValue 50 7
+RemoveEmployee 416
+GetCompanyInfo 983
+PromoteEmployee 923 628 137
+HireEmployee 923 50
+RemoveEmployee 923
+AddEmployee 435 50 699 998
+GetEmployeeInfo 681
+RemoveEmployee 124
+GetEmployeeInfo 435
+HireEmployee 681 983
+HireEmployee 789 983
+HireEmployee 435 983
+GetAllEmployeesBySalary 983
+GetAllEmployeesBySalary 983
+AddEmployee 740 983 651 634
+IncreaseCompanyValue 983 15
+RemoveEmployee 740
+PromoteEmployee 435 231 747
+GetEmployeeInfo 681
+GetEmployeeInfo 435
+HireEmployee 435 50
+HireEmployee 789 50
+AddCompany 768 23
+GetAllEmployeesBySalary 983
+GetAllEmployeesBySalary -5
+AddCompany 789 71
+GetAllEmployeesBySalary 983
+GetAllEmployeesBySalary 50
+GetEmployeeInfo 789
+GetAllEmployeesBySalary -17
+GetAllEmployeesBySalary 983
+IncreaseCompanyValue 768 57
+RemoveEmployee 435
+GetEmployeeInfo 789
+GetEmployeeInfo 681
+GetAllEmployeesBySalary -4
+GetAllEmployeesBySalary -10
+GetEmployeeInfo 789
+RemoveEmployee 681
+GetEmployeeInfo 789
+AddCompany 161 11
+AddCompany 3 84
+AddCompany 742 49
+HireEmployee 789 983
+RemoveCompany 3
+IncreaseCompanyValue 50 64
+GetEmployeeInfo 789
+GetCompanyInfo 789
+GetEmployeeInfo 789
+RemoveEmployee 789
+RemoveCompany 161
+IncreaseCompanyValue 768 24
+AddEmployee 690 768 844 261
+RemoveCompany 983
+RemoveCompany 742
+HireEmployee 690 789
+IncreaseCompanyValue 50 1
+HireEmployee 690 50
+GetEmployeeInfo 690
+AddCompany 699 28
+AddCompany 737 1
+RemoveEmployee 690
+AddCompany 331 36
+GetCompanyInfo 331
+AddCompany 783 15
+GetCompanyInfo 331
+RemoveCompany 699
+RemoveCompany 789
+AddEmployee 99 768 582 902
+RemoveEmployee 99
+IncreaseCompanyValue 783 4
+AddCompany 914 26
+GetCompanyInfo 737
+RemoveCompany 914
+GetCompanyInfo 737
+GetCompanyInfo 768
+GetCompanyInfo 737
+GetCompanyInfo 331
+AddEmployee 253 50 592 464
+RemoveEmployee 253
+IncreaseCompanyValue 737 57
+RemoveCompany 331
+AddEmployee 319 768 932 934
+HireEmployee 319 737
+PromoteEmployee 319 336 346
+AddEmployee 707 768 156 120
+GetCompanyInfo 783
+AddCompany 551 34
+AddEmployee 311 50 412 133
+PromoteEmployee 707 907 5
+RemoveEmployee 311
+GetAllEmployeesBySalary 768
+GetAllEmployeesBySalary 737
+GetAllEmployeesBySalary 737
+GetAllEmployeesBySalary 737
+GetAllEmployeesBySalary 768
+PromoteEmployee 707 704 941
+GetAllEmployeesBySalary 768
+AddCompany 988 54
+RemoveCompany 783
+GetAllEmployeesBySalary -2
+AddEmployee 369 50 35 356
+IncreaseCompanyValue 768 46
+AddEmployee 448 737 389 907
+HireEmployee 319 551
+GetAllEmployeesBySalary -9
+GetCompanyInfo 988
+GetAllEmployeesBySalary -19
+GetAllEmployeesBySalary -19
+RemoveCompany 988
+AddCompany 910 46
+GetAllEmployeesBySalary -16
+RemoveCompany 910
+GetEmployeeInfo 369
+HireEmployee 448 551
+GetAllEmployeesBySalary -5
+AddCompany 92 12
+RemoveCompany 92
+AddCompany 741 16
+GetAllEmployeesBySalary -14
+GetAllEmployeesBySalary 551
+AddEmployee 112 741 442 768
+GetAllEmployeesBySalary 551
+GetCompanyInfo 551
+PromoteEmployee 369 122 333
+GetAllEmployeesBySalary -5
+GetAllEmployeesBySalary -10
+IncreaseCompanyValue 50 31
+GetAllEmployeesBySalary 551
+GetAllEmployeesBySalary -16
+GetAllEmployeesBySalary 551
+IncreaseCompanyValue 768 22
+GetAllEmployeesBySalary -15
+AddCompany 803 15
+GetEmployeeInfo 707
+GetAllEmployeesBySalary -12
+HireEmployee 369 737
+HireEmployee 369 768
+AddCompany 696 89
+GetAllEmployeesBySalary 551
+AddCompany 357 100
+AddCompany 877 22
+PromoteEmployee 112 757 378
+GetAllEmployeesBySalary -17
+GetAllEmployeesBySalary -10
+GetAllEmployeesBySalary -16
+GetEmployeeInfo 112
+RemoveCompany 737
+IncreaseCompanyValue 877 50
+GetAllEmployeesBySalary 741
+GetAllEmployeesBySalary -11
+PromoteEmployee 369 241 952
+IncreaseCompanyValue 768 11
+IncreaseCompanyValue 696 88
+GetAllEmployeesBySalary 768
+AddEmployee 442 357 695 534
+AddCompany 252 75
+AddCompany 571 19
+RemoveEmployee 319
+GetAllEmployeesBySalary 551
+RemoveEmployee 442
+GetAllEmployeesBySalary -6
+GetAllEmployeesBySalary 768
+GetAllEmployeesBySalary 768
+GetCompanyInfo 252
+HireEmployee 448 696
+IncreaseCompanyValue 252 32
+GetCompanyInfo 50
+AddEmployee 11 252 300 572
+GetAllEmployeesBySalary -1
+PromoteEmployee 11 446 869
+HireEmployee 11 696
+GetAllEmployeesBySalary 696
+GetAllEmployeesBySalary 696
+GetAllEmployeesBySalary 768
+GetAllEmployeesBySalary 741
+GetAllEmployeesBySalary -1
+GetAllEmployeesBySalary -15
+RemoveCompany 551
+GetAllEmployeesBySalary -16
+GetCompanyInfo 696
+RemoveCompany 877
+GetAllEmployeesBySalary 741
+RemoveCompany 50
+GetAllEmployeesBySalary 768
+AddCompany 78 26
+GetAllEmployeesBySalary -11
+GetEmployeeInfo 448
+GetCompanyInfo 571
+GetAllEmployeesBySalary 768
+HireEmployee 448 741
+AddEmployee 520 252 949 348
+GetAllEmployeesBySalary -12
+RemoveEmployee 520
+GetAllEmployeesBySalary -6
+HireEmployee 11 252
+RemoveCompany 78
+RemoveEmployee 112
+GetAllEmployeesBySalary 768
+GetAllEmployeesBySalary -2
+IncreaseCompanyValue 571 50
+GetAllEmployeesBySalary 768
+HireEmployee 707 803
+GetAllEmployeesBySalary -7
+GetAllEmployeesBySalary -2
+GetAllEmployeesBySalary 803
+GetCompanyInfo 252
+HireEmployee 707 696
+RemoveEmployee 707
+AddCompany 872 15
+GetAllEmployeesBySalary 768
+PromoteEmployee 11 208 876
+GetCompanyInfo 696
+RemoveEmployee 369
+GetAllEmployeesBySalary 252
+HireEmployee 448 768
+AddEmployee 899 696 985 544
+GetAllEmployeesBySalary 696
+GetAllEmployeesBySalary -4
+GetEmployeeInfo 448
+AddCompany 88 71
+AddEmployee 666 571 920 824
+GetAllEmployeesBySalary -15
+GetEmployeeInfo 448
+AddEmployee 758 357 407 213
+GetAllEmployeesBySalary -18
+AddCompany 552 40
+RemoveEmployee 666
+RemoveCompany 872
+RemoveEmployee 899
+HireEmployee 11 571
+GetAllEmployeesBySalary -7
+GetAllEmployeesBySalary 768
+AddCompany 49 16
+IncreaseCompanyValue 49 40
+IncreaseCompanyValue 741 40
+GetCompanyInfo 741
+PromoteEmployee 758 894 602
+RemoveEmployee 758
+GetAllEmployeesBySalary -8
+GetEmployeeInfo 448
+RemoveCompany 741
+GetAllEmployeesBySalary -15
+IncreaseCompanyValue 571 99
+AddEmployee 495 696 949 613
+RemoveCompany 552
+GetAllEmployeesBySalary -11
+HireEmployee 495 252
+AddEmployee 16 571 104 876
+GetAllEmployeesBySalary -20
+GetAllEmployeesBySalary -7
+HireEmployee 16 696
+IncreaseCompanyValue 357 98
+GetAllEmployeesBySalary -4
+PromoteEmployee 448 327 528
+PromoteEmployee 495 666 777
+GetCompanyInfo 803
+IncreaseCompanyValue 252 6
+IncreaseCompanyValue 768 78
+GetEmployeeInfo 448
+GetAllEmployeesBySalary 768
+AddEmployee 548 88 692 908
+GetAllEmployeesBySalary 252
+AddCompany 716 8
+GetAllEmployeesBySalary 88
+GetAllEmployeesBySalary -6
+RemoveEmployee 495
+GetAllEmployeesBySalary 571
+GetAllEmployeesBySalary -20
+GetEmployeeInfo 548
+RemoveCompany 252
+GetCompanyInfo 716
+GetAllEmployeesBySalary 571
+PromoteEmployee 548 737 557
+AddCompany 82 14
+PromoteEmployee 448 751 997
+AddEmployee 561 716 278 534
+AddEmployee 704 357 913 830
+AddEmployee 205 716 351 709
+IncreaseCompanyValue 49 83
+GetAllEmployeesBySalary 88
+GetAllEmployeesBySalary 571
+AddEmployee 452 49 504 332
+RemoveEmployee 11
+RemoveCompany 571
+GetAllEmployeesBySalary 696
+IncreaseCompanyValue 88 13
+PromoteEmployee 561 374 112
+GetAllEmployeesBySalary -15
+GetAllEmployeesBySalary -12
+HireEmployee 452 803
+PromoteEmployee 548 535 967
+GetAllEmployeesBySalary -12
+RemoveCompany 82
+AddCompany 132 95
+GetEmployeeInfo 548
+GetAllEmployeesBySalary -5
+AddCompany 378 40
+IncreaseCompanyValue 768 61
+AddEmployee 23 357 218 386
+GetAllEmployeesBySalary -18
+HireEmployee 16 88
+GetAllEmployeesBySalary 803
+GetAllEmployeesBySalary -18
+IncreaseCompanyValue 716 17
+GetAllEmployeesBySalary -9
+GetAllEmployeesBySalary -20
+GetCompanyInfo 132
+GetAllEmployeesBySalary -4
+GetCompanyInfo 49
+PromoteEmployee 23 390 19
+GetAllEmployeesBySalary -20
+GetCompanyInfo 49
+GetAllEmployeesBySalary -8
+GetAllEmployeesBySalary -3
+GetEmployeeInfo 561
+GetAllEmployeesBySalary 768
+GetEmployeeInfo 704
+IncreaseCompanyValue 716 28
+GetAllEmployeesBySalary -1
+AddEmployee 939 49 627 848
+AddEmployee 810 716 926 520
+HireEmployee 452 378
+GetAllEmployeesBySalary 357
+GetAllEmployeesBySalary 88
+GetAllEmployeesBySalary 49
+RemoveCompany 696
+IncreaseCompanyValue 716 78
+IncreaseCompanyValue 768 19
+IncreaseCompanyValue 716 19
+RemoveCompany 803
+GetAllEmployeesBySalary 378
+GetEmployeeInfo 704
+GetAllEmployeesBySalary 768
+HireEmployee 452 768
+GetAllEmployeesBySalary -9
+RemoveEmployee 448
+PromoteEmployee 561 177 822
+GetCompanyInfo 88
+GetAllEmployeesBySalary -5
+PromoteEmployee 548 189 952
+PromoteEmployee 452 475 61
+PromoteEmployee 810 220 186
+GetEmployeeInfo 205
+GetAllEmployeesBySalary -5
+RemoveEmployee 561
+GetCompanyInfo 378
+AddEmployee 234 132 845 396
+GetCompanyInfo 768
+GetEmployeeInfo 939
+PromoteEmployee 16 424 356
+HireEmployee 205 132
+GetAllEmployeesBySalary -14
+GetCompanyInfo 716
+HireEmployee 939 357
+GetAllEmployeesBySalary -19
+GetAllEmployeesBySalary 357
+GetAllEmployeesBySalary 132
+GetAllEmployeesBySalary -8
+RemoveEmployee 23
+GetAllEmployeesBySalary 132
+GetCompanyInfo 49
+GetAllEmployeesBySalary 716
+GetAllEmployeesBySalary -4
+RemoveCompany 378
+HireEmployee 452 132
+GetAllEmployeesBySalary -18
+HireEmployee 704 132
+IncreaseCompanyValue 88 33
+GetCompanyInfo 49
+GetEmployeeInfo 205
+#Trying 250 mixed SUCCESS/FAILURE commands
+GetAllEmployeesBySalary 716
+RemoveCompany 768
+GetAllEmployeesBySalary 49
+IncreaseCompanyValue 376 277
+GetAllEmployeesBySalary 132
+AddCompany 287 39
+AddEmployee 16 49 752 778
+GetCompanyInfo 357
+GetAllEmployeesBySalary 716
+AddCompany 392 74
+RemoveCompany 132
+GetCompanyInfo 97
+GetAllEmployeesBySalary -9
+IncreaseCompanyValue 619 124
+RemoveEmployee 69
+GetCompanyInfo 425
+GetAllEmployeesBySalary 132
+HireEmployee 956 89
+GetCompanyInfo 132
+GetCompanyInfo 917
+RemoveEmployee 589
+GetAllEmployeesBySalary 88
+AddEmployee 533 132 757 92
+GetAllEmployeesBySalary 49
+AddEmployee 234 49 407 650
+PromoteEmployee 943 448 682
+PromoteEmployee 861 303 206
+RemoveCompany 287
+RemoveEmployee 362
+GetAllEmployeesBySalary -12
+GetAllEmployeesBySalary 88
+RemoveEmployee 205
+PromoteEmployee 850 28 376
+GetAllEmployeesBySalary 132
+IncreaseCompanyValue 716 69
+GetCompanyInfo 88
+GetAllEmployeesBySalary -9
+RemoveEmployee 452
+AddCompany 582 11
+HireEmployee 704 49
+GetAllEmployeesBySalary 779
+GetEmployeeInfo 27
+GetAllEmployeesBySalary 171
+IncreaseCompanyValue 716 33
+HireEmployee 548 716
+IncreaseCompanyValue 49 29
+GetAllEmployeesBySalary 392
+GetAllEmployeesBySalary -13
+GetAllEmployeesBySalary -9
+GetAllEmployeesBySalary 582
+GetAllEmployeesBySalary 582
+GetEmployeeInfo 775
+RemoveCompany 392
+AddEmployee 234 132 325 280
+GetCompanyInfo 6
+RemoveEmployee 234
+PromoteEmployee 33 176 634
+PromoteEmployee 533 210 228
+IncreaseCompanyValue 132 16
+GetCompanyInfo 132
+GetAllEmployeesBySalary 532
+RemoveCompany 73
+AddEmployee 92 357 106 283
+RemoveCompany 716
+RemoveCompany 582
+GetAllEmployeesBySalary 472
+GetAllEmployeesBySalary -9
+AddCompany 88 444
+AddCompany 200 23
+PromoteEmployee 810 217 932
+PromoteEmployee 533 864 832
+GetAllEmployeesBySalary 981
+AddCompany 357 341
+GetAllEmployeesBySalary 132
+IncreaseCompanyValue 88 71
+GetAllEmployeesBySalary 200
+GetCompanyInfo 467
+RemoveCompany 513
+GetAllEmployeesBySalary 716
+GetEmployeeInfo 533
+GetEmployeeInfo 92
+RemoveEmployee 939
+GetCompanyInfo 200
+GetCompanyInfo 357
+GetAllEmployeesBySalary -9
+PromoteEmployee 905 5 329
+GetAllEmployeesBySalary 357
+GetEmployeeInfo 548
+GetCompanyInfo 81
+AddEmployee 92 200 40 209
+HireEmployee 819 11
+RemoveCompany 200
+GetAllEmployeesBySalary -12
+IncreaseCompanyValue 934 262
+GetAllEmployeesBySalary -6
+IncreaseCompanyValue 756 12
+GetAllEmployeesBySalary 132
+GetAllEmployeesBySalary 716
+GetAllEmployeesBySalary 49
+PromoteEmployee 186 644 525
+HireEmployee 16 716
+IncreaseCompanyValue 49 88
+AddCompany 357 166
+RemoveCompany 88
+GetAllEmployeesBySalary 357
+PromoteEmployee 899 136 230
+GetAllEmployeesBySalary -20
+GetAllEmployeesBySalary -16
+GetAllEmployeesBySalary 455
+GetAllEmployeesBySalary 287
+PromoteEmployee 533 985 591
+GetAllEmployeesBySalary 716
+GetAllEmployeesBySalary -19
+RemoveCompany 49
+GetEmployeeInfo 92
+GetAllEmployeesBySalary -1
+RemoveEmployee 16
+GetAllEmployeesBySalary -9
+GetAllEmployeesBySalary 716
+GetAllEmployeesBySalary 132
+GetAllEmployeesBySalary 716
+GetCompanyInfo 49
+HireEmployee 704 132
+AddEmployee 232 132 842 115
+GetAllEmployeesBySalary 49
+AddCompany 49 586
+RemoveEmployee 704
+GetAllEmployeesBySalary 716
+RemoveCompany 357
+GetAllEmployeesBySalary 132
+GetEmployeeInfo 232
+PromoteEmployee 710 472 946
+GetAllEmployeesBySalary -12
+GetEmployeeInfo 406
+AddCompany 357 682
+GetCompanyInfo 357
+GetCompanyInfo 672
+AddCompany 569 13
+GetAllEmployeesBySalary 466
+HireEmployee 16 654
+GetAllEmployeesBySalary 49
+AddCompany 49 351
+GetCompanyInfo 97
+GetEmployeeInfo 836
+AddCompany 569 850
+AddCompany 226 51
+GetAllEmployeesBySalary 716
+GetAllEmployeesBySalary -16
+GetEmployeeInfo 837
+AddCompany 205 67
+GetAllEmployeesBySalary 936
+GetAllEmployeesBySalary 49
+RemoveCompany 226
+HireEmployee 92 357
+GetCompanyInfo 377
+GetAllEmployeesBySalary 132
+RemoveCompany 395
+HireEmployee 810 380
+HireEmployee 810 357
+GetCompanyInfo 681
+GetCompanyInfo 499
+AddEmployee 548 49 339 895
+GetAllEmployeesBySalary 126
+RemoveEmployee 232
+GetAllEmployeesBySalary -17
+IncreaseCompanyValue 451 235
+HireEmployee 92 569
+HireEmployee 996 651
+RemoveEmployee 92
+RemoveEmployee 318
+AddCompany 257 16
+PromoteEmployee 548 800 247
+AddCompany 85 5
+AddCompany 569 360
+GetEmployeeInfo 810
+GetAllEmployeesBySalary 205
+GetAllEmployeesBySalary -11
+GetAllEmployeesBySalary -6
+GetAllEmployeesBySalary 205
+AddCompany 93 19
+IncreaseCompanyValue 205 98
+GetEmployeeInfo 533
+GetCompanyInfo 328
+GetAllEmployeesBySalary 132
+GetEmployeeInfo 533
+IncreaseCompanyValue 569 46
+IncreaseCompanyValue 569 58
+GetAllEmployeesBySalary 132
+RemoveEmployee 356
+PromoteEmployee 305 688 351
+PromoteEmployee 755 214 463
+HireEmployee 533 716
+AddCompany 716 423
+GetAllEmployeesBySalary -20
+HireEmployee 548 902
+GetAllEmployeesBySalary 8
+GetEmployeeInfo 55
+AddCompany 257 562
+HireEmployee 533 49
+IncreaseCompanyValue 429 95
+GetAllEmployeesBySalary -10
+GetAllEmployeesBySalary 143
+RemoveCompany 257
+GetAllEmployeesBySalary 85
+GetEmployeeInfo 994
+PromoteEmployee 810 806 643
+RemoveEmployee 548
+GetAllEmployeesBySalary 85
+HireEmployee 533 49
+RemoveCompany 357
+PromoteEmployee 533 187 451
+RemoveCompany 484
+GetEmployeeInfo 614
+GetAllEmployeesBySalary 235
+HireEmployee 810 85
+GetEmployeeInfo 712
+PromoteEmployee 325 270 594
+GetAllEmployeesBySalary -10
+IncreaseCompanyValue 93 81
+AddEmployee 740 99 609 800
+PromoteEmployee 613 52 826
+AddCompany 171 14
+GetAllEmployeesBySalary 85
+GetCompanyInfo 103
+GetAllEmployeesBySalary 357
+GetCompanyInfo 132
+RemoveCompany 569
+GetCompanyInfo 171
+RemoveCompany 716
+PromoteEmployee 880 352 409
+IncreaseCompanyValue 518 982
+PromoteEmployee 533 910 319
+RemoveCompany 357
+AddEmployee 516 85 610 705
+GetCompanyInfo 205
+IncreaseCompanyValue 93 24
+RemoveCompany 171
+IncreaseCompanyValue 673 269
+RemoveCompany 474
+GetAllEmployeesBySalary 49
+GetCompanyInfo 49
+HireEmployee 593 789
+RemoveCompany 85
+HireEmployee 516 205
+AddCompany 93 716
+IncreaseCompanyValue 205 33
+GetAllEmployeesBySalary -19
+GetAllEmployeesBySalary 49
+GetAllEmployeesBySalary 132
+IncreaseCompanyValue 716 828
+#Finishing with 250 SUCCESS commands
+GetAllEmployeesBySalary -19
+GetCompanyInfo 132
+GetAllEmployeesBySalary -17
+AddEmployee 439 85 717 727
+GetAllEmployeesBySalary -13
+GetAllEmployeesBySalary -4
+GetAllEmployeesBySalary -5
+GetAllEmployeesBySalary -8
+AddEmployee 328 132 150 256
+RemoveCompany 93
+GetAllEmployeesBySalary -13
+GetAllEmployeesBySalary 49
+GetEmployeeInfo 810
+IncreaseCompanyValue 205 20
+RemoveEmployee 533
+GetAllEmployeesBySalary 132
+GetAllEmployeesBySalary 85
+GetAllEmployeesBySalary 85
+GetAllEmployeesBySalary -6
+RemoveEmployee 328
+RemoveEmployee 439
+GetCompanyInfo 205
+GetAllEmployeesBySalary -1
+GetAllEmployeesBySalary 205
+AddEmployee 37 132 446 52
+PromoteEmployee 516 9 907
+GetAllEmployeesBySalary -5
+AddEmployee 234 132 751 188
+GetAllEmployeesBySalary -13
+RemoveEmployee 516
+GetAllEmployeesBySalary -13
+GetAllEmployeesBySalary -6
+AddEmployee 635 49 936 642
+GetCompanyInfo 85
+GetAllEmployeesBySalary -3
+GetAllEmployeesBySalary -13
+IncreaseCompanyValue 49 54
+GetCompanyInfo 205
+GetAllEmployeesBySalary -3
+RemoveEmployee 234
+GetAllEmployeesBySalary -12
+AddCompany 692 41
+GetAllEmployeesBySalary -14
+AddCompany 687 21
+RemoveCompany 205
+GetCompanyInfo 132
+GetAllEmployeesBySalary -15
+GetAllEmployeesBySalary 132
+GetAllEmployeesBySalary -13
+GetAllEmployeesBySalary -1
+GetEmployeeInfo 810
+GetAllEmployeesBySalary 85
+GetAllEmployeesBySalary -8
+GetCompanyInfo 692
+GetAllEmployeesBySalary -15
+PromoteEmployee 635 380 235
+GetAllEmployeesBySalary -9
+PromoteEmployee 635 748 962
+GetAllEmployeesBySalary 132
+RemoveCompany 687
+GetEmployeeInfo 810
+HireEmployee 635 132
+IncreaseCompanyValue 132 86
+AddEmployee 542 49 2 255
+GetAllEmployeesBySalary 85
+GetAllEmployeesBySalary -3
+IncreaseCompanyValue 692 60
+HireEmployee 810 49
+GetAllEmployeesBySalary -16
+GetAllEmployeesBySalary 132
+GetAllEmployeesBySalary 49
+PromoteEmployee 542 1000 -11
+GetAllEmployeesBySalary -1
+GetAllEmployeesBySalary 132
+RemoveCompany 85
+PromoteEmployee 635 191 918
+HireEmployee 37 49
+GetCompanyInfo 49
+GetAllEmployeesBySalary -11
+GetAllEmployeesBySalary -12
+PromoteEmployee 810 599 787
+GetAllEmployeesBySalary -15
+AddEmployee 909 692 603 481
+IncreaseCompanyValue 692 42
+GetAllEmployeesBySalary -18
+GetAllEmployeesBySalary 49
+GetAllEmployeesBySalary 692
+GetAllEmployeesBySalary -9
+RemoveEmployee 635
+HireEmployee 542 692
+GetAllEmployeesBySalary -5
+PromoteEmployee 810 281 439
+RemoveCompany 132
+GetAllEmployeesBySalary 692
+AddCompany 707 86
+IncreaseCompanyValue 49 10
+RemoveEmployee 542
+AddEmployee 781 692 553 494
+AddCompany 778 26
+AddCompany 73 59
+IncreaseCompanyValue 707 47
+RemoveEmployee 37
+GetEmployeeInfo 781
+GetAllEmployeesBySalary 692
+GetAllEmployeesBySalary -6
+RemoveEmployee 810
+IncreaseCompanyValue 49 41
+RemoveCompany 49
+GetAllEmployeesBySalary 692
+IncreaseCompanyValue 707 19
+GetAllEmployeesBySalary 692
+RemoveCompany 707
+GetAllEmployeesBySalary -4
+GetAllEmployeesBySalary 692
+RemoveEmployee 781
+AddEmployee 24 692 491 177
+RemoveEmployee 24
+GetCompanyInfo 73
+AddCompany 681 42
+PromoteEmployee 909 948 1000
+GetEmployeeInfo 909
+GetCompanyInfo 778
+AddEmployee 924 778 643 141
+GetAllEmployeesBySalary 692
+RemoveCompany 681
+AddEmployee 369 692 901 675
+GetAllEmployeesBySalary -7
+GetAllEmployeesBySalary 778
+RemoveCompany 73
+GetAllEmployeesBySalary 778
+GetAllEmployeesBySalary 778
+HireEmployee 369 778
+HireEmployee 369 692
+HireEmployee 909 778
+GetAllEmployeesBySalary 778
+RemoveEmployee 909
+GetAllEmployeesBySalary -10
+GetAllEmployeesBySalary -12
+AddCompany 531 49
+PromoteEmployee 924 406 772
+GetAllEmployeesBySalary 778
+PromoteEmployee 924 646 479
+PromoteEmployee 369 242 530
+GetEmployeeInfo 924
+AddEmployee 732 531 921 753
+AddCompany 4 56
+GetAllEmployeesBySalary 778
+RemoveCompany 4
+GetAllEmployeesBySalary 692
+AddCompany 98 60
+RemoveCompany 98
+PromoteEmployee 369 562 791
+GetAllEmployeesBySalary -4
+GetAllEmployeesBySalary 692
+GetEmployeeInfo 732
+HireEmployee 924 692
+RemoveCompany 778
+GetCompanyInfo 531
+IncreaseCompanyValue 692 89
+GetAllEmployeesBySalary 692
+GetAllEmployeesBySalary -15
+AddEmployee 249 531 327 791
+GetAllEmployeesBySalary 531
+GetAllEmployeesBySalary 531
+GetAllEmployeesBySalary 531
+HireEmployee 249 692
+AddEmployee 464 692 506 145
+AddEmployee 601 692 282 237
+GetAllEmployeesBySalary -11
+GetAllEmployeesBySalary -20
+RemoveEmployee 249
+GetAllEmployeesBySalary 692
+GetAllEmployeesBySalary -15
+GetCompanyInfo 692
+GetCompanyInfo 692
+AddCompany 392 8
+PromoteEmployee 464 217 37
+IncreaseCompanyValue 531 19
+AddCompany 904 40
+PromoteEmployee 601 769 270
+GetAllEmployeesBySalary 531
+PromoteEmployee 732 264 916
+GetAllEmployeesBySalary -12
+AddEmployee 338 392 8 353
+AddEmployee 638 392 279 89
+GetCompanyInfo 904
+GetAllEmployeesBySalary -7
+HireEmployee 924 392
+GetAllEmployeesBySalary -7
+GetAllEmployeesBySalary 531
+GetAllEmployeesBySalary 692
+IncreaseCompanyValue 692 47
+GetAllEmployeesBySalary -5
+IncreaseCompanyValue 531 10
+GetAllEmployeesBySalary -8
+GetAllEmployeesBySalary 692
+PromoteEmployee 464 488 610
+HireEmployee 924 692
+GetAllEmployeesBySalary 692
+GetAllEmployeesBySalary 392
+GetEmployeeInfo 464
+RemoveCompany 904
+RemoveEmployee 464
+GetAllEmployeesBySalary -7
+GetAllEmployeesBySalary -12
+HireEmployee 601 531
+GetEmployeeInfo 338
+GetAllEmployeesBySalary -20
+RemoveEmployee 732
+GetEmployeeInfo 338
+RemoveEmployee 369
+IncreaseCompanyValue 392 3
+GetAllEmployeesBySalary -13
+GetAllEmployeesBySalary -10
+GetAllEmployeesBySalary -7
+IncreaseCompanyValue 692 37
+HireEmployee 601 692
+RemoveEmployee 338
+RemoveEmployee 638
+GetAllEmployeesBySalary -19
+GetEmployeeInfo 601
+HireEmployee 924 531
+RemoveCompany 392
+GetCompanyInfo 531
+GetAllEmployeesBySalary 692
+PromoteEmployee 601 76 606
+AddEmployee 628 531 114 391
+GetCompanyInfo 531
+GetAllEmployeesBySalary 692
+HireEmployee 628 692
+PromoteEmployee 601 308 857
+HireEmployee 924 692
+GetEmployeeInfo 924
+PromoteEmployee 924 363 207
+RemoveCompany 531
+GetCompanyInfo 692
+GetAllEmployeesBySalary 692
+PromoteEmployee 601 73 320
+RemoveEmployee 628
+IncreaseCompanyValue 692 33
+RemoveEmployee 924
+AddEmployee 400 692 753 294
+GetAllEmployeesBySalary -18
+GetAllEmployeesBySalary -3
+GetAllEmployeesBySalary -9
+IncreaseCompanyValue 692 80
+GetAllEmployeesBySalary -5
+GetCompanyInfo 692
+GetAllEmployeesBySalary 692
+AddCompany 655 3
+Quit

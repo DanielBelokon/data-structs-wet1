@@ -1,0 +1,1006 @@
+#Test: BasicMergeTest. NumCommands: 1000. MinInt: -20. MaxInt: 1000. Seed: 1821640578543013148.
+Init
+#Starting with 500 SUCCESS commands
+AddCompany 469 42
+IncreaseCompanyValue 469 64
+AddCompany 223 47
+RemoveCompany 223
+IncreaseCompanyValue 469 74
+GetCompanyInfo 469
+GetCompanyInfo 469
+RemoveCompany 469
+AddCompany 857 73
+GetCompanyInfo 857
+RemoveCompany 857
+AddCompany 725 52
+IncreaseCompanyValue 725 10
+RemoveCompany 725
+AddCompany 516 39
+AddEmployee 914 516 662 686
+GetEmployeeInfo 914
+AddEmployee 815 516 760 728
+AddCompany 827 64
+IncreaseCompanyValue 827 5
+IncreaseCompanyValue 516 48
+RemoveCompany 827
+GetCompanyInfo 516
+RemoveEmployee 815
+PromoteEmployee 914 51 254
+RemoveEmployee 914
+AddCompany 910 33
+AddEmployee 459 516 421 936
+AddEmployee 74 910 926 60
+PromoteEmployee 459 628 985
+AddCompany 752 66
+GetCompanyInfo 910
+AddCompany 919 92
+HireEmployee 459 919
+RemoveEmployee 74
+RemoveCompany 752
+GetEmployeeInfo 459
+HireEmployee 459 516
+GetEmployeeInfo 459
+RemoveCompany 910
+PromoteEmployee 459 523 51
+IncreaseCompanyValue 919 17
+IncreaseCompanyValue 516 79
+RemoveCompany 919
+AddCompany 957 85
+AddEmployee 869 516 108 866
+IncreaseCompanyValue 957 74
+IncreaseCompanyValue 957 49
+RemoveEmployee 869
+GetCompanyInfo 957
+AddEmployee 554 957 14 403
+IncreaseCompanyValue 957 8
+HireEmployee 459 957
+RemoveEmployee 459
+AddCompany 452 88
+RemoveEmployee 554
+RemoveCompany 452
+IncreaseCompanyValue 957 43
+GetCompanyInfo 957
+RemoveCompany 516
+GetCompanyInfo 957
+IncreaseCompanyValue 957 68
+GetCompanyInfo 957
+AddEmployee 244 957 644 987
+PromoteEmployee 244 974 286
+PromoteEmployee 244 842 597
+GetCompanyInfo 957
+GetEmployeeInfo 244
+AddCompany 849 88
+GetCompanyInfo 957
+AddCompany 436 27
+AcquireCompany 957 436 1.0
+RemoveCompany 849
+RemoveEmployee 244
+RemoveCompany 957
+AddCompany 195 85
+GetCompanyInfo 195
+IncreaseCompanyValue 195 87
+GetCompanyInfo 195
+RemoveCompany 195
+AddCompany 799 80
+GetCompanyInfo 799
+RemoveCompany 799
+AddCompany 491 69
+AddEmployee 74 491 941 933
+PromoteEmployee 74 468 331
+GetCompanyInfo 491
+PromoteEmployee 74 962 387
+AddCompany 735 97
+PromoteEmployee 74 981 744
+PromoteEmployee 74 401 439
+GetEmployeeInfo 74
+AddCompany 18 38
+AddCompany 912 96
+AddCompany 895 18
+HireEmployee 74 895
+HireEmployee 74 735
+RemoveEmployee 74
+AddCompany 375 69
+AddEmployee 548 895 212 233
+HireEmployee 548 18
+AddEmployee 965 912 234 938
+RemoveEmployee 548
+PromoteEmployee 965 126 205
+GetCompanyInfo 18
+IncreaseCompanyValue 18 85
+RemoveEmployee 965
+AddCompany 87 55
+AddEmployee 812 912 994 915
+PromoteEmployee 812 856 601
+RemoveEmployee 812
+GetCompanyInfo 735
+AddCompany 24 4
+IncreaseCompanyValue 375 96
+IncreaseCompanyValue 24 84
+RemoveCompany 87
+RemoveCompany 895
+AddCompany 536 69
+RemoveCompany 18
+IncreaseCompanyValue 735 54
+AddCompany 296 81
+AddEmployee 475 536 180 51
+IncreaseCompanyValue 491 92
+AddEmployee 717 375 708 913
+PromoteEmployee 717 879 946
+IncreaseCompanyValue 536 4
+HireEmployee 475 491
+PromoteEmployee 475 804 827
+GetEmployeeInfo 475
+PromoteEmployee 717 8 241
+PromoteEmployee 475 281 57
+PromoteEmployee 475 786 36
+AddEmployee 47 735 388 797
+RemoveCompany 296
+PromoteEmployee 717 65 838
+PromoteEmployee 47 184 261
+AddCompany 397 96
+RemoveEmployee 717
+RemoveEmployee 47
+RemoveEmployee 475
+AddCompany 708 17
+GetCompanyInfo 24
+IncreaseCompanyValue 491 27
+AcquireCompany 491 708 1.3
+AddCompany 994 23
+AcquireCompany 491 994 1.2
+IncreaseCompanyValue 536 16
+IncreaseCompanyValue 24 65
+AddCompany 200 22
+AcquireCompany 491 200 1.0
+AddCompany 658 40
+IncreaseCompanyValue 375 3
+AddCompany 528 14
+AcquireCompany 491 528 1.1
+IncreaseCompanyValue 491 3
+RemoveCompany 375
+AcquireCompany 491 658 1.0
+RemoveCompany 912
+IncreaseCompanyValue 735 68
+AddEmployee 259 491 616 31
+PromoteEmployee 259 139 327
+RemoveCompany 536
+GetCompanyInfo 735
+RemoveCompany 24
+GetCompanyInfo 735
+GetCompanyInfo 491
+GetCompanyInfo 491
+GetEmployeeInfo 259
+IncreaseCompanyValue 397 68
+RemoveEmployee 259
+AddEmployee 163 397 921 88
+PromoteEmployee 163 973 26
+PromoteEmployee 163 117 669
+PromoteEmployee 163 844 424
+AddCompany 455 84
+HireEmployee 163 491
+GetCompanyInfo 397
+HireEmployee 163 455
+RemoveEmployee 163
+GetCompanyInfo 491
+AddCompany 862 82
+RemoveCompany 862
+AddCompany 457 69
+GetCompanyInfo 455
+AddEmployee 845 397 892 719
+RemoveCompany 457
+AddEmployee 523 397 673 545
+AddCompany 117 18
+GetCompanyInfo 491
+AcquireCompany 735 117 1.0
+RemoveEmployee 523
+RemoveEmployee 845
+RemoveCompany 397
+IncreaseCompanyValue 455 41
+AddEmployee 903 491 981 963
+AddCompany 467 84
+GetEmployeeInfo 903
+AddEmployee 126 455 85 132
+RemoveEmployee 126
+HireEmployee 903 467
+HireEmployee 903 491
+GetCompanyInfo 455
+AddEmployee 91 735 187 101
+IncreaseCompanyValue 491 101
+AddEmployee 266 455 515 610
+AddCompany 752 62
+RemoveCompany 752
+PromoteEmployee 903 148 234
+AddCompany 934 60
+GetEmployeeInfo 903
+RemoveEmployee 903
+IncreaseCompanyValue 934 97
+PromoteEmployee 91 18 515
+AddEmployee 455 934 9 557
+PromoteEmployee 91 932 546
+IncreaseCompanyValue 455 11
+IncreaseCompanyValue 934 17
+GetCompanyInfo 455
+AddEmployee 5 491 262 259
+GetEmployeeInfo 91
+RemoveCompany 467
+AddCompany 279 20
+AcquireCompany 491 279 1.0
+GetCompanyInfo 934
+HireEmployee 455 735
+RemoveEmployee 455
+GetEmployeeInfo 91
+GetEmployeeInfo 5
+IncreaseCompanyValue 455 66
+AddEmployee 943 491 550 364
+IncreaseCompanyValue 934 19
+AddCompany 989 73
+RemoveEmployee 91
+RemoveCompany 989
+GetEmployeeInfo 5
+IncreaseCompanyValue 735 17
+RemoveEmployee 266
+HireEmployee 5 934
+GetEmployeeInfo 5
+GetEmployeeInfo 5
+RemoveEmployee 943
+RemoveCompany 491
+AddCompany 990 35
+RemoveCompany 990
+GetCompanyInfo 934
+RemoveEmployee 5
+AddCompany 294 34
+AddEmployee 50 735 206 931
+RemoveEmployee 50
+AddEmployee 183 455 166 305
+AddEmployee 339 294 928 908
+GetCompanyInfo 934
+AddCompany 948 76
+RemoveCompany 948
+RemoveEmployee 339
+PromoteEmployee 183 752 613
+RemoveCompany 294
+AddEmployee 295 934 598 224
+HireEmployee 183 934
+AddEmployee 908 735 836 514
+RemoveEmployee 908
+HireEmployee 183 455
+GetCompanyInfo 735
+GetCompanyInfo 934
+AddCompany 980 77
+GetCompanyInfo 455
+RemoveEmployee 183
+RemoveEmployee 295
+AddEmployee 99 735 976 500
+PromoteEmployee 99 73 971
+AddCompany 719 80
+GetEmployeeInfo 99
+AddEmployee 268 719 352 857
+RemoveCompany 980
+IncreaseCompanyValue 735 95
+RemoveCompany 455
+GetEmployeeInfo 268
+AddEmployee 304 934 427 620
+AddCompany 887 60
+IncreaseCompanyValue 719 53
+IncreaseCompanyValue 719 29
+GetCompanyInfo 934
+PromoteEmployee 99 963 958
+IncreaseCompanyValue 887 93
+HireEmployee 99 887
+PromoteEmployee 99 925 133
+IncreaseCompanyValue 887 61
+HireEmployee 304 735
+HireEmployee 304 934
+RemoveEmployee 99
+RemoveEmployee 304
+AddCompany 367 68
+AddCompany 224 93
+PromoteEmployee 268 442 106
+RemoveCompany 367
+GetCompanyInfo 735
+IncreaseCompanyValue 887 80
+GetCompanyInfo 735
+RemoveEmployee 268
+GetCompanyInfo 719
+RemoveCompany 224
+AddEmployee 243 719 519 566
+AddCompany 867 24
+AcquireCompany 887 867 1.2
+GetCompanyInfo 934
+AddEmployee 877 719 975 29
+RemoveEmployee 243
+HireEmployee 877 735
+GetCompanyInfo 719
+PromoteEmployee 877 222 920
+GetCompanyInfo 934
+RemoveCompany 719
+GetCompanyInfo 934
+AddCompany 692 16
+AddEmployee 444 934 827 774
+AcquireCompany 735 692 1.1
+AddEmployee 450 887 771 39
+GetEmployeeInfo 450
+AddEmployee 190 735 996 351
+AddCompany 105 85
+GetEmployeeInfo 190
+HireEmployee 190 887
+GetCompanyInfo 887
+RemoveCompany 105
+PromoteEmployee 877 503 838
+GetEmployeeInfo 877
+AddEmployee 408 934 680 853
+RemoveEmployee 450
+GetCompanyInfo 735
+PromoteEmployee 877 111 344
+AddEmployee 638 934 495 384
+RemoveEmployee 408
+PromoteEmployee 190 641 49
+PromoteEmployee 638 668 108
+GetEmployeeInfo 638
+RemoveEmployee 638
+RemoveEmployee 190
+AddCompany 268 6
+AcquireCompany 887 268 1.1
+RemoveEmployee 877
+AddCompany 654 17
+IncreaseCompanyValue 654 87
+IncreaseCompanyValue 887 15
+RemoveEmployee 444
+AddCompany 978 51
+AddCompany 422 61
+IncreaseCompanyValue 934 76
+AddCompany 823 95
+IncreaseCompanyValue 934 56
+IncreaseCompanyValue 978 69
+GetCompanyInfo 978
+GetCompanyInfo 735
+RemoveCompany 887
+GetCompanyInfo 735
+AddCompany 336 88
+RemoveCompany 422
+AddEmployee 730 978 114 267
+AddEmployee 740 978 882 261
+RemoveCompany 654
+RemoveEmployee 730
+GetCompanyInfo 336
+GetCompanyInfo 934
+RemoveCompany 336
+PromoteEmployee 740 761 864
+AddCompany 276 34
+PromoteEmployee 740 383 754
+RemoveCompany 276
+PromoteEmployee 740 656 782
+GetEmployeeInfo 740
+RemoveEmployee 740
+GetCompanyInfo 934
+IncreaseCompanyValue 735 39
+AddCompany 121 92
+IncreaseCompanyValue 823 7
+AddEmployee 74 121 131 980
+RemoveCompany 934
+GetEmployeeInfo 74
+GetCompanyInfo 978
+HireEmployee 74 735
+RemoveEmployee 74
+RemoveCompany 823
+IncreaseCompanyValue 121 96
+GetCompanyInfo 735
+AddEmployee 744 735 537 855
+GetCompanyInfo 978
+IncreaseCompanyValue 978 67
+GetEmployeeInfo 744
+GetCompanyInfo 121
+GetEmployeeInfo 744
+AddEmployee 925 735 271 686
+GetCompanyInfo 121
+RemoveCompany 121
+RemoveCompany 978
+GetCompanyInfo 735
+RemoveEmployee 744
+AddCompany 347 48
+RemoveCompany 347
+AddCompany 988 39
+AcquireCompany 735 988 1.2
+IncreaseCompanyValue 735 97
+IncreaseCompanyValue 735 15
+PromoteEmployee 925 239 266
+IncreaseCompanyValue 735 31
+PromoteEmployee 925 280 523
+PromoteEmployee 925 741 142
+PromoteEmployee 925 121 993
+GetCompanyInfo 735
+IncreaseCompanyValue 735 59
+RemoveEmployee 925
+GetCompanyInfo 735
+RemoveCompany 735
+AddCompany 751 63
+AddEmployee 726 751 797 550
+RemoveEmployee 726
+AddEmployee 842 751 683 498
+AddCompany 70 28
+GetEmployeeInfo 842
+HireEmployee 842 70
+RemoveCompany 751
+PromoteEmployee 842 830 839
+IncreaseCompanyValue 70 28
+AddEmployee 596 70 587 932
+GetEmployeeInfo 596
+IncreaseCompanyValue 70 25
+RemoveEmployee 842
+AddEmployee 74 70 114 397
+IncreaseCompanyValue 70 91
+PromoteEmployee 74 672 145
+RemoveEmployee 74
+IncreaseCompanyValue 70 78
+IncreaseCompanyValue 70 65
+AddCompany 331 99
+AddEmployee 676 331 731 992
+HireEmployee 676 70
+PromoteEmployee 596 88 823
+AddEmployee 114 70 658 697
+GetEmployeeInfo 114
+GetEmployeeInfo 676
+PromoteEmployee 676 562 969
+AddCompany 709 27
+PromoteEmployee 676 765 704
+AcquireCompany 70 709 1.3
+RemoveCompany 331
+PromoteEmployee 676 903 618
+AddEmployee 674 70 659 10
+PromoteEmployee 674 503 -12
+AddCompany 839 32
+AddCompany 218 71
+RemoveEmployee 114
+GetEmployeeInfo 674
+IncreaseCompanyValue 218 41
+AcquireCompany 70 839 1.1
+RemoveEmployee 676
+GetEmployeeInfo 674
+AddEmployee 446 218 457 604
+IncreaseCompanyValue 218 19
+HireEmployee 596 218
+IncreaseCompanyValue 70 4
+PromoteEmployee 596 952 831
+PromoteEmployee 446 478 379
+PromoteEmployee 596 517 469
+AddCompany 367 9
+AcquireCompany 70 367 1.1
+PromoteEmployee 446 630 849
+GetCompanyInfo 218
+AddEmployee 463 218 696 937
+AddCompany 43 90
+AddCompany 217 46
+AcquireCompany 70 217 1.0
+AddEmployee 566 43 478 398
+AddCompany 651 62
+RemoveEmployee 566
+GetCompanyInfo 651
+AcquireCompany 70 651 1.3
+AcquireCompany 70 43 1.0
+GetCompanyInfo 70
+HireEmployee 674 218
+IncreaseCompanyValue 70 50
+AddCompany 87 23
+AddEmployee 363 218 696 123
+AddCompany 833 51
+PromoteEmployee 463 191 -3
+IncreaseCompanyValue 87 70
+AcquireCompany 70 833 1.3
+RemoveEmployee 363
+AcquireCompany 70 218 1.1
+RemoveCompany 87
+IncreaseCompanyValue 70 5
+RemoveEmployee 674
+RemoveEmployee 463
+GetCompanyInfo 70
+AddEmployee 493 70 59 126
+AddCompany 279 89
+AcquireCompany 70 279 1.3
+AddEmployee 855 70 228 659
+GetEmployeeInfo 446
+AddEmployee 41 70 690 220
+GetEmployeeInfo 493
+GetCompanyInfo 70
+RemoveEmployee 41
+#Trying 250 mixed SUCCESS/FAILURE commands
+AddCompany 70 974
+RemoveCompany 637
+AddCompany 70 199
+AcquireCompany 746 959 1.3
+HireEmployee 596 70
+AddEmployee 316 73 991 234
+AddCompany 70 72
+AcquireCompany 143 691 1.2
+GetCompanyInfo 70
+PromoteEmployee 446 716 393
+AcquireCompany 908 530 1.2
+AcquireCompany 879 415 1.1
+HireEmployee 446 70
+AcquireCompany 588 666 1.1
+AddCompany 70 972
+AcquireCompany 170 332 1.0
+AddEmployee 439 70 582 9
+AddEmployee 796 70 588 1000
+PromoteEmployee 796 447 892
+AddCompany 70 267
+IncreaseCompanyValue 438 596
+AcquireCompany 883 649 1.0
+AcquireCompany 215 342 1.0
+AcquireCompany 307 891 1.2
+AcquireCompany 669 807 1.2
+GetEmployeeInfo 796
+AddCompany 148 92
+AcquireCompany 70 148 1.0
+AddEmployee 596 70 551 79
+AddCompany 326 85
+RemoveEmployee 794
+AcquireCompany 299 391 1.1
+HireEmployee 595 628
+AddCompany 326 161
+AddCompany 70 564
+AddCompany 326 156
+HireEmployee 914 736
+GetEmployeeInfo 860
+RemoveCompany 326
+AcquireCompany 640 463 1.2
+GetCompanyInfo 403
+AcquireCompany 377 877 1.0
+AcquireCompany 318 691 1.3
+AcquireCompany 401 979 1.3
+HireEmployee 796 70
+RemoveEmployee 902
+AcquireCompany 4 363 1.0
+RemoveCompany 70
+RemoveCompany 771
+AcquireCompany 872 158 1.0
+AcquireCompany 161 960 1.0
+GetEmployeeInfo 498
+AcquireCompany 690 100 1.3
+AcquireCompany 683 64 1.0
+RemoveEmployee 841
+AcquireCompany 342 935 1.0
+AcquireCompany 521 938 1.3
+AcquireCompany 570 26 1.1
+IncreaseCompanyValue 70 84
+GetCompanyInfo 70
+AcquireCompany 97 772 1.2
+PromoteEmployee 369 359 73
+RemoveCompany 973
+RemoveCompany 70
+PromoteEmployee 666 280 872
+IncreaseCompanyValue 4 591
+IncreaseCompanyValue 561 174
+AddEmployee 340 70 25 76
+AcquireCompany 527 739 1.2
+HireEmployee 340 70
+GetEmployeeInfo 446
+RemoveCompany 676
+IncreaseCompanyValue 663 548
+AcquireCompany 822 303 1.3
+GetCompanyInfo 854
+GetCompanyInfo 70
+PromoteEmployee 70 760 776
+AcquireCompany 601 362 1.0
+GetEmployeeInfo 387
+AcquireCompany 385 770 1.1
+RemoveCompany 70
+RemoveCompany 704
+AcquireCompany 821 944 1.1
+HireEmployee 596 70
+AddCompany 70 100
+GetEmployeeInfo 596
+AcquireCompany 518 43 1.1
+AddCompany 70 852
+GetEmployeeInfo 132
+AcquireCompany 299 94 1.1
+GetCompanyInfo 70
+RemoveCompany 760
+GetCompanyInfo 70
+PromoteEmployee 493 238 641
+AcquireCompany 44 72 1.0
+AcquireCompany 505 422 1.0
+AddEmployee 855 726 760 783
+AddEmployee 456 70 675 193
+GetCompanyInfo 730
+HireEmployee 659 57
+AcquireCompany 274 207 1.2
+AcquireCompany 616 607 1.0
+GetCompanyInfo 70
+PromoteEmployee 223 888 363
+AcquireCompany 957 897 1.2
+AddCompany 721 98
+AcquireCompany 70 721 1.0
+RemoveCompany 569
+IncreaseCompanyValue 70 50
+AddCompany 70 241
+PromoteEmployee 439 922 262
+HireEmployee 978 651
+AcquireCompany 249 415 1.3
+AcquireCompany 716 386 1.1
+AcquireCompany 869 509 1.2
+HireEmployee 340 70
+AcquireCompany 60 676 1.1
+HireEmployee 29 216
+PromoteEmployee 493 428 -11
+RemoveEmployee 855
+RemoveEmployee 493
+RemoveEmployee 939
+AcquireCompany 1000 112 1.3
+AcquireCompany 501 636 1.2
+AcquireCompany 841 586 1.3
+RemoveCompany 70
+IncreaseCompanyValue 70 59
+HireEmployee 446 70
+AcquireCompany 208 176 1.1
+RemoveCompany 390
+AcquireCompany 512 931 1.3
+RemoveCompany 70
+AcquireCompany 586 297 1.2
+AddCompany 482 56
+AcquireCompany 482 70 1.1
+RemoveEmployee 796
+AcquireCompany 83 278 1.2
+HireEmployee 326 177
+AcquireCompany 70 482 1.3
+AcquireCompany 831 801 1.3
+RemoveEmployee 363
+AcquireCompany 85 885 1.3
+HireEmployee 33 14
+AcquireCompany 222 468 1.0
+AcquireCompany 749 350 1.2
+AcquireCompany 232 561 1.3
+GetCompanyInfo 70
+AcquireCompany 316 724 1.0
+RemoveCompany 70
+AcquireCompany 981 256 1.2
+AcquireCompany 885 847 1.2
+GetCompanyInfo 799
+AddEmployee 602 426 1 895
+RemoveCompany 70
+AcquireCompany 214 71 1.0
+RemoveEmployee 589
+GetEmployeeInfo 381
+AcquireCompany 378 512 1.3
+IncreaseCompanyValue 70 1
+RemoveEmployee 439
+RemoveCompany 739
+IncreaseCompanyValue 661 455
+GetCompanyInfo 70
+GetCompanyInfo 70
+AcquireCompany 639 608 1.0
+AddEmployee 959 376 807 408
+AddCompany 70 924
+HireEmployee 340 70
+HireEmployee 446 70
+PromoteEmployee 93 638 97
+AddCompany 910 73
+HireEmployee 596 555
+IncreaseCompanyValue 910 95
+AcquireCompany 910 70 1.2
+RemoveCompany 910
+AddEmployee 340 818 283 371
+RemoveCompany 70
+IncreaseCompanyValue 70 68
+AcquireCompany 523 167 1.2
+HireEmployee 446 70
+AcquireCompany 492 526 1.0
+AcquireCompany 735 164 1.2
+AcquireCompany 828 321 1.0
+RemoveEmployee 340
+AcquireCompany 204 389 1.2
+AcquireCompany 431 377 1.2
+RemoveCompany 148
+GetCompanyInfo 70
+IncreaseCompanyValue 70 98
+AcquireCompany 464 280 1.1
+GetEmployeeInfo 135
+AddEmployee 41 70 405 368
+RemoveCompany 593
+IncreaseCompanyValue 70 86
+HireEmployee 456 70
+IncreaseCompanyValue 34 360
+AddEmployee 688 70 192 242
+AcquireCompany 192 460 1.2
+AddEmployee 599 70 245 521
+AcquireCompany 552 934 1.2
+IncreaseCompanyValue 70 48
+PromoteEmployee 751 6 540
+AcquireCompany 328 315 1.3
+RemoveEmployee 688
+GetEmployeeInfo 359
+IncreaseCompanyValue 83 15
+RemoveCompany 70
+AcquireCompany 86 728 1.2
+AcquireCompany 670 499 1.2
+RemoveEmployee 908
+AddCompany 771 75
+AcquireCompany 771 70 1.3
+AcquireCompany 771 70 1.0
+GetEmployeeInfo 709
+IncreaseCompanyValue 678 932
+GetCompanyInfo 771
+RemoveEmployee 446
+AcquireCompany 771 70 1.3
+GetEmployeeInfo 127
+HireEmployee 851 4
+HireEmployee 441 749
+RemoveEmployee 41
+GetEmployeeInfo 360
+GetEmployeeInfo 198
+AddCompany 771 363
+PromoteEmployee 956 915 223
+IncreaseCompanyValue 70 91
+AcquireCompany 985 415 1.1
+GetEmployeeInfo 573
+AcquireCompany 771 70 1.1
+AcquireCompany 735 662 1.3
+GetEmployeeInfo 596
+PromoteEmployee 530 189 849
+GetEmployeeInfo 606
+HireEmployee 456 771
+GetEmployeeInfo 599
+AcquireCompany 70 771 1.0
+IncreaseCompanyValue 70 88
+IncreaseCompanyValue 534 8
+GetEmployeeInfo 487
+GetEmployeeInfo 275
+GetCompanyInfo 70
+RemoveCompany 928
+IncreaseCompanyValue 125 248
+PromoteEmployee 596 539 440
+IncreaseCompanyValue 70 25
+AcquireCompany 311 457 1.0
+AddCompany 309 81
+GetEmployeeInfo 596
+RemoveCompany 309
+#Finishing with 250 SUCCESS commands
+PromoteEmployee 599 337 232
+IncreaseCompanyValue 70 37
+GetEmployeeInfo 599
+GetEmployeeInfo 456
+IncreaseCompanyValue 70 25
+AddCompany 535 78
+PromoteEmployee 599 178 276
+RemoveEmployee 596
+AddEmployee 631 70 299 825
+HireEmployee 599 535
+IncreaseCompanyValue 70 48
+GetCompanyInfo 70
+AddCompany 469 46
+AcquireCompany 70 469 1.2
+RemoveEmployee 599
+IncreaseCompanyValue 535 1
+IncreaseCompanyValue 535 21
+AcquireCompany 70 535 1.1
+RemoveEmployee 456
+GetCompanyInfo 70
+GetCompanyInfo 70
+AddCompany 771 38
+RemoveCompany 771
+PromoteEmployee 631 537 878
+GetCompanyInfo 70
+AddEmployee 311 70 767 810
+RemoveEmployee 311
+GetEmployeeInfo 631
+GetCompanyInfo 70
+RemoveEmployee 631
+RemoveCompany 70
+AddCompany 569 1
+AddEmployee 380 569 37 296
+PromoteEmployee 380 866 664
+GetEmployeeInfo 380
+GetCompanyInfo 569
+IncreaseCompanyValue 569 100
+RemoveEmployee 380
+RemoveCompany 569
+AddCompany 33 13
+GetCompanyInfo 33
+IncreaseCompanyValue 33 3
+RemoveCompany 33
+AddCompany 900 79
+AddEmployee 379 900 907 297
+AddEmployee 885 900 46 362
+IncreaseCompanyValue 900 45
+PromoteEmployee 379 704 120
+GetCompanyInfo 900
+IncreaseCompanyValue 900 81
+RemoveEmployee 885
+GetCompanyInfo 900
+RemoveEmployee 379
+GetCompanyInfo 900
+AddCompany 818 48
+IncreaseCompanyValue 818 41
+GetCompanyInfo 900
+GetCompanyInfo 818
+AddCompany 250 89
+AddEmployee 82 250 382 574
+GetEmployeeInfo 82
+AddEmployee 891 900 642 25
+GetEmployeeInfo 891
+PromoteEmployee 82 685 433
+RemoveEmployee 82
+HireEmployee 891 250
+AddEmployee 743 900 301 437
+AddCompany 612 23
+AddEmployee 970 900 705 817
+PromoteEmployee 891 588 827
+RemoveEmployee 891
+RemoveEmployee 743
+GetCompanyInfo 900
+GetEmployeeInfo 970
+GetEmployeeInfo 970
+GetCompanyInfo 818
+RemoveCompany 612
+HireEmployee 970 818
+GetEmployeeInfo 970
+GetCompanyInfo 250
+AddCompany 606 97
+AddCompany 333 48
+IncreaseCompanyValue 900 71
+IncreaseCompanyValue 333 76
+RemoveCompany 900
+GetCompanyInfo 606
+GetEmployeeInfo 970
+AddCompany 499 42
+RemoveEmployee 970
+IncreaseCompanyValue 606 88
+RemoveCompany 333
+IncreaseCompanyValue 250 46
+AddEmployee 816 499 186 957
+GetEmployeeInfo 816
+AddEmployee 771 606 198 443
+PromoteEmployee 816 746 592
+RemoveEmployee 771
+AddCompany 704 45
+GetEmployeeInfo 816
+PromoteEmployee 816 914 278
+GetCompanyInfo 499
+GetEmployeeInfo 816
+AddEmployee 751 818 120 221
+GetCompanyInfo 499
+HireEmployee 816 704
+IncreaseCompanyValue 704 25
+AddCompany 640 73
+IncreaseCompanyValue 499 91
+RemoveCompany 606
+RemoveCompany 640
+GetCompanyInfo 704
+AddEmployee 764 250 189 735
+RemoveCompany 499
+AddCompany 19 21
+RemoveEmployee 816
+IncreaseCompanyValue 704 1
+AddEmployee 594 19 859 433
+AddCompany 444 60
+RemoveEmployee 594
+RemoveEmployee 764
+HireEmployee 751 250
+IncreaseCompanyValue 19 77
+RemoveCompany 818
+GetCompanyInfo 19
+GetEmployeeInfo 751
+RemoveEmployee 751
+RemoveCompany 444
+AddEmployee 35 250 122 894
+AddEmployee 129 704 85 547
+GetEmployeeInfo 35
+IncreaseCompanyValue 19 65
+GetCompanyInfo 19
+HireEmployee 35 19
+GetEmployeeInfo 129
+GetEmployeeInfo 35
+GetCompanyInfo 19
+IncreaseCompanyValue 250 69
+RemoveEmployee 35
+RemoveCompany 19
+HireEmployee 129 250
+IncreaseCompanyValue 250 80
+RemoveCompany 704
+AddCompany 485 57
+PromoteEmployee 129 204 60
+AddEmployee 254 250 838 218
+AddEmployee 340 250 479 76
+PromoteEmployee 129 53 114
+GetEmployeeInfo 340
+HireEmployee 340 485
+GetCompanyInfo 250
+GetEmployeeInfo 340
+PromoteEmployee 129 973 821
+AddEmployee 256 250 166 370
+IncreaseCompanyValue 250 46
+PromoteEmployee 256 877 882
+AddCompany 602 49
+GetCompanyInfo 602
+GetCompanyInfo 485
+GetEmployeeInfo 340
+GetEmployeeInfo 256
+AddCompany 746 19
+AcquireCompany 250 746 1.2
+IncreaseCompanyValue 602 88
+RemoveCompany 602
+AddEmployee 69 485 89 609
+AddEmployee 428 250 989 651
+HireEmployee 340 250
+IncreaseCompanyValue 250 74
+GetCompanyInfo 485
+GetCompanyInfo 485
+GetCompanyInfo 485
+AddCompany 985 96
+PromoteEmployee 428 306 377
+GetEmployeeInfo 340
+RemoveEmployee 256
+RemoveCompany 985
+IncreaseCompanyValue 485 26
+RemoveEmployee 428
+IncreaseCompanyValue 250 2
+AddCompany 38 88
+GetEmployeeInfo 254
+GetEmployeeInfo 340
+GetCompanyInfo 485
+HireEmployee 129 485
+RemoveEmployee 129
+RemoveCompany 38
+AddEmployee 27 250 591 117
+HireEmployee 69 250
+GetEmployeeInfo 69
+RemoveEmployee 27
+GetEmployeeInfo 69
+GetEmployeeInfo 340
+AddCompany 694 24
+IncreaseCompanyValue 250 38
+PromoteEmployee 69 325 69
+AddEmployee 637 485 19 643
+AcquireCompany 250 694 1.0
+GetCompanyInfo 250
+RemoveEmployee 69
+AddCompany 646 20
+RemoveCompany 646
+AddCompany 849 9
+AcquireCompany 250 849 1.0
+GetCompanyInfo 485
+AddEmployee 22 485 184 142
+AddEmployee 790 250 410 987
+GetEmployeeInfo 637
+AddCompany 385 48
+AcquireCompany 250 385 1.0
+IncreaseCompanyValue 250 95
+RemoveEmployee 254
+IncreaseCompanyValue 250 67
+GetCompanyInfo 485
+AddCompany 979 11
+AcquireCompany 250 979 1.0
+IncreaseCompanyValue 250 71
+AcquireCompany 250 485 1.0
+GetEmployeeInfo 22
+AddCompany 865 28
+AcquireCompany 250 865 1.2
+IncreaseCompanyValue 250 31
+PromoteEmployee 340 351 174
+PromoteEmployee 22 312 440
+GetCompanyInfo 250
+IncreaseCompanyValue 250 69
+GetCompanyInfo 250
+GetEmployeeInfo 22
+GetCompanyInfo 250
+IncreaseCompanyValue 250 4
+AddCompany 79 36
+RemoveCompany 79
+PromoteEmployee 790 34 1
+AddEmployee 366 250 83 175
+IncreaseCompanyValue 250 57
+RemoveEmployee 790
+AddCompany 63 18
+AcquireCompany 250 63 1.1
+AddCompany 69 40
+AcquireCompany 250 69 1.1
+RemoveEmployee 637
+GetEmployeeInfo 340
+AddCompany 579 91
+GetEmployeeInfo 366
+RemoveEmployee 340
+AddCompany 404 34
+AcquireCompany 250 579 1.1
+AcquireCompany 250 404 1.2
+AddEmployee 740 250 901 77
+RemoveEmployee 366
+PromoteEmployee 740 251 578
+Quit

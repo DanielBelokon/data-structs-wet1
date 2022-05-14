@@ -1,0 +1,116 @@
+#Test: BasicTest. NumCommands: 100. MinInt: -20. MaxInt: 100. With outer errors. Seed: 7905619473042850345.
+#Injecting commands before Init
+GetHighestEarner 81
+GetCompanyInfo 93
+AddEmployee 7 87 -8 82
+GetHighestEarner 22
+GetHighestEarnerInEachCompany 73
+HireEmployee -2 10
+Init
+AddCompany 1 50
+AddCompany 2 500
+AddCompany 3 5000
+AddEmployee 11 1 60 70
+AddEmployee 12 2 600 700
+AddEmployee 13 3 6000 7000
+AcquireCompany 3 2 1.63
+IncreaseCompanyValue 1 100
+PromoteEmployee 13 10 1
+GetHighestEarner 12
+GetAllEmployeesBySalary 3
+GetHighestEarnerInEachCompany 2
+GetNumEmployeesMatching -1 0 20 100 10
+HireEmployee 12 1
+GetCompanyInfo 1
+GetCompanyInfo 2
+GetCompanyInfo 3
+GetEmployeeInfo 11
+GetEmployeeInfo 12
+GetEmployeeInfo 13
+RemoveEmployee 13
+RemoveCompany 3
+HireEmployee 12 1
+GetAllEmployeesBySalary 0
+GetHighestEarnerInEachCompany 1
+GetHighestEarnerInEachCompany 1
+GetAllEmployeesBySalary -10
+GetAllEmployeesBySalary 1
+PromoteEmployee 12 48 -13
+PromoteEmployee 12 41 49
+GetNumEmployeesMatching 1 12 84 628 104
+GetCompanyInfo 1
+RemoveEmployee 12
+PromoteEmployee 11 40 95
+RemoveEmployee 11
+IncreaseCompanyValue 1 10
+GetCompanyInfo 1
+AddEmployee 24 1 94 78
+GetCompanyInfo 1
+GetEmployeeInfo 24
+GetCompanyInfo 1
+RemoveEmployee 24
+IncreaseCompanyValue 1 10
+GetCompanyInfo 1
+IncreaseCompanyValue 1 3
+IncreaseCompanyValue 1 5
+AddEmployee 79 1 72 85
+GetEmployeeInfo 79
+GetCompanyInfo 1
+GetCompanyInfo 1
+AddCompany 84 9
+RemoveCompany 84
+GetCompanyInfo 1
+GetCompanyInfo 1
+PromoteEmployee 79 21 -2
+IncreaseCompanyValue 1 3
+AddCompany 64 10
+RemoveCompany 64
+PromoteEmployee 79 74 -8
+GetCompanyInfo 1
+AddCompany 28 4
+AddEmployee 28 1 93 17
+GetHighestEarnerInEachCompany 1
+AddEmployee 58 28 57 13
+AcquireCompany 1 28 1.1
+IncreaseCompanyValue 1 5
+GetNumEmployeesMatching 1 0 81 92 19
+GetEmployeeInfo 58
+IncreaseCompanyValue 1 2
+AddEmployee 82 1 77 96
+GetHighestEarner 1
+GetEmployeeInfo 79
+AddCompany 16 1
+GetNumEmployeesMatching -2 1 49 99 11
+GetNumEmployeesMatching 1 15 62 79 4
+HireEmployee 28 16
+HireEmployee 79 16
+AcquireCompany 1 16 1.3
+RemoveEmployee 28
+PromoteEmployee 58 80 2
+GetHighestEarner -3
+GetHighestEarnerInEachCompany 1
+GetEmployeeInfo 79
+AddCompany 26 9
+RemoveCompany 26
+AddEmployee 4 1 99 33
+GetCompanyInfo 1
+GetCompanyInfo 1
+GetHighestEarnerInEachCompany 1
+GetHighestEarner -6
+AddEmployee 61 1 60 88
+AddCompany 55 9
+AddCompany 47 9
+IncreaseCompanyValue 47 3
+IncreaseCompanyValue 1 10
+RemoveEmployee 61
+AddCompany 11 1
+HireEmployee 58 11
+GetAllEmployeesBySalary 11
+RemoveEmployee 58
+Quit
+#Injecting commands after Quit
+AcquireCompany 24 84 49.3
+GetCompanyInfo 69
+AddCompany 100 -5
+AddCompany 94 -14
+RemoveCompany 9
