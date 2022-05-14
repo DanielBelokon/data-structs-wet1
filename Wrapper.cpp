@@ -162,7 +162,7 @@ StatusType AcquireCompany(void *DS, int AcquirerID, int TargetID, double Factor)
 
 StatusType GetHighestEarner(void *DS, int CompanyID, int *EmployeeID)
 {
-    if (DS == NULL)
+    if (DS == NULL || EmployeeID == NULL)
         return INVALID_INPUT;
     try
     {
@@ -177,7 +177,7 @@ StatusType GetHighestEarner(void *DS, int CompanyID, int *EmployeeID)
 
 StatusType GetAllEmployeesBySalary(void *DS, int CompanyID, int **Employees, int *NumOfEmployees)
 {
-    if (DS == NULL)
+    if (DS == NULL || Employees == NULL || NumOfEmployees == NULL)
         return INVALID_INPUT;
     try
     {

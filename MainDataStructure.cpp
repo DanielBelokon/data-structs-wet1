@@ -27,7 +27,7 @@ void MainDataStructure::AddCompany(int companyID, int value)
 
 void MainDataStructure::AddEmployee(int employeeID, int companyID, int salary, int grade)
 {
-    if (companyID <= 0 || employeeID <= 0 || salary <= 0)
+    if (companyID <= 0 || employeeID <= 0 || salary <= 0 || grade < 0)
     {
         throw InvalidInputException();
     }
@@ -83,7 +83,7 @@ void MainDataStructure::RemoveEmployee(int employeeID)
 
 void MainDataStructure::RemoveCompany(int companyID, bool force)
 {
-    if (companyID == 0)
+    if (companyID <= 0)
     {
         throw InvalidInputException();
     }
@@ -262,9 +262,14 @@ int MainDataStructure::GetAllEmployeesBySalary(int companyID, int **employeeIDs)
 
 void MainDataStructure::GetHighestEarnerInEachCompany(int numOfCompanies, int **highestEarners)
 {
-    if (numOfCompanies <= 0 || numOfCompanies > companies_with_employees_tree.getSize())
+    if (numOfCompanies <= 0)
     {
         throw InvalidInputException();
+    }
+
+    if (numOfCompanies > companies_with_employees_tree.getSize())
+    {
+        throw CompanyNotFoundException();
     }
 
     *highestEarners = (int *)(malloc(sizeof(int) * numOfCompanies));

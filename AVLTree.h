@@ -310,6 +310,10 @@ Node<T> *AVLTree<T>::findNode(T object, Node<T> **prev)
 template <typename T>
 void AVLTree<T>::remove(T object)
 {
+    if (find(object) == nullptr)
+    {
+        return;
+    }
     removeAux(object, root, nullptr);
     size--;
 }
