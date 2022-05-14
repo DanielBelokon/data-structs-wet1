@@ -268,10 +268,7 @@ void MainDataStructure::GetHighestEarnerInEachCompany(int numOfCompanies, int **
     }
 
     if (numOfCompanies > companies_with_employees_tree.getSize())
-    {
         throw CompanyNotFoundException();
-    }
-
     *highestEarners = (int *)(malloc(sizeof(int) * numOfCompanies));
     if (highestEarners == NULL)
     {
