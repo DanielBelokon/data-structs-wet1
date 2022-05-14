@@ -10,8 +10,8 @@ set(SOURCE_FILES main1.cpp Wrapper.cpp MainDataStructure.cpp Employee.cpp Compan
 # Add executable target with source files listed in SOURCE_FILES variable
 add_executable(data-structs-1 ${SOURCE_FILES})
 
-file(GLOB inputs "${CMAKE_CURRENT_SOURCE_DIR}/tests/input/*.txt")
-file(GLOB outputs "${CMAKE_CURRENT_SOURCE_DIR}/tests/output/*.txt")
+file(GLOB inputs "${CMAKE_CURRENT_SOURCE_DIR}/tests/input/*.in")
+file(GLOB outputs "${CMAKE_CURRENT_SOURCE_DIR}/tests/output/*.out")
 
 foreach(filename ${inputs})
     get_filename_component(filename_no_extension ${filename} NAME_WE)
